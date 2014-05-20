@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_date_formatter">"%2$s
+%1$s"</string>
+    <string name="app_label">システム UI</string>
+    <string name="status_bar_clear_all_button">通知消去</string>
+    <string name="status_bar_recent_remove_item_title">リストから削除</string>
+    <string name="status_bar_recent_inspect_item_title">アプリ情報</string>
+    <string name="status_bar_no_recent_apps">最近使用したアプリなし</string>
+    <string name="status_bar_accessibility_dismiss_recents">最近使用したアプリを消去</string>
+    <string name="status_bar_no_notifications_title">通知なし</string>
+    <string name="status_bar_ongoing_events_title">実行中</string>
+    <string name="status_bar_latest_events_title">通知</string>
+    <string name="battery_low_title">充電器を接続</string>
+    <string name="battery_low_subtitle">電池が残り少なくなっています。</string>
+    <string name="battery_low_percent_format">残り %d%%</string>
+    <string name="invalid_charger">"USB 充電はサポートされていません。
+付属の充電器だけをご使用ください。"</string>
+    <string name="battery_low_why">電池の使用状況</string>
+    <string name="status_bar_settings_settings_button">設定</string>
+    <string name="status_bar_settings_wifi_button">Wi-Fi</string>
+    <string name="status_bar_settings_airplane">フライトモード</string>
+    <string name="status_bar_settings_auto_rotation">画面の自動回転</string>
+    <string name="status_bar_settings_mute_label">ミュート</string>
+    <string name="status_bar_settings_auto_brightness_label">自動</string>
+    <string name="status_bar_settings_notifications">通知</string>
+    <string name="bluetooth_tethered">Bluetooth テザリングしました</string>
+    <string name="status_bar_input_method_settings_configure_input_methods">入力方式の設定</string>
+    <string name="status_bar_use_physical_keyboard">物理キーボード</string>
+    <string name="usb_device_permission_prompt">アプリ %1$s に USB デバイスにアクセスさせますか?</string>
+    <string name="usb_accessory_permission_prompt">アプリ %1$s に USB アクセサリにアクセスさせますか?</string>
+    <string name="usb_device_confirm_prompt">この USB デバイスが接続されたとき、%1$s を開きますか?</string>
+    <string name="usb_accessory_confirm_prompt">この USB アクセサリが接続されたとき、%1$s を開きますか?</string>
+    <string name="usb_accessory_uri_prompt">インストールしたアプリは、この USB アクセサリとは作動しません。このアクセサリについての情報は、%1$s をご覧ください</string>
+    <string name="title_usb_accessory">USB アクセサリ</string>
+    <string name="label_view">表示</string>
+    <string name="always_use_device">この USB デバイスの既定値を使用する</string>
+    <string name="always_use_accessory">この USB アクセサリの既定値を使用する</string>
+    <string name="usb_debugging_title">USBデバッグを許可しますか？</string>
+    <string name="usb_debugging_message">"コンピュータの RSA キー指紋:
+%1$s"</string>
+    <string name="usb_debugging_always">このコンピュータは常に許可する</string>
+    <string name="compat_mode_on">全画面にズーム</string>
+    <string name="compat_mode_off">全画面に拡張</string>
+    <string name="screenshot_saving_ticker">スクリーンショットを保存しています…</string>
+    <string name="screenshot_saving_title">スクリーンショットを保存しています…</string>
+    <string name="screenshot_saving_text">スクリーンショットを保存しています。</string>
+    <string name="screenshot_saved_title">スクリーンショットを撮影しました。</string>
+    <string name="screenshot_saved_text">触れるとスクリーンショットが表示されます。</string>
+    <string name="screenshot_failed_title">スクリーンショットを撮影できませんでした。</string>
+    <string name="screenshot_failed_text">スクリーンショットを保存できませんでした。メモリが使用中かもしれません。</string>
+    <string name="usb_preference_title">USB ファイル転送オプション</string>
+    <string name="use_mtp_button_title">メディア プレーヤーとしてマウント (MTP)</string>
+    <string name="use_ptp_button_title">カメラとしてマウント (PTP)</string>
+    <string name="installer_cd_button_title">Mac 用 Android ファイル転送アプリをインストール</string>
+    <string name="accessibility_back">戻る</string>
+    <string name="accessibility_home">ホーム</string>
+    <string name="accessibility_menu">メニュー</string>
+    <string name="accessibility_recent">最近使用したアプリケーション</string>
+    <string name="accessibility_search_light">検索</string>
+    <string name="accessibility_camera_button">カメラ</string>
+    <string name="accessibility_ime_switch_button">入力方式ボタンを切り替え。</string>
+    <string name="accessibility_compatibility_zoom_button">ズーム互換性ボタン。</string>
+    <string name="accessibility_compatibility_zoom_example">小さいスクリーンから大きいスクリーンへズーム。</string>
+    <string name="accessibility_bluetooth_connected">Bluetooth 接続済みです。</string>
+    <string name="accessibility_bluetooth_disconnected">Bluetooth 接続解除されています。</string>
+    <string name="accessibility_no_battery">バッテリーの残量がありません。</string>
+    <string name="accessibility_battery_one_bar">バッテリーの残量がバー 1 本分です。</string>
+    <string name="accessibility_battery_two_bars">バッテリーの残量がバー 2 本分です。</string>
+    <string name="accessibility_battery_three_bars">バッテリーの残量がバー 3 本分です。</string>
+    <string name="accessibility_battery_full">バッテリーは充電されています。</string>
+    <string name="accessibility_no_phone">電波が届きません。</string>
+    <string name="accessibility_phone_one_bar">電波が弱いです。</string>
+    <string name="accessibility_phone_two_bars">電話の電波がバー 2 本分です。</string>
+    <string name="accessibility_phone_three_bars">電話の電波がバー 3 本分です。</string>
+    <string name="accessibility_phone_signal_full">電話の電波フル。</string>
+    <string name="accessibility_no_data">データなし。</string>
+    <string name="accessibility_data_one_bar">データの電波がバー 1 本分です。</string>
+    <string name="accessibility_data_two_bars">データの電波がバー 2 本分です。</string>
+    <string name="accessibility_data_three_bars">データの電波がバー 3 本分です。</string>
+    <string name="accessibility_data_signal_full">データの電波フル。</string>
+    <string name="accessibility_wifi_off">Wi-Fi オフ。</string>
+    <string name="accessibility_no_wifi">WiFi の接続が解除されました。</string>
+    <string name="accessibility_wifi_one_bar">WiFi 電波が弱いです。</string>
+    <string name="accessibility_wifi_two_bars">WiFi の電波がバー 2 本分です。</string>
+    <string name="accessibility_wifi_three_bars">WiFi の電波がバー 3 本分です。</string>
+    <string name="accessibility_wifi_signal_full">WiFi 信号フル。</string>
+    <string name="accessibility_no_wimax">WiMAX の電波なし。</string>
+    <string name="accessibility_wimax_one_bar">WiMAX 電波が弱いです。</string>
+    <string name="accessibility_wimax_two_bars">WiMAX の電波がバー 2 本分です。</string>
+    <string name="accessibility_wimax_three_bars">WiMAX の電波がバー 3 本分です。</string>
+    <string name="accessibility_wimax_signal_full">WiMAX の電波フル。</string>
+    <string name="accessibility_no_signal">信号なし。</string>
+    <string name="accessibility_not_connected">接続されていません。</string>
+    <string name="accessibility_zero_bars">ゼロ バー。</string>
+    <string name="accessibility_one_bar">1 本バー。</string>
+    <string name="accessibility_two_bars">2 本バー。</string>
+    <string name="accessibility_three_bars">3 本バー。</string>
+    <string name="accessibility_signal_full">信号フル。</string>
+    <string name="accessibility_desc_on">オン。</string>
+    <string name="accessibility_desc_off">オフ。</string>
+    <string name="accessibility_desc_connected">接続済み。</string>
+    <string name="accessibility_data_connection_gprs">GPRS</string>
+    <string name="accessibility_data_connection_1x">1 X</string>
+    <string name="accessibility_data_connection_hspa">HSPA</string>
+    <string name="accessibility_data_connection_3g">3G</string>
+    <string name="accessibility_data_connection_3.5g">3.5G</string>
+    <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_lte">LTE</string>
+    <string name="accessibility_data_connection_cdma">CDMA</string>
+    <string name="accessibility_data_connection_roaming">ローミング</string>
+    <string name="accessibility_data_connection_edge">Edge</string>
+    <string name="accessibility_data_connection_wifi">Wi-Fi</string>
+    <string name="accessibility_no_sim">SIM カードなし。</string>
+    <string name="accessibility_bluetooth_tether">Bluetooth テザリング</string>
+    <string name="accessibility_airplane_mode">機内モード。</string>
+    <string name="accessibility_battery_level">バッテリー残量 %d パーセント。</string>
+    <string name="accessibility_settings_button">システム設定。</string>
+    <string name="accessibility_notifications_button">通知。</string>
+    <string name="accessibility_remove_notification">通知をクリア。</string>
+    <string name="accessibility_gps_enabled">GPS が有効です。</string>
+    <string name="accessibility_gps_acquiring">GPS 取得中。</string>
+    <string name="accessibility_tty_enabled">テレタイプライターが有効です。</string>
+    <string name="accessibility_ringer_vibrate">着信音をバイブレートにする。</string>
+    <string name="accessibility_ringer_silent">着信音を無音にする。</string>
+    <string name="accessibility_recents_item_dismissed">%s 消去済み。</string>
+    <string name="accessibility_notification_dismissed">通知は解除されました。</string>
+    <string name="accessibility_desc_notification_shade">プルダウン メニュー。</string>
+    <string name="accessibility_desc_quick_settings">クイック設定。</string>
+    <string name="accessibility_desc_recent_apps">最近使用したアプリケーション。</string>
+    <string name="accessibility_quick_settings_user">ユーザー%s.</string>
+    <string name="accessibility_quick_settings_wifi">%1$s. %2$s</string>
+    <string name="accessibility_quick_settings_mobile">モバイル%1$s. %2$s. %3$s.</string>
+    <string name="accessibility_quick_settings_battery">バッテリー%s.</string>
+    <string name="accessibility_quick_settings_airplane">機内モード%s.</string>
+    <string name="accessibility_quick_settings_bluetooth">Bluetooth%s.</string>
+    <string name="accessibility_quick_settings_location">位置情報 %s</string>
+    <string name="accessibility_quick_settings_alarm">アラーム設定%s.</string>
+    <string name="data_usage_disabled_dialog_3g_title">2G-3G データが無効です</string>
+    <string name="data_usage_disabled_dialog_4g_title">4G データが無効です</string>
+    <string name="data_usage_disabled_dialog_mobile_title">モバイルデータが無効です</string>
+    <string name="data_usage_disabled_dialog_title">データが無効です</string>
+    <string name="data_usage_disabled_dialog">"指定したデータ使用累計の上限に達しました。
+
+データを再度有効にすると、通信会社から課金される場合があります。"</string>
+    <string name="data_usage_disabled_dialog_enable">データを再び有効にする</string>
+    <string name="status_bar_settings_signal_meter_disconnected">インターネット接続なし</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">Wi-Fi 接続済みです</string>
+    <string name="gps_notification_searching_text">GPS を検索しています</string>
+    <string name="gps_notification_found_text">GPS で設定された位置</string>
+    <string name="accessibility_location_active">ロケーションがアクティブにするよう要求しています</string>
+    <string name="accessibility_clear_all">すべての通知をクリアします。</string>
+    <string name="status_bar_notification_inspect_item_title">アプリ情報</string>
+    <string name="accessibility_rotation_lock_off">スクリーンは自動的に回転します。</string>
+    <string name="accessibility_rotation_lock_on_landscape">スクリーンは横方向にロックされています。</string>
+    <string name="accessibility_rotation_lock_on_portrait">スクリーンは縦方向にロックされています。</string>
+    <string name="dessert_case">デザートケース</string>
+    <string name="start_dreams">スクリーンセーバー</string>
+    <string name="ethernet_label">イーサネット</string>
+    <string name="quick_settings_airplane_mode_label">フライトモード</string>
+    <string name="quick_settings_battery_charging_label">充電しています: %d%%</string>
+    <string name="quick_settings_battery_charged_label">充電完了</string>
+    <string name="quick_settings_bluetooth_label">Bluetooth</string>
+    <string name="quick_settings_bluetooth_multiple_devices_label">Bluetooth (%d 個のデバイス)</string>
+    <string name="quick_settings_bluetooth_off_label">Bluetooth オフ</string>
+    <string name="quick_settings_brightness_label">明るさ</string>
+    <string name="quick_settings_rotation_unlocked_label">自動回転</string>
+    <string name="quick_settings_rotation_locked_label">回転はロックされました</string>
+    <string name="quick_settings_ime_label">入力方法</string>
+    <string name="quick_settings_location_label">ロケーション</string>
+    <string name="quick_settings_location_off_label">ロケーション オフ</string>
+    <string name="quick_settings_media_device_label">メディアデバイス</string>
+    <string name="quick_settings_rssi_label">RSSI</string>
+    <string name="quick_settings_rssi_emergency_only">緊急電話のみ</string>
+    <string name="quick_settings_settings_label">設定</string>
+    <string name="quick_settings_time_label">時間</string>
+    <string name="quick_settings_user_label">現在地</string>
+    <string name="quick_settings_wifi_label">Wi-Fi</string>
+    <string name="quick_settings_wifi_not_connected">接続されていません</string>
+    <string name="quick_settings_wifi_no_network">ネットワークなし</string>
+    <string name="quick_settings_wifi_off_label">Wi-Fi オフ</string>
+    <string name="quick_settings_remote_display_no_connection_label">キャスト画面</string>
+    <string name="quick_settings_brightness_dialog_title">明るさ</string>
+    <string name="quick_settings_brightness_dialog_auto_brightness_label">自動</string>
+    <string name="ssl_ca_cert_warning">ネットワークが監視されています</string>
+    <string name="quick_settings_wifi">Wi-Fi</string>
+    <string name="quick_settings_wifi_cn">WLAN</string>
+    <string name="quick_settings_nfc">NFC</string>
+    <string name="quick_settings_gps">GPS</string>
+    <string name="quick_settings_font">フォント</string>
+    <string name="quick_settings_volume">音量</string>
+    <string name="quick_settings_usage">データ使用量</string>
+    <string name="quick_settings_sync_all">すべてを同期</string>
+    <string name="quick_settings_ringtone">着信音</string>
+    <string name="quick_settings_auto_sync">自動的に同期</string>
+    <string name="quick_settings_bluetooth">Bluetooth</string>
+    <string name="quick_settings_user_card">ユーザー カード</string>
+    <string name="quick_settings_mini_lite">HTC Mini+</string>
+    <string name="quick_settings_home_mode">ホーム モード</string>
+    <string name="quick_settings_screenshot">スクリーンショット</string>
+    <string name="quick_settings_timeout">画面消灯</string>
+    <string name="quick_settings_mobile_data">モバイル データ</string>
+    <string name="quick_settings_power_saver">省電力</string>
+    <string name="quick_settings_data_roaming">データ ローミング</string>
+    <string name="quick_settings_media_output">メディア出力</string>
+    <string name="quick_settings_sound_profile">サウンド プロファイル</string>
+    <string name="quick_settings_music_channel">音楽チャンネル</string>
+    <string name="quick_settings_do_not_disturb">着信拒否</string>
+    <string name="quick_settings_fingerprint_scan">指紋スキャン</string>
+    <string name="quick_settings_power_saver_ex">最大省電力モード</string>
+    <string name="quick_settings_wifi_hotspot">Wi-Fi テザリング</string>
+    <string name="quick_settings_wifi_hotspot_jp">テザリング</string>
+    <string name="quick_settings_wifi_hotspot_us">Mobile Hotspot</string>
+    <string name="quick_settings_wifi_hotspot_tmo">Mobile HotSpot</string>
+    <string name="quick_settings_apn">APN</string>
+    <string name="quick_settings_prefer_network">優先ネットワーク</string>
+    <string name="quick_settings_network_selection">ネットワーク選択</string>
+    <string name="quick_settings_prefer_slot1">スロット 1</string>
+    <string name="quick_settings_prefer_slot2">スロット 2</string>
+    <string name="quick_settings_sound_profile_normal">標準</string>
+    <string name="quick_settings_sound_profile_silent">サイレント</string>
+    <string name="quick_settings_sound_profile_vibrate">バイブ</string>
+    <string name="quick_settings_sound_profile_outdoor">野外</string>
+    <string name="quick_settings_accessibility_auto">自動</string>
+    <string name="quick_settings_accessibility_more">その他</string>
+    <string name="quick_settings_accessibility_level">レベル</string>
+    <string name="accessibility_desc_quick_settings_edit">クイック設定の編集</string>
+    <string name="quick_settings_kid_mode">キッズ モード</string>
+    <string name="quick_setting_launch_kid_fail">キッズモードのアプリケーションがインストールされていません。</string>
+    <string name="quick_settings_reorder_title">クイック設定の編集</string>
+    <string name="quick_settings_reorder_content">右のアイコンを押したままで並べ替え</string>
+    <string name="quick_settings_reorder_separator">隠しアイテム (ドラッグしてクイック設定を追加)</string>
+    <string name="quick_settings_reorder_full_items">12 個のクイック設定まで保管できます。</string>
+    <string name="quick_settings_power_saver_dialog_title">省電力をオンにしますか?</string>
+    <string name="quick_settings_power_saver_dialog_chkbox">次回からこのメッセージを表示しない</string>
+    <string name="quick_settings_power_saver_dialog_message">"省電力でのデータ接続がオンになっています。これがオンの時には、ディスプレイが切ってあると、電子メールの受信などのデータ通信は行われません。
+(充電時のデータ通信は、この設定に関係なく可能です)"</string>
+    <string name="quick_settings_hotspot_dialog_chkbox">次回からこのメッセージを表示しない</string>
+    <string name="quick_settings_hotspot_dialog_message">USB テザリングまたは Mobile Hotspot がアクティブな場合は、Wi-Fi がオフになります。Wi-Fi をオンにするには、USB テザリングまたは Mobile Hotspot をオフにしてください。</string>
+    <string name="quick_tips_edit_button">タップしてクイック設定を追加または削除します</string>
+    <string name="quick_tips_more_button">アイテムを長押しすると、[設定] ページが開きます</string>
+    <string name="quick_settings_wifi_hotspot_cn">WLAN アクセスポイント</string>
+    <string name="quick_setting_wifi_hotspot_ct">WLAN アクセスポイント</string>
+    <string name="qs_mobile_roaming_title">注意</string>
+    <string name="qs_mobile_roaming_msg_att">データ ローミングを許可しますか?米国、プエルトリコ、米国領バージン諸島以外で使用すると、国際データ ローミング料金が課金されます。</string>
+    <string name="qs_mobile_roaming_msg_generic">ローミング中です。データローミングを使用すると、高額の料金が課金されます。ローミング接続を有効にしますか?</string>
+    <string name="qs_restrict_mode_error">エラー</string>
+    <string name="qs_restrict_mode_message">これはシステム管理者によってブロックされています。IT 部門にお尋ねください。</string>
+    <string name="recentapps_title">最近使用したアプリケーション</string>
+    <string name="recentapps_clear_all">すべて消去</string>
+    <string name="recentapps_running_services">実行中のサービス</string>
+    <string name="illegal_ms_reject_cause_3">不正な MS</string>
+    <string name="tmo_plmn">T-Mobile</string>
+    <string name="att_puk_perm_blocked">SIM がブロックされました</string>
+    <string name="lockscreen_imei_locked">無効なカード</string>
+    <string name="lockscreen_uim_fail_message">UIM カードはロックされています</string>
+    <string name="lockscreen_missing_uim_message_short">UIM カードなし</string>
+    <string name="lockscreen_missing_sim_message_short">SIMカードが挿入されていません</string>
+    <string name="lockscreen_missing_kddi_message_short">au IC カードがありません</string>
+    <string name="carrier_label_sim1">(スロット 1)</string>
+    <string name="carrier_label_sim2">(スロット 2)</string>
+    <string name="lockscreen_uimsim_fail_message">UIM/SIM カードはロックされています</string>
+    <string name="lockscreen_missing_uimsim_message_short">UIM/SIM カードなし</string>
+    <string name="battery_low_newtitle">バッテリーの残量が少なくなっています</string>
+    <string name="battery_low_remaining">残量</string>
+    <string name="battery_low_only_percent_format">%d%%</string>
+    <string name="battery_low_charging_not_enough_title">警告</string>
+    <string name="battery_low_charging_not_enough_ac_title">充電できません</string>
+    <string name="battery_low_charging_not_enough_ac">消費する電力が多すぎるため電話を充電できません。この問題を修正するには、電話の電源を切るか、使用していないアプリを閉じるか、スクリーンをオフにして、消費している電力を削減してください。</string>
+    <string name="extreme_auto_power_saver_ask_title_ex">最大省電力モード</string>
+    <string name="extreme_auto_power_saver_ask_eps_msg">"最大省電力モードに切り替えると、次の方法でバッテリーを長く使用できるようになります。
+-CPU の使用量を縮小する。
+-スクリーンの輝度を下げる。
+-バイブレーション フィードバックを切る。
+-スクリーンが消えているときにはデータ接続を切る。
+-必要なアプリだけを有効にする。
+-万歩計を切る。"</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex">"最大省電力モードに切り替えると、次の方法でバッテリーを長く使用できるようになります。
+-CPU の使用量を縮小する。
+-スクリーンの輝度を下げる。
+-バイブレーション フィードバックを切る。
+-スクリーンが消えているときにはデータ接続を切る。
+-必要なアプリだけを有効にする。"</string>
+    <string name="extreme_auto_power_saver_ask_title_ex1">最大省電力</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex1">"最大省電力機能に切り替えると、次の方法でバッテリーを長く使用できるようになります。
+-CPU の使用量を縮小する。
+-スクリーンの輝度を下げる。
+-バイブレーション フィードバックを切る。
+-スクリーンが消えているときにはデータ接続を切る。
+-必要なアプリだけを有効にする。"</string>
+    <string name="extreme_auto_power_saver_ask_title">最高省電力</string>
+    <string name="extreme_auto_power_saver_ask_msg">"最高省電力機能に切り替えると、次の方法でバッテリーを長く使用できるようになります。
+-CPU の使用量を縮小する。
+-スクリーンの輝度を下げる
+-バイブレーション フィードバックを切る。
+-スクリーンが消えているときにはデータ接続を切る。
+-必要なアプリだけを有効にする。"</string>
+    <string name="extreme_auto_power_saver_ask_title_ex2">スタンバイ モード</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex2">"スタンバイ モードに切り替えると、次の方法でバッテリーを長く使用できるようになります。
+-CPU の使用量を縮小する。
+-スクリーンの輝度を下げる。
+-バイブレーション フィードバックを切る。
+-スクリーンが消えているときにはデータ接続を切る。
+-必要なアプリだけを有効にする。"</string>
+    <string name="extreme_auto_power_saver_ask_title_ex3">緊急モード</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex3">"緊急モードに切り替えると、次の方法でバッテリーを長く使用できるようになります。
+-CPU の使用量を縮小する。
+-スクリーンの輝度を下げる。
+-バイブレーション フィードバックを切る。
+-スクリーンが消えているときにはデータ接続を切る。
+-必要なアプリだけを有効にする。"</string>
+    <string name="extreme_auto_power_saver_ask_title_ex4">低電力モード</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex4">"低電力モードに切り替えると、次の方法でバッテリーを長く使用できるようになります。
+-CPU の使用量を縮小する。
+-スクリーンの輝度を下げる。
+-バイブレーション フィードバックを切る。
+-スクリーンが消えているときにはデータ接続を切る。
+-必要なアプリだけを有効にする。"</string>
+    <string name="extreme_auto_power_saver_ask_title_ex5">節電モード</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex5">"節電モードに切り替えると、次の方法でバッテリーを長く使用できるようになります。
+-CPU の使用量を縮小する
+-スクリーンの輝度を下げる。
+-バイブレーション フィードバックを切る。
+-スクリーンが消えているときにはデータ接続を切る。
+-必要なアプリだけを有効にする。"</string>
+    <string name="extreme_auto_power_saver_ask_title_ex6">スマート省電力モード</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex6">"スマート省電力モードに切り替えると、次の方法でバッテリーを長く使用できるようになります。
+-CPU の使用量を縮小する。
+-スクリーンの輝度を下げる。
+-バイブレーション フィードバックを切る。
+-スクリーンが消えているときにはデータ接続を切る。
+-必要なアプリだけを有効にする。"</string>
+</resources>

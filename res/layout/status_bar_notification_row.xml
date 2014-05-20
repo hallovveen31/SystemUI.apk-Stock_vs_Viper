@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.ExpandableNotificationRow android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_gravity="top|center" android:id="@id/top_glow" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/notification_divider_height" />
+    <Button android:gravity="end" android:id="@id/veto" android:background="@null" android:focusable="false" android:layout_width="48.0dip" android:layout_height="fill_parent" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_marginEnd="-80.0dip" />
+    <com.android.systemui.statusbar.LatestItemView android:id="@id/content" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/notification_divider_height" android:layout_marginBottom="@dimen/notification_divider_height">
+        <com.android.internal.widget.SizeAdaptiveLayout android:id="@id/adaptive" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.android.systemui.statusbar.LatestItemView>
+    <View android:layout_gravity="bottom|center" android:id="@id/bottom_glow" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/notification_divider_height" />
+</com.android.systemui.statusbar.ExpandableNotificationRow>

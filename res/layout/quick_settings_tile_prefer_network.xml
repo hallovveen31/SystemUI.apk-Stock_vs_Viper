@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.quicksetting.QuickSettingPreferNet android:background="@drawable/quick_settings_tile_background" android:layout_width="wrap_content" android:layout_height="@dimen/quick_settings_cell_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <Space android:layout_width="1.0px" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/quick_setting_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/margin_s" android:layout_marginRight="@com.htc:dimen/margin_s" style="@style/TextAppearance.QuickSettings.TileView" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/quick_setting_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@com.htc:dimen/margin_s" android:layout_marginRight="@com.htc:dimen/margin_s" style="@style/TextAppearance.QuickSettings.TileView" />
+    <Space android:layout_width="1.0px" android:layout_height="0.0px" android:layout_weight="1.0" />
+    <com.android.systemui.statusbar.quicksetting.LevelIndicator android:id="@id/quick_setting_indicator" android:layout_width="fill_parent" android:layout_height="@dimen/quick_settings_level_indicator_height" />
+    <TextView android:gravity="start|center" android:id="@id/quick_setting_text" android:layout_width="fill_parent" android:layout_height="@dimen/quick_settings_label_height" android:paddingStart="@com.htc:dimen/margin_m" android:paddingEnd="@com.htc:dimen/margin_m" style="@style/TextAppearance.QuickSettings.TileView" />
+</com.android.systemui.statusbar.quicksetting.QuickSettingPreferNet>

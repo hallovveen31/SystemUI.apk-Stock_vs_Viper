@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/stat_sys_data_sprint_3g_idle_to_active_anim01" />
+    <item android:duration="50" android:drawable="@drawable/stat_sys_data_sprint_3g_idle_to_active_anim02" />
+    <item android:duration="50" android:drawable="@drawable/stat_sys_data_sprint_3g_idle_to_active_anim03" />
+    <item android:duration="50" android:drawable="@drawable/stat_sys_data_sprint_3g_idle_to_active_anim04" />
+    <item android:duration="50" android:drawable="@drawable/stat_sys_data_sprint_3g_active" />
+</animation-list>

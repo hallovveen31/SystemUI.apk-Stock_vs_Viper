@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">මෑත යෙදුම් %d ක්</item>
+        <item quantity="one">මෑත යෙදුම් 1 ක්</item>
+    </plurals>
+</resources>

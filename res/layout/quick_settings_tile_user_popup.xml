@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@com.htc:drawable/common_dialogbox_full_dark" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.systemui.statusbar.quicksetting.ScaleUserFrameLayout android:id="@id/user_card" android:layout_width="@dimen/quick_settings_ucard_width" android:layout_height="@dimen/quick_settings_ucard_height_u">
+        <com.android.systemui.statusbar.quicksetting.ScaleImageView android:id="@id/user_card_image" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/people_icon_detail_photo" android:scaleType="fitXY" />
+        <TextView android:textColor="@*android:color/white" android:gravity="start|center" android:layout_gravity="bottom" android:id="@id/user_card_text" android:background="@drawable/quick_settings_item_background" android:layout_width="fill_parent" android:layout_height="@dimen/quick_settings_ucard_label_height" android:text="@string/quick_settings_user_label" android:paddingStart="@com.htc:dimen/margin_m" android:paddingEnd="@com.htc:dimen/margin_m" style="@com.htc:style/fixed_darklist_primary_l" />
+    </com.android.systemui.statusbar.quicksetting.ScaleUserFrameLayout>
+    <com.android.systemui.statusbar.quicksetting.ScaleUserFrameLayout android:id="@id/kid_card" android:layout_width="@dimen/quick_settings_ucard_width" android:layout_height="@dimen/quick_settings_ucard_height_k">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/notification_kid_icon_detail_photo" android:scaleType="fitXY" />
+        <TextView android:textColor="@*android:color/white" android:gravity="start|center" android:layout_gravity="bottom" android:id="@id/kid_card_text" android:background="@drawable/quick_settings_item_background" android:layout_width="fill_parent" android:layout_height="@dimen/quick_settings_ucard_label_height" android:text="@string/quick_settings_kid_mode" android:paddingStart="@com.htc:dimen/margin_m" android:paddingEnd="@com.htc:dimen/margin_m" style="@com.htc:style/fixed_darklist_primary_l" />
+    </com.android.systemui.statusbar.quicksetting.ScaleUserFrameLayout>
+</LinearLayout>

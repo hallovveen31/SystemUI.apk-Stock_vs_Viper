@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.android.systemui.recent.RecentsGridView android:id="@id/recentGridView" android:background="#ff161616" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0px" android:stackFromBottom="true" android:stretchMode="spacingWidthUniform" android:numColumns="3" android:layout_weight="1.0" android:layoutDirection="ltr" />
+    </LinearLayout>
+    <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/recents_no_apps" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status_bar_no_recent_apps" android:singleLine="true" style="@com.htc:style/fixed_list_body_secondary_l" />
+    <com.android.systemui.recent.ScaleLaunchView android:id="@id/launch_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</merge>

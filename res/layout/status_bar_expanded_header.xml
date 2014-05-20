@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header" android:background="@com.htc:drawable/common_app_bkg_top_src" android:padding="0.0px" android:focusable="false" android:layout_width="fill_parent" android:layout_height="@dimen/notification_panel_header_height" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <com.android.systemui.statusbar.policy.Clock android:id="@id/clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@com.htc:dimen/margin_l" style="@style/ExpandedClock" />
+    <com.android.systemui.statusbar.policy.DateView android:id="@id/date" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="@com.htc:dimen/margin_m" style="@style/ExpandedDate" />
+    <TextView android:layout_gravity="center_vertical" android:id="@id/header_debug_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-condensed" />
+    <FrameLayout android:id="@id/settings_button_holder2" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.android.systemui.statusbar.widget.ScaleImageView android:id="@id/clear_all_button" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_btn_clear_dark" android:scaleType="center" android:contentDescription="@string/accessibility_clear_all" />
+        <com.android.systemui.statusbar.widget.ScaleImageView android:id="@id/edit_button" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@com.htc:drawable/icon_btn_edit_dark" android:scaleType="center" android:contentDescription="@string/accessibility_desc_quick_settings_edit" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/settings_button_holder" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.android.systemui.statusbar.widget.ScaleImageView android:id="@id/settings_button" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_btn_quick_settings_dark" android:scaleType="center" android:contentDescription="@string/accessibility_desc_quick_settings" />
+        <com.android.systemui.statusbar.widget.ScaleImageView android:id="@id/notification_button" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_btn_notification_dark" android:scaleType="center" android:contentDescription="@string/accessibility_notifications_button" />
+    </FrameLayout>
+</LinearLayout>

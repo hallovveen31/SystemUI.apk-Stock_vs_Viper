@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_date_formatter">"%2$s
+%1$s"</string>
+    <string name="app_label">Sistemos UI</string>
+    <string name="status_bar_clear_all_button">Išvalyti</string>
+    <string name="status_bar_recent_remove_item_title">Pašalinti iš sąrašo</string>
+    <string name="status_bar_recent_inspect_item_title">Programos informacija</string>
+    <string name="status_bar_no_recent_apps">Nėra naujausių programų</string>
+    <string name="status_bar_accessibility_dismiss_recents">Praleisti naujausias programas</string>
+    <string name="status_bar_no_notifications_title">Nėra perspėjimų</string>
+    <string name="status_bar_ongoing_events_title">Vykstantys</string>
+    <string name="status_bar_latest_events_title">Perspėjimai</string>
+    <string name="battery_low_title">Prijunkite kroviklį</string>
+    <string name="battery_low_subtitle">Mažėja energijos akumuliatoriuje.</string>
+    <string name="battery_low_percent_format">%d%% liko</string>
+    <string name="invalid_charger">"USB įkrovimas nepalaikomas.
+Naudokite tik tiekiamą įkroviklį."</string>
+    <string name="battery_low_why">Baterijos naudojimas</string>
+    <string name="status_bar_settings_settings_button">Nustatymai</string>
+    <string name="status_bar_settings_wifi_button">Wi-Fi</string>
+    <string name="status_bar_settings_airplane">Lėktuvo režimas</string>
+    <string name="status_bar_settings_auto_rotation">Automatiškai pasukti ekraną</string>
+    <string name="status_bar_settings_mute_label">NUTILD</string>
+    <string name="status_bar_settings_auto_brightness_label">AUTO</string>
+    <string name="status_bar_settings_notifications">Automatizuoti pranešimai</string>
+    <string name="bluetooth_tethered">Prijungta modemo režimu per Bluetooth</string>
+    <string name="status_bar_input_method_settings_configure_input_methods">Nustatyti įvesties metodus</string>
+    <string name="status_bar_use_physical_keyboard">Fizinė klaviatūra</string>
+    <string name="usb_device_permission_prompt">Ar leisti programai %1$s naudotis USB įrenginiu?</string>
+    <string name="usb_accessory_permission_prompt">Ar leisti programai %1$s naudotis USB priedu?</string>
+    <string name="usb_device_confirm_prompt">Atidaryti %1$s, kai šis USB įrenginys prijungtas?</string>
+    <string name="usb_accessory_confirm_prompt">Atidaryti %1$s, kai šis USB priedas prijungtas?</string>
+    <string name="usb_accessory_uri_prompt">Nėra įdiegtų programų, kurios veiktų su šiuo USB priedu. Sužinokite daugiau apie šį priedą per %1$s</string>
+    <string name="title_usb_accessory">USB priedas</string>
+    <string name="label_view">Peržiūra</string>
+    <string name="always_use_device">Naudoti pagal numat. nustatymą šiam USB įrenginiui</string>
+    <string name="always_use_accessory">Naudoti pagal numatytąjį nustatymą šiam USB priedui</string>
+    <string name="usb_debugging_title">Leisti vykdyti USB atmintinės derinimą?</string>
+    <string name="usb_debugging_message">"Kompiuterio RSA rakto pirštų atspaudas yra:
+%1$s"</string>
+    <string name="usb_debugging_always">Visada leisti iš šio kompiuterio</string>
+    <string name="compat_mode_on">Užpildyti ekraną</string>
+    <string name="compat_mode_off">Ištempti pagal ekraną</string>
+    <string name="screenshot_saving_ticker">Įraš. mom. ekrano kopija…</string>
+    <string name="screenshot_saving_title">Įrašoma momentinė ekrano kopija…</string>
+    <string name="screenshot_saving_text">Momentinė ekrano kopija įrašoma.</string>
+    <string name="screenshot_saved_title">Padaryta momentinė ekrano kopija.</string>
+    <string name="screenshot_saved_text">Palieskite, kad peržiūrėtumėte savo momentinę ekrano kopiją.</string>
+    <string name="screenshot_failed_title">Nepavyko padaryti momentinės ekrano kopijos.</string>
+    <string name="screenshot_failed_text">Nepavyko įrašyti momentinės ekrano kopijos. Atmintinė gali būti naudojama.</string>
+    <string name="usb_preference_title">USB failų perdavimo parinktys</string>
+    <string name="use_mtp_button_title">Prijungti kaip medijos leistuvą (MTP)</string>
+    <string name="use_ptp_button_title">Prijungti kaip fotoaparatą (PTP)</string>
+    <string name="installer_cd_button_title">Įdiegti Android failų perd. progr., skirtą Mac</string>
+    <string name="accessibility_back">Atgal</string>
+    <string name="accessibility_home">Namai</string>
+    <string name="accessibility_menu">Meniu</string>
+    <string name="accessibility_recent">Naujausios programos</string>
+    <string name="accessibility_search_light">Ieškoti</string>
+    <string name="accessibility_camera_button">Kamera</string>
+    <string name="accessibility_ime_switch_button">Perjungti įvesties metodo mygtuką.</string>
+    <string name="accessibility_compatibility_zoom_button">Suderinamumo mastelio keitimo mygtukas.</string>
+    <string name="accessibility_compatibility_zoom_example">Padidinti mažesnį ekraną į didesnį.</string>
+    <string name="accessibility_bluetooth_connected">Bluetooth prijungtas.</string>
+    <string name="accessibility_bluetooth_disconnected">Bluetooth atjungtas.</string>
+    <string name="accessibility_no_battery">Nėra baterijos.</string>
+    <string name="accessibility_battery_one_bar">Baterijos viena juosta.</string>
+    <string name="accessibility_battery_two_bars">Baterijos dvi juostos.</string>
+    <string name="accessibility_battery_three_bars">Baterijos trys juostos.</string>
+    <string name="accessibility_battery_full">Baterija pilna.</string>
+    <string name="accessibility_no_phone">Nėra telefono signalo.</string>
+    <string name="accessibility_phone_one_bar">Telefono viena juosta.</string>
+    <string name="accessibility_phone_two_bars">Telefono dvi juostos.</string>
+    <string name="accessibility_phone_three_bars">Telefono trys juostos.</string>
+    <string name="accessibility_phone_signal_full">Telefono signalas visavertis.</string>
+    <string name="accessibility_no_data">Nėra duomenų.</string>
+    <string name="accessibility_data_one_bar">Duomenų viena juosta.</string>
+    <string name="accessibility_data_two_bars">Duomenų dvi juostos.</string>
+    <string name="accessibility_data_three_bars">Duomenų trys juostos.</string>
+    <string name="accessibility_data_signal_full">Duomenų signalas visavertis.</string>
+    <string name="accessibility_wifi_off">Wi-Fi išjungtas.</string>
+    <string name="accessibility_no_wifi">„Wi-Fi“ atjungtas.</string>
+    <string name="accessibility_wifi_one_bar">„Wi-Fi“ vienas stulpelis.</string>
+    <string name="accessibility_wifi_two_bars">„Wi-Fi“ du stulpeliai.</string>
+    <string name="accessibility_wifi_three_bars">„Wi-Fi“ trys stulpeliai.</string>
+    <string name="accessibility_wifi_signal_full">„Wi-Fi“ signalas visavertis.</string>
+    <string name="accessibility_no_wimax">WiMAX ryšio nėra.</string>
+    <string name="accessibility_wimax_one_bar">WiMAX: viena padala.</string>
+    <string name="accessibility_wimax_two_bars">WiMAX: dvi padalos.</string>
+    <string name="accessibility_wimax_three_bars">WiMAX: trys padalos.</string>
+    <string name="accessibility_wimax_signal_full">WiMAX signalas visavertis.</string>
+    <string name="accessibility_no_signal">Nėra signalo.</string>
+    <string name="accessibility_not_connected">Neprisijungta.</string>
+    <string name="accessibility_zero_bars">Nulis juostelių.</string>
+    <string name="accessibility_one_bar">Viena juostelė.</string>
+    <string name="accessibility_two_bars">Dvi juostelės.</string>
+    <string name="accessibility_three_bars">Trys juostelės.</string>
+    <string name="accessibility_signal_full">Visas signalas.</string>
+    <string name="accessibility_desc_on">Įjungta.</string>
+    <string name="accessibility_desc_off">Išjungta.</string>
+    <string name="accessibility_desc_connected">Prisijungta.</string>
+    <string name="accessibility_data_connection_gprs">GPRS</string>
+    <string name="accessibility_data_connection_1x">1 X</string>
+    <string name="accessibility_data_connection_hspa">HSPA</string>
+    <string name="accessibility_data_connection_3g">3G</string>
+    <string name="accessibility_data_connection_3.5g">3.5G</string>
+    <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_lte">LTE</string>
+    <string name="accessibility_data_connection_cdma">CDMA</string>
+    <string name="accessibility_data_connection_roaming">Tarptinklinis ryšys</string>
+    <string name="accessibility_data_connection_edge">Edge</string>
+    <string name="accessibility_data_connection_wifi">Wi-Fi</string>
+    <string name="accessibility_no_sim">Nėra SIM.</string>
+    <string name="accessibility_bluetooth_tether">Prij. mod. rež. per Blth.</string>
+    <string name="accessibility_airplane_mode">Lėktuvo režimas.</string>
+    <string name="accessibility_battery_level">Baterija %d procentų.</string>
+    <string name="accessibility_settings_button">Sistemos nustatymai.</string>
+    <string name="accessibility_notifications_button">Perspėjimai.</string>
+    <string name="accessibility_remove_notification">Išvalyti perspėjimus.</string>
+    <string name="accessibility_gps_enabled">GPS įjungta.</string>
+    <string name="accessibility_gps_acquiring">GPS gaunama.</string>
+    <string name="accessibility_tty_enabled">TeleTypewriter įjungtas.</string>
+    <string name="accessibility_ringer_vibrate">Skambutis vibruoja.</string>
+    <string name="accessibility_ringer_silent">Skambutis nutildytas.</string>
+    <string name="accessibility_recents_item_dismissed">%s praleista.</string>
+    <string name="accessibility_notification_dismissed">Perspėjimas atmestas.</string>
+    <string name="accessibility_desc_notification_shade">Perspėjimų šešėlis.</string>
+    <string name="accessibility_desc_quick_settings">Greiti nustatymai.</string>
+    <string name="accessibility_desc_recent_apps">Naujausios programos.</string>
+    <string name="accessibility_quick_settings_user">Vartotojas %s.</string>
+    <string name="accessibility_quick_settings_wifi">%1$s. %2$s</string>
+    <string name="accessibility_quick_settings_mobile">Mobilusis %1$s. %2$s. %3$s.</string>
+    <string name="accessibility_quick_settings_battery">Akumuliatorius %s.</string>
+    <string name="accessibility_quick_settings_airplane">Lėktuvo režimas %s.</string>
+    <string name="accessibility_quick_settings_bluetooth">Bluetooth %s.</string>
+    <string name="accessibility_quick_settings_location">Buvimo vieta %s.</string>
+    <string name="accessibility_quick_settings_alarm">Signalas nustatytas %s.</string>
+    <string name="data_usage_disabled_dialog_3g_title">2G-3G duomenys išjungti</string>
+    <string name="data_usage_disabled_dialog_4g_title">4G duomenys išjungti</string>
+    <string name="data_usage_disabled_dialog_mobile_title">Mobilieji duomenys išjungti</string>
+    <string name="data_usage_disabled_dialog_title">Duomenys išjungti</string>
+    <string name="data_usage_disabled_dialog">"Pasiekėte nurodytą duomenų perdavimo limitą.
+
+Jei siųsite daugiau duomenų, bus papildomų mokesčių operatoriui."</string>
+    <string name="data_usage_disabled_dialog_enable">Iš naujo įjungti duomenis</string>
+    <string name="status_bar_settings_signal_meter_disconnected">Nėra interneto ryšio</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">Wi-Fi prisijungta</string>
+    <string name="gps_notification_searching_text">Ieškoma GPS</string>
+    <string name="gps_notification_found_text">Vieta nustatyta pagal GPS</string>
+    <string name="accessibility_location_active">Buvimo vietos užklausos aktyvios</string>
+    <string name="accessibility_clear_all">Išvalyti visus perspėjimus.</string>
+    <string name="status_bar_notification_inspect_item_title">Programos informacija</string>
+    <string name="accessibility_rotation_lock_off">Ekranas bus pasuktas automatiškai.</string>
+    <string name="accessibility_rotation_lock_on_landscape">Ekranas užrakintas gulsčioje padėtyje.</string>
+    <string name="accessibility_rotation_lock_on_portrait">Ekranas užrakintas stačioje padėtyje.</string>
+    <string name="dessert_case">Deserto dėžutė</string>
+    <string name="start_dreams">Svajonė</string>
+    <string name="ethernet_label">Ethernet</string>
+    <string name="quick_settings_airplane_mode_label">Lėktuvo režimas</string>
+    <string name="quick_settings_battery_charging_label">Kraunama, %d%%</string>
+    <string name="quick_settings_battery_charged_label">Įkrauta</string>
+    <string name="quick_settings_bluetooth_label">Bluetooth</string>
+    <string name="quick_settings_bluetooth_multiple_devices_label">Bluetooth (%d įrenginiai)</string>
+    <string name="quick_settings_bluetooth_off_label">Bluetooth išjungtas</string>
+    <string name="quick_settings_brightness_label">Ryškumas</string>
+    <string name="quick_settings_rotation_unlocked_label">Automatinis pasukimas</string>
+    <string name="quick_settings_rotation_locked_label">Pasukimas užrakintas</string>
+    <string name="quick_settings_ime_label">Įvesties metodas</string>
+    <string name="quick_settings_location_label">Buvimo vieta</string>
+    <string name="quick_settings_location_off_label">Buvimo vieta išjungta</string>
+    <string name="quick_settings_media_device_label">Medijos įrenginys</string>
+    <string name="quick_settings_rssi_label">RSSI</string>
+    <string name="quick_settings_rssi_emergency_only">Tik pagalbos skambučiai</string>
+    <string name="quick_settings_settings_label">Nustatymai</string>
+    <string name="quick_settings_time_label">Laikas</string>
+    <string name="quick_settings_user_label">Aš</string>
+    <string name="quick_settings_wifi_label">Wi-Fi</string>
+    <string name="quick_settings_wifi_not_connected">Neprisijungta</string>
+    <string name="quick_settings_wifi_no_network">Nėra tinklo</string>
+    <string name="quick_settings_wifi_off_label">Wi-Fi išjungta</string>
+    <string name="quick_settings_remote_display_no_connection_label">Aktorių ekranas</string>
+    <string name="quick_settings_brightness_dialog_title">Ryškumas</string>
+    <string name="quick_settings_brightness_dialog_auto_brightness_label">AUTO</string>
+    <string name="ssl_ca_cert_warning">"Tinklas gali
+būti stebimas"</string>
+    <string name="quick_settings_wifi">Wi-Fi</string>
+    <string name="quick_settings_wifi_cn">WLAN</string>
+    <string name="quick_settings_nfc">NFC</string>
+    <string name="quick_settings_gps">GPS</string>
+    <string name="quick_settings_font">Šriftas</string>
+    <string name="quick_settings_volume">Garsumas</string>
+    <string name="quick_settings_usage">Duomenų naudojimas</string>
+    <string name="quick_settings_sync_all">Sinchronizuoti visus</string>
+    <string name="quick_settings_ringtone">Skambėjimo garsas</string>
+    <string name="quick_settings_auto_sync">Automatinis sinchronizavimas</string>
+    <string name="quick_settings_bluetooth">Bluetooth</string>
+    <string name="quick_settings_user_card">Vartotojo kortelė</string>
+    <string name="quick_settings_mini_lite">„HTC Mini+“</string>
+    <string name="quick_settings_home_mode">Namų režimas</string>
+    <string name="quick_settings_screenshot">Momentinė ekrano kopija</string>
+    <string name="quick_settings_timeout">Ekrano skirtasis laikas</string>
+    <string name="quick_settings_mobile_data">Mobiliojo ryšio duomenys</string>
+    <string name="quick_settings_power_saver">Energijos taupymo priemonė</string>
+    <string name="quick_settings_data_roaming">Duomenų perdavimas tarptinkliniu ryšiu</string>
+    <string name="quick_settings_media_output">Medijos išvestis</string>
+    <string name="quick_settings_sound_profile">Garso profilis</string>
+    <string name="quick_settings_music_channel">Muzikos kanalas</string>
+    <string name="quick_settings_do_not_disturb">Netrukdyti</string>
+    <string name="quick_settings_fingerprint_scan">Piršto atspaudo nuskaitymas</string>
+    <string name="quick_settings_power_saver_ex">Ekstremalusis energijos taupymo režimas</string>
+    <string name="quick_settings_wifi_hotspot">Wi-Fi interneto prieigos taškas</string>
+    <string name="quick_settings_wifi_hotspot_jp">Modemo režimas</string>
+    <string name="quick_settings_wifi_hotspot_us">Mobilusis interneto prieigos taškas</string>
+    <string name="quick_settings_wifi_hotspot_tmo">Mobilieji interneto prieigos taškai</string>
+    <string name="quick_settings_apn">APN</string>
+    <string name="quick_settings_prefer_network">Pageidaujamas tinklas</string>
+    <string name="quick_settings_network_selection">Tinklo pasirinkimas</string>
+    <string name="quick_settings_prefer_slot1">1 LIZDAS</string>
+    <string name="quick_settings_prefer_slot2">2 LIZDAS</string>
+    <string name="quick_settings_sound_profile_normal">Normalus</string>
+    <string name="quick_settings_sound_profile_silent">Begarsis</string>
+    <string name="quick_settings_sound_profile_vibrate">Vibruoti</string>
+    <string name="quick_settings_sound_profile_outdoor">Lauke</string>
+    <string name="quick_settings_accessibility_auto">auto</string>
+    <string name="quick_settings_accessibility_more">daugiau</string>
+    <string name="quick_settings_accessibility_level">lygis</string>
+    <string name="accessibility_desc_quick_settings_edit">Redaguoti greitus nustatymus</string>
+    <string name="quick_settings_kid_mode">Vaiko režimas</string>
+    <string name="quick_setting_launch_kid_fail">Neįdiegta Vaiko režimo programa.</string>
+    <string name="quick_settings_reorder_title">Redaguoti Greitus nustatymus</string>
+    <string name="quick_settings_reorder_content">Paspauskite ir palaikykite dešiniąją piktogramą, kad pertvarkytumėte</string>
+    <string name="quick_settings_reorder_separator">Paslėptieji elementai (nuvilkite, kad įtrauktumėte į Greitus nustatymus)</string>
+    <string name="quick_settings_reorder_full_items">Galite pasirinkti iki 12 greitų nustatymų</string>
+    <string name="quick_settings_power_saver_dialog_title">Ar įjungti energijos taupymo funkciją?</string>
+    <string name="quick_settings_power_saver_dialog_chkbox">Neberodyti šio pranešimo</string>
+    <string name="quick_settings_power_saver_dialog_message">"Duomenų ryšys energijos taupymo režimu ĮJUNGTAS. Kai jis ĮJUNGTAS, išjungus ekraną negalima perduoti duomenų, pvz., priimti el. laiškų.
+(Neatsižvelgiant į šį nustatymą, duomenis galima perduoti, kai įrenginys įkraunamas.)"</string>
+    <string name="quick_settings_hotspot_dialog_chkbox">Neberodyti šio pranešimo</string>
+    <string name="quick_settings_hotspot_dialog_message">Kai aktyvus USB modemo arba mobiliojo interneto prieigos taško ryšys, „Wi-Fi“ ryšys išjungiamas. Kad įjungtumėte „Wi-Fi“, išjunkite USB modemo arba mobiliojo interneto prieigos taško ryšį.</string>
+    <string name="quick_tips_edit_button">Bakstelėkite, kad įtrauktumėte ir pašalintumėte Greitus nustatymus</string>
+    <string name="quick_tips_more_button">Paspauskite ir palaikykite elementą, kad atvertumėte jo Nustatymų puslapį</string>
+    <string name="quick_settings_wifi_hotspot_cn">WLAN interneto prieigos taškas</string>
+    <string name="quick_setting_wifi_hotspot_ct">WLAN interneto prieigos taškas</string>
+    <string name="qs_mobile_roaming_title">Dėmesio</string>
+    <string name="qs_mobile_roaming_msg_att">Leisti duomenų naudojimą tarptinkliniu ryšiu? Tarptautinio tarptinklinio ryšio duomenų mokesčiai taikomi duomenų naudojimui ne JAV, Puerto Rike ir JAV Mergelių Salose.</string>
+    <string name="qs_mobile_roaming_msg_generic">Šiuo metu prieinamos tik tarptinklinio ryšio paslaugos. Dėl duomenų perdavimo tarptinkliniu ryšiu gali reikėti sumokėti didelę sąskaitą. Ar norite, kad būtų įjungtas tarptinklinis ryšys?</string>
+    <string name="qs_restrict_mode_error">Klaida</string>
+    <string name="qs_restrict_mode_message">Šį elementą užblokavo sistemos administratorius. Susisiekite su savo IT komanda, kad ji jums padėtų.</string>
+    <string name="recentapps_title">Naujausios programos</string>
+    <string name="recentapps_clear_all">Išvalyti viską</string>
+    <string name="recentapps_running_services">Veikiančios paslaugos</string>
+    <string name="illegal_ms_reject_cause_3">Neteisėta MS</string>
+    <string name="tmo_plmn">T-Mobile</string>
+    <string name="att_puk_perm_blocked">SIM užblokuota</string>
+    <string name="lockscreen_imei_locked">Negaliojanti kortelė</string>
+    <string name="lockscreen_uim_fail_message">UIM kortelė užrakinta</string>
+    <string name="lockscreen_missing_uim_message_short">Nėra UIM kortelės</string>
+    <string name="lockscreen_missing_sim_message_short">Nėra SIM kortelės</string>
+    <string name="lockscreen_missing_kddi_message_short">ne au IC kortelė</string>
+    <string name="carrier_label_sim1">(1 lizdas)</string>
+    <string name="carrier_label_sim2">(2 lizdas)</string>
+    <string name="lockscreen_uimsim_fail_message">UIM/SIM kortelė užrakinta</string>
+    <string name="lockscreen_missing_uimsim_message_short">Nėra UIM/SIM kortelės</string>
+    <string name="battery_low_newtitle">Mažėja energijos jūsų baterijoje</string>
+    <string name="battery_low_remaining">LIEKA</string>
+    <string name="battery_low_only_percent_format">%d%%</string>
+    <string name="battery_low_charging_not_enough_title">Įspėjimas</string>
+    <string name="battery_low_charging_not_enough_ac_title">Neįmanoma įkrauti</string>
+    <string name="battery_low_charging_not_enough_ac">Telefono įkrauti nepavyks, nes jis naudoja per daug energijos. Šiai problemai išspręsti sumažinkite energijos sąnaudas išjungdami savo telefoną, užverdami nenaudojamas programas arba išjungdami ekraną.</string>
+    <string name="extreme_auto_power_saver_ask_title_ex">Ekstremalusis energijos taupymo režimas</string>
+    <string name="extreme_auto_power_saver_ask_eps_msg">"Įjungus ekstremalųjį energijos taupymo režimą, akumuliatoriaus naudojimo laikas pailgėja:
+-Mažiau apkraunamas procesorius.
+-Sumažinamas ekrano šviesumas.
+-Išjungiamas vibracijos grįžtamasis ryšys.
+-Išjungiamas duomenų ryšys, kai ekranas išjungtas.
+-Leidžiama veikti tik esminėms programoms.
+-Išjungiamas žingsniamatis."</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex">"Įjungus ekstremalųjį energijos taupymo režimą, akumuliatoriaus naudojimo laikas pailgėja:
+-Mažiau apkraunamas procesorius.
+-Sumažinamas ekrano šviesumas.
+-Išjungiamas vibracijos grįžtamasis ryšys.
+-Išjungiamas duomenų ryšys, kai ekranas išjungtas.
+-Leidžiama veikti tik esminėms programoms."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex1">Ekstremalusis energijos taupymo režimas</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex1">"Įjungus ekstremalųjį energijos taupymo režimą, akumuliatoriaus naudojimo laikas pailgėja:
+-Mažiau apkraunamas procesorius.
+-Sumažinamas ekrano šviesumas.
+-Išjungiamas vibracijos grįžtamasis ryšys.
+-Išjungiamas duomenų ryšys, kai ekranas išjungtas.
+-Leidžiama veikti tik esminėms programoms."</string>
+    <string name="extreme_auto_power_saver_ask_title">Maksimalusis energijos taupymo režimas</string>
+    <string name="extreme_auto_power_saver_ask_msg">"Įjungus maksimalųjį energijos taupymo režimą, akumuliatoriaus naudojimo laikas pailgėja:
+-Mažiau apkraunamas procesorius.
+-Sumažinamas ekrano šviesumas.
+-Išjungiamas vibracijos grįžtamasis ryšys.
+-Išjungiamas duomenų ryšys, kai ekranas išjungtas.
+-Leidžiama veikti tik esminėms programoms."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex2">Budėjimo režimas</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex2">"Įjungus budėjimo režimą, akumuliatoriaus naudojimo laikas pailgėja:
+-Mažiau apkraunamas procesorius.
+-Sumažinamas ekrano šviesumas.
+-Išjungiamas vibracijos grįžtamasis ryšys.
+-Išjungiamas duomenų ryšys, kai ekranas išjungtas.
+-Leidžiama veikti tik esminėms programoms."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex3">Avarinis režimas</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex3">"Įjungus avarinį režimą, akumuliatoriaus naudojimo laikas pailgėja:
+-Mažiau apkraunamas procesorius.
+-Sumažinamas ekrano šviesumas.
+-Išjungiamas vibracijos grįžtamasis ryšys.
+-Išjungiamas duomenų ryšys, kai ekranas išjungtas.
+-Leidžiama veikti tik esminėms programoms."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex4">Mažų energijos sąnaudų režimas</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex4">"Įjungus mažų energijos sąnaudų režimą, akumuliatoriaus naudojimo laikas pailgėja:
+-Mažiau apkraunamas procesorius.
+-Sumažinamas ekrano šviesumas.
+-Išjungiamas vibracijos grįžtamasis ryšys.
+-Išjungiamas duomenų ryšys, kai ekranas išjungtas.
+-Leidžiama veikti tik esminėms programoms."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex5">Energijos taupymo režimas</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex5">"Įjungus energijos taupymo režimą, akumuliatoriaus naudojimo laikas pailgėja:
+-Mažiau apkraunamas procesorius.
+-Sumažinamas ekrano šviesumas.
+-Išjungiamas vibracijos grįžtamasis ryšys.
+-Išjungiamas duomenų ryšys, kai ekranas išjungtas.
+-Leidžiama veikti tik esminėms programoms."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex6">Išmanusis energijos taupymo režimas</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex6">"Įjungus išmanųjį energijos taupymo režimą, akumuliatoriaus naudojimo laikas pailgėja:
+-Mažiau apkraunamas procesorius.
+-Sumažinamas ekrano šviesumas.
+-Išjungiamas vibracijos grįžtamasis ryšys.
+-Išjungiamas duomenų ryšys, kai ekranas išjungtas.
+-Leidžiama veikti tik esminėms programoms."</string>
+</resources>

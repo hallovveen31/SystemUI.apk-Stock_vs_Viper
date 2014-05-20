@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">Systeem-UI</string>
+    <string name="status_bar_clear_all_button">Wissen</string>
+    <string name="status_bar_recent_remove_item_title">Verwijderen uit lijst</string>
+    <string name="status_bar_recent_inspect_item_title">Info over app</string>
+    <string name="status_bar_no_recent_apps">Geen recente apps</string>
+    <string name="status_bar_accessibility_dismiss_recents">Recente apps negeren</string>
+    <string name="status_bar_no_notifications_title">Geen meldingen</string>
+    <string name="status_bar_ongoing_events_title">Actief</string>
+    <string name="status_bar_latest_events_title">Meldingen</string>
+    <string name="battery_low_title">Lader aansluiten</string>
+    <string name="battery_low_subtitle">De accu raakt op.</string>
+    <string name="battery_low_percent_format">%d%% resterend</string>
+    <string name="invalid_charger">"Opladen via USB wordt niet ondersteund.
+Gebruik uitsluitend de bijgesloten oplader."</string>
+    <string name="battery_low_why">Accugebruik</string>
+    <string name="status_bar_settings_settings_button">Instellingen</string>
+    <string name="status_bar_settings_wifi_button">Wi-Fi</string>
+    <string name="status_bar_settings_airplane">Vliegtuigmodus</string>
+    <string name="status_bar_settings_auto_rotation">Scherm autom. draaien</string>
+    <string name="status_bar_settings_mute_label">DEMPEN</string>
+    <string name="status_bar_settings_auto_brightness_label">AUTO</string>
+    <string name="status_bar_settings_notifications">Meldingen</string>
+    <string name="bluetooth_tethered">Bluetooth tethering geactiveerd</string>
+    <string name="status_bar_input_method_settings_configure_input_methods">Invoermethoden instellen</string>
+    <string name="status_bar_use_physical_keyboard">Fysiek toetsenbord</string>
+    <string name="usb_device_permission_prompt">De toepassing %1$s toegang tot het USB-apparaat verlenen?</string>
+    <string name="usb_accessory_permission_prompt">De toepassing %1$s toegang tot het USB-apparaat verlenen?</string>
+    <string name="usb_device_confirm_prompt">%1$s openen als dit USB-apparaat is verbonden?</string>
+    <string name="usb_accessory_confirm_prompt">%1$s openen als deze USB-accessoire is verbonden?</string>
+    <string name="usb_accessory_uri_prompt">Er zijn geen toepassingen geïnstalleerd die met deze USB-accessoire functioneren. Meer informatie over deze accessoire vind je op %1$s</string>
+    <string name="title_usb_accessory">USB-accessoire</string>
+    <string name="label_view">Weergeven</string>
+    <string name="always_use_device">Standaard gebruiken voor dit USB-apparaat</string>
+    <string name="always_use_accessory">Standaard gebruiken voor deze USB-accessoire</string>
+    <string name="usb_debugging_title">USB debugging toestaan?</string>
+    <string name="usb_debugging_message">"De vingerafdruk van de RSA-sleutel van de computer is:
+%1$s"</string>
+    <string name="usb_debugging_always">Altijd toestaan vanaf deze computer</string>
+    <string name="compat_mode_on">Scherm vullen door zoomen</string>
+    <string name="compat_mode_off">Scherm vullen door rekken</string>
+    <string name="screenshot_saving_ticker">Schermopname wordt opgeslagen…</string>
+    <string name="screenshot_saving_title">Schermopname wordt opgeslagen…</string>
+    <string name="screenshot_saving_text">Schermopname wordt opgeslagen.</string>
+    <string name="screenshot_saved_title">Schermopname gemaakt.</string>
+    <string name="screenshot_saved_text">Aanraken om je schermopname te bekijken.</string>
+    <string name="screenshot_failed_title">Kon geen schermopname maken.</string>
+    <string name="screenshot_failed_text">Kon schermopname niet opslaan. Opslag is mogelijk in gebruik.</string>
+    <string name="usb_preference_title">Opties voor USB-bestandsoverdracht</string>
+    <string name="use_mtp_button_title">Koppelen als mediaspeler (MTP)</string>
+    <string name="use_ptp_button_title">Koppelen als camera (PTP)</string>
+    <string name="installer_cd_button_title">Installeer de app Android File Transfer voor Mac</string>
+    <string name="accessibility_back">Vorige</string>
+    <string name="accessibility_home">Start</string>
+    <string name="accessibility_menu">Menu</string>
+    <string name="accessibility_recent">Recente apps</string>
+    <string name="accessibility_search_light">Zoeken</string>
+    <string name="accessibility_camera_button">Camera</string>
+    <string name="accessibility_ime_switch_button">Schakelknop invoermethode.</string>
+    <string name="accessibility_compatibility_zoom_button">Compatibiliteitszoomknop.</string>
+    <string name="accessibility_compatibility_zoom_example">Van kleiner naar groter scherm zoomen.</string>
+    <string name="accessibility_bluetooth_connected">Bluetooth verbonden.</string>
+    <string name="accessibility_bluetooth_disconnected">Bluetooth verbroken.</string>
+    <string name="accessibility_no_battery">Geen accu.</string>
+    <string name="accessibility_battery_one_bar">Accu één balkje.</string>
+    <string name="accessibility_battery_two_bars">Accu twee balkjes.</string>
+    <string name="accessibility_battery_three_bars">Accu drie balkjes.</string>
+    <string name="accessibility_battery_full">Accu vol.</string>
+    <string name="accessibility_no_phone">Geen telefoon.</string>
+    <string name="accessibility_phone_one_bar">Telefoon één balkje.</string>
+    <string name="accessibility_phone_two_bars">Telefoon twee balkjes.</string>
+    <string name="accessibility_phone_three_bars">Telefoon drie balkjes.</string>
+    <string name="accessibility_phone_signal_full">Telefoonsignaal vol.</string>
+    <string name="accessibility_no_data">Geen gegevens.</string>
+    <string name="accessibility_data_one_bar">Gegevens één balkje.</string>
+    <string name="accessibility_data_two_bars">Gegevens twee balkjes.</string>
+    <string name="accessibility_data_three_bars">Gegevens drie balkjes.</string>
+    <string name="accessibility_data_signal_full">Gegevenssignaal vol.</string>
+    <string name="accessibility_wifi_off">Wi-Fi uit.</string>
+    <string name="accessibility_no_wifi">WiFi-verbinding verbroken.</string>
+    <string name="accessibility_wifi_one_bar">WiFi één balkje.</string>
+    <string name="accessibility_wifi_two_bars">WiFi twee balkjes.</string>
+    <string name="accessibility_wifi_three_bars">WiFi drie balkjes.</string>
+    <string name="accessibility_wifi_signal_full">Wi-Fi signaal vol.</string>
+    <string name="accessibility_no_wimax">Geen WiMAX.</string>
+    <string name="accessibility_wimax_one_bar">WiMAX een balk.</string>
+    <string name="accessibility_wimax_two_bars">WiMAX twee balkjes.</string>
+    <string name="accessibility_wimax_three_bars">WiMAX drie balkjes.</string>
+    <string name="accessibility_wimax_signal_full">WiMAX volledig signaal.</string>
+    <string name="accessibility_no_signal">Geen signaal.</string>
+    <string name="accessibility_not_connected">Niet verbonden.</string>
+    <string name="accessibility_zero_bars">Nul balken.</string>
+    <string name="accessibility_one_bar">Een balk.</string>
+    <string name="accessibility_two_bars">Twee balken.</string>
+    <string name="accessibility_three_bars">Drie balken.</string>
+    <string name="accessibility_signal_full">Volledig signaal.</string>
+    <string name="accessibility_desc_on">Aan.</string>
+    <string name="accessibility_desc_off">Uit.</string>
+    <string name="accessibility_desc_connected">Verbonden.</string>
+    <string name="accessibility_data_connection_gprs">GPRS</string>
+    <string name="accessibility_data_connection_1x">1 X</string>
+    <string name="accessibility_data_connection_hspa">HSPA</string>
+    <string name="accessibility_data_connection_3g">3G</string>
+    <string name="accessibility_data_connection_3.5g">3.5G</string>
+    <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_lte">LTE</string>
+    <string name="accessibility_data_connection_cdma">CDMA</string>
+    <string name="accessibility_data_connection_roaming">Roaming</string>
+    <string name="accessibility_data_connection_edge">Edge</string>
+    <string name="accessibility_data_connection_wifi">Wi-Fi</string>
+    <string name="accessibility_no_sim">Geen SIM.</string>
+    <string name="accessibility_bluetooth_tether">Bluetooth tethering.</string>
+    <string name="accessibility_airplane_mode">Vliegtuigmodus.</string>
+    <string name="accessibility_battery_level">Accu op %d procent.</string>
+    <string name="accessibility_settings_button">Systeeminstellingen.</string>
+    <string name="accessibility_notifications_button">Meldingen.</string>
+    <string name="accessibility_remove_notification">Melding wissen.</string>
+    <string name="accessibility_gps_enabled">GPS ingeschakeld.</string>
+    <string name="accessibility_gps_acquiring">GPS oppikken.</string>
+    <string name="accessibility_tty_enabled">TeleTypewriter ingeschakeld.</string>
+    <string name="accessibility_ringer_vibrate">Trilmodus.</string>
+    <string name="accessibility_ringer_silent">Stille modus.</string>
+    <string name="accessibility_recents_item_dismissed">%s genegeerd.</string>
+    <string name="accessibility_notification_dismissed">Melding verwijderd.</string>
+    <string name="accessibility_desc_notification_shade">Meldingenklep.</string>
+    <string name="accessibility_desc_quick_settings">Snelle instellingen.</string>
+    <string name="accessibility_desc_recent_apps">Recente toepassingen.</string>
+    <string name="accessibility_quick_settings_user">Gebruiker %s.</string>
+    <string name="accessibility_quick_settings_wifi">%1$s. %2$s</string>
+    <string name="accessibility_quick_settings_mobile">Mobiel %1$s. %2$s. %3$s.</string>
+    <string name="accessibility_quick_settings_battery">Batterij %s.</string>
+    <string name="accessibility_quick_settings_airplane">Vliegtuigmodus %s.</string>
+    <string name="accessibility_quick_settings_bluetooth">Bluetooth %s.</string>
+    <string name="accessibility_quick_settings_location">Locatie %s.</string>
+    <string name="accessibility_quick_settings_alarm">Alarm ingesteld voor %s.</string>
+    <string name="data_usage_disabled_dialog_3g_title">2G-3G-gegevens uitgeschakeld</string>
+    <string name="data_usage_disabled_dialog_4g_title">4G-gegevens uitgeschakeld</string>
+    <string name="data_usage_disabled_dialog_mobile_title">Mobiele gegevens uitgeschakeld</string>
+    <string name="data_usage_disabled_dialog_title">Gegevens uitgeschakeld</string>
+    <string name="data_usage_disabled_dialog">"Je hebt de opgegeven datalimiet bereikt.
+
+Als je de gegevens weer activeert kan dit extra kosten van de aanbieder opleveren."</string>
+    <string name="data_usage_disabled_dialog_enable">Gegevens opnieuw inschakelen</string>
+    <string name="status_bar_settings_signal_meter_disconnected">Geen internetverbinding</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">Wi-Fi verbonden</string>
+    <string name="gps_notification_searching_text">GPS zoeken</string>
+    <string name="gps_notification_found_text">Locatie ingesteld met GPS</string>
+    <string name="accessibility_location_active">Locatieaanvragen actief</string>
+    <string name="accessibility_clear_all">Alle meldingen wissen.</string>
+    <string name="status_bar_notification_inspect_item_title">Info over app</string>
+    <string name="accessibility_rotation_lock_off">Scherm draait automatisch.</string>
+    <string name="accessibility_rotation_lock_on_landscape">Scherm vergrendeld in liggende stand.</string>
+    <string name="accessibility_rotation_lock_on_portrait">Scherm vergrendeld in staande stand.</string>
+    <string name="dessert_case">Dessert doos</string>
+    <string name="start_dreams">Dagdromen</string>
+    <string name="ethernet_label">Ethernet</string>
+    <string name="quick_settings_airplane_mode_label">Vliegtuigmodus</string>
+    <string name="quick_settings_battery_charging_label">Laadt op, %d%%</string>
+    <string name="quick_settings_battery_charged_label">Geladen</string>
+    <string name="quick_settings_bluetooth_label">Bluetooth</string>
+    <string name="quick_settings_bluetooth_multiple_devices_label">Bluetooth (%d apparaten)</string>
+    <string name="quick_settings_bluetooth_off_label">Bluetooth uit</string>
+    <string name="quick_settings_brightness_label">Helderheid</string>
+    <string name="quick_settings_rotation_unlocked_label">Automatisch draaien</string>
+    <string name="quick_settings_rotation_locked_label">Draaien vergrendeld</string>
+    <string name="quick_settings_ime_label">Invoermethode</string>
+    <string name="quick_settings_location_label">Locatie</string>
+    <string name="quick_settings_location_off_label">Locatie uit</string>
+    <string name="quick_settings_media_device_label">Media-apparaat</string>
+    <string name="quick_settings_rssi_label">RSSI</string>
+    <string name="quick_settings_rssi_emergency_only">Alleen noodoproepen</string>
+    <string name="quick_settings_settings_label">Instellingen</string>
+    <string name="quick_settings_time_label">Tijd</string>
+    <string name="quick_settings_user_label">Ik</string>
+    <string name="quick_settings_wifi_label">Wi-Fi</string>
+    <string name="quick_settings_wifi_not_connected">Niet verbonden</string>
+    <string name="quick_settings_wifi_no_network">Geen netwerk</string>
+    <string name="quick_settings_wifi_off_label">Wi-Fi uit</string>
+    <string name="quick_settings_remote_display_no_connection_label">Uitvoerenden</string>
+    <string name="quick_settings_brightness_dialog_title">Helderheid</string>
+    <string name="quick_settings_brightness_dialog_auto_brightness_label">AUTO</string>
+    <string name="ssl_ca_cert_warning">"Netwerk kan
+gecontroleerd worden"</string>
+    <string name="quick_settings_wifi">Wi-Fi</string>
+    <string name="quick_settings_wifi_cn">WLAN</string>
+    <string name="quick_settings_nfc">NFC</string>
+    <string name="quick_settings_gps">GPS</string>
+    <string name="quick_settings_font">Lettertype</string>
+    <string name="quick_settings_volume">Volume</string>
+    <string name="quick_settings_usage">Gegevensgebruik</string>
+    <string name="quick_settings_sync_all">Alles synchroniseren</string>
+    <string name="quick_settings_ringtone">Beltoon</string>
+    <string name="quick_settings_auto_sync">Autosynchronisatie</string>
+    <string name="quick_settings_bluetooth">Bluetooth</string>
+    <string name="quick_settings_user_card">Gebruikerskaart</string>
+    <string name="quick_settings_mini_lite">HTC Mini+</string>
+    <string name="quick_settings_home_mode">Thuismodus</string>
+    <string name="quick_settings_screenshot">Schermafbeelding</string>
+    <string name="quick_settings_timeout">Time-out scherm</string>
+    <string name="quick_settings_mobile_data">Mobiele gegevens</string>
+    <string name="quick_settings_power_saver">Energiebesparing</string>
+    <string name="quick_settings_data_roaming">Gegevensroaming</string>
+    <string name="quick_settings_media_output">Media-uitvoer</string>
+    <string name="quick_settings_sound_profile">Geluidsprofiel</string>
+    <string name="quick_settings_music_channel">Muziekkanaal</string>
+    <string name="quick_settings_do_not_disturb">Niet storen</string>
+    <string name="quick_settings_fingerprint_scan">Vingerafdrukscan</string>
+    <string name="quick_settings_power_saver_ex">Extreme energiebesparingmodus</string>
+    <string name="quick_settings_wifi_hotspot">Wi-Fi hotspot</string>
+    <string name="quick_settings_wifi_hotspot_jp">Tethering</string>
+    <string name="quick_settings_wifi_hotspot_us">Mobile Hotspot</string>
+    <string name="quick_settings_wifi_hotspot_tmo">Mobile Hotspot</string>
+    <string name="quick_settings_apn">APN</string>
+    <string name="quick_settings_prefer_network">Voorkeur voor netwerk</string>
+    <string name="quick_settings_network_selection">Netwerkselectie</string>
+    <string name="quick_settings_prefer_slot1">SIM 1</string>
+    <string name="quick_settings_prefer_slot2">SIM 2</string>
+    <string name="quick_settings_sound_profile_normal">Normaal</string>
+    <string name="quick_settings_sound_profile_silent">Stil</string>
+    <string name="quick_settings_sound_profile_vibrate">Trillen</string>
+    <string name="quick_settings_sound_profile_outdoor">Buitenshuis</string>
+    <string name="quick_settings_accessibility_auto">auto</string>
+    <string name="quick_settings_accessibility_more">meer</string>
+    <string name="quick_settings_accessibility_level">niveau</string>
+    <string name="accessibility_desc_quick_settings_edit">Snelinstellingen bewerken</string>
+    <string name="quick_settings_kid_mode">Kid-modus</string>
+    <string name="quick_setting_launch_kid_fail">Geen Kid-modus toepassing geïnstalleerd.</string>
+    <string name="quick_settings_reorder_title">Snelinstellingen bewerken</string>
+    <string name="quick_settings_reorder_content">Houd het rechter pictogram ingedrukt om te herordenen</string>
+    <string name="quick_settings_reorder_separator">Verborgen items (slepen om aan Snelinstellingen toe te voegen)</string>
+    <string name="quick_settings_reorder_full_items">Je kunt maximaal 12 snelinstellingen hebben.</string>
+    <string name="quick_settings_power_saver_dialog_title">Energiebesparing inschakelen?</string>
+    <string name="quick_settings_power_saver_dialog_chkbox">Dit bericht niet nogmaals weergeven</string>
+    <string name="quick_settings_power_saver_dialog_message">"Gegevensverbinding in Energiebesparing is AAN. Als dit AAN is, kan dataoverdracht zoals het ontvangen van e-mail niet plaatsvinden als het scherm is uitgeschakeld.
+Datatransmissie is mogelijk bij het laden ongeacht deze instelling.)"</string>
+    <string name="quick_settings_hotspot_dialog_chkbox">Dit bericht niet nogmaals weergeven</string>
+    <string name="quick_settings_hotspot_dialog_message">Wi-Fi wordt uitgeschakeld als USB tethering of Mobiele Hotspot geactiveerd wordt. Om Wi-Fi in te schakelen, moet je USB-tethering of Mobiele Hotspot uitschakelen.</string>
+    <string name="quick_tips_edit_button">Tik om Snelle instellingen toe te voegen en te verwijderen</string>
+    <string name="quick_tips_more_button">Houd een item ingedrukt om de pagina Instellingen te openen</string>
+    <string name="quick_settings_wifi_hotspot_cn">WLAN-hotspot</string>
+    <string name="quick_setting_wifi_hotspot_ct">WLAN-hotspot</string>
+    <string name="qs_mobile_roaming_title">Let op</string>
+    <string name="qs_mobile_roaming_msg_att">Gegevensroaming toestaan? Kosten voor internationale gegevensroaming zijn van toepassing als dataverbindingen buiten de V.S., Puerto Rico en de Amerikaanse Maagdeneilanden worden gebruikt.</string>
+    <string name="qs_mobile_roaming_msg_generic">Je roamt. Gegevensroamen kan aanzienlijke kosten met zich meebrengen. Wil je de roeming netwerkverbinding inschakelen?</string>
+    <string name="qs_restrict_mode_error">Fout</string>
+    <string name="qs_restrict_mode_message">Dit is geblokkeerd door je systeembeheerder. Neem contact op met de IT-afdeling voor hulp.</string>
+    <string name="recentapps_title">Recente apps</string>
+    <string name="recentapps_clear_all">Alles wissen</string>
+    <string name="recentapps_running_services">Actieve diensten</string>
+    <string name="illegal_ms_reject_cause_3">Illegale MS</string>
+    <string name="tmo_plmn">T-Mobile</string>
+    <string name="att_puk_perm_blocked">SIM geblokkeerd</string>
+    <string name="lockscreen_imei_locked">Ongeldige kaart</string>
+    <string name="lockscreen_uim_fail_message">UIM-kaart geblokkeerd</string>
+    <string name="lockscreen_missing_uim_message_short">Geen UIM-kaart</string>
+    <string name="lockscreen_missing_sim_message_short">Geen SIM-kaart</string>
+    <string name="lockscreen_missing_kddi_message_short">geen au IC-kaart</string>
+    <string name="carrier_label_sim1">(SIM 1)</string>
+    <string name="carrier_label_sim2">(SIM 2)</string>
+    <string name="lockscreen_uimsim_fail_message">UIM/SIM-kaart geblokeerd</string>
+    <string name="lockscreen_missing_uimsim_message_short">Geen UIM/SIM-kaart</string>
+    <string name="battery_low_newtitle">De batterij raakt leeg</string>
+    <string name="battery_low_remaining">RESTEREND</string>
+    <string name="battery_low_only_percent_format">%d%%</string>
+    <string name="battery_low_charging_not_enough_title">Waarschuwing</string>
+    <string name="battery_low_charging_not_enough_ac_title">Kan niet opladen</string>
+    <string name="battery_low_charging_not_enough_ac">Kan je telefoon niet laden omdat hij teveel energie gebruikt. Om dit probleem op te heffen, kun je het energieverbruik beperkten door de telefoon uit te schakelen, apps te sluiten die je niet gebruikt, of het scherm uit te schakelen.</string>
+    <string name="extreme_auto_power_saver_ask_title_ex">Extreme energiebesparingmodus</string>
+    <string name="extreme_auto_power_saver_ask_eps_msg">"Het inschakelen van extreme energiebesparingmodus zorgt voor een verlenging van de batterijduur door:
+-Besparend CPU-gebruik.
+-Schermhelderheid verlagen.
+-Trilfeedback uitschakelen.
+-Dataverbinding uitschakelen wanneer scherm uit staat.
+-Alleen uitvoeren van essentiële apps toestaan.
+-Hodometer uitschakelen."</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex">"Het inschakelen van extreme energiebesparingmodus zorgt voor een verlenging van de batterijduur door:
+-Besparend CPU-gebruik.
+-Schermhelderheid verlagen.
+-Trilfeedback uitschakelen.
+-Dataverbinding uitschakelen wanneer scherm uit staat.
+-Alleen uitvoeren van essentiële apps toestaan."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex1">Extreme energiebesparing</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex1">"Het inschakelen van extreme energiebesparing zorgt voor een verlenging van de batterijduur door:
+-Besparend CPU-gebruik.
+-Schermhelderheid verlagen.
+-Trilfeedback uitschakelen.
+-Dataverbinding uitschakelen wanneer scherm uit staat.
+-Alleen uitvoeren van essentiële apps toestaan."</string>
+    <string name="extreme_auto_power_saver_ask_title">Maximale energiebesparing</string>
+    <string name="extreme_auto_power_saver_ask_msg">"Het inschakelen van maximale energiebesparing zorgt voor een verlenging van de batterijduur door:
+-Besparend CPU-gebruik.
+-Schermhelderheid verlagen.
+-Trilfeedback uitschakelen.
+-Dataverbinding uitschakelen wanneer scherm uit staat.
+-Alleen uitvoeren van essentiële apps toestaan."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex2">Stand-bymodus</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex2">"Het inschakelen van stand-bymodus zorgt voor een verlenging van de batterijduur door:
+-Besparend CPU-gebruik.
+-Schermhelderheid verlagen.
+-Trilfeedback uitschakelen.
+-Dataverbinding uitschakelen wanneer scherm uit staat.
+-Alleen uitvoeren van essentiële apps toestaan."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex3">Alarmmodus</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex3">"Het inschakelen van alarmmodus zorgt voor een verlenging van de batterijduur door:
+-Besparend CPU-gebruik.
+-Schermhelderheid verlagen.
+-Trilfeedback uitschakelen.
+-Dataverbinding uitschakelen wanneer scherm uit staat.
+-Alleen uitvoeren van essentiële apps toestaan."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex4">Lage energiemodus</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex4">"Het inschakelen van lage energiemodus zorgt voor een verlenging van de batterijduur door:
+-Besparend CPU-gebruik.
+-Schermhelderheid verlagen.
+-Trilfeedback uitschakelen.
+-Dataverbinding uitschakelen wanneer scherm uit staat.
+-Alleen uitvoeren van essentiële apps toestaan."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex5">Energiebesparingmodus</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex5">"Het inschakelen van energiebesparingmodus zorgt voor een verlenging van de batterijduur door:
+-Besparend CPU-gebruik.
+-Schermhelderheid verlagen.
+-Trilfeedback uitschakelen.
+-Dataverbinding uitschakelen wanneer scherm uit staat.
+-Alleen uitvoeren van essentiële apps toestaan."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex6">Slimme energiebesparingmodus</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex6">"Het inschakelen van slimme energiebesparingmodus zorgt voor een verlenging van de batterijduur door:
+-Besparend CPU-gebruik.
+-Schermhelderheid verlagen.
+-Trilfeedback uitschakelen.
+-Dataverbinding uitschakelen wanneer scherm uit staat.
+-Alleen uitvoeren van essentiële apps toestaan."</string>
+</resources>

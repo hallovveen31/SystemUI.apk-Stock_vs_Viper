@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.htc.widget.HtcOverlapLayout android:orientation="vertical" android:background="@com.htc:drawable/common_app_bkg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.htc.widget.HtcFooter android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.htc.widget.HtcOverlapLayout>
+    <View android:layout_gravity="top|left|center" android:background="@com.htc:drawable/common_app_bkg_top_src" android:layout_width="fill_parent" android:layout_height="@dimen/fakescreen_header_height" />
+</FrameLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="status_bar_date_formatter">"%2$s
+%1$s"</string>
+    <string name="app_label">시스템 UI</string>
+    <string name="status_bar_clear_all_button">지우기</string>
+    <string name="status_bar_recent_remove_item_title">목록에서 제거</string>
+    <string name="status_bar_recent_inspect_item_title">응용 프로그램 정보</string>
+    <string name="status_bar_no_recent_apps">최근 응용 프로그램 없음</string>
+    <string name="status_bar_accessibility_dismiss_recents">최근 응용 프로그램 해제</string>
+    <string name="status_bar_no_notifications_title">알림 없음</string>
+    <string name="status_bar_ongoing_events_title">진행 중</string>
+    <string name="status_bar_latest_events_title">알림</string>
+    <string name="battery_low_title">충전기 연결</string>
+    <string name="battery_low_subtitle">배터리 전원이 부족합니다.</string>
+    <string name="battery_low_percent_format">%d%% 남음</string>
+    <string name="invalid_charger">"USB 충전이 지원되지 않습니다.
+제공된 충전기만 사용하십시오."</string>
+    <string name="battery_low_why">배터리 사용</string>
+    <string name="status_bar_settings_settings_button">설정</string>
+    <string name="status_bar_settings_wifi_button">Wi-Fi</string>
+    <string name="status_bar_settings_airplane">비행 모드</string>
+    <string name="status_bar_settings_auto_rotation">자동 화면 회전</string>
+    <string name="status_bar_settings_mute_label">음소거</string>
+    <string name="status_bar_settings_auto_brightness_label">자동</string>
+    <string name="status_bar_settings_notifications">알림</string>
+    <string name="bluetooth_tethered">Bluetooth 테더링됨</string>
+    <string name="status_bar_input_method_settings_configure_input_methods">입력 방법 설정</string>
+    <string name="status_bar_use_physical_keyboard">물리적 키보드</string>
+    <string name="usb_device_permission_prompt">USB 장치에 액세스하기 위해 %1$s 응용 프로그램을 허용하시겠습니까?</string>
+    <string name="usb_accessory_permission_prompt">USB 액세서리에 액세스하기 위해 %1$s 응용 프로그램을 허용하시겠습니까?</string>
+    <string name="usb_device_confirm_prompt">이 USB 장치를 연결할 때 %1$s을(를) 여시겠습니까?</string>
+    <string name="usb_accessory_confirm_prompt">이 USB 액세서리를 연결할 때 %1$s을(를) 여시겠습니까?</string>
+    <string name="usb_accessory_uri_prompt">이 USB 액세서리에서 작동하는 응용 프로그램이 설치되지 않았습니다. %1$s에서 이 액세서리에 대해 배우기</string>
+    <string name="title_usb_accessory">USB 액세서리</string>
+    <string name="label_view">보기</string>
+    <string name="always_use_device">이 USB 장치에 대해 기본으로 사용</string>
+    <string name="always_use_accessory">이 USB 액세서리에 대해 기본으로 사용</string>
+    <string name="usb_debugging_title">USB 디버깅 허용?</string>
+    <string name="usb_debugging_message">"컴퓨터의 RSA 키 지문:
+%1$s"</string>
+    <string name="usb_debugging_always">이 컴퓨터로부터 항상 허용</string>
+    <string name="compat_mode_on">줌으로 화면 채우기</string>
+    <string name="compat_mode_off">늘여서 화면 채우기</string>
+    <string name="screenshot_saving_ticker">스크린샷 저장 중…</string>
+    <string name="screenshot_saving_title">스크린샷 저장 중…</string>
+    <string name="screenshot_saving_text">스크린샷을 저장하는 중입니다.</string>
+    <string name="screenshot_saved_title">스크린샷을 캡처했습니다.</string>
+    <string name="screenshot_saved_text">스크린샷을 보려면 터치하십시오.</string>
+    <string name="screenshot_failed_title">스크린샷을 캡처할 수 없습니다.</string>
+    <string name="screenshot_failed_text">스크린샷을 저장할 수 없습니다. 저장소가 사용 중인 것 같습니다.</string>
+    <string name="usb_preference_title">USB 파일 전송 옵션</string>
+    <string name="use_mtp_button_title">미디어 플레이어로 마운트 (MTP)</string>
+    <string name="use_ptp_button_title">카메라로 마운트(PTP)</string>
+    <string name="installer_cd_button_title">Mac용 Android 파일 전송 응용 프로그램 설치</string>
+    <string name="accessibility_back">뒤로</string>
+    <string name="accessibility_home">홈</string>
+    <string name="accessibility_menu">메뉴</string>
+    <string name="accessibility_recent">최근 응용 프로그램</string>
+    <string name="accessibility_search_light">검색</string>
+    <string name="accessibility_camera_button">카메라</string>
+    <string name="accessibility_ime_switch_button">입력 방식 전환 버튼입니다.</string>
+    <string name="accessibility_compatibility_zoom_button">호환성 줌 단추입니다.</string>
+    <string name="accessibility_compatibility_zoom_example">작은 화면에서 큰 화면으로 줌합니다.</string>
+    <string name="accessibility_bluetooth_connected">Bluetooth가 연결되었습니다.</string>
+    <string name="accessibility_bluetooth_disconnected">Bluetooth 연결이 끊어졌습니다.</string>
+    <string name="accessibility_no_battery">배터리가 없습니다.</string>
+    <string name="accessibility_battery_one_bar">배터리 막대가 1개입니다.</string>
+    <string name="accessibility_battery_two_bars">배터리 막대가 2개입니다.</string>
+    <string name="accessibility_battery_three_bars">배터리 막대가 3개입니다.</string>
+    <string name="accessibility_battery_full">배터리가 충전되었습니다.</string>
+    <string name="accessibility_no_phone">휴대폰이 없습니다.</string>
+    <string name="accessibility_phone_one_bar">휴대폰 막대가 1개입니다.</string>
+    <string name="accessibility_phone_two_bars">휴대폰 막대가 2개입니다.</string>
+    <string name="accessibility_phone_three_bars">휴대폰 막대가 3개입니다.</string>
+    <string name="accessibility_phone_signal_full">휴대폰 신호가 최대입니다.</string>
+    <string name="accessibility_no_data">데이터 없음.</string>
+    <string name="accessibility_data_one_bar">데이터 막대가 1개입니다.</string>
+    <string name="accessibility_data_two_bars">데이터 막대가 2개입니다.</string>
+    <string name="accessibility_data_three_bars">데이터 막대가 3개입니다.</string>
+    <string name="accessibility_data_signal_full">데이터 신호가 최대입니다.</string>
+    <string name="accessibility_wifi_off">Wi-Fi 꺼짐.</string>
+    <string name="accessibility_no_wifi">Wifi가 끊어졌습니다.</string>
+    <string name="accessibility_wifi_one_bar">Wifi 막대가 1개입니다.</string>
+    <string name="accessibility_wifi_two_bars">Wifi 막대가 2개입니다.</string>
+    <string name="accessibility_wifi_three_bars">Wifi 막대가 3개입니다.</string>
+    <string name="accessibility_wifi_signal_full">Wifi 신호가 최대입니다.</string>
+    <string name="accessibility_no_wimax">WiMAX가 없습니다.</string>
+    <string name="accessibility_wimax_one_bar">WiMAX 막대가 1개입니다.</string>
+    <string name="accessibility_wimax_two_bars">WiMAX 막대가 2개입니다.</string>
+    <string name="accessibility_wimax_three_bars">WiMAX 막대가 3개입니다.</string>
+    <string name="accessibility_wimax_signal_full">WiMAX 신호가 최대입니다.</string>
+    <string name="accessibility_no_signal">신호 없음.</string>
+    <string name="accessibility_not_connected">연결 안 됨.</string>
+    <string name="accessibility_zero_bars">막대 0개.</string>
+    <string name="accessibility_one_bar">막대 1개.</string>
+    <string name="accessibility_two_bars">막대 2개.</string>
+    <string name="accessibility_three_bars">막대 3개.</string>
+    <string name="accessibility_signal_full">신호가 꽉 참.</string>
+    <string name="accessibility_desc_on">켜짐.</string>
+    <string name="accessibility_desc_off">꺼짐.</string>
+    <string name="accessibility_desc_connected">연결됨.</string>
+    <string name="accessibility_data_connection_gprs">GPRS</string>
+    <string name="accessibility_data_connection_1x">1 X</string>
+    <string name="accessibility_data_connection_hspa">HSPA</string>
+    <string name="accessibility_data_connection_3g">3G</string>
+    <string name="accessibility_data_connection_3.5g">3.5G</string>
+    <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_lte">LTE</string>
+    <string name="accessibility_data_connection_cdma">CDMA</string>
+    <string name="accessibility_data_connection_roaming">로밍</string>
+    <string name="accessibility_data_connection_edge">에지</string>
+    <string name="accessibility_data_connection_wifi">Wi-Fi</string>
+    <string name="accessibility_no_sim">SIM이 없습니다.</string>
+    <string name="accessibility_bluetooth_tether">Bluetooth 테더링.</string>
+    <string name="accessibility_airplane_mode">비행 모드.</string>
+    <string name="accessibility_battery_level">배터리가 %d 퍼센트입니다.</string>
+    <string name="accessibility_settings_button">시스템 설정.</string>
+    <string name="accessibility_notifications_button">알림.</string>
+    <string name="accessibility_remove_notification">알림 삭제</string>
+    <string name="accessibility_gps_enabled">GPS를 사용합니다.</string>
+    <string name="accessibility_gps_acquiring">GPS를 가져오고 있습니다.</string>
+    <string name="accessibility_tty_enabled">텔레타이프라이터를 사용합니다.</string>
+    <string name="accessibility_ringer_vibrate">벨소리가 진동입니다.</string>
+    <string name="accessibility_ringer_silent">벨소리가 무음입니다.</string>
+    <string name="accessibility_recents_item_dismissed">%s이(가) 해제되었습니다.</string>
+    <string name="accessibility_notification_dismissed">알림 취소됨.</string>
+    <string name="accessibility_desc_notification_shade">알림 그림자.</string>
+    <string name="accessibility_desc_quick_settings">빠른 설정.</string>
+    <string name="accessibility_desc_recent_apps">최근 응용 프로그램.</string>
+    <string name="accessibility_quick_settings_user">사용자 %s.</string>
+    <string name="accessibility_quick_settings_wifi">%1$s. %2$s</string>
+    <string name="accessibility_quick_settings_mobile">모바일 %1$s. %2$s. %3$s.</string>
+    <string name="accessibility_quick_settings_battery">배터리 %s.</string>
+    <string name="accessibility_quick_settings_airplane">비행 모드 %s.</string>
+    <string name="accessibility_quick_settings_bluetooth">Bluetooth %s.</string>
+    <string name="accessibility_quick_settings_location">위치 %s.</string>
+    <string name="accessibility_quick_settings_alarm">알람 설정 %s.</string>
+    <string name="data_usage_disabled_dialog_3g_title">2G-3G 데이터 사용 안함</string>
+    <string name="data_usage_disabled_dialog_4g_title">4G 데이터 사용 안함</string>
+    <string name="data_usage_disabled_dialog_mobile_title">모바일 데이터 사용 안함</string>
+    <string name="data_usage_disabled_dialog_title">데이터 사용 안함</string>
+    <string name="data_usage_disabled_dialog">"지정된 데이터 사용 제한에 도달했습니다.
+
+데이터를 다시 사용하려면 통신사 요금이 부과될 수 있습니다."</string>
+    <string name="data_usage_disabled_dialog_enable">데이터 다시 사용</string>
+    <string name="status_bar_settings_signal_meter_disconnected">인터넷에 연결되지 않음</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">Wi-Fi가 연결됨</string>
+    <string name="gps_notification_searching_text">GPS 검색 중</string>
+    <string name="gps_notification_found_text">GPS 설정 위치</string>
+    <string name="accessibility_location_active">위치 요청 활성</string>
+    <string name="accessibility_clear_all">모든 알림 삭제</string>
+    <string name="status_bar_notification_inspect_item_title">응용 프로그램 정보</string>
+    <string name="accessibility_rotation_lock_off">화면이 자동으로 회전합니다.</string>
+    <string name="accessibility_rotation_lock_on_landscape">화면이 가로 방향으로 잠깁니다.</string>
+    <string name="accessibility_rotation_lock_on_portrait">화면이 세로 방향으로 잠깁니다.</string>
+    <string name="dessert_case">디저트 케이스</string>
+    <string name="start_dreams">화면 보호기</string>
+    <string name="ethernet_label">이더넷</string>
+    <string name="quick_settings_airplane_mode_label">비행 모드</string>
+    <string name="quick_settings_battery_charging_label">충전 중(%d%%)</string>
+    <string name="quick_settings_battery_charged_label">충전되었습니다</string>
+    <string name="quick_settings_bluetooth_label">Bluetooth</string>
+    <string name="quick_settings_bluetooth_multiple_devices_label">Bluetooth (%d 장치)</string>
+    <string name="quick_settings_bluetooth_off_label">Bluetooth 끄기</string>
+    <string name="quick_settings_brightness_label">밝기</string>
+    <string name="quick_settings_rotation_unlocked_label">자동 회전</string>
+    <string name="quick_settings_rotation_locked_label">회전 잠금</string>
+    <string name="quick_settings_ime_label">입력 방법</string>
+    <string name="quick_settings_location_label">위치</string>
+    <string name="quick_settings_location_off_label">위치 꺼짐</string>
+    <string name="quick_settings_media_device_label">미디어 장치</string>
+    <string name="quick_settings_rssi_label">RSSI</string>
+    <string name="quick_settings_rssi_emergency_only">긴급 전화만</string>
+    <string name="quick_settings_settings_label">설정</string>
+    <string name="quick_settings_time_label">시간대</string>
+    <string name="quick_settings_user_label">나</string>
+    <string name="quick_settings_wifi_label">Wi-Fi</string>
+    <string name="quick_settings_wifi_not_connected">연결 안 됨</string>
+    <string name="quick_settings_wifi_no_network">네트워크 없음</string>
+    <string name="quick_settings_wifi_off_label">Wi-Fi 끄기</string>
+    <string name="quick_settings_remote_display_no_connection_label">캐스트 화면</string>
+    <string name="quick_settings_brightness_dialog_title">밝기</string>
+    <string name="quick_settings_brightness_dialog_auto_brightness_label">자동</string>
+    <string name="ssl_ca_cert_warning">"네트워크가
+모니터링될 수 있음"</string>
+    <string name="quick_settings_wifi">Wi-Fi</string>
+    <string name="quick_settings_wifi_cn">WLAN</string>
+    <string name="quick_settings_nfc">NFC</string>
+    <string name="quick_settings_gps">GPS</string>
+    <string name="quick_settings_font">글꼴</string>
+    <string name="quick_settings_volume">볼륨</string>
+    <string name="quick_settings_usage">데이터 사용</string>
+    <string name="quick_settings_sync_all">모두 동기화</string>
+    <string name="quick_settings_ringtone">벨소리</string>
+    <string name="quick_settings_auto_sync">자동 동기화</string>
+    <string name="quick_settings_bluetooth">Bluetooth</string>
+    <string name="quick_settings_user_card">사용자 카드</string>
+    <string name="quick_settings_mini_lite">HTC Mini+</string>
+    <string name="quick_settings_home_mode">홈 모드</string>
+    <string name="quick_settings_screenshot">스크린샷</string>
+    <string name="quick_settings_timeout">화면 시간제한</string>
+    <string name="quick_settings_mobile_data">모바일 데이터</string>
+    <string name="quick_settings_power_saver">전원 절약기</string>
+    <string name="quick_settings_data_roaming">데이터 로밍</string>
+    <string name="quick_settings_media_output">미디어 출력</string>
+    <string name="quick_settings_sound_profile">소리 설정</string>
+    <string name="quick_settings_music_channel">음악 채널</string>
+    <string name="quick_settings_do_not_disturb">응답 거부</string>
+    <string name="quick_settings_fingerprint_scan">지문 스캔</string>
+    <string name="quick_settings_power_saver_ex">익스트림 전원 절약 모드</string>
+    <string name="quick_settings_wifi_hotspot">Wi-Fi 핫스팟</string>
+    <string name="quick_settings_wifi_hotspot_jp">테더링</string>
+    <string name="quick_settings_wifi_hotspot_us">모바일 핫스팟</string>
+    <string name="quick_settings_wifi_hotspot_tmo">모바일 핫스폿</string>
+    <string name="quick_settings_apn">APN</string>
+    <string name="quick_settings_prefer_network">선호하는 네트워크</string>
+    <string name="quick_settings_network_selection">네트워크 선택</string>
+    <string name="quick_settings_prefer_slot1">슬롯 1</string>
+    <string name="quick_settings_prefer_slot2">슬롯 2</string>
+    <string name="quick_settings_sound_profile_normal">보통</string>
+    <string name="quick_settings_sound_profile_silent">무음</string>
+    <string name="quick_settings_sound_profile_vibrate">진동</string>
+    <string name="quick_settings_sound_profile_outdoor">야외</string>
+    <string name="quick_settings_accessibility_auto">자동</string>
+    <string name="quick_settings_accessibility_more">더 보기</string>
+    <string name="quick_settings_accessibility_level">수준</string>
+    <string name="accessibility_desc_quick_settings_edit">빠른 설정 편집</string>
+    <string name="quick_settings_kid_mode">아이 모드</string>
+    <string name="quick_setting_launch_kid_fail">아이모드 응용 프로그램이 설치되지 않았습니다.</string>
+    <string name="quick_settings_reorder_title">빠른 설정 편집</string>
+    <string name="quick_settings_reorder_content">다시 정렬하려면 오른쪽 아이콘을 길게 누름</string>
+    <string name="quick_settings_reorder_separator">숨겨진 항목(끌어서 빠른 설정에 추가)</string>
+    <string name="quick_settings_reorder_full_items">최대 12 개의 빠른 설정을 가질 수 있습니다</string>
+    <string name="quick_settings_power_saver_dialog_title">전원 절약기 켜기?</string>
+    <string name="quick_settings_power_saver_dialog_chkbox">이 메시지를 다시 표시 안 함</string>
+    <string name="quick_settings_power_saver_dialog_message">"전원 절약기에서 데이터 연결이 켜졌습니다. 이 기능이 켜지면, 디스플레이가 꺼졌을 때 이메일 수신 같은 데이터 전송이 이루어지지 않습니다.
+(충전 중에는 이 설정에 관계없이 데이터 전송이 가능합니다.)"</string>
+    <string name="quick_settings_hotspot_dialog_chkbox">이 메시지를 다시 표시 안 함</string>
+    <string name="quick_settings_hotspot_dialog_message">USB 테더링 또는 모바일 핫스폿이 활성화될 때 Wi-Fi가 꺼집니다. Wi-Fi를 켜려면 USB 테더링 또는 모바일 핫스폿을 끄십시오.</string>
+    <string name="quick_tips_edit_button">눌러서 빠른 설정 추가 및 제거</string>
+    <string name="quick_tips_more_button">항목을 길게 눌러 해당 설정 페이지 열기</string>
+    <string name="quick_settings_wifi_hotspot_cn">WLAN 핫스팟</string>
+    <string name="quick_setting_wifi_hotspot_ct">WLAN 핫스팟</string>
+    <string name="qs_mobile_roaming_title">주의</string>
+    <string name="qs_mobile_roaming_msg_att">데이터 로밍을 허용하시겠습니까? 미국, 푸에토리카 및 U.S.V.I 외부에서 데이터를 사용하면 국제 데이터 로밍 요금이 부과됩니다.</string>
+    <string name="qs_mobile_roaming_msg_generic">현재 로밍 중입니다. 데이터 로밍을 사용하면 요금이 많이 부과될 수 있습니다. 로밍 네트워크 연결을 활성화하시겠습니까?</string>
+    <string name="qs_restrict_mode_error">오류</string>
+    <string name="qs_restrict_mode_message">시스템 관리자가 이 메시지를 차단했습니다. IT 팀에 도움을 요청하십시오.</string>
+    <string name="recentapps_title">최근 응용 프로그램</string>
+    <string name="recentapps_clear_all">모두 지우기</string>
+    <string name="recentapps_running_services">실행 중인 서비스</string>
+    <string name="illegal_ms_reject_cause_3">불법 MS</string>
+    <string name="tmo_plmn">T-Mobile</string>
+    <string name="att_puk_perm_blocked">SIM 차단됨</string>
+    <string name="lockscreen_imei_locked">잘못된 카드</string>
+    <string name="lockscreen_uim_fail_message">UIM 카드 잠김</string>
+    <string name="lockscreen_missing_uim_message_short">UIM 카드가 없음</string>
+    <string name="lockscreen_missing_sim_message_short">SIM 카드가 없습니다.</string>
+    <string name="lockscreen_missing_kddi_message_short">au IC 카드 없음</string>
+    <string name="carrier_label_sim1">(슬롯 1)</string>
+    <string name="carrier_label_sim2">(슬롯 2)</string>
+    <string name="lockscreen_uimsim_fail_message">UIM/SIM 카드 잠김</string>
+    <string name="lockscreen_missing_uimsim_message_short">UIM/SIM 카드 없음</string>
+    <string name="battery_low_newtitle">배터리가 떨어지고 있습니다</string>
+    <string name="battery_low_remaining">남음</string>
+    <string name="battery_low_only_percent_format">%d%%</string>
+    <string name="battery_low_charging_not_enough_title">경고</string>
+    <string name="battery_low_charging_not_enough_ac_title">충전할 수 없음</string>
+    <string name="battery_low_charging_not_enough_ac">휴대폰이 너무 많은 전력을 사용 중이어서 충전할 수 없습니다. 이 문제를 해결하려면 휴대폰을 끄거나, 사용하지 않는 앱을 닫거나, 화면을 끄거나 해서 전력 소모를 줄이십시오.</string>
+    <string name="extreme_auto_power_saver_ask_title_ex">익스트림 전원 절약 모드</string>
+    <string name="extreme_auto_power_saver_ask_eps_msg">"익스트림 전원 절약 모드를 켜면 다음과 같이 배터리 수명이 연장됩니다:
+-CPU 사용량 절약.
+-화면 밝기 줄이기.
+-진동 피드백 끄기.
+-화면이 꺼질 때 데이터 연결 끄기.
+-필수 앱들만 실행 허용.
+-보수계 끄기."</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex">"익스트림 전원 절약 모드를 켜면 다음과 같이 배터리 수명이 연장됩니다:
+-CPU 사용량 절약.
+-화면 밝기 줄이기.
+-진동 피드백 끄기.
+-화면이 꺼질 때 데이터 연결 끄기.
+-필수 앱들만 실행 허용."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex1">익스트림 전원 절약기</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex1">"익스트림 전원 절약기를 켜면 다음과 같이 배터리 수명이 연장됩니다:
+-CPU 사용량 절약.
+-화면 밝기 줄이기.
+-진동 피드백 끄기.
+-화면이 꺼질 때 데이터 연결 끄기.
+-필수 앱들만 실행 허용."</string>
+    <string name="extreme_auto_power_saver_ask_title">최대 전원 절약기</string>
+    <string name="extreme_auto_power_saver_ask_msg">"최대 전원 절약기를 켜면 다음과 같이 배터리 수명이 연장됩니다:
+-CPU 사용량 절약.
+-화면 밝기 줄이기.
+-진동 피드백 끄기.
+-화면이 꺼질 때 데이터 연결 끄기.
+-필수 앱들만 실행 허용."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex2">대기 모드</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex2">"대기 모드를 켜면 다음과 같이 배터리 수명이 연장됩니다:
+-CPU 사용량 절약.
+-화면 밝기 줄이기.
+-진동 피드백 끄기.
+-화면이 꺼질 때 데이터 연결 끄기.
+-필수 앱들만 실행 허용."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex3">긴급 모드</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex3">"긴급 모드를 켜면 다음과 같이 배터리 수명이 연장됩니다:
+-CPU 사용량 절약.
+-화면 밝기 줄이기.
+-진동 피드백 끄기.
+-화면이 꺼질 때 데이터 연결 끄기.
+-필수 앱들만 실행 허용."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex4">저전력 모드</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex4">"저전력 모드를 켜면 다음과 같이 배터리 수명이 연장됩니다:
+-CPU 사용량 절약.
+-화면 밝기 줄이기.
+-진동 피드백 끄기.
+-화면이 꺼질 때 데이터 연결 끄기.
+-필수 앱들만 실행 허용."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex5">전원 절약 모드</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex5">"전원 절약 모드를 켜면 다음과 같이 배터리 수명이 연장됩니다:
+-CPU 사용량 절약.
+-화면 밝기 줄이기.
+-진동 피드백 끄기.
+-화면이 꺼질 때 데이터 연결 끄기.
+-필수 앱들만 실행 허용."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex6">스마트 전원 절약기 모드</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex6">"스마트 전원 절약기 모드를 켜면 다음과 같이 배터리 수명이 연장됩니다:
+-CPU 사용량 절약.
+-화면 밝기 줄이기.
+-진동 피드백 끄기.
+-화면이 꺼질 때 데이터 연결 끄기.
+-필수 앱들만 실행 허용."</string>
+</resources>

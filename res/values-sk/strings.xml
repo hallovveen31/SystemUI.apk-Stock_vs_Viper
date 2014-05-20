@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">UI systém</string>
+    <string name="status_bar_clear_all_button">Vymazať</string>
+    <string name="status_bar_recent_remove_item_title">Odstrániť zo zoznamu</string>
+    <string name="status_bar_recent_inspect_item_title">Informácie o aplikácii</string>
+    <string name="status_bar_no_recent_apps">Žiadne nedávne aplikácie</string>
+    <string name="status_bar_accessibility_dismiss_recents">Zrušiť naposledy použité aplikácie</string>
+    <string name="status_bar_no_notifications_title">Žiadne upozornenia</string>
+    <string name="status_bar_ongoing_events_title">Odchádzajúce</string>
+    <string name="status_bar_latest_events_title">Upozornenia</string>
+    <string name="battery_low_title">Pripojte nabíjačku</string>
+    <string name="battery_low_subtitle">Batéria je takmer vybitá.</string>
+    <string name="battery_low_percent_format">zostáva %d%%</string>
+    <string name="invalid_charger">"Nabíjanie cez USB nie je podporované.
+Používajte len pribalenú nabíjačku."</string>
+    <string name="battery_low_why">Použitie batérie</string>
+    <string name="status_bar_settings_settings_button">Nastavenia</string>
+    <string name="status_bar_settings_wifi_button">Wi-Fi</string>
+    <string name="status_bar_settings_airplane">Režim V lietadle</string>
+    <string name="status_bar_settings_auto_rotation">Automatické otáčanie obrazovky</string>
+    <string name="status_bar_settings_mute_label">STLMIŤ</string>
+    <string name="status_bar_settings_auto_brightness_label">AUTO</string>
+    <string name="status_bar_settings_notifications">Upozornenia</string>
+    <string name="bluetooth_tethered">Zosieťované cez Bluetooth</string>
+    <string name="status_bar_input_method_settings_configure_input_methods">Nastavenie metód vstupu</string>
+    <string name="status_bar_use_physical_keyboard">Fyzická klávesnica</string>
+    <string name="usb_device_permission_prompt">Povoliť aplikácii %1$s prístup k USB zariadeniu?</string>
+    <string name="usb_accessory_permission_prompt">Povoliť aplikácii %1$s prístup k USB príslušenstvu?</string>
+    <string name="usb_device_confirm_prompt">Otvoriť %1$s, keď je pripojené USB zariadenie?</string>
+    <string name="usb_accessory_confirm_prompt">Otvoriť %1$s, keď je pripojené USB príslušenstvo?</string>
+    <string name="usb_accessory_uri_prompt">Na prácu s týmto USB príslušenstvom nie sú nainštalované žiadne aplikácie. Ďalšie informácie o tomto príslušenstve na %1$s</string>
+    <string name="title_usb_accessory">USB príslušenstvo</string>
+    <string name="label_view">Zobraziť</string>
+    <string name="always_use_device">Pre toto USB zariadenie použiť ako predvolené</string>
+    <string name="always_use_accessory">Použiť ako predvolené pre toto USB príslušenstvo</string>
+    <string name="usb_debugging_title">Povoliť ladenie cez USB?</string>
+    <string name="usb_debugging_message">"Prístupový odtlačok prsta RSA pre počítač je:
+%1$s"</string>
+    <string name="usb_debugging_always">Vždy povoliť z tohto počítača</string>
+    <string name="compat_mode_on">Zväčšiť na celú obrazovku</string>
+    <string name="compat_mode_off">Roztiahnuť na celú obrazovku</string>
+    <string name="screenshot_saving_ticker">Ukladá sa snímka…</string>
+    <string name="screenshot_saving_title">Ukladá sa snímka…</string>
+    <string name="screenshot_saving_text">Snímka sa ukladá.</string>
+    <string name="screenshot_saved_title">Snímka zachytená.</string>
+    <string name="screenshot_saved_text">Stlačením snímku zobrazíte.</string>
+    <string name="screenshot_failed_title">Snímku nie je možné zachytiť.</string>
+    <string name="screenshot_failed_text">Snímku nie je možné uložiť. Pamäť sa možno používa.</string>
+    <string name="usb_preference_title">Možnosti prenosu cez USB</string>
+    <string name="use_mtp_button_title">Pripojiť ako prehrávač médií (MTP)</string>
+    <string name="use_ptp_button_title">Pripojiť ako fotoaparát (PTP)</string>
+    <string name="installer_cd_button_title">Inštalovať aplikáciu Prenos súborov Android pre Mac</string>
+    <string name="accessibility_back">Späť</string>
+    <string name="accessibility_home">Domov</string>
+    <string name="accessibility_menu">Menu</string>
+    <string name="accessibility_recent">Nedávne aplikácie</string>
+    <string name="accessibility_search_light">Hľadať</string>
+    <string name="accessibility_camera_button">Fotoaparát</string>
+    <string name="accessibility_ime_switch_button">Tlačidlo prepínania spôsobu zadávania.</string>
+    <string name="accessibility_compatibility_zoom_button">Tlačidlo zoomu kompatibility.</string>
+    <string name="accessibility_compatibility_zoom_example">Zväčšenie z menšej na väčšiu obrazovku.</string>
+    <string name="accessibility_bluetooth_connected">Bluetooth pripojené.</string>
+    <string name="accessibility_bluetooth_disconnected">Bluetooth odpojené.</string>
+    <string name="accessibility_no_battery">Žiadna batéria.</string>
+    <string name="accessibility_battery_one_bar">Jedna palička batérie.</string>
+    <string name="accessibility_battery_two_bars">Dve paličky batérie.</string>
+    <string name="accessibility_battery_three_bars">Tri paličky batérie.</string>
+    <string name="accessibility_battery_full">Batéria plná.</string>
+    <string name="accessibility_no_phone">Žiadny telefón.</string>
+    <string name="accessibility_phone_one_bar">Jedna palička signálu.</string>
+    <string name="accessibility_phone_two_bars">Dve paličky signálu.</string>
+    <string name="accessibility_phone_three_bars">Tri paličky signálu.</string>
+    <string name="accessibility_phone_signal_full">Signál telefónu plný.</string>
+    <string name="accessibility_no_data">Žiadne dáta.</string>
+    <string name="accessibility_data_one_bar">Jedna palička dát.</string>
+    <string name="accessibility_data_two_bars">Dve paličky dát.</string>
+    <string name="accessibility_data_three_bars">Tri paličky dát.</string>
+    <string name="accessibility_data_signal_full">Dátový signál plný.</string>
+    <string name="accessibility_wifi_off">Wi-Fi vypnuté.</string>
+    <string name="accessibility_no_wifi">Wi-Fi odpojené.</string>
+    <string name="accessibility_wifi_one_bar">Jedna palička Wi-Fi.</string>
+    <string name="accessibility_wifi_two_bars">Dve paličky Wi-Fi.</string>
+    <string name="accessibility_wifi_three_bars">Tri paličky Wi-Fi.</string>
+    <string name="accessibility_wifi_signal_full">Signál Wi-Fi plný.</string>
+    <string name="accessibility_no_wimax">Žiadne WiMAX.</string>
+    <string name="accessibility_wimax_one_bar">Jedna palička WiMAX.</string>
+    <string name="accessibility_wimax_two_bars">Dve paličky WiMAX.</string>
+    <string name="accessibility_wimax_three_bars">Tri paličky WiMAX.</string>
+    <string name="accessibility_wimax_signal_full">Signál WiMAX plný.</string>
+    <string name="accessibility_no_signal">Žiadny signál.</string>
+    <string name="accessibility_not_connected">Nepripojené.</string>
+    <string name="accessibility_zero_bars">Žiadna palička.</string>
+    <string name="accessibility_one_bar">Jedna palička.</string>
+    <string name="accessibility_two_bars">Dve paličky.</string>
+    <string name="accessibility_three_bars">Tri paličky.</string>
+    <string name="accessibility_signal_full">Signál plný.</string>
+    <string name="accessibility_desc_on">Zapnuté.</string>
+    <string name="accessibility_desc_off">Vypnuté.</string>
+    <string name="accessibility_desc_connected">Pripojené.</string>
+    <string name="accessibility_data_connection_gprs">GPRS</string>
+    <string name="accessibility_data_connection_1x">1 X</string>
+    <string name="accessibility_data_connection_hspa">HSPA</string>
+    <string name="accessibility_data_connection_3g">3G</string>
+    <string name="accessibility_data_connection_3.5g">3.5G</string>
+    <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_lte">LTE</string>
+    <string name="accessibility_data_connection_cdma">CDMA</string>
+    <string name="accessibility_data_connection_roaming">Roaming</string>
+    <string name="accessibility_data_connection_edge">Edge</string>
+    <string name="accessibility_data_connection_wifi">Wi-Fi</string>
+    <string name="accessibility_no_sim">Žiadna karta SIM.</string>
+    <string name="accessibility_bluetooth_tether">Zosieťovanie cez Bluetooth.</string>
+    <string name="accessibility_airplane_mode">Režim v lietadle.</string>
+    <string name="accessibility_battery_level">Batéria na %d percent.</string>
+    <string name="accessibility_settings_button">Systémové nastavenia.</string>
+    <string name="accessibility_notifications_button">Upozornenia.</string>
+    <string name="accessibility_remove_notification">Vymazať upozornenie.</string>
+    <string name="accessibility_gps_enabled">GPS zapnuté.</string>
+    <string name="accessibility_gps_acquiring">Získava sa GPS.</string>
+    <string name="accessibility_tty_enabled">TeleTypewriter zapnuté.</string>
+    <string name="accessibility_ringer_vibrate">Vibrovanie.</string>
+    <string name="accessibility_ringer_silent">Vyzváňanie stíšené.</string>
+    <string name="accessibility_recents_item_dismissed">%s zrušené.</string>
+    <string name="accessibility_notification_dismissed">Upozornenie odstránené.</string>
+    <string name="accessibility_desc_notification_shade">Tieňovanie upozornenia.</string>
+    <string name="accessibility_desc_quick_settings">Rýchle nastavenie.</string>
+    <string name="accessibility_desc_recent_apps">Nedávne aplikácie.</string>
+    <string name="accessibility_quick_settings_user">Používateľ %s.</string>
+    <string name="accessibility_quick_settings_wifi">%1$s. %2$s</string>
+    <string name="accessibility_quick_settings_mobile">Mobil %1$s. %2$s. %3$s.</string>
+    <string name="accessibility_quick_settings_battery">Batéria %s.</string>
+    <string name="accessibility_quick_settings_airplane">Režim V lietadle %s.</string>
+    <string name="accessibility_quick_settings_bluetooth">Bluetooth %s.</string>
+    <string name="accessibility_quick_settings_location">Umiestnenie %s.</string>
+    <string name="accessibility_quick_settings_alarm">Budík nastavený na %s.</string>
+    <string name="data_usage_disabled_dialog_3g_title">2G-3G dáta vypnuté</string>
+    <string name="data_usage_disabled_dialog_4g_title">4G dáta vypnuté</string>
+    <string name="data_usage_disabled_dialog_mobile_title">Mobilné dáta vypnuté</string>
+    <string name="data_usage_disabled_dialog_title">Dáta vypnuté</string>
+    <string name="data_usage_disabled_dialog">"Dosiahli ste stanovený limit spotreby dát.
+
+Znovu povolenie dát môže byť operátorom spoplatnené."</string>
+    <string name="data_usage_disabled_dialog_enable">Znova zapnúť dáta</string>
+    <string name="status_bar_settings_signal_meter_disconnected">Žiadne pripojenie na Internet</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">Wi-Fi pripojené</string>
+    <string name="gps_notification_searching_text">Hľadá sa GPS</string>
+    <string name="gps_notification_found_text">Poloha nastavená prostredníctvom GPS</string>
+    <string name="accessibility_location_active">Žiadosti o polohu aktívne</string>
+    <string name="accessibility_clear_all">Vymazať všetky upozornenia.</string>
+    <string name="status_bar_notification_inspect_item_title">Informácie o aplikácii</string>
+    <string name="accessibility_rotation_lock_off">Obrazovka sa bude otáčať automaticky.</string>
+    <string name="accessibility_rotation_lock_on_landscape">Obrazovka je uzamknutá v orientácii na šírku.</string>
+    <string name="accessibility_rotation_lock_on_portrait">Obrazovka je uzamknutá v orientácii na výšku.</string>
+    <string name="dessert_case">Zákusková vitrína</string>
+    <string name="start_dreams">Šetrič obrazovky</string>
+    <string name="ethernet_label">Ethernet</string>
+    <string name="quick_settings_airplane_mode_label">Režim V lietadle</string>
+    <string name="quick_settings_battery_charging_label">Nabíja sa, %d%%</string>
+    <string name="quick_settings_battery_charged_label">Nabité</string>
+    <string name="quick_settings_bluetooth_label">Bluetooth</string>
+    <string name="quick_settings_bluetooth_multiple_devices_label">Bluetooth (zariadenia: %d)</string>
+    <string name="quick_settings_bluetooth_off_label">Bluetooth vypnuté</string>
+    <string name="quick_settings_brightness_label">Jas</string>
+    <string name="quick_settings_rotation_unlocked_label">Automatické otáčanie</string>
+    <string name="quick_settings_rotation_locked_label">Otáčanie zablokované</string>
+    <string name="quick_settings_ime_label">Spôsob zadávania</string>
+    <string name="quick_settings_location_label">Poloha</string>
+    <string name="quick_settings_location_off_label">Určenie polohy vypnuté</string>
+    <string name="quick_settings_media_device_label">Zariadenie médií</string>
+    <string name="quick_settings_rssi_label">RSSI</string>
+    <string name="quick_settings_rssi_emergency_only">Len tiesňové hovory</string>
+    <string name="quick_settings_settings_label">Nastavenia</string>
+    <string name="quick_settings_time_label">Čas</string>
+    <string name="quick_settings_user_label">Ja</string>
+    <string name="quick_settings_wifi_label">Wi-Fi</string>
+    <string name="quick_settings_wifi_not_connected">Nepripojené</string>
+    <string name="quick_settings_wifi_no_network">Žiadna sieť</string>
+    <string name="quick_settings_wifi_off_label">Wi-Fi vyp.</string>
+    <string name="quick_settings_remote_display_no_connection_label">Obrazovka Cast</string>
+    <string name="quick_settings_brightness_dialog_title">Jas</string>
+    <string name="quick_settings_brightness_dialog_auto_brightness_label">AUTO</string>
+    <string name="ssl_ca_cert_warning">"Sieť môže byť
+monitorovaná"</string>
+    <string name="quick_settings_wifi">Wi-Fi</string>
+    <string name="quick_settings_wifi_cn">WLAN</string>
+    <string name="quick_settings_nfc">NFC</string>
+    <string name="quick_settings_gps">GPS</string>
+    <string name="quick_settings_font">Písmo</string>
+    <string name="quick_settings_volume">Hlasitosť</string>
+    <string name="quick_settings_usage">Využitie dát</string>
+    <string name="quick_settings_sync_all">Synchronizovať všetko</string>
+    <string name="quick_settings_ringtone">Vyzváňací tón</string>
+    <string name="quick_settings_auto_sync">Automatická synchronizácia</string>
+    <string name="quick_settings_bluetooth">Bluetooth</string>
+    <string name="quick_settings_user_card">Karta používateľa</string>
+    <string name="quick_settings_mini_lite">HTC Mini+</string>
+    <string name="quick_settings_home_mode">Režim obrazovky Domov</string>
+    <string name="quick_settings_screenshot">Snímka obrazovky</string>
+    <string name="quick_settings_timeout">Časový limit obrazovky</string>
+    <string name="quick_settings_mobile_data">Mobilné dáta</string>
+    <string name="quick_settings_power_saver">Šetrič energie</string>
+    <string name="quick_settings_data_roaming">Dátový roaming</string>
+    <string name="quick_settings_media_output">Výstup médií</string>
+    <string name="quick_settings_sound_profile">Zvukový profil</string>
+    <string name="quick_settings_music_channel">Hudobný kanál</string>
+    <string name="quick_settings_do_not_disturb">Nevyrušovať</string>
+    <string name="quick_settings_fingerprint_scan">Skenovanie odtlačku prsta</string>
+    <string name="quick_settings_power_saver_ex">Režim extrémnej úspory energie</string>
+    <string name="quick_settings_wifi_hotspot">Wi-Fi Hotspot</string>
+    <string name="quick_settings_wifi_hotspot_jp">Zosieťovanie</string>
+    <string name="quick_settings_wifi_hotspot_us">Mobilný hotspot</string>
+    <string name="quick_settings_wifi_hotspot_tmo">Mobilný hotspot</string>
+    <string name="quick_settings_apn">APN</string>
+    <string name="quick_settings_prefer_network">Preferovaná sieť</string>
+    <string name="quick_settings_network_selection">Výber siete</string>
+    <string name="quick_settings_prefer_slot1">ZÁSUVKA 1</string>
+    <string name="quick_settings_prefer_slot2">ZÁSUVKA 2</string>
+    <string name="quick_settings_sound_profile_normal">Normálny</string>
+    <string name="quick_settings_sound_profile_silent">Tichý režim</string>
+    <string name="quick_settings_sound_profile_vibrate">Vibrovať</string>
+    <string name="quick_settings_sound_profile_outdoor">Vonku</string>
+    <string name="quick_settings_accessibility_auto">auto</string>
+    <string name="quick_settings_accessibility_more">viac</string>
+    <string name="quick_settings_accessibility_level">úroveň</string>
+    <string name="accessibility_desc_quick_settings_edit">Upraviť rýchle nastavenie</string>
+    <string name="quick_settings_kid_mode">Detský režim</string>
+    <string name="quick_setting_launch_kid_fail">Nie je nainštalovaná žiadna aplikácia pre Detský režim.</string>
+    <string name="quick_settings_reorder_title">Upraviť Rýchle nastavenie</string>
+    <string name="quick_settings_reorder_content">Stlačením a podržaním pravej ikony zmeňte usporiadanie</string>
+    <string name="quick_settings_reorder_separator">Skryté položky (potiahnutím pridáte medzi Rýchle nastavenie)</string>
+    <string name="quick_settings_reorder_full_items">Môžete mať najviac 12 rýchlych nastavení</string>
+    <string name="quick_settings_power_saver_dialog_title">Zapnúť Šetrič energie?</string>
+    <string name="quick_settings_power_saver_dialog_chkbox">Toto hlásenie nabudúce nezobrazovať</string>
+    <string name="quick_settings_power_saver_dialog_message">"Dátové pripojenie v režime Šetrič energie je ZAPNUTÉ. Ak je ZAPNUTÉ, dátové prenosy (napr. prijímanie e-mailov) nebudú prebiehať, keď je obrazovky vypnutá.
+(Dátový prenos je možný pri nabíjaní bez ohľadu na toto nastavenie.)"</string>
+    <string name="quick_settings_hotspot_dialog_chkbox">Toto hlásenie nabudúce nezobrazovať</string>
+    <string name="quick_settings_hotspot_dialog_message">Keď sú Pripojenie cez USB alebo mobilný hotspot aktívne, Wi-Fi je vypnuté. Ak chcete zapnúť Wi-Fi, vypnite Pripojenie cez USB alebo mobilný hotspot.</string>
+    <string name="quick_tips_edit_button">Klepnutím pridáte a odstránite Rýchle nastavenie</string>
+    <string name="quick_tips_more_button">Stlačením a podržaním položky otvorte stránku jej nastavenia</string>
+    <string name="quick_settings_wifi_hotspot_cn">WLAN hotspot</string>
+    <string name="quick_setting_wifi_hotspot_ct">WLAN hotspot</string>
+    <string name="qs_mobile_roaming_title">Pozor</string>
+    <string name="qs_mobile_roaming_msg_att">Povoliť dátový roaming? Pri použití dát mimo územia USA, Portorika a Panenských ostrovov (USA) môžu byť účtované medzinárodné poplatky za dáta.</string>
+    <string name="qs_mobile_roaming_msg_generic">Teraz ste v roamingu. Dátový roaming môže viesť k nadmernému nárastu poplatkov. Chcete povoliť roamingové pripojenie k sieti?</string>
+    <string name="qs_restrict_mode_error">Chyba</string>
+    <string name="qs_restrict_mode_message">Zablokované administrátorom systému. Obráťte sa o pomoc na svoj tím IT.</string>
+    <string name="recentapps_title">Nedávne aplikácie</string>
+    <string name="recentapps_clear_all">Vymazať všetko</string>
+    <string name="recentapps_running_services">Spustené služby</string>
+    <string name="illegal_ms_reject_cause_3">Ilegálne MS</string>
+    <string name="tmo_plmn">T-Mobile</string>
+    <string name="att_puk_perm_blocked">Karta SIM blokovaná</string>
+    <string name="lockscreen_imei_locked">Neplatná karta</string>
+    <string name="lockscreen_uim_fail_message">Karta UIM zablokovaná</string>
+    <string name="lockscreen_missing_uim_message_short">Žiadna karta UIM</string>
+    <string name="lockscreen_missing_sim_message_short">Nie je vložená karta SIM</string>
+    <string name="lockscreen_missing_kddi_message_short">Žiadna karta au IC</string>
+    <string name="carrier_label_sim1">(Zásuvka 1)</string>
+    <string name="carrier_label_sim2">(Zásuvka 2)</string>
+    <string name="lockscreen_uimsim_fail_message">Karta UIM/SIM zablokovaná</string>
+    <string name="lockscreen_missing_uimsim_message_short">Žiadna karta UIM/SIM</string>
+    <string name="battery_low_newtitle">Batéria je takmer vybitá</string>
+    <string name="battery_low_remaining">ZOSTÁVA</string>
+    <string name="battery_low_only_percent_format">%d%%</string>
+    <string name="battery_low_charging_not_enough_title">Upozornenie</string>
+    <string name="battery_low_charging_not_enough_ac_title">Nie je možné nabíjať</string>
+    <string name="battery_low_charging_not_enough_ac">Telefón nie je možné nabíjať, pretože spotrebováva príliš veľa energie. Ak chcete tento problém napraviť, môžete vypnúť telefón, zavrieť nepoužívané aplikácie alebo vypnúť obrazovku.</string>
+    <string name="extreme_auto_power_saver_ask_title_ex">Režim extrémnej úspory energie</string>
+    <string name="extreme_auto_power_saver_ask_eps_msg">"Po zapnutí režimu extrémnej úspory energie sa predĺži výdrž batérie:
+–Šetrí sa výkon procesora.
+–Znižuje sa jas obrazovky.
+–Vypne sa odozva vibrovaním.
+–Vypne sa dátové pripojenie, keď je obrazovka vypnutá.
+–V činnosti sú len nevyhnutné aplikácie.
+–Vypne sa krokomer."</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex">"Po zapnutí režimu extrémnej úspory energie sa predĺži výdrž batérie:
+–Šetrí sa výkon procesora.
+–Znižuje sa jas obrazovky.
+–Vypne sa odozva vibrovaním.
+–Vypne sa dátové pripojenie, keď je obrazovka vypnutá.
+–V činnosti sú len nevyhnutné aplikácie."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex1">Extrémny šetrič energie</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex1">"Po zapnutí extrémneho šetriča energie sa predĺži výdrž batérie:
+–Šetrí sa výkon procesora.
+–Znižuje sa jas obrazovky.
+–Vypne sa odozva vibrovaním.
+–Vypne sa dátové pripojenie, keď je obrazovka vypnutá.
+–V činnosti sú len nevyhnutné aplikácie."</string>
+    <string name="extreme_auto_power_saver_ask_title">Maximálny šetrič energie</string>
+    <string name="extreme_auto_power_saver_ask_msg">"Po zapnutí maximálneho šetriča energie sa predĺži výdrž batérie:
+–Šetrí sa výkon procesora.
+–Znižuje sa jas obrazovky.
+–Vypne sa odozva vibrovaním.
+–Vypne sa dátové pripojenie, keď je obrazovka vypnutá.
+–V činnosti sú len nevyhnutné aplikácie."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex2">Pohotovostný režim</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex2">"Po zapnutí pohotovostného režimu sa predĺži výdrž batérie:
+–Šetrí sa výkon procesora.
+–Znižuje sa jas obrazovky.
+–Vypne sa odozva vibrovaním.
+–Vypne sa dátové pripojenie, keď je obrazovka vypnutá.
+–V činnosti sú len nevyhnutné aplikácie."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex3">Tiesňový režim</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex3">"Po zapnutí tiesňového režimu sa predĺži výdrž batérie:
+–Šetrí sa výkon procesora.
+–Znižuje sa jas obrazovky.
+–Vypne sa odozva vibrovaním.
+–Vypne sa dátové pripojenie, keď je obrazovka vypnutá.
+–V činnosti sú len nevyhnutné aplikácie."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex4">Režim malej spotreby</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex4">"Po zapnutí režimu malej spotreby sa predĺži výdrž batérie:
+–Šetrí sa výkon procesora.
+–Znižuje sa jas obrazovky.
+–Vypne sa odozva vibrovaním.
+–Vypne sa dátové pripojenie, keď je obrazovka vypnutá.
+–V činnosti sú len nevyhnutné aplikácie."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex5">Režim úspory energie</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex5">"Po zapnutí režimu úspory energie sa predĺži výdrž batérie:
+–Šetrí sa výkon procesora.
+–Znižuje sa jas obrazovky.
+–Vypne sa odozva vibrovaním.
+–Vypne sa dátové pripojenie, keď je obrazovka vypnutá.
+–V činnosti sú len nevyhnutné aplikácie."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex6">Režim inteligentného šetriča energie</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex6">"Po zapnutí inteligentného šetriča energie sa predĺži výdrž batérie:
+–Šetrí sa výkon procesora.
+–Znižuje sa jas obrazovky.
+–Vypne sa odozva vibrovaním.
+–Vypne sa dátové pripojenie, keď je obrazovka vypnutá.
+–V činnosti sú len nevyhnutné aplikácie."</string>
+</resources>

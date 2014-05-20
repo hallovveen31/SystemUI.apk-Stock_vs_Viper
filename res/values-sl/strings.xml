@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">UI sistema</string>
+    <string name="status_bar_clear_all_button">Pobriši</string>
+    <string name="status_bar_recent_remove_item_title">Odstrani s seznama</string>
+    <string name="status_bar_recent_inspect_item_title">Podatki o aplikaciji</string>
+    <string name="status_bar_no_recent_apps">Ni nedavnih aplikacij</string>
+    <string name="status_bar_accessibility_dismiss_recents">Izključi nedavne aplikacije</string>
+    <string name="status_bar_no_notifications_title">Ni obvestil</string>
+    <string name="status_bar_ongoing_events_title">Neprekinjeni dogodki</string>
+    <string name="status_bar_latest_events_title">Obvestila</string>
+    <string name="battery_low_title">Priključite polnilec</string>
+    <string name="battery_low_subtitle">Baterija je skoraj prazna.</string>
+    <string name="battery_low_percent_format">%d%% preostale energije</string>
+    <string name="invalid_charger">"USB-polnjenje ni podprto.
+Uporabljajte le priloženi polnilec."</string>
+    <string name="battery_low_why">Poraba baterije</string>
+    <string name="status_bar_settings_settings_button">Nastavitve</string>
+    <string name="status_bar_settings_wifi_button">Brezžična povezava</string>
+    <string name="status_bar_settings_airplane">Letalski način</string>
+    <string name="status_bar_settings_auto_rotation">Samodejno sukanje zaslona</string>
+    <string name="status_bar_settings_mute_label">UTIŠAJ</string>
+    <string name="status_bar_settings_auto_brightness_label">SAMOD.</string>
+    <string name="status_bar_settings_notifications">Obvestila</string>
+    <string name="bluetooth_tethered">Posredništvo Bluetooth</string>
+    <string name="status_bar_input_method_settings_configure_input_methods">Nastavitev načinov vnosa</string>
+    <string name="status_bar_use_physical_keyboard">Fizična tipkovnica</string>
+    <string name="usb_device_permission_prompt">Ali želite aplikaciji %1$s dovoliti dostop do naprave USB?</string>
+    <string name="usb_accessory_permission_prompt">Ali želite aplikaciji %1$s dovoliti dostop do dodatka USB?</string>
+    <string name="usb_device_confirm_prompt">Ali želite ob priklopu te naprave USB odpreti %1$s?</string>
+    <string name="usb_accessory_confirm_prompt">Ali želite ob priklopu tega dodatka USB odpreti %1$s?</string>
+    <string name="usb_accessory_uri_prompt">S tem dodatkom USB ne more delati nobena nameščena aplikacija. Več o tem dodatku najdete na %1$s</string>
+    <string name="title_usb_accessory">Dodatek USB</string>
+    <string name="label_view">Poglej</string>
+    <string name="always_use_device">Uporabi kot privzeto možnost za to napravo USB</string>
+    <string name="always_use_accessory">Uporabi kot privzeto možnost za ta dodatek USB</string>
+    <string name="usb_debugging_title">Ali želite omogočiti odpravljanje napak USB?</string>
+    <string name="usb_debugging_message">"Prstni odtis ključa RSA računalnika je:
+%1$s"</string>
+    <string name="usb_debugging_always">Vedno dovoli v tem računalniku</string>
+    <string name="compat_mode_on">Povečaj in zapolni zaslon</string>
+    <string name="compat_mode_off">Raztegni in zapolni zasl.</string>
+    <string name="screenshot_saving_ticker">Shranjevanje posn. zaslona…</string>
+    <string name="screenshot_saving_title">Shranjevanje posnetka zaslona…</string>
+    <string name="screenshot_saving_text">Posnetek zaslona se shranjuje.</string>
+    <string name="screenshot_saved_title">Posnetek zaslona je zajet.</string>
+    <string name="screenshot_saved_text">Dotaknite se, da si ogledate posnetek zaslona.</string>
+    <string name="screenshot_failed_title">Posnetka zaslona ni mogoče zajeti.</string>
+    <string name="screenshot_failed_text">Posnetka zaslona ni mogoče shraniti. Pomnilnik je morda v uporabi.</string>
+    <string name="usb_preference_title">Možnosti prenosa dat. po USB</string>
+    <string name="use_mtp_button_title">Vključi kot medijski predvajalnik (MTP)</string>
+    <string name="use_ptp_button_title">Vključi kot kamero (PTP)</string>
+    <string name="installer_cd_button_title">Nam. Android Pren. Dat. za Mac</string>
+    <string name="accessibility_back">Nazaj</string>
+    <string name="accessibility_home">Domov</string>
+    <string name="accessibility_menu">Meni</string>
+    <string name="accessibility_recent">Nedavne aplikacije</string>
+    <string name="accessibility_search_light">Iskanje</string>
+    <string name="accessibility_camera_button">Fotoaparat</string>
+    <string name="accessibility_ime_switch_button">Gumb za preklop med načini vnosa.</string>
+    <string name="accessibility_compatibility_zoom_button">Gumb za združljivostno povečavo.</string>
+    <string name="accessibility_compatibility_zoom_example">Manjša povečava za večji zaslon.</string>
+    <string name="accessibility_bluetooth_connected">Bluetooth je priključen.</string>
+    <string name="accessibility_bluetooth_disconnected">Bluetooth je izključen.</string>
+    <string name="accessibility_no_battery">Ni baterije.</string>
+    <string name="accessibility_battery_one_bar">Ena črtica za baterijo.</string>
+    <string name="accessibility_battery_two_bars">Dve črtici za baterijo.</string>
+    <string name="accessibility_battery_three_bars">Tri črtice za baterijo.</string>
+    <string name="accessibility_battery_full">Baterija je polna.</string>
+    <string name="accessibility_no_phone">Ni telefona.</string>
+    <string name="accessibility_phone_one_bar">Ena črtica za telefon.</string>
+    <string name="accessibility_phone_two_bars">Dve črtici za telefon.</string>
+    <string name="accessibility_phone_three_bars">Tri črtice za telefon.</string>
+    <string name="accessibility_phone_signal_full">Telefonski signal je poln.</string>
+    <string name="accessibility_no_data">Ni podatkov.</string>
+    <string name="accessibility_data_one_bar">Ena črtica za podatke.</string>
+    <string name="accessibility_data_two_bars">Dve črtici za podatke.</string>
+    <string name="accessibility_data_three_bars">Tri črtice za podatke.</string>
+    <string name="accessibility_data_signal_full">Podatkovni signal je poln.</string>
+    <string name="accessibility_wifi_off">Wi-Fi je izklopljen.</string>
+    <string name="accessibility_no_wifi">Brezžična povezava je prekinjena.</string>
+    <string name="accessibility_wifi_one_bar">Ena črtica za brezžično povezavo.</string>
+    <string name="accessibility_wifi_two_bars">Dve črtici za brezžično povezavo.</string>
+    <string name="accessibility_wifi_three_bars">Tri črtice za brezžično povezavo.</string>
+    <string name="accessibility_wifi_signal_full">Signal brezžične povezave je poln.</string>
+    <string name="accessibility_no_wimax">Ni signala WiMAX.</string>
+    <string name="accessibility_wimax_one_bar">Ena črtica za signal WiMAX.</string>
+    <string name="accessibility_wimax_two_bars">Dve črtici za signal WiMAX.</string>
+    <string name="accessibility_wimax_three_bars">Tri črtice za signal WiMAX.</string>
+    <string name="accessibility_wimax_signal_full">Signal WiMAX je poln</string>
+    <string name="accessibility_no_signal">Ni signala.</string>
+    <string name="accessibility_not_connected">Ni povezan.</string>
+    <string name="accessibility_zero_bars">Nič črtic.</string>
+    <string name="accessibility_one_bar">Ena črtica.</string>
+    <string name="accessibility_two_bars">Dve črtici.</string>
+    <string name="accessibility_three_bars">Tri črtice.</string>
+    <string name="accessibility_signal_full">Poln signal.</string>
+    <string name="accessibility_desc_on">Vklopljeno.</string>
+    <string name="accessibility_desc_off">Izklopljeno.</string>
+    <string name="accessibility_desc_connected">Povezan.</string>
+    <string name="accessibility_data_connection_gprs">GPRS</string>
+    <string name="accessibility_data_connection_1x">1 X</string>
+    <string name="accessibility_data_connection_hspa">HSPA</string>
+    <string name="accessibility_data_connection_3g">3G</string>
+    <string name="accessibility_data_connection_3.5g">3.5G</string>
+    <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_lte">LTE</string>
+    <string name="accessibility_data_connection_cdma">CDMA</string>
+    <string name="accessibility_data_connection_roaming">Gostovanje</string>
+    <string name="accessibility_data_connection_edge">Edge</string>
+    <string name="accessibility_data_connection_wifi">Brezžična povezava</string>
+    <string name="accessibility_no_sim">Ni kartice SIM.</string>
+    <string name="accessibility_bluetooth_tether">Posredništvo prek Bluetooth.</string>
+    <string name="accessibility_airplane_mode">Letalski način.</string>
+    <string name="accessibility_battery_level">Baterija je na %d odstotkih.</string>
+    <string name="accessibility_settings_button">Sistemske nastavitve.</string>
+    <string name="accessibility_notifications_button">Obvestila.</string>
+    <string name="accessibility_remove_notification">Počisti obvestilo.</string>
+    <string name="accessibility_gps_enabled">GPS je omogočen.</string>
+    <string name="accessibility_gps_acquiring">GPS išče podatke.</string>
+    <string name="accessibility_tty_enabled">TeleTypewriter je omogočen.</string>
+    <string name="accessibility_ringer_vibrate">Zvonjenje je nastavljeno na vibriranje.</string>
+    <string name="accessibility_ringer_silent">Zvonjenje je utišano.</string>
+    <string name="accessibility_recents_item_dismissed">%s je izključen.</string>
+    <string name="accessibility_notification_dismissed">Obvestilo je izključeno.</string>
+    <string name="accessibility_desc_notification_shade">Zaslon z obvestili.</string>
+    <string name="accessibility_desc_quick_settings">Hitre nastavitve.</string>
+    <string name="accessibility_desc_recent_apps">Nedavne aplikacije.</string>
+    <string name="accessibility_quick_settings_user">Uporabnik %s.</string>
+    <string name="accessibility_quick_settings_wifi">%1$s. %2$s</string>
+    <string name="accessibility_quick_settings_mobile">Mobilno %1$s. %2$s. %3$s.</string>
+    <string name="accessibility_quick_settings_battery">Baterija %s.</string>
+    <string name="accessibility_quick_settings_airplane">Letalski način %s.</string>
+    <string name="accessibility_quick_settings_bluetooth">Bluetooth %s.</string>
+    <string name="accessibility_quick_settings_location">Lokacija %s.</string>
+    <string name="accessibility_quick_settings_alarm">Alarm nastavljen ob %s.</string>
+    <string name="data_usage_disabled_dialog_3g_title">Podatki 2G-3G so onemogočeni</string>
+    <string name="data_usage_disabled_dialog_4g_title">Podatki 4G so onemogočeni</string>
+    <string name="data_usage_disabled_dialog_mobile_title">Mobilni podatki so onemogočeni</string>
+    <string name="data_usage_disabled_dialog_title">Podatki so onemogočeni</string>
+    <string name="data_usage_disabled_dialog">"Dosegli ste določeno omejitev porabe podatkov.
+
+Če znova omogočite podatke, se lahko zvišajo stroški porabe."</string>
+    <string name="data_usage_disabled_dialog_enable">Znova omogoči podatke</string>
+    <string name="status_bar_settings_signal_meter_disconnected">Internetna povezava ni na voljo</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">Brezžična povezava je vključena</string>
+    <string name="gps_notification_searching_text">Iščem GPS</string>
+    <string name="gps_notification_found_text">Lokacijo je določil GPS</string>
+    <string name="accessibility_location_active">Aktivne lokacijske zahteve</string>
+    <string name="accessibility_clear_all">Počisti vsa obvestila.</string>
+    <string name="status_bar_notification_inspect_item_title">Podatki o programu</string>
+    <string name="accessibility_rotation_lock_off">Zaslon se bo samodejno zasukal.</string>
+    <string name="accessibility_rotation_lock_on_landscape">Zaslon je zaklenjen v ležeči usmerjenosti.</string>
+    <string name="accessibility_rotation_lock_on_portrait">Zaslon je zaklenjen v pokončni usmerjenosti.</string>
+    <string name="dessert_case">Posodica za sladico</string>
+    <string name="start_dreams">Sanjarjenje</string>
+    <string name="ethernet_label">Ethernet</string>
+    <string name="quick_settings_airplane_mode_label">Letalski način</string>
+    <string name="quick_settings_battery_charging_label">Polnjenje, %d%%</string>
+    <string name="quick_settings_battery_charged_label">Napolnjen</string>
+    <string name="quick_settings_bluetooth_label">Bluetooth</string>
+    <string name="quick_settings_bluetooth_multiple_devices_label">Bluetooth (%d naprav)</string>
+    <string name="quick_settings_bluetooth_off_label">Bluetooth je izklopljen</string>
+    <string name="quick_settings_brightness_label">Svetlost</string>
+    <string name="quick_settings_rotation_unlocked_label">Samodejno sukanje</string>
+    <string name="quick_settings_rotation_locked_label">Sukanje je zaklenjeno</string>
+    <string name="quick_settings_ime_label">Način vnosa</string>
+    <string name="quick_settings_location_label">Lokacija</string>
+    <string name="quick_settings_location_off_label">Lokacija je izklopljena</string>
+    <string name="quick_settings_media_device_label">Predstavnostna naprava</string>
+    <string name="quick_settings_rssi_label">RSSI</string>
+    <string name="quick_settings_rssi_emergency_only">Samo klici v sili</string>
+    <string name="quick_settings_settings_label">Nastavitve</string>
+    <string name="quick_settings_time_label">Čas</string>
+    <string name="quick_settings_user_label">Mene</string>
+    <string name="quick_settings_wifi_label">Wi-Fi</string>
+    <string name="quick_settings_wifi_not_connected">Ni povezan</string>
+    <string name="quick_settings_wifi_no_network">Ni omrežja</string>
+    <string name="quick_settings_wifi_off_label">Wi-Fi je izklopljen</string>
+    <string name="quick_settings_remote_display_no_connection_label">Zaslon za oddajo</string>
+    <string name="quick_settings_brightness_dialog_title">Svetlost</string>
+    <string name="quick_settings_brightness_dialog_auto_brightness_label">SAMODEJNO</string>
+    <string name="ssl_ca_cert_warning">"Omrežje je
+morda nadzorovano"</string>
+    <string name="quick_settings_wifi">Wi-Fi</string>
+    <string name="quick_settings_wifi_cn">WLAN</string>
+    <string name="quick_settings_nfc">NFC</string>
+    <string name="quick_settings_gps">GPS</string>
+    <string name="quick_settings_font">Pisava</string>
+    <string name="quick_settings_volume">Glasnost</string>
+    <string name="quick_settings_usage">Uporaba podatkov</string>
+    <string name="quick_settings_sync_all">Sinhroniziraj vse</string>
+    <string name="quick_settings_ringtone">Ton zvonjenja</string>
+    <string name="quick_settings_auto_sync">Samodejna sinhronizacija</string>
+    <string name="quick_settings_bluetooth">Bluetooth</string>
+    <string name="quick_settings_user_card">Kartica uporabnika</string>
+    <string name="quick_settings_mini_lite">HTC Mini+</string>
+    <string name="quick_settings_home_mode">Način domačega zaslona</string>
+    <string name="quick_settings_screenshot">Posnetek zaslona</string>
+    <string name="quick_settings_timeout">Časovna omejitev zaslona</string>
+    <string name="quick_settings_mobile_data">Mobilni podatki</string>
+    <string name="quick_settings_power_saver">Način varčevanja z energijo</string>
+    <string name="quick_settings_data_roaming">Podatkovno gostovanje</string>
+    <string name="quick_settings_media_output">Iz medijev</string>
+    <string name="quick_settings_sound_profile">Zvočni profil</string>
+    <string name="quick_settings_music_channel">Glasbeni kanal</string>
+    <string name="quick_settings_do_not_disturb">Ne moti</string>
+    <string name="quick_settings_fingerprint_scan">Pregled prstnega odtisa</string>
+    <string name="quick_settings_power_saver_ex">Način radikalnega varčevanja z energijo</string>
+    <string name="quick_settings_wifi_hotspot">Dostopna točka Wi-Fi</string>
+    <string name="quick_settings_wifi_hotspot_jp">Posredništvo</string>
+    <string name="quick_settings_wifi_hotspot_us">Mobilna dostopna točka</string>
+    <string name="quick_settings_wifi_hotspot_tmo">Mobilna dostopna točka</string>
+    <string name="quick_settings_apn">APN</string>
+    <string name="quick_settings_prefer_network">Izberi omrežje</string>
+    <string name="quick_settings_network_selection">Izbira omrežja</string>
+    <string name="quick_settings_prefer_slot1">REŽA 1</string>
+    <string name="quick_settings_prefer_slot2">REŽA 2</string>
+    <string name="quick_settings_sound_profile_normal">Normalno</string>
+    <string name="quick_settings_sound_profile_silent">Tiho</string>
+    <string name="quick_settings_sound_profile_vibrate">Vibriraj</string>
+    <string name="quick_settings_sound_profile_outdoor">Zunaj</string>
+    <string name="quick_settings_accessibility_auto">samodejno</string>
+    <string name="quick_settings_accessibility_more">več</string>
+    <string name="quick_settings_accessibility_level">raven</string>
+    <string name="accessibility_desc_quick_settings_edit">Uredi hitre nastavitve</string>
+    <string name="quick_settings_kid_mode">Način za otroke</string>
+    <string name="quick_setting_launch_kid_fail">Aplikacija načina za otroke ni nameščena.</string>
+    <string name="quick_settings_reorder_title">Uredi hitre nastavitve</string>
+    <string name="quick_settings_reorder_content">Za prerazporeditev pritisnite in pridržite desno ikono</string>
+    <string name="quick_settings_reorder_separator">Skriti elementi (za dodajanje v »Hitre nastavitve« povlecite)</string>
+    <string name="quick_settings_reorder_full_items">Določite lahko največ 12 hitrih nastavitev</string>
+    <string name="quick_settings_power_saver_dialog_title">Želite vklopiti varčevanje z energijo?</string>
+    <string name="quick_settings_power_saver_dialog_chkbox">Tega sporočila ne pokaži več</string>
+    <string name="quick_settings_power_saver_dialog_message">"Podatkovna povezava v Varčevanju z energijo je vklopljena. Če je ta možnost vklopljena, prenos podatkov, kot je prejemanje e-poštnega sporočila, morda ne bo uspel, če je zaslon izklopljen.
+(Prenos podatkov je mogoč med polnjenjem ne glede na to nastavitev.)"</string>
+    <string name="quick_settings_hotspot_dialog_chkbox">Tega sporočila ne pokaži več</string>
+    <string name="quick_settings_hotspot_dialog_message">Brezžična povezava je izklopljena, če je aktivno posredništvo prek USB-ja ali mobilna dostopna točka. Če želite vklopiti brezžično povezavo, izklopite posredništvo prek USB-ja ali mobilno dostopno točko.</string>
+    <string name="quick_tips_edit_button">Tapnite, da dodate in odstranite hitre nastavitve</string>
+    <string name="quick_tips_more_button">Pritisnite element in ga pridržite, da odprete njegovo stran Nastavitve</string>
+    <string name="quick_settings_wifi_hotspot_cn">Dostopna točka WLAN</string>
+    <string name="quick_setting_wifi_hotspot_ct">Dostopna točka WLAN</string>
+    <string name="qs_mobile_roaming_title">Pozor</string>
+    <string name="qs_mobile_roaming_msg_att">Želite dovoliti podatkovno gostovanje? Za prenos podatkov zunaj ozemlja ZDA, Portorika in Ameriških Deviških otokov veljajo cene za mednarodno podatkovno gostovanje.</string>
+    <string name="qs_mobile_roaming_msg_generic">Zdaj gostujete. Podatkovno gostovanje lahko povzroči visoke stroške. Želite omogočiti omrežno povezavo za gostovanje?</string>
+    <string name="qs_restrict_mode_error">Napaka</string>
+    <string name="qs_restrict_mode_message">Skrbnik sistema je to funkcijo blokiral. Za pomoč se obrnite na svoj oddelek IT.</string>
+    <string name="recentapps_title">Nedavne aplikacije</string>
+    <string name="recentapps_clear_all">Počisti vse</string>
+    <string name="recentapps_running_services">Zagnane storitve</string>
+    <string name="illegal_ms_reject_cause_3">Nezakonit MS</string>
+    <string name="tmo_plmn">T-Mobile</string>
+    <string name="att_puk_perm_blocked">Kartica SIM je blokirana</string>
+    <string name="lockscreen_imei_locked">Neveljavna kartica</string>
+    <string name="lockscreen_uim_fail_message">Kartica UIM je zaklenjena</string>
+    <string name="lockscreen_missing_uim_message_short">Ni kartice UIM</string>
+    <string name="lockscreen_missing_sim_message_short">Ni kartice SIM</string>
+    <string name="lockscreen_missing_kddi_message_short">ni kartice au IC</string>
+    <string name="carrier_label_sim1">(Reža 1)</string>
+    <string name="carrier_label_sim2">(Reža 2)</string>
+    <string name="lockscreen_uimsim_fail_message">Kartica UIM/SIM je zaklenjena</string>
+    <string name="lockscreen_missing_uimsim_message_short">Ni kartice UIM/SIM</string>
+    <string name="battery_low_newtitle">Baterija je skoraj prazna</string>
+    <string name="battery_low_remaining">PREOSTALO</string>
+    <string name="battery_low_only_percent_format">%d%%</string>
+    <string name="battery_low_charging_not_enough_title">Opozorilo</string>
+    <string name="battery_low_charging_not_enough_ac_title">Polnjenje ni možno</string>
+    <string name="battery_low_charging_not_enough_ac">Telefona ni mogoče napolniti, ker uporablja preveč energije. To težavo odpravite tako, da zmanjšate porabo energije, tako da izklopite telefon, zaprete aplikacije, ki jih ne uporabljate, ali izklopite zaslon.</string>
+    <string name="extreme_auto_power_saver_ask_title_ex">Način radikalnega varčevanja z energijo</string>
+    <string name="extreme_auto_power_saver_ask_eps_msg">"Če vklopite način radikalnega varčevanja z energijo, boste podaljšali življenjsko dobo baterije z naslednjim:
+-Prihrankom uporabe CPE-ja.
+-Zmanjšanjem svetlosti zaslona.
+-Izklopom povratnega odziva z vibriranjem.
+-Izklopom podatkovne povezave pri izklopljenem zaslonu.
+-Dovoljenjem za izvajanjem samo nujnih aplikacij.
+-Izklopom pedometra."</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex">"Če vklopite način radikalnega varčevanje z energijo, boste podaljšali življenjsko dobo baterije z naslednjim:
+-Prihrankom uporabe CPE-ja.
+-Zmanjšanjem svetlosti zaslona.
+-Izklopom povratnega odziva z vibriranjem.
+-Izklopom podatkovne povezave pri izklopljenem zaslonu.
+-Dovoljenjem za izvajanje samo nujnih aplikacij."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex1">Radikalno varčevanje z energijo</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex1">"Če vklopite način radikalnega varčevanja z energijo, boste podaljšali življenjsko dobo baterije z naslednjim:
+-Prihrankom uporabe CPE-ja.
+-Zmanjšanjem svetlosti zaslona.
+-Izklopom povratnega odziva z vibriranjem.
+-Izklopom podatkovne povezave pri izklopljenem zaslonu.
+-Dovoljenjem za izvajanje samo nujnih aplikacij."</string>
+    <string name="extreme_auto_power_saver_ask_title">Najvišja stopnja varčevanja z energijo</string>
+    <string name="extreme_auto_power_saver_ask_msg">"Če vklopite najvišjo stopnjo varčevanje z energijo, boste podaljšali življenjsko dobo baterije z naslednjim:
+-Prihrankom uporabe CPE-ja.
+-Zmanjšanjem svetlosti zaslona.
+-Izklopom povratnega odziva z vibriranjem.
+-Izklopom podatkovne povezave pri izklopljenem zaslonu.
+-Dovoljenjem za izvajanje samo nujnih aplikacij."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex2">Način pripravljenosti</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex2">"Če vklopite način pripravljenosti, boste podaljšali življenjsko dobo baterije z naslednjim:
+-Prihrankom uporabe CPE-ja.
+-Zmanjšanjem svetlosti zaslona.
+-Izklopom povratnega odziva z vibriranjem.
+-Izklopom podatkovne povezave pri izklopljenem zaslonu.
+-Dovoljenjem za izvajanje samo nujnih aplikacij."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex3">Način klicev v sili</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex3">"Če vklopite način klicev v sili, boste podaljšali življenjsko dobo baterije z naslednjim:
+-Prihrankom uporabe CPE-ja.
+-Zmanjšanjem svetlosti zaslona.
+-Izklopom povratnega odziva z vibriranjem.
+-Izklopom podatkovne povezave pri izklopljenem zaslonu.
+-Dovoljenjem za izvajanje samo nujnih aplikacij."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex4">Način majhne porabe energije</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex4">"Če vklopite način majhne porabe energije, boste podaljšali življenjsko dobo baterije z naslednjim:
+-Prihrankom uporabe CPE-ja.
+-Zmanjšanjem svetlosti zaslona.
+-Izklopom povratnega odziva z vibriranjem.
+-Izklopom podatkovne povezave pri izklopljenem zaslonu.
+-Dovoljenjem za izvajanje samo nujnih aplikacij."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex5">Način varčevanja z energijo</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex5">"Če vklopite način varčevanja z energijo, boste podaljšali življenjsko dobo baterije z naslednjim:
+-Prihrankom uporabe CPE-ja.
+-Zmanjšanjem svetlosti zaslona.
+-Izklopom povratnega odziva z vibriranjem.
+-Izklopom podatkovne povezave pri izklopljenem zaslonu.
+-Dovoljenjem za izvajanje samo nujnih aplikacij."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex6">Način pametnega varčevanja z energijo</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex6">"Če vklopite način pametnega varčevanje z energijo, boste podaljšali življenjsko dobo baterije z naslednjim:
+-Prihrankom uporabe CPE-ja.
+-Zmanjšanjem svetlosti zaslona.
+-Izklopom povratnega odziva z vibriranjem.
+-Izklopom podatkovne povezave pri izklopljenem zaslonu.
+-Dovoljenjem za izvajanje samo nujnih aplikacij."</string>
+</resources>

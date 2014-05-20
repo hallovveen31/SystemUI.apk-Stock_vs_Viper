@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_label">IU del sistema</string>
+    <string name="status_bar_clear_all_button">Borrar</string>
+    <string name="status_bar_recent_remove_item_title">Borrar de la lista</string>
+    <string name="status_bar_recent_inspect_item_title">Información de aplicación</string>
+    <string name="status_bar_no_recent_apps">Ninguna aplicación reciente</string>
+    <string name="status_bar_accessibility_dismiss_recents">Rechazar aplicaciones recientes</string>
+    <string name="status_bar_no_notifications_title">Sin notificaciones</string>
+    <string name="status_bar_ongoing_events_title">Entrante</string>
+    <string name="status_bar_latest_events_title">Notificaciones</string>
+    <string name="battery_low_title">Conectar cargador</string>
+    <string name="battery_low_subtitle">Se está agotando la batería.</string>
+    <string name="battery_low_percent_format">%d%% restante</string>
+    <string name="invalid_charger">"La carga por USB no es compatible.
+Usa solo el cargador suministrado."</string>
+    <string name="battery_low_why">Uso de batería</string>
+    <string name="status_bar_settings_settings_button">Ajustes</string>
+    <string name="status_bar_settings_wifi_button">WiFi</string>
+    <string name="status_bar_settings_airplane">Modo avión</string>
+    <string name="status_bar_settings_auto_rotation">Pantalla giratoria</string>
+    <string name="status_bar_settings_mute_label">SILENCIO</string>
+    <string name="status_bar_settings_auto_brightness_label">Autom.</string>
+    <string name="status_bar_settings_notifications">Notificaciones</string>
+    <string name="bluetooth_tethered">Compartido vía Bluetooth</string>
+    <string name="status_bar_input_method_settings_configure_input_methods">Configurar métodos de entrada</string>
+    <string name="status_bar_use_physical_keyboard">Teclado físico</string>
+    <string name="usb_device_permission_prompt">¿Permitir a la aplicación %1$s acceder al dispositivo USB?</string>
+    <string name="usb_accessory_permission_prompt">¿Permitir a la aplicación %1$s acceder al accesorio USB?</string>
+    <string name="usb_device_confirm_prompt">¿Abrir %1$s cuando este dispositivo USB está conectado?</string>
+    <string name="usb_accessory_confirm_prompt">¿Abrir %1$s cuando este accesorio USB está conectado?</string>
+    <string name="usb_accessory_uri_prompt">Ninguna aplicación instalada funciona con este accesorio USB. Más información sobre este accesorio en %1$s</string>
+    <string name="title_usb_accessory">Accesorio USB</string>
+    <string name="label_view">Ver</string>
+    <string name="always_use_device">Utilizar por defecto para este dispositivo USB</string>
+    <string name="always_use_accessory">Utilizar por defecto para este accesorio USB</string>
+    <string name="usb_debugging_title">¿Permitir depuración USB?</string>
+    <string name="usb_debugging_message">"La huella digital clave RSA del ordenador es:
+%1$s"</string>
+    <string name="usb_debugging_always">Permitir siempre desde este ordenador</string>
+    <string name="compat_mode_on">Zoom para completar la pantalla</string>
+    <string name="compat_mode_off">Estirar para rellenar la pantalla</string>
+    <string name="screenshot_saving_ticker">Guardar captura pantalla…</string>
+    <string name="screenshot_saving_title">Guardar captura pantalla…</string>
+    <string name="screenshot_saving_text">La captura de pantalla se está guardando.</string>
+    <string name="screenshot_saved_title">Captura de pantalla realizada.</string>
+    <string name="screenshot_saved_text">Pulsa para ver tu captura de pantalla.</string>
+    <string name="screenshot_failed_title">No se pudo realizar la captura de pantalla.</string>
+    <string name="screenshot_failed_text">No se pudo guardar la captura de pantalla. Puede que la memoria se esté utilizando.</string>
+    <string name="usb_preference_title">Opciones transfer. archivo USB</string>
+    <string name="use_mtp_button_title">Colocar como un reproductor de contenidos(MTP)</string>
+    <string name="use_ptp_button_title">Activatr como una cámara (PTP)</string>
+    <string name="installer_cd_button_title">Instalar aplic. transfer. archivo Android para Mac</string>
+    <string name="accessibility_back">Atrás</string>
+    <string name="accessibility_home">Página principal</string>
+    <string name="accessibility_menu">Menú</string>
+    <string name="accessibility_recent">Aplicaciones recientes</string>
+    <string name="accessibility_search_light">Buscar</string>
+    <string name="accessibility_camera_button">Cámara</string>
+    <string name="accessibility_ime_switch_button">Botón de cambio de entrada de texto.</string>
+    <string name="accessibility_compatibility_zoom_button">Compatibilidad de botón de zoom.</string>
+    <string name="accessibility_compatibility_zoom_example">Zoom más pequeño para ampliar la pantalla.</string>
+    <string name="accessibility_bluetooth_connected">Bluetooth conectado.</string>
+    <string name="accessibility_bluetooth_disconnected">Bluetooth desconectado.</string>
+    <string name="accessibility_no_battery">Sin batería.</string>
+    <string name="accessibility_battery_one_bar">Una barra de batería.</string>
+    <string name="accessibility_battery_two_bars">Dos barras de batería.</string>
+    <string name="accessibility_battery_three_bars">Tres barras de la batería.</string>
+    <string name="accessibility_battery_full">Batería llena.</string>
+    <string name="accessibility_no_phone">Teléfono sin señal.</string>
+    <string name="accessibility_phone_one_bar">Teléfono con una barra.</string>
+    <string name="accessibility_phone_two_bars">Teléfono con dos barras.</string>
+    <string name="accessibility_phone_three_bars">Teléfono con tres barras.</string>
+    <string name="accessibility_phone_signal_full">Señal del teléfono completa.</string>
+    <string name="accessibility_no_data">Sin datos.</string>
+    <string name="accessibility_data_one_bar">Una línea de datos.</string>
+    <string name="accessibility_data_two_bars">Dos barras de datos.</string>
+    <string name="accessibility_data_three_bars">Tres barras de datos.</string>
+    <string name="accessibility_data_signal_full">Señal de datos completa.</string>
+    <string name="accessibility_wifi_off">WiFi desactivado.</string>
+    <string name="accessibility_no_wifi">Wi-Fi desconectada.</string>
+    <string name="accessibility_wifi_one_bar">Una línea de Wi-Fi.</string>
+    <string name="accessibility_wifi_two_bars">Dos líneas de Wi-Fi.</string>
+    <string name="accessibility_wifi_three_bars">Tres líneas de Wi-Fi.</string>
+    <string name="accessibility_wifi_signal_full">Señal Wi-Fi completa.</string>
+    <string name="accessibility_no_wimax">Sin WiMAX.</string>
+    <string name="accessibility_wimax_one_bar">Una barra de WiMAX.</string>
+    <string name="accessibility_wimax_two_bars">Dos barras de WiMAX.</string>
+    <string name="accessibility_wimax_three_bars">Tres barras de WiMAX.</string>
+    <string name="accessibility_wimax_signal_full">Señal WiMAX completa.</string>
+    <string name="accessibility_no_signal">Sin señal.</string>
+    <string name="accessibility_not_connected">No conectado.</string>
+    <string name="accessibility_zero_bars">Ninguna barra.</string>
+    <string name="accessibility_one_bar">Una barra.</string>
+    <string name="accessibility_two_bars">Dos barras.</string>
+    <string name="accessibility_three_bars">Tres barras.</string>
+    <string name="accessibility_signal_full">Señal completa.</string>
+    <string name="accessibility_desc_on">Activado.</string>
+    <string name="accessibility_desc_off">Desactivado.</string>
+    <string name="accessibility_desc_connected">Conectado.</string>
+    <string name="accessibility_data_connection_gprs">GPRS</string>
+    <string name="accessibility_data_connection_1x">1 X</string>
+    <string name="accessibility_data_connection_hspa">HSPA</string>
+    <string name="accessibility_data_connection_3g">3G</string>
+    <string name="accessibility_data_connection_3.5g">3.5 G</string>
+    <string name="accessibility_data_connection_4g">4G</string>
+    <string name="accessibility_data_connection_lte">LTE</string>
+    <string name="accessibility_data_connection_cdma">CDMA</string>
+    <string name="accessibility_data_connection_roaming">Roaming</string>
+    <string name="accessibility_data_connection_edge">Edge</string>
+    <string name="accessibility_data_connection_wifi">WiFi</string>
+    <string name="accessibility_no_sim">No hay SIM.</string>
+    <string name="accessibility_bluetooth_tether">Conexión compartida vía Bluetooth.</string>
+    <string name="accessibility_airplane_mode">Modo avión.</string>
+    <string name="accessibility_battery_level">Porcentaje %d de batería.</string>
+    <string name="accessibility_settings_button">Ajustes del sistema.</string>
+    <string name="accessibility_notifications_button">Notificaciones.</string>
+    <string name="accessibility_remove_notification">Borrar notificación.</string>
+    <string name="accessibility_gps_enabled">GPS activado.</string>
+    <string name="accessibility_gps_acquiring">Adquiriendo GPS.</string>
+    <string name="accessibility_tty_enabled">Teletipo activado.</string>
+    <string name="accessibility_ringer_vibrate">Vibración de llamada.</string>
+    <string name="accessibility_ringer_silent">Llamada en silencio</string>
+    <string name="accessibility_recents_item_dismissed">%s descartado.</string>
+    <string name="accessibility_notification_dismissed">Notificación descartada.</string>
+    <string name="accessibility_desc_notification_shade">Desplegable de notificaciones.</string>
+    <string name="accessibility_desc_quick_settings">Ajustes rápidos.</string>
+    <string name="accessibility_desc_recent_apps">Aplicaciones recientes.</string>
+    <string name="accessibility_quick_settings_user">Usuario %s.</string>
+    <string name="accessibility_quick_settings_wifi">%1$s. %2$s</string>
+    <string name="accessibility_quick_settings_mobile">Móvil %1$s. %2$s. %3$s.</string>
+    <string name="accessibility_quick_settings_battery">Batería %s.</string>
+    <string name="accessibility_quick_settings_airplane">Modo avión %s.</string>
+    <string name="accessibility_quick_settings_bluetooth">Bluetooth %s.</string>
+    <string name="accessibility_quick_settings_location">Ubicación %s.</string>
+    <string name="accessibility_quick_settings_alarm">Alarma configurada en %s.</string>
+    <string name="data_usage_disabled_dialog_3g_title">Datos 2G-3G desactivados</string>
+    <string name="data_usage_disabled_dialog_4g_title">Datos 4G desactivados</string>
+    <string name="data_usage_disabled_dialog_mobile_title">Datos móviles desactivados</string>
+    <string name="data_usage_disabled_dialog_title">Datos desactivados</string>
+    <string name="data_usage_disabled_dialog">"Has alcanzado el límite definido de uso de datos.
+
+Si reactivas los datos, puede que el operador te cobre por ello."</string>
+    <string name="data_usage_disabled_dialog_enable">Re-activar datos</string>
+    <string name="status_bar_settings_signal_meter_disconnected">Sin Internet</string>
+    <string name="status_bar_settings_signal_meter_wifi_nossid">WiFi conectado</string>
+    <string name="gps_notification_searching_text">Buscando GPS</string>
+    <string name="gps_notification_found_text">Ubicación establecida por GPS</string>
+    <string name="accessibility_location_active">Solicitudes de ubicación activas</string>
+    <string name="accessibility_clear_all">Borrar todas las notificaciones.</string>
+    <string name="status_bar_notification_inspect_item_title">Información de aplicación</string>
+    <string name="accessibility_rotation_lock_off">Giro de pantalla automático.</string>
+    <string name="accessibility_rotation_lock_on_landscape">Giro de pantalla bloqueado.</string>
+    <string name="accessibility_rotation_lock_on_portrait">Giro de pantalla bloqueado.</string>
+    <string name="dessert_case">Funda de postre</string>
+    <string name="start_dreams">Salvapantallas</string>
+    <string name="ethernet_label">Ethernet</string>
+    <string name="quick_settings_airplane_mode_label">Modo avión</string>
+    <string name="quick_settings_battery_charging_label">Cargando, %d%%</string>
+    <string name="quick_settings_battery_charged_label">Cargado</string>
+    <string name="quick_settings_bluetooth_label">Bluetooth</string>
+    <string name="quick_settings_bluetooth_multiple_devices_label">Bluetooth (dispositivos %d)</string>
+    <string name="quick_settings_bluetooth_off_label">Bluetooth desactivado</string>
+    <string name="quick_settings_brightness_label">Brillo</string>
+    <string name="quick_settings_rotation_unlocked_label">Giro automático</string>
+    <string name="quick_settings_rotation_locked_label">Giro bloqueado</string>
+    <string name="quick_settings_ime_label">Método de entrada</string>
+    <string name="quick_settings_location_label">Ubicación</string>
+    <string name="quick_settings_location_off_label">Ubicación desactivada</string>
+    <string name="quick_settings_media_device_label">Dispositivo multimedia</string>
+    <string name="quick_settings_rssi_label">RSSI</string>
+    <string name="quick_settings_rssi_emergency_only">Solo llamadas de emergencia</string>
+    <string name="quick_settings_settings_label">Ajustes</string>
+    <string name="quick_settings_time_label">Tiempo</string>
+    <string name="quick_settings_user_label">Yo</string>
+    <string name="quick_settings_wifi_label">WiFi</string>
+    <string name="quick_settings_wifi_not_connected">No conectado</string>
+    <string name="quick_settings_wifi_no_network">Sin red</string>
+    <string name="quick_settings_wifi_off_label">WiFi desactivado</string>
+    <string name="quick_settings_remote_display_no_connection_label">Pantalla de reparto</string>
+    <string name="quick_settings_brightness_dialog_title">Brillo</string>
+    <string name="quick_settings_brightness_dialog_auto_brightness_label">AUTOMÁTICO</string>
+    <string name="ssl_ca_cert_warning">"Puede que la red
+esté siendo controlada"</string>
+    <string name="quick_settings_wifi">WiFi</string>
+    <string name="quick_settings_wifi_cn">WLAN</string>
+    <string name="quick_settings_nfc">NFC</string>
+    <string name="quick_settings_gps">GPS</string>
+    <string name="quick_settings_font">Fuente</string>
+    <string name="quick_settings_volume">Volumen</string>
+    <string name="quick_settings_usage">Uso de datos</string>
+    <string name="quick_settings_sync_all">Sincronizar todo</string>
+    <string name="quick_settings_ringtone">Tono de llamada</string>
+    <string name="quick_settings_auto_sync">Sincronización automática</string>
+    <string name="quick_settings_bluetooth">Bluetooth</string>
+    <string name="quick_settings_user_card">Tarjeta de usuario</string>
+    <string name="quick_settings_mini_lite">HTC Mini+</string>
+    <string name="quick_settings_home_mode">Modo Inicio</string>
+    <string name="quick_settings_screenshot">Captura de pantalla</string>
+    <string name="quick_settings_timeout">Tiempo espera pantalla</string>
+    <string name="quick_settings_mobile_data">Datos móviles</string>
+    <string name="quick_settings_power_saver">Ahorro de energía</string>
+    <string name="quick_settings_data_roaming">Roaming de datos</string>
+    <string name="quick_settings_media_output">Salida multimedia</string>
+    <string name="quick_settings_sound_profile">Perfil de sonido</string>
+    <string name="quick_settings_music_channel">Canal Música</string>
+    <string name="quick_settings_do_not_disturb">No molestar</string>
+    <string name="quick_settings_fingerprint_scan">Escaneo de huella digital</string>
+    <string name="quick_settings_power_saver_ex">Modo de ahorro de energía extremo</string>
+    <string name="quick_settings_wifi_hotspot">Router WiFi</string>
+    <string name="quick_settings_wifi_hotspot_jp">Conexión compartida</string>
+    <string name="quick_settings_wifi_hotspot_us">Router móvil</string>
+    <string name="quick_settings_wifi_hotspot_tmo">Router WiFi</string>
+    <string name="quick_settings_apn">APN</string>
+    <string name="quick_settings_prefer_network">Red preferida</string>
+    <string name="quick_settings_network_selection">Selección de red</string>
+    <string name="quick_settings_prefer_slot1">RANURA 1</string>
+    <string name="quick_settings_prefer_slot2">RANURA 2</string>
+    <string name="quick_settings_sound_profile_normal">Normal</string>
+    <string name="quick_settings_sound_profile_silent">Silencio</string>
+    <string name="quick_settings_sound_profile_vibrate">Vibración</string>
+    <string name="quick_settings_sound_profile_outdoor">Exterior</string>
+    <string name="quick_settings_accessibility_auto">automático</string>
+    <string name="quick_settings_accessibility_more">más</string>
+    <string name="quick_settings_accessibility_level">nivel</string>
+    <string name="accessibility_desc_quick_settings_edit">Editar ajustes rápidos</string>
+    <string name="quick_settings_kid_mode">Modo Niños</string>
+    <string name="quick_setting_launch_kid_fail">No hay ninguna aplicación de Modo Niños instalada.</string>
+    <string name="quick_settings_reorder_title">Editar ajustes rápidos</string>
+    <string name="quick_settings_reorder_content">Pulsa durante varios segundos en el icono derecho para reorganizar</string>
+    <string name="quick_settings_reorder_separator">Elementos ocultos (arrastrar para añadir a Ajustes rápidos)</string>
+    <string name="quick_settings_reorder_full_items">Puedes tener un máximo de 12 ajustes rápidos</string>
+    <string name="quick_settings_power_saver_dialog_title">¿Activar el Ahorro de energía?</string>
+    <string name="quick_settings_power_saver_dialog_chkbox">No volver a mostrar este mensaje</string>
+    <string name="quick_settings_power_saver_dialog_message">"La Conexión de datos en Ahorro de energía está activada. Si está activada, puede que la transmisión de datos, como, por ejemplo, recibir correo electrónico, no se lleve a cabo cuando la pantalla esté apagada.
+(La transmisión de datos sí es posible durante la carga, independientemente de esta opción.)"</string>
+    <string name="quick_settings_hotspot_dialog_chkbox">No volver a mostrar este mensaje</string>
+    <string name="quick_settings_hotspot_dialog_message">La WiFi se desactiva cuando la Conexión compartida USB o el Router WiFi están activados. Para activar la WiFi, desactiva la Conexión compartida USB o el Router WiFi.</string>
+    <string name="quick_tips_edit_button">Pulsa para añadir y eliminar ajustes rápidos</string>
+    <string name="quick_tips_more_button">Mantén pulsado en un elemento para abrir su página de Ajustes</string>
+    <string name="quick_settings_wifi_hotspot_cn">Zona activa WLAN</string>
+    <string name="quick_setting_wifi_hotspot_ct">Zona activa WLAN</string>
+    <string name="qs_mobile_roaming_title">Atención</string>
+    <string name="qs_mobile_roaming_msg_att">¿Permitir el roaming de datos? Se aplicará una tasa por roaming internacional de datos de utilizarse fuera de Estados Unidos, Puerto Rico o Islas Vírgenes de los Estados Unidos.</string>
+    <string name="qs_mobile_roaming_msg_generic">Ahora estás en roaming. El roaming de datos puede incurrir en gastos significativos. ¿Quieres activar la conexión de red en roaming?</string>
+    <string name="qs_restrict_mode_error">Error</string>
+    <string name="qs_restrict_mode_message">Esto ha sido bloqueado por el administrador de tu sistema. Contacta con tu equipo de Informática para solicitar asistencia.</string>
+    <string name="recentapps_title">Aplicaciones recientes</string>
+    <string name="recentapps_clear_all">Borrar todo</string>
+    <string name="recentapps_running_services">Servicios en ejecución</string>
+    <string name="illegal_ms_reject_cause_3">MS ilegal</string>
+    <string name="tmo_plmn">T-Mobile</string>
+    <string name="att_puk_perm_blocked">SIM bloqueada</string>
+    <string name="lockscreen_imei_locked">Tarjeta no válida</string>
+    <string name="lockscreen_uim_fail_message">Tarjeta UIM bloqueada</string>
+    <string name="lockscreen_missing_uim_message_short">Sin tarjeta UIM</string>
+    <string name="lockscreen_missing_sim_message_short">Falta la tarjeta SIM.</string>
+    <string name="lockscreen_missing_kddi_message_short">sin tarjeta au IC</string>
+    <string name="carrier_label_sim1">(Ranura 1)</string>
+    <string name="carrier_label_sim2">(Ranura 2)</string>
+    <string name="lockscreen_uimsim_fail_message">Tarjeta UIM/SIM bloqueada</string>
+    <string name="lockscreen_missing_uimsim_message_short">Sin tarjeta UIM/SIM</string>
+    <string name="battery_low_newtitle">La batería está cada vez más baja</string>
+    <string name="battery_low_remaining">RESTANTE</string>
+    <string name="battery_low_only_percent_format">%d%%</string>
+    <string name="battery_low_charging_not_enough_title">Advertencia</string>
+    <string name="battery_low_charging_not_enough_ac_title">No se puede cargar</string>
+    <string name="battery_low_charging_not_enough_ac">Incapaz de cargar el teléfono porque está utilizando demasiada energía. Para solucionar este problema, reduce el consumo de energía apagando el teléfono, cerrando cualquier aplicación que no estés usando o desactivando la pantalla.</string>
+    <string name="extreme_auto_power_saver_ask_title_ex">Modo de ahorro de energía extremo</string>
+    <string name="extreme_auto_power_saver_ask_eps_msg">"Con el modo de ahorro de energía extremo activado, se alarga la duración de la batería:
+-Conservando el uso de la CPU.
+-Reduciendo el brillo de la pantalla.
+-Desactivando la respuesta con vibración.
+-Desactivando la conexión de datos cuando la pantalla esté apagada.
+-Permitiendo que solo se ejecuten aplicaciones esenciales.
+-Desactivando el podómetro."</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex">"Con el modo de ahorro de energía extremo activado, se alarga la duración de la batería:
+-Conservando el uso de la CPU.
+-Reduciendo el brillo de la pantalla.
+-Desactivando la respuesta con vibración.
+-Desactivando la conexión de datos cuando la pantalla esté apagada.
+-Permitiendo que solo se ejecuten aplicaciones esenciales."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex1">Ahorro de energía extremo</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex1">"Con el ahorro de energía extremo activado, se alarga la duración de la batería:
+-Conservando el uso de la CPU.
+-Reduciendo el brillo de la pantalla.
+-Desactivando la respuesta con vibración.
+-Desactivando la conexión de datos cuando la pantalla esté apagada.
+-Permitiendo que solo se ejecuten aplicaciones esenciales."</string>
+    <string name="extreme_auto_power_saver_ask_title">Ahorro de energía máximo</string>
+    <string name="extreme_auto_power_saver_ask_msg">"Con el ahorro de energía máximo activado, se alarga la duración de la batería:
+-Conservando el uso de la CPU.
+-Reduciendo el brillo de la pantalla.
+-Desactivando la respuesta con vibración.
+-Desactivando la conexión de datos cuando la pantalla esté apagada.
+-Permitiendo que solo se ejecuten aplicaciones esenciales."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex2">Modo de espera</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex2">"Con el modo de espera activado, se alarga la duración de la batería:
+-Conservando el uso de la CPU.
+-Reduciendo el brillo de la pantalla.
+-Desactivando la respuesta con vibración.
+-Desactivando la conexión de datos cuando la pantalla esté apagada.
+-Permitiendo que solo se ejecuten aplicaciones esenciales."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex3">Modo emergencia</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex3">"Con el modo emergencia activado, se alarga la duración de la batería:
+-Conservando el uso de la CPU.
+-Reduciendo el brillo de la pantalla.
+-Desactivando la respuesta con vibración.
+-Desactivando la conexión de datos cuando la pantalla esté apagada.
+-Permitiendo que solo se ejecuten aplicaciones esenciales."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex4">Modo de baja energía</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex4">"Con el modo de baja energía activado, se alarga la duración de la batería:
+-Conservando el uso de la CPU.
+-Reduciendo el brillo de la pantalla.
+-Desactivando la respuesta con vibración.
+-Desactivando la conexión de datos cuando la pantalla esté apagada.
+-Permitiendo que solo se ejecuten aplicaciones esenciales."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex5">Modo de conservación de energía</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex5">"Con el modo de conservación de energía activado, se alarga la duración de la batería:
+-Conservando el uso de la CPU.
+-Reduciendo el brillo de la pantalla.
+-Desactivando la respuesta con vibración.
+-Desactivando la conexión de datos cuando la pantalla esté apagada.
+-Permitiendo que solo se ejecuten aplicaciones esenciales."</string>
+    <string name="extreme_auto_power_saver_ask_title_ex6">Modo de ahorro de energía inteligente</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex6">"Con el modo de ahorro de energía inteligente activado, se alarga la duración de la batería:
+-Conservando el uso de la CPU.
+-Reduciendo el brillo de la pantalla.
+-Desactivando la respuesta con vibración.
+-Desactivando la conexión de datos cuando la pantalla esté apagada.
+-Permitiendo que solo se ejecuten aplicaciones esenciales."</string>
+</resources>

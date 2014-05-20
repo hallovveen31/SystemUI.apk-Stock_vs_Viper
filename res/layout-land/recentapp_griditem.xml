@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.recent.RecentsItemView android:id="@id/main" android:layout_width="@dimen/item_width_land" android:layout_height="@dimen/item_height_land"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="@dimen/item_width_land" android:layout_height="@dimen/item_height_land" android:scaleType="matrix" />
+    <TextView android:textColor="@*android:color/white" android:ellipsize="marquee" android:gravity="bottom|center" android:layout_gravity="bottom|center" android:id="@id/text1" android:background="#ff252525" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:paddingBottom="@dimen/recent_text_padding_land" android:fadingEdge="horizontal" android:layout_width="@dimen/item_width_land" android:layout_height="@dimen/recent_text_height_land" android:singleLine="true" style="@com.htc:style/fixed_darklist_primary_xxs" />
+</com.android.systemui.recent.RecentsItemView>

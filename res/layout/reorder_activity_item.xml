@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.htc.widget.HtcListItem android:id="@id/reorder_items" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:htc="http://schemas.android.com/apk/res/com.htc">
+    <ImageView android:gravity="center" android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+    <com.htc.widget.HtcListItem1LineCenteredText android:id="@id/label" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/dragger" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.htc.widget.HtcListItem>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="notification_panel_layout_gravity">0x800033</integer>
+    <integer name="settings_panel_layout_gravity">0x800035</integer>
+</resources>
