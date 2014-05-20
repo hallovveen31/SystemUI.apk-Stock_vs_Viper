@@ -21,10 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 175
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -36,21 +33,15 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .parameter "context"
-    .parameter "intent"
 
-    .prologue
-    .line 179
     if-eqz p1, :cond_0
 
     if-nez p2, :cond_1
 
-    .line 186
     :cond_0
     :goto_0
     return-void
 
-    .line 182
     :cond_1
     invoke-static {}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;->access$100()Z
 
@@ -60,7 +51,6 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 183
     const-string v0, "QuickSettingAirplane"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -87,7 +77,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 185
     :cond_2
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 

@@ -21,10 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 313
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -36,26 +33,20 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .parameter "message"
 
-    .prologue
-    .line 317
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 320
     iget v0, p1, Landroid/os/Message;->what:I
 
     const v1, 0xc351
 
     if-ne v0, v1, :cond_0
 
-    .line 321
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;->updateActiveNetwork()V
     invoke-static {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;->access$100(Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;)V
 
-    .line 322
     :cond_0
     return-void
 .end method

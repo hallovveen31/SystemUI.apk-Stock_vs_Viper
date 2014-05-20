@@ -34,11 +34,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/recent/FxRecentTasksLoader;Ljava/util/ArrayList;)V
     .locals 0
-    .parameter
-    .parameter
 
-    .prologue
-    .line 235
     iput-object p1, p0, Lcom/android/systemui/recent/FxRecentTasksLoader$1;->this$0:Lcom/android/systemui/recent/FxRecentTasksLoader;
 
     iput-object p2, p0, Lcom/android/systemui/recent/FxRecentTasksLoader$1;->val$descriptions:Ljava/util/ArrayList;
@@ -52,13 +48,9 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 235
     check-cast p1, [Ljava/lang/Void;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/recent/FxRecentTasksLoader$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
@@ -68,12 +60,9 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 7
-    .parameter "params"
 
-    .prologue
     const/4 v5, 0x0
 
-    .line 265
     invoke-static {}, Landroid/os/Process;->myTid()I
 
     move-result v4
@@ -82,11 +71,8 @@
 
     move-result v2
 
-    .line 266
-    .local v2, origPri:I
     invoke-static {v5}, Landroid/os/Process;->setThreadPriority(I)V
 
-    .line 271
     const-wide/16 v4, 0x32
 
     :try_start_0
@@ -94,11 +80,9 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 278
     :goto_0
     const/4 v1, 0x1
 
-    .local v1, i:I
     :goto_1
     iget-object v4, p0, Lcom/android/systemui/recent/FxRecentTasksLoader$1;->val$descriptions:Ljava/util/ArrayList;
 
@@ -108,7 +92,6 @@
 
     if-ge v1, v4, :cond_0
 
-    .line 279
     iget-object v4, p0, Lcom/android/systemui/recent/FxRecentTasksLoader$1;->val$descriptions:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -117,36 +100,26 @@
 
     check-cast v3, Lcom/android/systemui/recent/TaskDescription;
 
-    .line 280
-    .local v3, td:Lcom/android/systemui/recent/TaskDescription;
     iget-object v4, p0, Lcom/android/systemui/recent/FxRecentTasksLoader$1;->this$0:Lcom/android/systemui/recent/FxRecentTasksLoader;
 
     invoke-virtual {v4, v3}, Lcom/android/systemui/recent/FxRecentTasksLoader;->loadThumbnail(Lcom/android/systemui/recent/TaskDescription;)V
 
-    .line 282
-    invoke-virtual {p0}, Lcom/android/systemui/recent/FxRecentTasksLoader$1;->isCancelled()Z
+    invoke-virtual {p0}, Landroid/os/AsyncTask;->isCancelled()Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    .line 295
-    .end local v3           #td:Lcom/android/systemui/recent/TaskDescription;
     :cond_0
     invoke-static {v2}, Landroid/os/Process;->setThreadPriority(I)V
 
-    .line 296
     const/4 v4, 0x0
 
     return-object v4
 
-    .line 273
-    .end local v1           #i:I
     :catch_0
     move-exception v0
 
-    .line 275
-    .local v0, exception:Ljava/lang/Exception;
     const-string v4, "RecentTasksLoader"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -159,7 +132,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v6
 
@@ -175,14 +148,9 @@
 
     goto :goto_0
 
-    .line 285
-    .end local v0           #exception:Ljava/lang/Exception;
-    .restart local v1       #i:I
-    .restart local v3       #td:Lcom/android/systemui/recent/TaskDescription;
     :cond_1
     monitor-enter v3
 
-    .line 286
     const/4 v4, 0x1
 
     :try_start_1
@@ -196,14 +164,12 @@
 
     aput-object v6, v4, v5
 
-    invoke-virtual {p0, v4}, Lcom/android/systemui/recent/FxRecentTasksLoader$1;->publishProgress([Ljava/lang/Object;)V
+    invoke-virtual {p0, v4}, Landroid/os/AsyncTask;->publishProgress([Ljava/lang/Object;)V
 
-    .line 287
     monitor-exit v3
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 290
     const-wide/16 v4, 0x19
 
     :try_start_2
@@ -211,13 +177,11 @@
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 278
     :goto_2
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_1
 
-    .line 287
     :catchall_0
     move-exception v4
 
@@ -228,12 +192,9 @@
 
     throw v4
 
-    .line 291
     :catch_1
     move-exception v0
 
-    .line 292
-    .restart local v0       #exception:Ljava/lang/Exception;
     const-string v4, "RecentTasksLoader"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -246,7 +207,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v6
 
@@ -265,12 +226,9 @@
 
 .method protected varargs onProgressUpdate([Ljava/lang/Integer;)V
     .locals 6
-    .parameter "values"
 
-    .prologue
     const/4 v5, 0x0
 
-    .line 238
     iget-object v2, p0, Lcom/android/systemui/recent/FxRecentTasksLoader$1;->val$descriptions:Ljava/util/ArrayList;
 
     aget-object v3, p1, v5
@@ -285,15 +243,12 @@
 
     check-cast v1, Lcom/android/systemui/recent/TaskDescription;
 
-    .line 239
-    .local v1, td:Lcom/android/systemui/recent/TaskDescription;
-    invoke-virtual {p0}, Lcom/android/systemui/recent/FxRecentTasksLoader$1;->isCancelled()Z
+    invoke-virtual {p0}, Landroid/os/AsyncTask;->isCancelled()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 240
     iget-object v2, p0, Lcom/android/systemui/recent/FxRecentTasksLoader$1;->this$0:Lcom/android/systemui/recent/FxRecentTasksLoader;
 
     #getter for: Lcom/android/systemui/recent/FxRecentTasksLoader;->mListener:Lcom/android/systemui/recent/FxRecentTasksLoader$RecentTaskListener;
@@ -303,7 +258,6 @@
 
     invoke-interface {v2, v1}, Lcom/android/systemui/recent/FxRecentTasksLoader$RecentTaskListener;->onTaskThumbnailLoaded(Lcom/android/systemui/recent/TaskDescription;)V
 
-    .line 244
     :cond_0
     iget-object v2, p0, Lcom/android/systemui/recent/FxRecentTasksLoader$1;->this$0:Lcom/android/systemui/recent/FxRecentTasksLoader;
 
@@ -318,7 +272,6 @@
 
     invoke-virtual {v2, v3}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
-    .line 253
     aget-object v2, p1, v5
 
     invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
@@ -335,23 +288,18 @@
 
     if-ne v2, v3, :cond_1
 
-    .line 255
     invoke-static {}, Ldalvik/system/VMRuntime;->getRuntime()Ldalvik/system/VMRuntime;
 
     move-result-object v0
 
-    .line 256
-    .local v0, dvm:Ldalvik/system/VMRuntime;
     invoke-virtual {v0, v5}, Ldalvik/system/VMRuntime;->restoreGc(Z)Z
 
-    .line 258
     sget-boolean v2, Lcom/android/systemui/recent/FxRecentTasksLoader;->DEBUG:Z
 
     const/4 v3, 0x1
 
     if-ne v2, v3, :cond_1
 
-    .line 259
     const-string v2, "RecentApps.Perf"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -376,21 +324,15 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 261
-    .end local v0           #dvm:Ldalvik/system/VMRuntime;
     :cond_1
     return-void
 .end method
 
 .method protected bridge synthetic onProgressUpdate([Ljava/lang/Object;)V
     .locals 0
-    .parameter "x0"
 
-    .prologue
-    .line 235
     check-cast p1, [Ljava/lang/Integer;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/recent/FxRecentTasksLoader$1;->onProgressUpdate([Ljava/lang/Integer;)V
 
     return-void

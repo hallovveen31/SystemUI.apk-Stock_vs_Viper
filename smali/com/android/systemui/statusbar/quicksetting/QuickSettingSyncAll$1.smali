@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 74
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,25 +36,20 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .parameter "view"
 
-    .prologue
-    .line 78
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;
 
     const-string v1, "QuickSettingSyncAll"
 
     const-string v2, "click:toggle sync all state!"
 
-    #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;->Log(Ljava/lang/String;Ljava/lang/String;)V
+    #calls: Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->Log(Ljava/lang/String;Ljava/lang/String;)V
     invoke-static {v0, v1, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;->access$100(Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 79
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;->toggleSyncAll()V
     invoke-static {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;->access$200(Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;)V
 
-    .line 80
     return-void
 .end method

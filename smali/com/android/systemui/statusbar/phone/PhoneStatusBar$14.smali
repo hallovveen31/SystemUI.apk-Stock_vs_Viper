@@ -25,12 +25,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Landroid/view/View;I)V
     .locals 0
-    .parameter
-    .parameter
-    .parameter
 
-    .prologue
-    .line 1683
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$14;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$14;->val$v:Landroid/view/View;
@@ -46,16 +41,18 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .parameter "animation"
 
-    .prologue
-    .line 1686
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$14;->val$v:Landroid/view/View;
 
     iget v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$14;->val$vis:I
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 1687
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$14;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
+
+    iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mVenomStatusBarExtension:Lcom/android/systemui/statusbar/phone/VenomStatusBarExtension;
+
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/VenomStatusBarExtension;->checkQSTabs()V
+
     return-void
 .end method

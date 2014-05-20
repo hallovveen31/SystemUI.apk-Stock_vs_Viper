@@ -26,11 +26,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/power/PowerUI;Landroid/content/Intent;)V
     .locals 0
-    .parameter
-    .parameter
 
-    .prologue
-    .line 951
     iput-object p1, p0, Lcom/android/systemui/power/PowerUI$9;->this$0:Lcom/android/systemui/power/PowerUI;
 
     iput-object p2, p0, Lcom/android/systemui/power/PowerUI$9;->val$i:Landroid/content/Intent;
@@ -45,12 +41,10 @@
 .method public run()V
     .locals 4
 
-    .prologue
-    .line 955
     :try_start_0
     iget-object v1, p0, Lcom/android/systemui/power/PowerUI$9;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    iget-object v1, v1, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v1, v1, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/android/systemui/power/PowerUI$9;->val$i:Landroid/content/Intent;
 
@@ -60,19 +54,15 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 959
     :goto_0
     return-void
 
-    .line 956
     :catch_0
     move-exception v0
 
-    .line 957
-    .local v0, e:Ljava/lang/Exception;
     const-string v1, "PowerUI"
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v2
 

@@ -34,11 +34,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;Z)V
     .locals 0
-    .parameter
-    .parameter
 
-    .prologue
-    .line 202
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;
 
     iput-boolean p2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$2;->val$syncing:Z
@@ -52,13 +48,9 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 202
     check-cast p1, [Ljava/lang/Void;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$2;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
@@ -68,22 +60,17 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 7
-    .parameter "args"
 
-    .prologue
     const/4 v6, 0x1
 
     const/4 v5, 0x0
 
-    .line 206
     iget-boolean v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$2;->val$syncing:Z
 
     if-eqz v2, :cond_1
 
-    .line 207
     invoke-static {v5, v5}, Landroid/content/ContentResolver;->cancelSync(Landroid/accounts/Account;Ljava/lang/String;)V
 
-    .line 217
     :cond_0
     :goto_0
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;
@@ -93,12 +80,10 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$H;->obtainMessage()Landroid/os/Message;
+    invoke-virtual {v2}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object v1
 
-    .line 218
-    .local v1, msg:Landroid/os/Message;
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;->mHandler:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$H;
@@ -106,12 +91,10 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v6}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$H;->removeMessages(I)V
+    invoke-virtual {v2, v6}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 219
     iput v6, v1, Landroid/os/Message;->what:I
 
-    .line 220
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;->mHandler:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$H;
@@ -119,17 +102,14 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$H;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {v2, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 222
     return-object v5
 
-    .line 210
-    .end local v1           #msg:Landroid/os/Message;
     :cond_1
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;
 
-    #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;->mContext:Landroid/content/Context;
+    #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;->access$700(Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;)Landroid/content/Context;
 
     move-result-object v2
@@ -142,8 +122,6 @@
 
     move-result-object v0
 
-    .line 211
-    .local v0, accounts:[Landroid/accounts/Account;
     const-string v3, "QuickSettingSyncAll"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -171,10 +149,8 @@
 
     invoke-static {v3, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 212
     if-eqz v0, :cond_0
 
-    .line 213
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;->syncCheckedAuthorityForAllAccount([Landroid/accounts/Account;)V
@@ -182,7 +158,6 @@
 
     goto :goto_0
 
-    .line 211
     :cond_2
     array-length v2, v0
 

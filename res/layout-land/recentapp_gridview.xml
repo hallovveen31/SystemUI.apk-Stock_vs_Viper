@@ -6,4 +6,5 @@
     </LinearLayout>
     <TextView android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/recents_no_apps" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status_bar_no_recent_apps" android:singleLine="true" style="@com.htc:style/fixed_list_body_secondary_l" />
     <com.android.systemui.recent.ScaleLaunchView android:id="@id/launch_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/clear_all_button" android:layout_width="fill_parent" android:layout_height="@dimen/notification_panel_header_height" layout="@layout/ram_meter" />
 </merge>

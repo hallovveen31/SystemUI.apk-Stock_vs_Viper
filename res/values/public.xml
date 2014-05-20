@@ -1077,6 +1077,13 @@
     <public type="drawable" name="sym_gpsone_none" id="0x7f02050e" />
     <public type="drawable" name="sys_data_connected_h_plus_capability" id="0x7f02050f" />
     <public type="drawable" name="top_divider_glow" id="0x7f020514" />
+    <public type="drawable" name="eqs_hub" id="0x7f020532" />
+    <public type="drawable" name="ext_batt_icon" id="0x7f02054f" />
+    <public type="drawable" name="ext_batt_icon_chg" id="0x7f020550" />
+    <public type="drawable" name="ext_ram_cpu_icon" id="0x7f020551" />
+    <public type="drawable" name="ext_sd_icon" id="0x7f020552" />
+    <public type="drawable" name="ext_wifi_icon" id="0x7f020553" />
+    <public type="drawable" name="status_bar_titlebar_rest" id="0x7f0205fc" />
     <public type="drawable" name="cdma_stat_sys_4g_lte" id="0x7f020007" />
     <public type="drawable" name="icon_btn_ringtone_dark_l" id="0x7f02013f" />
     <public type="drawable" name="stat_sys_data_connected_4g_lte" id="0x7f02033a" />
@@ -1084,6 +1091,126 @@
     <public type="drawable" name="stat_sys_data_in_4g_lte" id="0x7f020373" />
     <public type="drawable" name="stat_sys_data_inandout_4g_lte" id="0x7f02038c" />
     <public type="drawable" name="stat_sys_data_out_4g_lte" id="0x7f0203a5" />
+    <public type="drawable" name="common_icon_glance_settings_rest" id="0x7f020523" />
+    <public type="drawable" name="eqs_adb_off" id="0x7f020525" />
+    <public type="drawable" name="eqs_adb_on" id="0x7f020526" />
+    <public type="drawable" name="eqs_airplane_icon" id="0x7f020527" />
+    <public type="drawable" name="eqs_autosync" id="0x7f020528" />
+    <public type="drawable" name="eqs_autosync_off" id="0x7f020529" />
+    <public type="drawable" name="eqs_brightness" id="0x7f02052a" />
+    <public type="drawable" name="eqs_bt_icon" id="0x7f02052b" />
+    <public type="drawable" name="eqs_dnd" id="0x7f02052c" />
+    <public type="drawable" name="eqs_dnd_off" id="0x7f02052d" />
+    <public type="drawable" name="eqs_flash_icon_off" id="0x7f02052e" />
+    <public type="drawable" name="eqs_flash_icon_on" id="0x7f02052f" />
+    <public type="drawable" name="eqs_gps_icon" id="0x7f020530" />
+    <public type="drawable" name="eqs_hotspot_icon" id="0x7f020531" />
+    <public type="drawable" name="eqs_lte" id="0x7f020533" />
+    <public type="drawable" name="eqs_lte_off" id="0x7f020534" />
+    <public type="drawable" name="eqs_lte_on" id="0x7f020535" />
+    <public type="drawable" name="eqs_mobile_icon" id="0x7f020536" />
+    <public type="drawable" name="eqs_networkmode" id="0x7f020537" />
+    <public type="drawable" name="eqs_nfc" id="0x7f020538" />
+    <public type="drawable" name="eqs_powersaver" id="0x7f020539" />
+    <public type="drawable" name="eqs_quiet_hours" id="0x7f02053a" />
+    <public type="drawable" name="eqs_quiet_hours_off" id="0x7f02053b" />
+    <public type="drawable" name="eqs_reboot" id="0x7f02053c" />
+    <public type="drawable" name="eqs_rotation_icon" id="0x7f02053d" />
+    <public type="drawable" name="eqs_screenon_icon" id="0x7f02053e" />
+    <public type="drawable" name="eqs_silent_icon_off" id="0x7f02053f" />
+    <public type="drawable" name="eqs_silent_icon_on" id="0x7f020540" />
+    <public type="drawable" name="eqs_sound_alarm_icon" id="0x7f020541" />
+    <public type="drawable" name="eqs_sound_bluetooth_icon" id="0x7f020542" />
+    <public type="drawable" name="eqs_sound_media_icon" id="0x7f020543" />
+    <public type="drawable" name="eqs_sound_notifications_icon" id="0x7f020544" />
+    <public type="drawable" name="eqs_sound_ringtone_icon" id="0x7f020545" />
+    <public type="drawable" name="eqs_sound_settings_icon" id="0x7f020546" />
+    <public type="drawable" name="eqs_sound_voice_icon" id="0x7f020547" />
+    <public type="drawable" name="eqs_sync_icon" id="0x7f020548" />
+    <public type="drawable" name="eqs_task_icon" id="0x7f020549" />
+    <public type="drawable" name="eqs_tweaks_icon" id="0x7f02054a" />
+    <public type="drawable" name="eqs_vibration_icon_off" id="0x7f02054b" />
+    <public type="drawable" name="eqs_vibration_icon_on" id="0x7f02054c" />
+    <public type="drawable" name="eqs_wifi_icon" id="0x7f02054d" />
+    <public type="drawable" name="eqs_xloud" id="0x7f02054e" />
+    <public type="drawable" name="ic_notify_taskmanager" id="0x7f020554" />
+    <public type="drawable" name="ic_qs_2g3g_on" id="0x7f020555" />
+    <public type="drawable" name="ic_qs_3g_on" id="0x7f020556" />
+    <public type="drawable" name="ic_qs_adb_off" id="0x7f020557" />
+    <public type="drawable" name="ic_qs_adb_on" id="0x7f020558" />
+    <public type="drawable" name="ic_qs_nfc_off" id="0x7f020559" />
+    <public type="drawable" name="ic_qs_nfc_on" id="0x7f02055a" />
+    <public type="drawable" name="ic_qs_reboot" id="0x7f02055b" />
+    <public type="drawable" name="ic_qs_ring_off" id="0x7f02055c" />
+    <public type="drawable" name="ic_qs_screen_timeout_off" id="0x7f02055d" />
+    <public type="drawable" name="ic_qs_screen_timeout_on" id="0x7f02055e" />
+    <public type="drawable" name="ic_qs_sync_off" id="0x7f02055f" />
+    <public type="drawable" name="ic_qs_sync_on" id="0x7f020560" />
+    <public type="drawable" name="ic_qs_taskmanager" id="0x7f020561" />
+    <public type="drawable" name="ic_qs_torch_off" id="0x7f020562" />
+    <public type="drawable" name="ic_qs_torch_on" id="0x7f020563" />
+    <public type="drawable" name="ic_qs_tweaks" id="0x7f020564" />
+    <public type="drawable" name="ic_qs_vibrate_on" id="0x7f020565" />
+    <public type="drawable" name="ic_qs_xloud_off" id="0x7f020566" />
+    <public type="drawable" name="ic_qs_xloud_on" id="0x7f020567" />
+    <public type="drawable" name="icon_launcher_beats_red" id="0x7f020569" />
+    <public type="drawable" name="icon_launcher_dolby" id="0x7f02056a" />
+    <public type="drawable" name="icon_launcher_equalizer" id="0x7f02056b" />
+    <public type="drawable" name="icon_launcher_movie" id="0x7f02056c" />
+    <public type="drawable" name="icon_launcher_no_effects" id="0x7f02056d" />
+    <public type="drawable" name="icon_launcher_srs" id="0x7f02056e" />
+    <public type="drawable" name="icon_launcher_voice" id="0x7f02056f" />
+    <public type="drawable" name="notification_tab_off" id="0x7f020571" />
+    <public type="drawable" name="notification_tab_on" id="0x7f020572" />
+    <public type="drawable" name="stat_2g3g_off" id="0x7f020577" />
+    <public type="drawable" name="stat_2g3g_on" id="0x7f020578" />
+    <public type="drawable" name="stat_adb_off" id="0x7f020579" />
+    <public type="drawable" name="stat_adb_on" id="0x7f02057a" />
+    <public type="drawable" name="stat_airplane_off" id="0x7f02057b" />
+    <public type="drawable" name="stat_airplane_on" id="0x7f02057c" />
+    <public type="drawable" name="stat_bluetooth_off" id="0x7f02057d" />
+    <public type="drawable" name="stat_bluetooth_on" id="0x7f02057e" />
+    <public type="drawable" name="stat_brightness_auto" id="0x7f02057f" />
+    <public type="drawable" name="stat_brightness_mid" id="0x7f020580" />
+    <public type="drawable" name="stat_brightness_mid_high" id="0x7f020581" />
+    <public type="drawable" name="stat_brightness_mid_low" id="0x7f020582" />
+    <public type="drawable" name="stat_brightness_off" id="0x7f020583" />
+    <public type="drawable" name="stat_brightness_on" id="0x7f020584" />
+    <public type="drawable" name="stat_data_off" id="0x7f020585" />
+    <public type="drawable" name="stat_data_on" id="0x7f020586" />
+    <public type="drawable" name="stat_flashlight_off" id="0x7f020587" />
+    <public type="drawable" name="stat_flashlight_on" id="0x7f020588" />
+    <public type="drawable" name="stat_gps_off" id="0x7f020589" />
+    <public type="drawable" name="stat_gps_on" id="0x7f02058a" />
+    <public type="drawable" name="stat_lte_off" id="0x7f02058b" />
+    <public type="drawable" name="stat_lte_on" id="0x7f02058c" />
+    <public type="drawable" name="stat_nfc_off" id="0x7f02058d" />
+    <public type="drawable" name="stat_nfc_on" id="0x7f02058e" />
+    <public type="drawable" name="stat_orientation_off" id="0x7f02058f" />
+    <public type="drawable" name="stat_orientation_on" id="0x7f020590" />
+    <public type="drawable" name="stat_powersaver_off" id="0x7f020591" />
+    <public type="drawable" name="stat_powersaver_on" id="0x7f020592" />
+    <public type="drawable" name="stat_reboot" id="0x7f020593" />
+    <public type="drawable" name="stat_ring_off" id="0x7f020594" />
+    <public type="drawable" name="stat_ring_on" id="0x7f020595" />
+    <public type="drawable" name="stat_ring_vibrate_on" id="0x7f020596" />
+    <public type="drawable" name="stat_screen_timeout_off" id="0x7f020597" />
+    <public type="drawable" name="stat_screen_timeout_on" id="0x7f020598" />
+    <public type="drawable" name="stat_silent" id="0x7f020599" />
+    <public type="drawable" name="stat_sync_off" id="0x7f02059a" />
+    <public type="drawable" name="stat_sync_on" id="0x7f02059b" />
+    <public type="drawable" name="stat_sys_data_dormant_vzw_lte" id="0x7f0205f0" />
+    <public type="drawable" name="stat_task" id="0x7f0205f1" />
+    <public type="drawable" name="stat_tweaks" id="0x7f0205f2" />
+    <public type="drawable" name="stat_vibrate_off" id="0x7f0205f3" />
+    <public type="drawable" name="stat_vibrate_on" id="0x7f0205f4" />
+    <public type="drawable" name="stat_wifi_ap_off" id="0x7f0205f5" />
+    <public type="drawable" name="stat_wifi_ap_on" id="0x7f0205f6" />
+    <public type="drawable" name="stat_wifi_off" id="0x7f0205f7" />
+    <public type="drawable" name="stat_wifi_on" id="0x7f0205f8" />
+    <public type="drawable" name="stat_xloud_off" id="0x7f0205f9" />
+    <public type="drawable" name="stat_xloud_on" id="0x7f0205fa" />
+    <public type="drawable" name="status_bar_background_launcher_gpe" id="0x7f0205fb" />
     <public type="drawable" name="cdma_stat_sys_2g" id="0x7f020004" />
     <public type="drawable" name="cdma_stat_sys_lte" id="0x7f02000c" />
     <public type="drawable" name="cdma_stat_sys_sprint_3g" id="0x7f02001b" />
@@ -1327,6 +1454,98 @@
     <public type="drawable" name="stat_sys_wx_new_signal_4" id="0x7f0204fd" />
     <public type="drawable" name="stat_sys_wx_new_signal_5" id="0x7f0204fe" />
     <public type="drawable" name="title_bar_shadow" id="0x7f020513" />
+    <public type="drawable" name="dummy" id="0x7f020524" />
+    <public type="drawable" name="icon_btn_edit_dark" id="0x7f020568" />
+    <public type="drawable" name="mail" id="0x7f020570" />
+    <public type="drawable" name="phone_mobile" id="0x7f020573" />
+    <public type="drawable" name="phone_private" id="0x7f020574" />
+    <public type="drawable" name="phone_work" id="0x7f020575" />
+    <public type="drawable" name="sms" id="0x7f020576" />
+    <public type="drawable" name="stat_sys_battery_1" id="0x7f02059c" />
+    <public type="drawable" name="stat_sys_battery_11" id="0x7f02059d" />
+    <public type="drawable" name="stat_sys_battery_12" id="0x7f02059e" />
+    <public type="drawable" name="stat_sys_battery_13" id="0x7f02059f" />
+    <public type="drawable" name="stat_sys_battery_14" id="0x7f0205a0" />
+    <public type="drawable" name="stat_sys_battery_16" id="0x7f0205a1" />
+    <public type="drawable" name="stat_sys_battery_17" id="0x7f0205a2" />
+    <public type="drawable" name="stat_sys_battery_18" id="0x7f0205a3" />
+    <public type="drawable" name="stat_sys_battery_19" id="0x7f0205a4" />
+    <public type="drawable" name="stat_sys_battery_2" id="0x7f0205a5" />
+    <public type="drawable" name="stat_sys_battery_21" id="0x7f0205a6" />
+    <public type="drawable" name="stat_sys_battery_22" id="0x7f0205a7" />
+    <public type="drawable" name="stat_sys_battery_23" id="0x7f0205a8" />
+    <public type="drawable" name="stat_sys_battery_24" id="0x7f0205a9" />
+    <public type="drawable" name="stat_sys_battery_25" id="0x7f0205aa" />
+    <public type="drawable" name="stat_sys_battery_26" id="0x7f0205ab" />
+    <public type="drawable" name="stat_sys_battery_27" id="0x7f0205ac" />
+    <public type="drawable" name="stat_sys_battery_29" id="0x7f0205ad" />
+    <public type="drawable" name="stat_sys_battery_3" id="0x7f0205ae" />
+    <public type="drawable" name="stat_sys_battery_31" id="0x7f0205af" />
+    <public type="drawable" name="stat_sys_battery_32" id="0x7f0205b0" />
+    <public type="drawable" name="stat_sys_battery_33" id="0x7f0205b1" />
+    <public type="drawable" name="stat_sys_battery_34" id="0x7f0205b2" />
+    <public type="drawable" name="stat_sys_battery_35" id="0x7f0205b3" />
+    <public type="drawable" name="stat_sys_battery_36" id="0x7f0205b4" />
+    <public type="drawable" name="stat_sys_battery_37" id="0x7f0205b5" />
+    <public type="drawable" name="stat_sys_battery_38" id="0x7f0205b6" />
+    <public type="drawable" name="stat_sys_battery_39" id="0x7f0205b7" />
+    <public type="drawable" name="stat_sys_battery_4" id="0x7f0205b8" />
+    <public type="drawable" name="stat_sys_battery_41" id="0x7f0205b9" />
+    <public type="drawable" name="stat_sys_battery_42" id="0x7f0205ba" />
+    <public type="drawable" name="stat_sys_battery_44" id="0x7f0205bb" />
+    <public type="drawable" name="stat_sys_battery_45" id="0x7f0205bc" />
+    <public type="drawable" name="stat_sys_battery_46" id="0x7f0205bd" />
+    <public type="drawable" name="stat_sys_battery_47" id="0x7f0205be" />
+    <public type="drawable" name="stat_sys_battery_48" id="0x7f0205bf" />
+    <public type="drawable" name="stat_sys_battery_49" id="0x7f0205c0" />
+    <public type="drawable" name="stat_sys_battery_5" id="0x7f0205c1" />
+    <public type="drawable" name="stat_sys_battery_51" id="0x7f0205c2" />
+    <public type="drawable" name="stat_sys_battery_52" id="0x7f0205c3" />
+    <public type="drawable" name="stat_sys_battery_53" id="0x7f0205c4" />
+    <public type="drawable" name="stat_sys_battery_54" id="0x7f0205c5" />
+    <public type="drawable" name="stat_sys_battery_55" id="0x7f0205c6" />
+    <public type="drawable" name="stat_sys_battery_56" id="0x7f0205c7" />
+    <public type="drawable" name="stat_sys_battery_58" id="0x7f0205c8" />
+    <public type="drawable" name="stat_sys_battery_59" id="0x7f0205c9" />
+    <public type="drawable" name="stat_sys_battery_6" id="0x7f0205ca" />
+    <public type="drawable" name="stat_sys_battery_61" id="0x7f0205cb" />
+    <public type="drawable" name="stat_sys_battery_62" id="0x7f0205cc" />
+    <public type="drawable" name="stat_sys_battery_63" id="0x7f0205cd" />
+    <public type="drawable" name="stat_sys_battery_64" id="0x7f0205ce" />
+    <public type="drawable" name="stat_sys_battery_65" id="0x7f0205cf" />
+    <public type="drawable" name="stat_sys_battery_66" id="0x7f0205d0" />
+    <public type="drawable" name="stat_sys_battery_67" id="0x7f0205d1" />
+    <public type="drawable" name="stat_sys_battery_68" id="0x7f0205d2" />
+    <public type="drawable" name="stat_sys_battery_69" id="0x7f0205d3" />
+    <public type="drawable" name="stat_sys_battery_7" id="0x7f0205d4" />
+    <public type="drawable" name="stat_sys_battery_72" id="0x7f0205d5" />
+    <public type="drawable" name="stat_sys_battery_73" id="0x7f0205d6" />
+    <public type="drawable" name="stat_sys_battery_74" id="0x7f0205d7" />
+    <public type="drawable" name="stat_sys_battery_75" id="0x7f0205d8" />
+    <public type="drawable" name="stat_sys_battery_76" id="0x7f0205d9" />
+    <public type="drawable" name="stat_sys_battery_77" id="0x7f0205da" />
+    <public type="drawable" name="stat_sys_battery_78" id="0x7f0205db" />
+    <public type="drawable" name="stat_sys_battery_79" id="0x7f0205dc" />
+    <public type="drawable" name="stat_sys_battery_8" id="0x7f0205dd" />
+    <public type="drawable" name="stat_sys_battery_81" id="0x7f0205de" />
+    <public type="drawable" name="stat_sys_battery_82" id="0x7f0205df" />
+    <public type="drawable" name="stat_sys_battery_83" id="0x7f0205e0" />
+    <public type="drawable" name="stat_sys_battery_84" id="0x7f0205e1" />
+    <public type="drawable" name="stat_sys_battery_86" id="0x7f0205e2" />
+    <public type="drawable" name="stat_sys_battery_87" id="0x7f0205e3" />
+    <public type="drawable" name="stat_sys_battery_88" id="0x7f0205e4" />
+    <public type="drawable" name="stat_sys_battery_89" id="0x7f0205e5" />
+    <public type="drawable" name="stat_sys_battery_9" id="0x7f0205e6" />
+    <public type="drawable" name="stat_sys_battery_91" id="0x7f0205e7" />
+    <public type="drawable" name="stat_sys_battery_92" id="0x7f0205e8" />
+    <public type="drawable" name="stat_sys_battery_93" id="0x7f0205e9" />
+    <public type="drawable" name="stat_sys_battery_94" id="0x7f0205ea" />
+    <public type="drawable" name="stat_sys_battery_95" id="0x7f0205eb" />
+    <public type="drawable" name="stat_sys_battery_96" id="0x7f0205ec" />
+    <public type="drawable" name="stat_sys_battery_97" id="0x7f0205ed" />
+    <public type="drawable" name="stat_sys_battery_98" id="0x7f0205ee" />
+    <public type="drawable" name="stat_sys_battery_99" id="0x7f0205ef" />
+    <public type="drawable" name="whatsapp" id="0x7f0205fd" />
     <public type="mipmap" name="ic_daydreams" id="0x7f030000" />
     <public type="mipmap" name="ic_launcher_dreams" id="0x7f030001" />
     <public type="layout" name="battery_low" id="0x7f040000" />
@@ -1441,6 +1660,14 @@
     <public type="layout" name="status_bar_search_panel" id="0x7f04006f" />
     <public type="layout" name="status_bar_toggle_slider" id="0x7f040071" />
     <public type="layout" name="super_status_bar" id="0x7f040072" />
+    <public type="layout" name="power_widget_button" id="0x7f040073" />
+    <public type="layout" name="quicklauncher_icon" id="0x7f040074" />
+    <public type="layout" name="ram_meter" id="0x7f040075" />
+    <public type="layout" name="signal_cluster_view_small" id="0x7f040076" />
+    <public type="layout" name="status_bar_preference" id="0x7f040077" />
+    <public type="layout" name="status_bar_small" id="0x7f040078" />
+    <public type="layout" name="super_status_bar_small" id="0x7f040079" />
+    <public type="layout" name="weather_widget" id="0x7f04007a" />
     <public type="layout" name="recentapp_griditem" id="0x7f040061" />
     <public type="layout" name="recentapp_gridview" id="0x7f040062" />
     <public type="layout" name="status_bar_search_panel_270" id="0x7f040070" />
@@ -1467,12 +1694,17 @@
     <public type="anim" name="system_out" id="0x7f050014" />
     <public type="anim" name="wallpaper_recents_launch_from_launcher_enter" id="0x7f050015" />
     <public type="anim" name="wallpaper_recents_launch_from_launcher_exit" id="0x7f050016" />
+    <public type="anim" name="slide_down" id="0x7f050017" />
+    <public type="anim" name="slide_up" id="0x7f050018" />
+    <public type="anim" name="status_bar_quick_setting_new" id="0x7f050019" />
     <public type="array" name="navbar_search_targets" id="0x7f060000" />
     <public type="array" name="navbar_search_target_descriptions" id="0x7f060001" />
     <public type="array" name="navbar_search_direction_descriptions" id="0x7f060002" />
     <public type="array" name="batterymeter_color_levels" id="0x7f060003" />
     <public type="array" name="batterymeter_color_values" id="0x7f060004" />
     <public type="array" name="batterymeter_bolt_points" id="0x7f060005" />
+    <public type="array" name="sizes" id="0x7f060009" />
+    <public type="array" name="volume_quick_settings" id="0x7f06000a" />
     <public type="array" name="navbar_search_targets_270" id="0x7f060006" />
     <public type="array" name="navbar_search_target_descriptions_270" id="0x7f060007" />
     <public type="array" name="navbar_search_direction_descriptions_270" id="0x7f060008" />
@@ -1631,6 +1863,48 @@
     <public type="id" name="notification_inspect_item" id="0x7f070098" />
     <public type="id" name="recent_remove_item" id="0x7f070099" />
     <public type="id" name="recent_inspect_item" id="0x7f07009a" />
+    <public type="id" name="title" id="0x7f07009b" />
+    <public type="id" name="carrier_extended" id="0x7f07009c" />
+    <public type="id" name="wicon" id="0x7f07009d" />
+    <public type="id" name="hilotemp" id="0x7f07009e" />
+    <public type="id" name="city" id="0x7f07009f" />
+    <public type="id" name="temp" id="0x7f0700a0" />
+    <public type="id" name="weatherwidget" id="0x7f0700a1" />
+    <public type="id" name="center" id="0x7f0700a2" />
+    <public type="id" name="status_icon" id="0x7f0700a3" />
+    <public type="id" name="carrier_icon" id="0x7f0700a4" />
+    <public type="id" name="quicklauncher_icon" id="0x7f0700a5" />
+    <public type="id" name="quicklauncher" id="0x7f0700a6" />
+    <public type="id" name="widgets_divider" id="0x7f0700a7" />
+    <public type="id" name="widgets_switchview" id="0x7f0700a8" />
+    <public type="id" name="exp_power_stat" id="0x7f0700a9" />
+    <public type="id" name="powerwidget" id="0x7f0700aa" />
+    <public type="id" name="power_widget_button" id="0x7f0700ab" />
+    <public type="id" name="power_widget_button_image" id="0x7f0700ac" />
+    <public type="id" name="power_widget_button_text" id="0x7f0700ad" />
+    <public type="id" name="power_widget_button_indicator" id="0x7f0700ae" />
+    <public type="id" name="notifications" id="0x7f0700af" />
+    <public type="id" name="quick_settings" id="0x7f0700b0" />
+    <public type="id" name="qs_swtich_buttons" id="0x7f0700b1" />
+    <public type="id" name="center_clock" id="0x7f0700b2" />
+    <public type="id" name="kill_all" id="0x7f0700b3" />
+    <public type="id" name="progress" id="0x7f0700b4" />
+    <public type="id" name="taskmanager" id="0x7f0700b5" />
+    <public type="id" name="htc_quick_settings" id="0x7f0700b6" />
+    <public type="id" name="eqs_icon" id="0x7f0700b7" />
+    <public type="id" name="eqs_title" id="0x7f0700b8" />
+    <public type="id" name="eqs_summary" id="0x7f0700b9" />
+    <public type="id" name="seekbar" id="0x7f0700ba" />
+    <public type="id" name="eqs_togglebutton" id="0x7f0700bb" />
+    <public type="id" name="qs_scroll" id="0x7f0700bc" />
+    <public type="id" name="gestures" id="0x7f0700bd" />
+    <public type="id" name="hsv_scroll" id="0x7f0700be" />
+    <public type="id" name="ll_imageContainer" id="0x7f0700bf" />
+    <public type="id" name="clear_button_holder" id="0x7f0700c0" />
+    <public type="id" name="battery_text2" id="0x7f0700c1" />
+    <public type="id" name="heqs_container_top" id="0x7f0700c2" />
+    <public type="id" name="heqs_container_bottom" id="0x7f0700c3" />
+    <public type="id" name="minor_qs_scroll" id="0x7f0700c4" />
     <public type="color" name="system_bar_background_opaque" id="0x7f080000" />
     <public type="color" name="system_bar_background_semi_transparent" id="0x7f080001" />
     <public type="color" name="notification_panel_solid_background" id="0x7f080002" />
@@ -1642,6 +1916,9 @@
     <public type="color" name="batterymeter_bolt_color" id="0x7f080008" />
     <public type="color" name="status_bar_clock_color" id="0x7f080009" />
     <public type="color" name="transparent_40_black" id="0x7f08000a" />
+    <public type="color" name="divider" id="0x7f08000b" />
+    <public type="color" name="status_bar_quick_setting_indicator_on" id="0x7f08000c" />
+    <public type="color" name="status_bar_quick_setting_indicator_off" id="0x7f08000d" />
     <public type="bool" name="config_recents_interface_for_tablets" id="0x7f090000" />
     <public type="bool" name="config_recents_thumbnail_image_fits_to_xy" id="0x7f090001" />
     <public type="bool" name="config_hspa_data_distinguishable" id="0x7f090002" />
@@ -1941,6 +2218,80 @@
     <public type="string" name="extreme_auto_power_saver_ask_msg_ex5" id="0x7f0a011a" />
     <public type="string" name="extreme_auto_power_saver_ask_title_ex6" id="0x7f0a011b" />
     <public type="string" name="extreme_auto_power_saver_ask_msg_ex6" id="0x7f0a011c" />
+    <public type="string" name="APKTOOL_DUMMY_0120" id="0x7f0a0120" />
+    <public type="string" name="APKTOOL_DUMMY_0121" id="0x7f0a0121" />
+    <public type="string" name="ext_meminfo" id="0x7f0a012c" />
+    <public type="string" name="ext_cpuinfo" id="0x7f0a012d" />
+    <public type="string" name="ext_sdinfo" id="0x7f0a012e" />
+    <public type="string" name="ext_batinfo" id="0x7f0a012f" />
+    <public type="string" name="ext_batinfo_charge" id="0x7f0a0130" />
+    <public type="string" name="ext_wifi_on" id="0x7f0a0131" />
+    <public type="string" name="ext_wifi_turnon" id="0x7f0a0132" />
+    <public type="string" name="ext_wifi_connected" id="0x7f0a0133" />
+    <public type="string" name="ext_wifi_connectin" id="0x7f0a0134" />
+    <public type="string" name="ext_cpuinfo_freq" id="0x7f0a0135" />
+    <public type="string" name="ext_cpuinfo_load" id="0x7f0a0136" />
+    <public type="string" name="ext_cpuinfo_idle" id="0x7f0a0137" />
+    <public type="string" name="ext_cpuinfo_mgz" id="0x7f0a0138" />
+    <public type="string" name="eqs_adb_disabled" id="0x7f0a0139" />
+    <public type="string" name="eqs_adb_enabled" id="0x7f0a013a" />
+    <public type="string" name="eqs_tweaks_title" id="0x7f0a013b" />
+    <public type="string" name="eqs_wifi" id="0x7f0a013c" />
+    <public type="string" name="eqs_bt" id="0x7f0a013d" />
+    <public type="string" name="eqs_gps" id="0x7f0a013e" />
+    <public type="string" name="eqs_airplane" id="0x7f0a013f" />
+    <public type="string" name="eqs_flash" id="0x7f0a0140" />
+    <public type="string" name="eqs_hotspot" id="0x7f0a0141" />
+    <public type="string" name="eqs_mobile" id="0x7f0a0142" />
+    <public type="string" name="eqs_rotation" id="0x7f0a0143" />
+    <public type="string" name="eqs_silent" id="0x7f0a0144" />
+    <public type="string" name="eqs_vibration" id="0x7f0a0145" />
+    <public type="string" name="eqs_task" id="0x7f0a0146" />
+    <public type="string" name="eqs_adb" id="0x7f0a0147" />
+    <public type="string" name="eqs_power_efficiency" id="0x7f0a0148" />
+    <public type="string" name="eqs_reboot" id="0x7f0a0149" />
+    <public type="string" name="eqs_networkmode" id="0x7f0a014a" />
+    <public type="string" name="eqs_nfc" id="0x7f0a014b" />
+    <public type="string" name="heqs_xloud" id="0x7f0a014c" />
+    <public type="string" name="heqs_brightness" id="0x7f0a014d" />
+    <public type="string" name="heqs_profile" id="0x7f0a014e" />
+    <public type="string" name="heqs_screenon" id="0x7f0a014f" />
+    <public type="string" name="heqs_sync" id="0x7f0a0150" />
+    <public type="string" name="status_bar_quick_settings" id="0x7f0a0151" />
+    <public type="string" name="status_bar_quick_settings_notifications" id="0x7f0a0152" />
+    <public type="string" name="eqs_on" id="0x7f0a0153" />
+    <public type="string" name="eqs_off" id="0x7f0a0154" />
+    <public type="string" name="eqs_tweaks_summary" id="0x7f0a0155" />
+    <public type="string" name="eqs_screenon" id="0x7f0a0156" />
+    <public type="string" name="eqs_screenon_timeout" id="0x7f0a0157" />
+    <public type="string" name="eqs_sync" id="0x7f0a0158" />
+    <public type="string" name="eqs_task_used" id="0x7f0a0159" />
+    <public type="string" name="eqs_task_free" id="0x7f0a015a" />
+    <public type="string" name="eqs_adb_connect" id="0x7f0a015b" />
+    <public type="string" name="eqs_volume" id="0x7f0a015c" />
+    <public type="string" name="eqs_auto_brightness" id="0x7f0a015d" />
+    <public type="string" name="eqs_reboot_summary" id="0x7f0a015e" />
+    <public type="string" name="eqs_wifi_auth" id="0x7f0a015f" />
+    <public type="string" name="eqs_wifi_connecting" id="0x7f0a0160" />
+    <public type="string" name="eqs_wifi_connected" id="0x7f0a0161" />
+    <public type="string" name="eqs_wifi_scan" id="0x7f0a0162" />
+    <public type="string" name="eqs_wifi_obtainip" id="0x7f0a0163" />
+    <public type="string" name="eqs_networkmode_2g" id="0x7f0a0164" />
+    <public type="string" name="eqs_networkmode_3g" id="0x7f0a0165" />
+    <public type="string" name="eqs_xloud" id="0x7f0a0166" />
+    <public type="string" name="wifi_obtaining_address" id="0x7f0a0167" />
+    <public type="string" name="wifi_disconnected" id="0x7f0a0168" />
+    <public type="string" name="quick_settings" id="0x7f0a0169" />
+    <public type="string" name="heqs_lte" id="0x7f0a016a" />
+    <public type="string" name="phoneNoNotAvailable" id="0x7f0a016b" />
+    <public type="string" name="homeNoNotAvailable" id="0x7f0a016c" />
+    <public type="string" name="workNoNotAvailable" id="0x7f0a016d" />
+    <public type="string" name="whatsappNotAvailable" id="0x7f0a016e" />
+    <public type="string" name="noDataAvailable" id="0x7f0a016f" />
+    <public type="string" name="noContactsToRemove" id="0x7f0a0170" />
+    <public type="string" name="eqs_soundenhancer" id="0x7f0a0171" />
+    <public type="string" name="eqs_quiethours" id="0x7f0a0172" />
+    <public type="string" name="eqs_hub" id="0x7f0a0173" />
     <public type="string" name="toast_rotation_locked" id="0x7f0a011d" />
     <public type="string" name="quick_settings_wifi_display_label" id="0x7f0a011e" />
     <public type="string" name="quick_settings_wifi_display_no_connection_label" id="0x7f0a011f" />
@@ -1954,8 +2305,6 @@
     <public type="string" name="ssl_ca_cert_info_message" id="0x7f0a0127" />
     <public type="string" name="ssl_ca_cert_warning_message" id="0x7f0a0128" />
     <public type="string" name="ssl_ca_cert_settings_button" id="0x7f0a0129" />
-    <public type="string" name="APKTOOL_DUMMY_0120" id="0x7f0a0120" />
-    <public type="string" name="APKTOOL_DUMMY_0121" id="0x7f0a0121" />
     <public type="integer" name="config_maxNotificationIcons" id="0x7f0b0000" />
     <public type="integer" name="config_show_search_delay" id="0x7f0b0001" />
     <public type="integer" name="config_vibration_duration" id="0x7f0b0002" />
@@ -1976,7 +2325,11 @@
     <public type="integer" name="notification_panel_layout_gravity" id="0x7f0b0012" />
     <public type="integer" name="settings_panel_layout_gravity" id="0x7f0b0013" />
     <public type="integer" name="recent_item_size" id="0x7f0b0014" />
+    <public type="integer" name="header_icon_width" id="0x7f0b0015" />
     <public type="integer" name="status_bar_config_maxNotificationIcons" id="0x7f0b0011" />
+    <public type="integer" name="heqs_size_small" id="0x7f0b0016" />
+    <public type="integer" name="heqs_size_medium" id="0x7f0b0017" />
+    <public type="integer" name="heqs_size_large" id="0x7f0b0018" />
     <public type="dimen" name="status_bar_edge_ignore" id="0x7f0c0000" />
     <public type="dimen" name="status_bar_recents_app_icon_max_width" id="0x7f0c0001" />
     <public type="dimen" name="status_bar_recents_app_icon_max_height" id="0x7f0c0002" />
@@ -2118,8 +2471,24 @@
     <public type="dimen" name="text_margin" id="0x7f0c0071" />
     <public type="dimen" name="text_height" id="0x7f0c0072" />
     <public type="dimen" name="gridview_gap" id="0x7f0c0073" />
+    <public type="dimen" name="quick_setting_item_height" id="0x7f0c008f" />
+    <public type="dimen" name="quick_setting_item_icon_width" id="0x7f0c0090" />
+    <public type="dimen" name="quick_setting_item_icon_height" id="0x7f0c0091" />
+    <public type="dimen" name="quick_setting_item_icon_margin_top" id="0x7f0c0092" />
+    <public type="dimen" name="quick_setting_item_text_margin_top" id="0x7f0c0093" />
+    <public type="dimen" name="quick_setting_item_indicator_height" id="0x7f0c0094" />
+    <public type="dimen" name="quick_setting_item_indicator_margin_left" id="0x7f0c0095" />
+    <public type="dimen" name="quick_setting_item_indicator_margin_top" id="0x7f0c0096" />
+    <public type="dimen" name="quick_setting_item_indicator_margin_right" id="0x7f0c0097" />
+    <public type="dimen" name="quick_setting_item_icon_size_s" id="0x7f0c0098" />
+    <public type="dimen" name="quick_setting_item_icon_size_m" id="0x7f0c0099" />
+    <public type="dimen" name="quick_setting_item_icon_size_l" id="0x7f0c009a" />
     <public type="dimen" name="thumbnail_transition_portrait_diff" id="0x7f0c0085" />
     <public type="dimen" name="thumbnail_transition_landscape_diff" id="0x7f0c0086" />
+    <public type="dimen" name="status_bar_clock_size_small" id="0x7f0c009b" />
+    <public type="dimen" name="status_bar_ticker_size_small" id="0x7f0c009c" />
+    <public type="dimen" name="status_bar_icon_size_small" id="0x7f0c009d" />
+    <public type="dimen" name="status_bar_icon_drawing_size_small" id="0x7f0c009e" />
     <public type="style" name="fixed_htcpowermanager_01" id="0x7f0d0000" />
     <public type="style" name="fixed_htcpowermanager_02" id="0x7f0d0001" />
     <public type="style" name="fixed_htcpowermanager_03" id="0x7f0d0002" />
@@ -2168,6 +2537,8 @@
     <public type="style" name="darklist_secondary_xxs" id="0x7f0d002d" />
     <public type="style" name="Theme.QuickContact" id="0x7f0d002e" />
     <public type="style" name="QuickSettingTheme" id="0x7f0d002f" />
+    <public type="style" name="TextAppearance.StatusBar.Clock.Small" id="0x7f0d0030" />
+    <public type="style" name="TextAppearance.StatusBar.PhoneTicker.Small" id="0x7f0d0031" />
     <public type="plurals" name="status_bar_accessibility_recent_apps" id="0x7f0e0000" />
     <public type="menu" name="notification_popup_menu" id="0x7f0f0000" />
     <public type="menu" name="recent_popup_menu" id="0x7f0f0001" />

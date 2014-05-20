@@ -21,10 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 220
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -36,17 +33,11 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 7
-    .parameter "context"
-    .parameter "intent"
 
-    .prologue
-    .line 224
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
-    .line 226
-    .local v1, startTime:J
     const-string v3, "android.media.EXTRA_RINGER_MODE"
 
     const/4 v4, -0x1
@@ -55,14 +46,11 @@
 
     move-result v0
 
-    .line 228
-    .local v0, intentMode:I
     iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile;->updateSoundProfile(I)V
     invoke-static {v3, v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile;->access$100(Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile;I)V
 
-    .line 230
     const-string v3, "QuickSettingSoundProfile"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -101,6 +89,5 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 231
     return-void
 .end method

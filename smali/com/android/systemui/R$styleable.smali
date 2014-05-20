@@ -34,12 +34,10 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .prologue
     const/4 v3, 0x1
 
     const/4 v2, 0x0
 
-    .line 24699
     const/4 v0, 0x5
 
     new-array v0, v0, [I
@@ -48,7 +46,6 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->DeadZone:[I
 
-    .line 24794
     const/4 v0, 0x3
 
     new-array v0, v0, [I
@@ -57,7 +54,6 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->KeyButtonView:[I
 
-    .line 24851
     new-array v0, v3, [I
 
     const v1, 0x7f010004
@@ -66,7 +62,6 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->NotificationLinearLayout:[I
 
-    .line 24880
     new-array v0, v3, [I
 
     const v1, 0x7f010005
@@ -75,7 +70,6 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->NotificationRowLayout:[I
 
-    .line 24909
     new-array v0, v3, [I
 
     const v1, 0x2010047
@@ -84,7 +78,6 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->RecentStylable:[I
 
-    .line 24928
     new-array v0, v3, [I
 
     const v1, 0x7f010006
@@ -93,7 +86,6 @@
 
     sput-object v0, Lcom/android/systemui/R$styleable;->RecentsPanelView:[I
 
-    .line 24951
     new-array v0, v3, [I
 
     const v1, 0x7f010003
@@ -104,7 +96,6 @@
 
     return-void
 
-    .line 24699
     :array_0
     .array-data 0x4
         0x7t 0x0t 0x1t 0x7ft
@@ -114,7 +105,6 @@
         0xbt 0x0t 0x1t 0x7ft
     .end array-data
 
-    .line 24794
     :array_1
     .array-data 0x4
         0x0t 0x0t 0x1t 0x7ft
@@ -126,8 +116,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .prologue
-    .line 24680
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -2,17 +2,46 @@
 <com.android.systemui.statusbar.phone.NotificationPanelView android:id="@id/notification_panel" android:background="@*android:color/black" android:paddingTop="@dimen/notification_panel_padding_top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="@dimen/notification_panel_margin_left"
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
-    <LinearLayout android:orientation="vertical" android:id="@id/panel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/close_handle_underlap" android:animateLayoutChanges="false">
+    <LinearLayout android:orientation="vertical" android:id="@id/panel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/close_handle_underlap" android:animateLayoutChanges="false">
         <include android:layout_width="fill_parent" android:layout_height="@dimen/notification_panel_header_height" layout="@layout/status_bar_expanded_header" />
-        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
-            <ViewStub android:id="@id/flip_settings_stub" android:layout="@layout/flip_settings" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-            <LinearLayout android:orientation="vertical" android:id="@id/notification_container" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false">
-                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/quick_settings_minor_container" android:background="@drawable/quick_settings_minor_container_background" android:focusable="false" android:visibility="gone" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.70000005dip" android:layout_marginBottom="1.0dip" android:overScrollMode="never" android:animateLayoutChanges="false" />
-                <ScrollView android:id="@id/scroll" android:focusable="false" android:fadingEdge="none" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" android:overScrollMode="never">
-                    <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/latestItems" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" systemui:rowHeight="@dimen/notification_row_min_height" />
-                </ScrollView>
+        <com.android.systemui.statusbar.info.InfoLine android:id="@id/carrier_extended" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewStub android:id="@id/flip_settings_stub" android:layout="@layout/flip_settings" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <LinearLayout android:orientation="vertical" android:id="@id/notification_container" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="false">
+                <HorizontalScrollView android:layout_gravity="bottom" android:scrollbars="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:overScrollMode="always" id="@id/minor_qs_scroll">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/quick_settings_minor_container" android:background="@drawable/quick_settings_minor_container_background" android:focusable="false" android:visibility="gone" android:descendantFocusability="afterDescendants" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.70000005dip" android:layout_marginBottom="1.0dip" android:overScrollMode="always" android:animateLayoutChanges="false" />
+                </HorizontalScrollView>
+                <include android:id="@id/weatherwidget" android:layout_width="fill_parent" android:layout_height="@dimen/notification_panel_header_height" layout="@layout/weather_widget" />
+                <FrameLayout android:id="@id/heqs_container_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ViewSwitcher android:id="@id/widgets_switchview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureAllChildren="false" android:inAnimation="@*android:anim/slide_in_right" android:outAnimation="@*android:anim/slide_out_left">
+                        <com.android.systemui.statusbar.powerwidget.PowerWidget android:id="@id/exp_power_stat" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <com.android.systemui.statusbar.phone.QuickLauncher android:id="@id/quicklauncher" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    </ViewSwitcher>
+                </FrameLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:animateLayoutChanges="false">
+                    <ScrollView android:id="@id/scroll" android:focusable="false" android:fadingEdge="none" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="ifContentScrolls">
+                        <com.android.systemui.statusbar.policy.NotificationRowLayout android:id="@id/latestItems" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" systemui:rowHeight="@dimen/notification_row_min_height" />
+                    </ScrollView>
+                </LinearLayout>
+                <HorizontalScrollView android:layout_gravity="bottom" android:id="@id/hsv_scroll" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="always">
+                    <LinearLayout android:orientation="horizontal" android:id="@id/ll_imageContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" />
+                </HorizontalScrollView>
+                <FrameLayout android:id="@id/heqs_container_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
             </LinearLayout>
         </FrameLayout>
     </LinearLayout>
-    <ViewStub android:id="@id/carrier_label_stub" android:layout_width="fill_parent" android:layout_height="@dimen/close_handle_height" />
+    <android.gesture.GestureOverlayView android:id="@id/gestures" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/notification_panel_header_height" android:layout_marginBottom="@dimen/close_handle_height" android:gestureColor="#ff33b5e5" android:gestureStrokeType="multiple" android:gestureStrokeAngleThreshold="90.0" android:eventsInterceptionEnabled="true" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/qs_swtich_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/close_handle_height">
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="center" android:id="@id/notifications" android:background="@drawable/notification_tab_on" android:clickable="true" android:layout_width="0.0px" android:layout_height="32.0dip" android:text="@string/status_bar_quick_settings_notifications" android:singleLine="true" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff999999" android:ellipsize="marquee" android:gravity="center" android:id="@id/quick_settings" android:background="@drawable/notification_tab_off" android:clickable="true" android:layout_width="0.0px" android:layout_height="32.0dip" android:text="@string/status_bar_quick_settings" android:singleLine="true" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.android.systemui.statusbar.phone.CarrierLabel android:gravity="center" android:id="@id/handle" android:background="@drawable/status_bar_close_on" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/close_handle_height">
+        <ImageView android:gravity="center_vertical" android:id="@id/carrier_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <TextView android:textAppearance="@com.htc:style/darklist_secondary_m" android:ellipsize="end" android:gravity="center" android:id="@id/plmnLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sans-serif" />
+        <TextView android:textAppearance="@com.htc:style/darklist_secondary_m" android:ellipsize="end" android:gravity="center" android:id="@id/spnLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sans-serif" />
+    </com.android.systemui.statusbar.phone.CarrierLabel>
+    <ViewStub android:id="@id/carrier_label_stub" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/close_handle_height" />
 </com.android.systemui.statusbar.phone.NotificationPanelView>

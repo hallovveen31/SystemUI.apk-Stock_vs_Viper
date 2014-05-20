@@ -30,13 +30,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/BaseStatusBar;Ljava/lang/String;Ljava/lang/String;I)V
     .locals 0
-    .parameter
-    .parameter
-    .parameter
-    .parameter
 
-    .prologue
-    .line 378
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->val$_pkg:Ljava/lang/String;
@@ -54,13 +48,10 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .parameter "v"
 
-    .prologue
-    .line 381
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    iget-object v0, v0, Lcom/android/systemui/statusbar/BaseStatusBar;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const v1, 0x7f0a007d
 
@@ -70,7 +61,6 @@
 
     invoke-virtual {p1, v0}, Landroid/view/View;->announceForAccessibility(Ljava/lang/CharSequence;)V
 
-    .line 384
     :try_start_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/BaseStatusBar$3;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
@@ -86,11 +76,9 @@
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 389
     :goto_0
     return-void
 
-    .line 386
     :catch_0
     move-exception v0
 

@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/recent/RecentsVerticalScrollView;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 120
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsVerticalScrollView$1;->this$0:Lcom/android/systemui/recent/RecentsVerticalScrollView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,11 +36,7 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
-    .parameter "v"
-    .parameter "event"
 
-    .prologue
-    .line 123
     const/4 v0, 0x1
 
     return v0

@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 60
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,10 +36,7 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 4
-    .parameter "view"
 
-    .prologue
-    .line 64
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;
 
     const-string v1, "QuickSettingMiniLite"
@@ -72,10 +66,9 @@
 
     move-result-object v2
 
-    #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;->Log(Ljava/lang/String;Ljava/lang/String;)V
+    #calls: Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->Log(Ljava/lang/String;Ljava/lang/String;)V
     invoke-static {v0, v1, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;->access$100(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 65
     new-instance v0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite$1$1;
 
     invoke-direct {v0, p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite$1$1;-><init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite$1;)V
@@ -84,8 +77,7 @@
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite$1$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Landroid/os/AsyncTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 87
     return-void
 .end method

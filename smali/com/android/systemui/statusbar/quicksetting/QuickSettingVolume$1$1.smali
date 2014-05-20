@@ -32,10 +32,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingVolume$1;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 51
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingVolume$1$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingVolume$1;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -47,13 +44,9 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 51
     check-cast p1, [Ljava/lang/Void;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingVolume$1$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
@@ -63,15 +56,12 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 3
-    .parameter "args"
 
-    .prologue
-    .line 55
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingVolume$1$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingVolume$1;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/quicksetting/QuickSettingVolume$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingVolume;
 
-    #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingVolume;->mContext:Landroid/content/Context;
+    #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingVolume;->access$100(Lcom/android/systemui/statusbar/quicksetting/QuickSettingVolume;)Landroid/content/Context;
 
     move-result-object v1
@@ -84,18 +74,14 @@
 
     check-cast v0, Landroid/media/AudioManager;
 
-    .line 57
-    .local v0, audioManager:Landroid/media/AudioManager;
     if-eqz v0, :cond_0
 
-    .line 58
     const/4 v1, 0x0
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v1, v2}, Landroid/media/AudioManager;->adjustVolume(II)V
 
-    .line 61
     :cond_0
     const/4 v1, 0x0
 

@@ -32,10 +32,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 366
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -47,13 +44,9 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 366
     check-cast p1, [Ljava/lang/Void;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$3;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
@@ -63,20 +56,15 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 10
-    .parameter "args"
 
-    .prologue
     const/4 v5, 0x1
 
     const/4 v6, 0x0
 
-    .line 370
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    .line 372
-    .local v2, startTime:J
     iget-object v4, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;->isAirplaneModeOn()Z
@@ -84,11 +72,9 @@
 
     move-result v0
 
-    .line 375
-    .local v0, airplaneOn:Z
     iget-object v4, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
-    #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;->mContext:Landroid/content/Context;
+    #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;->access$400(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;)Landroid/content/Context;
 
     move-result-object v4
@@ -106,15 +92,12 @@
     :goto_0
     invoke-static {v7, v8, v4}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 379
     new-instance v1, Landroid/content/Intent;
 
     const-string v4, "android.intent.action.AIRPLANE_MODE"
 
     invoke-direct {v1, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 380
-    .local v1, intent:Landroid/content/Intent;
     const-string v7, "state"
 
     if-nez v0, :cond_1
@@ -124,17 +107,15 @@
     :goto_1
     invoke-virtual {v1, v7, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 381
     iget-object v4, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
-    #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;->mContext:Landroid/content/Context;
+    #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;->access$500(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;)Landroid/content/Context;
 
     move-result-object v4
 
     invoke-virtual {v4, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 383
     const-string v4, "QuickSettingAirplane"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -186,28 +167,22 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 385
     const/4 v4, 0x0
 
     return-object v4
 
-    .end local v1           #intent:Landroid/content/Intent;
     :cond_0
     move v4, v6
 
-    .line 375
     goto :goto_0
 
-    .restart local v1       #intent:Landroid/content/Intent;
     :cond_1
     move v4, v6
 
-    .line 380
     goto :goto_1
 
     :cond_2
     move v5, v6
 
-    .line 383
     goto :goto_2
 .end method

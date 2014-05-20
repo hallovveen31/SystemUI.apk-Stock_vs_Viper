@@ -21,10 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 282
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -36,34 +33,26 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 13
-    .parameter "context"
-    .parameter "intent"
 
-    .prologue
     const/4 v12, 0x2
 
     const/4 v4, 0x1
 
     const/4 v7, 0x0
 
-    .line 286
     if-eqz p2, :cond_0
 
     if-nez p1, :cond_1
 
-    .line 373
     :cond_0
     :goto_0
     return-void
 
-    .line 289
     :cond_1
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 291
-    .local v0, action:Ljava/lang/String;
     const-string v8, "android.intent.action.SIM_STATE_CHANGED"
 
     invoke-virtual {v0, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -72,7 +61,6 @@
 
     if-eqz v8, :cond_9
 
-    .line 293
     iget-object v8, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     const-string v9, "phone_type"
@@ -84,15 +72,12 @@
     #setter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->type:I
     invoke-static {v8, v9}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->access$202(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;I)I
 
-    .line 295
     const-string v8, "ss"
 
     invoke-virtual {p2, v8}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 297
-    .local v6, state:Ljava/lang/String;
     iget-object v8, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->type:I
@@ -102,7 +87,6 @@
 
     if-ne v8, v12, :cond_2
 
-    .line 298
     const-string v8, "QuickSettingAPN"
 
     new-instance v9, Ljava/lang/StringBuilder;
@@ -159,7 +143,6 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 301
     :cond_2
     iget-object v8, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
@@ -186,14 +169,12 @@
 
     if-eqz v8, :cond_4
 
-    .line 305
     :cond_3
     iget-object v8, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->updateAPNstate()V
     invoke-static {v8}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->access$400(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;)V
 
-    .line 308
     const-string v8, "ABSENT"
 
     invoke-virtual {v8, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -202,14 +183,12 @@
 
     if-ne v8, v4, :cond_0
 
-    .line 309
     iget-object v8, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     invoke-virtual {v8, v7}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->setVisibility(I)V
 
     goto/16 :goto_0
 
-    .line 312
     :cond_4
     iget-object v8, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
@@ -244,22 +223,17 @@
 
     if-eqz v8, :cond_0
 
-    .line 317
     :cond_5
     invoke-static {}, Lcom/htc/service/HtcTelephonyManager;->dualPhoneEnable()Z
 
     move-result v1
 
-    .line 319
-    .local v1, isCGMode:Z
     if-nez v1, :cond_6
 
-    .line 321
     iget-object v8, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     invoke-virtual {v8, v7}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->setEnabled(Z)V
 
-    .line 324
     const-string v8, "LOADED"
 
     invoke-virtual {v8, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -268,15 +242,12 @@
 
     if-ne v8, v4, :cond_7
 
-    .line 326
-    .local v4, nextMode:I
     :goto_1
     iget-object v8, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->updateAPNVisual(I)V
     invoke-static {v8, v4}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->access$500(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;I)V
 
-    .line 329
     iget-object v8, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     if-nez v4, :cond_8
@@ -284,8 +255,6 @@
     :goto_2
     invoke-virtual {v8, v7}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->setVisibility(I)V
 
-    .line 331
-    .end local v4           #nextMode:I
     :cond_6
     const-string v7, "QuickSettingAPN"
 
@@ -358,20 +327,13 @@
     :cond_7
     move v4, v7
 
-    .line 324
     goto :goto_1
 
-    .line 329
-    .restart local v4       #nextMode:I
     :cond_8
     const/16 v7, 0x8
 
     goto :goto_2
 
-    .line 334
-    .end local v1           #isCGMode:Z
-    .end local v4           #nextMode:I
-    .end local v6           #state:Ljava/lang/String;
     :cond_9
     const-string v8, "android.intent.action.AIRPLANE_MODE"
 
@@ -381,7 +343,6 @@
 
     if-eqz v8, :cond_a
 
-    .line 336
     const-string v8, "QuickSettingAPN"
 
     new-instance v9, Ljava/lang/StringBuilder;
@@ -420,7 +381,6 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 338
     const-string v8, "state"
 
     invoke-virtual {p2, v8, v7}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
@@ -429,7 +389,6 @@
 
     if-ne v7, v4, :cond_0
 
-    .line 339
     iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->updateAPNstate()V
@@ -437,7 +396,6 @@
 
     goto/16 :goto_0
 
-    .line 341
     :cond_a
     const-string v7, "android.net.conn.CONNECTIVITY_CHANGE"
 
@@ -447,7 +405,6 @@
 
     if-eqz v7, :cond_c
 
-    .line 343
     const-string v7, "networkType"
 
     const/4 v8, -0x1
@@ -456,8 +413,6 @@
 
     move-result v3
 
-    .line 350
-    .local v3, networkType:I
     if-nez v3, :cond_b
 
     iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
@@ -469,13 +424,11 @@
 
     if-nez v7, :cond_b
 
-    .line 351
     iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->updateAPNstate()V
     invoke-static {v7}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->access$400(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;)V
 
-    .line 353
     :cond_b
     const-string v7, "QuickSettingAPN"
 
@@ -542,8 +495,6 @@
 
     goto/16 :goto_0
 
-    .line 355
-    .end local v3           #networkType:I
     :cond_c
     const-string v7, "android.intent.action.SERVICE_STATE"
 
@@ -553,7 +504,6 @@
 
     if-eqz v7, :cond_0
 
-    .line 357
     iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     const/4 v8, 0x0
@@ -561,7 +511,6 @@
     #setter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->serviceState:Landroid/telephony/ServiceState;
     invoke-static {v7, v8}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->access$902(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;Landroid/telephony/ServiceState;)Landroid/telephony/ServiceState;
 
-    .line 358
     iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     invoke-virtual {p2}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
@@ -575,7 +524,6 @@
     #setter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->serviceState:Landroid/telephony/ServiceState;
     invoke-static {v7, v8}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->access$902(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;Landroid/telephony/ServiceState;)Landroid/telephony/ServiceState;
 
-    .line 360
     iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->serviceState:Landroid/telephony/ServiceState;
@@ -587,11 +535,8 @@
 
     move-result v5
 
-    .line 363
-    .local v5, phoneType:I
     if-ne v5, v12, :cond_0
 
-    .line 365
     iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->isUnderDataRoaming()Z
@@ -599,8 +544,6 @@
 
     move-result v2
 
-    .line 367
-    .local v2, isUnderDataRoaming:Z
     const-string v7, "QuickSettingAPN"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -640,7 +583,6 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 369
     iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->roamingInCDMA:Z
@@ -650,7 +592,6 @@
 
     if-eq v2, v7, :cond_0
 
-    .line 370
     iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->updateAPNstate()V

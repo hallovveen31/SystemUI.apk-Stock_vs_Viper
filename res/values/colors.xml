@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="system_bar_background_opaque">#ff000000</color>
-    <color name="system_bar_background_semi_transparent">#66000000</color>
+    <color name="system_bar_background_opaque">#001500ff</color>
+    <color name="system_bar_background_semi_transparent">#00ff1010</color>
     <color name="notification_panel_solid_background">#ff000000</color>
     <color name="status_bar_recents_app_label_color">#ffffffff</color>
     <color name="notification_list_shadow_top">#80000000</color>
@@ -11,4 +11,7 @@
     <color name="batterymeter_bolt_color">#b2000000</color>
     <color name="status_bar_clock_color">#ffffffff</color>
     <color name="transparent_40_black">#66000000</color>
+    <color name="divider">#ff454545</color>
+    <color name="status_bar_quick_setting_indicator_on">#ff33b5e5</color>
+    <color name="status_bar_quick_setting_indicator_off">#ff5d5d5d</color>
 </resources>

@@ -23,8 +23,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .prologue
-    .line 82
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,33 +33,25 @@
 .method clearContext()V
     .locals 1
 
-    .prologue
-    .line 97
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->context:Landroid/content/Context;
 
-    .line 98
     return-void
 .end method
 
 .method clearImage()V
     .locals 1
 
-    .prologue
     const/4 v0, 0x0
 
-    .line 92
     iput-object v0, p0, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->image:Landroid/graphics/Bitmap;
 
-    .line 93
     iput-object v0, p0, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->imageUri:Landroid/net/Uri;
 
-    .line 94
     const/4 v0, 0x0
 
     iput v0, p0, Lcom/android/systemui/screenshot/SaveImageInBackgroundData;->iconSize:I
 
-    .line 95
     return-void
 .end method

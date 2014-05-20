@@ -32,10 +32,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingBrightness;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 362
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingBrightness$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingBrightness;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -47,13 +44,9 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 362
     check-cast p1, [Ljava/lang/Void;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingBrightness$3;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
@@ -63,16 +56,12 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 1
-    .parameter "args"
 
-    .prologue
-    .line 366
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingBrightness$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingBrightness;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingBrightness;->performNextProfileState()V
     invoke-static {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingBrightness;->access$600(Lcom/android/systemui/statusbar/quicksetting/QuickSettingBrightness;)V
 
-    .line 367
     const/4 v0, 0x0
 
     return-object v0

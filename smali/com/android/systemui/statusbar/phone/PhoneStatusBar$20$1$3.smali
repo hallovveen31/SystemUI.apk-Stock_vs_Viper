@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 2599
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1$3;->this$2:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,8 +37,6 @@
 .method public run()V
     .locals 2
 
-    .prologue
-    .line 2605
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1$3;->this$2:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1;->this$1:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20;
@@ -52,7 +47,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2606
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1$3;->this$2:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1;->this$1:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20;
@@ -63,7 +57,6 @@
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
-    .line 2607
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1$3;->this$2:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1;->this$1:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20;
@@ -74,7 +67,6 @@
 
     iput-object v1, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mPostCollapseCleanup:Ljava/lang/Runnable;
 
-    .line 2609
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1$3;->this$2:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1;
 
@@ -86,6 +78,5 @@
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->animateCollapsePanels(I)V
 
-    .line 2610
     return-void
 .end method

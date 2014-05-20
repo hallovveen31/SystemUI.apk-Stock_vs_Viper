@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/settings/BrightnessDialog;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 43
     iput-object p1, p0, Lcom/android/systemui/settings/BrightnessDialog$1;->this$0:Lcom/android/systemui/settings/BrightnessDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,22 +37,18 @@
 .method public run()V
     .locals 1
 
-    .prologue
-    .line 45
     iget-object v0, p0, Lcom/android/systemui/settings/BrightnessDialog$1;->this$0:Lcom/android/systemui/settings/BrightnessDialog;
 
-    invoke-virtual {v0}, Lcom/android/systemui/settings/BrightnessDialog;->isShowing()Z
+    invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 46
     iget-object v0, p0, Lcom/android/systemui/settings/BrightnessDialog$1;->this$0:Lcom/android/systemui/settings/BrightnessDialog;
 
-    invoke-virtual {v0}, Lcom/android/systemui/settings/BrightnessDialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 48
     :cond_0
     return-void
 .end method

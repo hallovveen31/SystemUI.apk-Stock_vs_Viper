@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 90
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,13 +37,10 @@
 .method public run()V
     .locals 1
 
-    .prologue
-    .line 95
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity;->refreshContactField()V
     invoke-static {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity;->access$000(Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity;)V
 
-    .line 96
     return-void
 .end method

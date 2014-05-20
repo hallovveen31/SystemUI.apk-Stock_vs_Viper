@@ -21,10 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/usb/UsbStorageActivity;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 90
     iput-object p1, p0, Lcom/android/systemui/usb/UsbStorageActivity$2;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 
     invoke-direct {p0}, Landroid/os/storage/StorageEventListener;-><init>()V
@@ -36,25 +33,17 @@
 # virtual methods
 .method public onStorageStateChanged(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
-    .parameter "path"
-    .parameter "oldState"
-    .parameter "newState"
 
-    .prologue
-    .line 93
     const-string v1, "shared"
 
     invoke-virtual {p3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    .line 94
-    .local v0, on:Z
     iget-object v1, p0, Lcom/android/systemui/usb/UsbStorageActivity$2;->this$0:Lcom/android/systemui/usb/UsbStorageActivity;
 
     #calls: Lcom/android/systemui/usb/UsbStorageActivity;->switchDisplay(Z)V
     invoke-static {v1, v0}, Lcom/android/systemui/usb/UsbStorageActivity;->access$100(Lcom/android/systemui/usb/UsbStorageActivity;Z)V
 
-    .line 95
     return-void
 .end method

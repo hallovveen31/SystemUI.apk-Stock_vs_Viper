@@ -3,12 +3,12 @@
 .source "RecentAppFxActivity.java"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Lcom/android/systemui/recent/RAMMeter$onTasksCleared;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/recent/RecentAppFxActivity;->setupActionBar()V
+    value = Lcom/android/systemui/recent/RecentAppFxActivity;->initClearRecentApps()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/recent/RecentAppFxActivity;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 362
     iput-object p1, p0, Lcom/android/systemui/recent/RecentAppFxActivity$4;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,66 +34,47 @@
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 5
-    .parameter "v"
+.method public getTasksDescriptions()Ljava/util/ArrayList;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/ArrayList",
+            "<",
+            "Lcom/android/systemui/recent/TaskDescription;",
+            ">;"
+        }
+    .end annotation
 
-    .prologue
-    .line 366
-    const-string v2, "RecentApps"
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentAppFxActivity$4;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
 
-    const-string v3, "RunningMem clicked"
+    #getter for: Lcom/android/systemui/recent/RecentAppFxActivity;->mRecentTaskDescriptions:Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/systemui/recent/RecentAppFxActivity;->access$0(Lcom/android/systemui/recent/RecentAppFxActivity;)Ljava/util/ArrayList;
 
-    invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+    move-result-object v0
 
-    .line 367
-    iget-object v2, p0, Lcom/android/systemui/recent/RecentAppFxActivity$4;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
+    return-object v0
+.end method
 
-    #getter for: Lcom/android/systemui/recent/RecentAppFxActivity;->actionRunningMem:Lcom/htc/widget/ActionBarItemView;
-    invoke-static {v2}, Lcom/android/systemui/recent/RecentAppFxActivity;->access$500(Lcom/android/systemui/recent/RecentAppFxActivity;)Lcom/htc/widget/ActionBarItemView;
+.method public onClicked()V
+    .locals 1
 
-    move-result-object v2
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentAppFxActivity$4;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
 
-    const/4 v3, 0x0
+    #getter for: Lcom/android/systemui/recent/RecentAppFxActivity;->mRecentGridViewAdapter:Lcom/android/systemui/recent/RecentAppFxActivity$RecentGridViewAdapter;
+    invoke-static {v0}, Lcom/android/systemui/recent/RecentAppFxActivity;->access$7(Lcom/android/systemui/recent/RecentAppFxActivity;)Lcom/android/systemui/recent/RecentAppFxActivity$RecentGridViewAdapter;
 
-    invoke-virtual {v2, v3}, Lcom/htc/widget/ActionBarItemView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    move-result-object v0
 
-    .line 368
-    new-instance v0, Landroid/content/Intent;
+    invoke-virtual {v0}, Lcom/android/systemui/recent/RecentAppFxActivity$RecentGridViewAdapter;->notifyDataSetInvalidated()V
 
-    invoke-direct {v0}, Landroid/content/Intent;-><init>()V
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentAppFxActivity$4;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
 
-    .line 369
-    .local v0, intent:Landroid/content/Intent;
-    const-string v2, "com.android.settings"
+    invoke-virtual {v0}, Lcom/android/systemui/recent/RecentAppFxActivity;->clearRecentTasksList()V
 
-    const-string v3, "com.android.settings.Settings$RunningServicesActivity"
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentAppFxActivity$4;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
 
-    invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-virtual {v0}, Lcom/android/systemui/recent/RecentAppFxActivity;->finish()V
 
-    .line 370
-    iget-object v2, p0, Lcom/android/systemui/recent/RecentAppFxActivity$4;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
-
-    iget-object v2, v2, Lcom/android/systemui/recent/RecentAppFxActivity;->mContext:Landroid/content/Context;
-
-    const v3, 0x304000c
-
-    const/4 v4, 0x0
-
-    invoke-static {v2, v3, v4}, Landroid/app/ActivityOptions;->makeCustomAnimation(Landroid/content/Context;II)Landroid/app/ActivityOptions;
-
-    move-result-object v1
-
-    .line 372
-    .local v1, opts:Landroid/app/ActivityOptions;
-    iget-object v2, p0, Lcom/android/systemui/recent/RecentAppFxActivity$4;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
-
-    invoke-virtual {v1}, Landroid/app/ActivityOptions;->toBundle()Landroid/os/Bundle;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v0, v3}, Lcom/android/systemui/recent/RecentAppFxActivity;->startActivity(Landroid/content/Intent;Landroid/os/Bundle;)V
-
-    .line 373
     return-void
 .end method

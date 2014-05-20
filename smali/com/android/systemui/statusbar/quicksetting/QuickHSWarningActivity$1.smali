@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickHSWarningActivity;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 105
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickHSWarningActivity$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickHSWarningActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,17 +36,12 @@
 # virtual methods
 .method public onCheckedChanged(Lcom/htc/widget/HtcCompoundButton;Z)V
     .locals 3
-    .parameter "buttonView"
-    .parameter "isChecked"
 
-    .prologue
-    .line 109
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickHSWarningActivity$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickHSWarningActivity;
 
     #setter for: Lcom/android/systemui/statusbar/quicksetting/QuickHSWarningActivity;->notShowAgain:Z
     invoke-static {v0, p2}, Lcom/android/systemui/statusbar/quicksetting/QuickHSWarningActivity;->access$002(Lcom/android/systemui/statusbar/quicksetting/QuickHSWarningActivity;Z)Z
 
-    .line 110
     const-string v0, "QuickHSWarningActivity"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -79,6 +71,5 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 111
     return-void
 .end method

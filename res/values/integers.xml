@@ -20,4 +20,5 @@
     <integer name="notification_panel_layout_gravity">0x37</integer>
     <integer name="settings_panel_layout_gravity">0x37</integer>
     <integer name="recent_item_size">230400</integer>
+    <integer name="header_icon_width">38</integer>
 </resources>

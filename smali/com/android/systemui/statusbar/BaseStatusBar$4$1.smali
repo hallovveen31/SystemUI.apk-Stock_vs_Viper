@@ -26,11 +26,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/BaseStatusBar$4;Ljava/lang/String;)V
     .locals 0
-    .parameter
-    .parameter
 
-    .prologue
-    .line 462
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$4$1;->this$1:Lcom/android/systemui/statusbar/BaseStatusBar$4;
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/BaseStatusBar$4$1;->val$packageNameF:Ljava/lang/String;
@@ -44,12 +40,9 @@
 # virtual methods
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 3
-    .parameter "item"
 
-    .prologue
     const/4 v0, 0x0
 
-    .line 464
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result v1
@@ -58,7 +51,6 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 465
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$4$1;->this$1:Lcom/android/systemui/statusbar/BaseStatusBar$4;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/BaseStatusBar$4;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
@@ -68,7 +60,6 @@
     #calls: Lcom/android/systemui/statusbar/BaseStatusBar;->startApplicationDetailsActivity(Ljava/lang/String;)V
     invoke-static {v1, v2}, Lcom/android/systemui/statusbar/BaseStatusBar;->access$000(Lcom/android/systemui/statusbar/BaseStatusBar;Ljava/lang/String;)V
 
-    .line 469
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$4$1;->this$1:Lcom/android/systemui/statusbar/BaseStatusBar$4;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/BaseStatusBar$4;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
@@ -77,7 +68,6 @@
 
     invoke-virtual {v1, v0, v2}, Lcom/android/systemui/statusbar/BaseStatusBar;->animateCollapsePanelsDelay(ILjava/lang/String;)V
 
-    .line 473
     const/4 v0, 0x1
 
     :cond_0

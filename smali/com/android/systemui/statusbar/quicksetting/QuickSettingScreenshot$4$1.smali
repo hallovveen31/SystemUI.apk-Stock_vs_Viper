@@ -23,12 +23,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;Landroid/os/Looper;Landroid/content/ServiceConnection;)V
     .locals 0
-    .parameter
-    .parameter "x0"
-    .parameter
 
-    .prologue
-    .line 309
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;
 
     iput-object p3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4$1;->val$myConnection:Landroid/content/ServiceConnection;
@@ -42,17 +37,12 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .parameter "message"
 
-    .prologue
-    .line 313
     if-nez p1, :cond_0
 
-    .line 332
     :goto_0
     return-void
 
-    .line 316
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;
 
@@ -65,7 +55,6 @@
 
     monitor-enter v1
 
-    .line 319
     :try_start_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;
 
@@ -80,14 +69,12 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 321
     const-string v0, "QuickSettingScreenshot"
 
     const-string v2, "receiveMessage:screenshotService"
 
     invoke-static {v0, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 323
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
@@ -108,12 +95,11 @@
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 324
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
 
-    #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;->mContext:Landroid/content/Context;
+    #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
     invoke-static {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;->access$1000(Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;)Landroid/content/Context;
 
     move-result-object v0
@@ -129,7 +115,6 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
-    .line 326
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
@@ -143,16 +128,14 @@
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setAlpha(F)V
 
-    .line 327
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->setEnabled(Z)V
 
-    .line 329
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
@@ -162,7 +145,6 @@
     #setter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;->screenshotConnection:Landroid/content/ServiceConnection;
     invoke-static {v0, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;->access$702(Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;Landroid/content/ServiceConnection;)Landroid/content/ServiceConnection;
 
-    .line 331
     :cond_1
     monitor-exit v1
 

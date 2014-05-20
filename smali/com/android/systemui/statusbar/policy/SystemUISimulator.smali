@@ -77,57 +77,44 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
-    .parameter "context"
 
-    .prologue
-    .line 80
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
     sget-boolean v1, Lcom/htc/htcjavaflag/HtcBuildFlag;->Htc_DEBUG_flag:Z
 
     iput-boolean v1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->HTC_DEBUG:Z
 
-    .line 18
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
     iput-object v1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mHandler:Landroid/os/Handler;
 
-    .line 82
     iget-boolean v1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->HTC_DEBUG:Z
 
     if-nez v1, :cond_1
 
-    .line 97
     :cond_0
     :goto_0
     return-void
 
-    .line 84
     :cond_1
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 85
-    .local v0, filter:Landroid/content/IntentFilter;
     const-string v1, "com.android.systemui.simulator.action_change"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 87
     new-instance v1, Lcom/android/systemui/statusbar/policy/SystemUISimulator$1;
 
     invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/policy/SystemUISimulator$1;-><init>(Lcom/android/systemui/statusbar/policy/SystemUISimulator;)V
 
     iput-object v1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
-    .line 93
     if-eqz p1, :cond_0
 
-    .line 94
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
     const-string v2, "com.htc.permission.APP_PLATFORM"
@@ -141,10 +128,7 @@
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/policy/SystemUISimulator;)Lcom/android/systemui/statusbar/policy/SystemUISimulator$Callback;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 13
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mController:Lcom/android/systemui/statusbar/policy/SystemUISimulator$Callback;
 
     return-object v0
@@ -152,10 +136,7 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/policy/SystemUISimulator;)Landroid/os/Handler;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 13
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mHandler:Landroid/os/Handler;
 
     return-object v0
@@ -163,11 +144,7 @@
 
 .method static synthetic access$1002(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mNetworkType:I
 
     return p1
@@ -175,11 +152,7 @@
 
 .method static synthetic access$1102(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mDataState:I
 
     return p1
@@ -187,11 +160,7 @@
 
 .method static synthetic access$1202(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mDataActivity:I
 
     return p1
@@ -199,11 +168,7 @@
 
 .method static synthetic access$1302(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mSignalLevel:I
 
     return p1
@@ -211,11 +176,7 @@
 
 .method static synthetic access$1402(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mPhoneType:I
 
     return p1
@@ -223,11 +184,7 @@
 
 .method static synthetic access$1502(Lcom/android/systemui/statusbar/policy/SystemUISimulator;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mNetworkOperator:Ljava/lang/String;
 
     return-object p1
@@ -235,11 +192,7 @@
 
 .method static synthetic access$1602(Lcom/android/systemui/statusbar/policy/SystemUISimulator;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mNetworkCountry:Ljava/lang/String;
 
     return-object p1
@@ -247,11 +200,7 @@
 
 .method static synthetic access$1702(Lcom/android/systemui/statusbar/policy/SystemUISimulator;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mSimOperator:Ljava/lang/String;
 
     return-object p1
@@ -259,11 +208,7 @@
 
 .method static synthetic access$1802(Lcom/android/systemui/statusbar/policy/SystemUISimulator;Z)Z
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mRoamingGsm:Z
 
     return p1
@@ -271,11 +216,7 @@
 
 .method static synthetic access$1902(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mRoamingCdma:I
 
     return p1
@@ -283,11 +224,7 @@
 
 .method static synthetic access$2002(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mCallState:I
 
     return p1
@@ -295,11 +232,7 @@
 
 .method static synthetic access$202(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->sku_id:I
 
     return p1
@@ -307,11 +240,7 @@
 
 .method static synthetic access$2102(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mUnderSilentReset:I
 
     return p1
@@ -319,11 +248,7 @@
 
 .method static synthetic access$2202(Lcom/android/systemui/statusbar/policy/SystemUISimulator;Z)Z
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mHasMdmService:Z
 
     return p1
@@ -331,11 +256,7 @@
 
 .method static synthetic access$2302(Lcom/android/systemui/statusbar/policy/SystemUISimulator;Z)Z
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mHasQscService:Z
 
     return p1
@@ -343,11 +264,7 @@
 
 .method static synthetic access$2402(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mMdmNetworkType:I
 
     return p1
@@ -355,11 +272,7 @@
 
 .method static synthetic access$2502(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mQscNetworkType:I
 
     return p1
@@ -367,11 +280,7 @@
 
 .method static synthetic access$2602(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mQscSignalLevel:I
 
     return p1
@@ -379,11 +288,7 @@
 
 .method static synthetic access$2702(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mModemState:I
 
     return p1
@@ -391,11 +296,7 @@
 
 .method static synthetic access$302(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->region:I
 
     return p1
@@ -403,11 +304,7 @@
 
 .method static synthetic access$402(Lcom/android/systemui/statusbar/policy/SystemUISimulator;Z)Z
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mHasCsService:Z
 
     return p1
@@ -415,11 +312,7 @@
 
 .method static synthetic access$502(Lcom/android/systemui/statusbar/policy/SystemUISimulator;Z)Z
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mHasPsService:Z
 
     return p1
@@ -427,11 +320,7 @@
 
 .method static synthetic access$602(Lcom/android/systemui/statusbar/policy/SystemUISimulator;Lcom/android/internal/telephony/IccCardConstants$State;)Lcom/android/internal/telephony/IccCardConstants$State;
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mSimState:Lcom/android/internal/telephony/IccCardConstants$State;
 
     return-object p1
@@ -439,11 +328,7 @@
 
 .method static synthetic access$702(Lcom/android/systemui/statusbar/policy/SystemUISimulator;I)I
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mNetworkId:I
 
     return p1
@@ -451,11 +336,7 @@
 
 .method static synthetic access$802(Lcom/android/systemui/statusbar/policy/SystemUISimulator;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mSectorId:Ljava/lang/String;
 
     return-object p1
@@ -463,11 +344,7 @@
 
 .method static synthetic access$902(Lcom/android/systemui/statusbar/policy/SystemUISimulator;Z)Z
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 13
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mAirplaneMode:Z
 
     return p1
@@ -478,8 +355,6 @@
 .method public dump()V
     .locals 3
 
-    .prologue
-    .line 221
     const-string v0, "SystemUISimulator"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -822,15 +697,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 249
     return-void
 .end method
 
 .method public getCallState()I
     .locals 1
 
-    .prologue
-    .line 65
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mCallState:I
 
     return v0
@@ -839,8 +711,6 @@
 .method public getCdmaRoamingIndicator()I
     .locals 1
 
-    .prologue
-    .line 64
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mRoamingCdma:I
 
     return v0
@@ -849,8 +719,6 @@
 .method public getDataActivity()I
     .locals 1
 
-    .prologue
-    .line 61
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mDataActivity:I
 
     return v0
@@ -859,8 +727,6 @@
 .method public getDataState()I
     .locals 1
 
-    .prologue
-    .line 60
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mDataState:I
 
     return v0
@@ -869,8 +735,6 @@
 .method public getMdmNetworkType()I
     .locals 1
 
-    .prologue
-    .line 47
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mMdmNetworkType:I
 
     return v0
@@ -879,8 +743,6 @@
 .method public getModemState()I
     .locals 1
 
-    .prologue
-    .line 50
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mModemState:I
 
     return v0
@@ -889,8 +751,6 @@
 .method public getNetworkCountry()Ljava/lang/String;
     .locals 1
 
-    .prologue
-    .line 67
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mNetworkCountry:Ljava/lang/String;
 
     return-object v0
@@ -899,8 +759,6 @@
 .method public getNetworkId()I
     .locals 1
 
-    .prologue
-    .line 57
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mNetworkId:I
 
     return v0
@@ -909,8 +767,6 @@
 .method public getNetworkOperator()Ljava/lang/String;
     .locals 1
 
-    .prologue
-    .line 66
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mNetworkOperator:Ljava/lang/String;
 
     return-object v0
@@ -919,8 +775,6 @@
 .method public getNetworkType()I
     .locals 1
 
-    .prologue
-    .line 59
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mNetworkType:I
 
     return v0
@@ -929,8 +783,6 @@
 .method public getPhoneType()I
     .locals 1
 
-    .prologue
-    .line 55
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mPhoneType:I
 
     return v0
@@ -939,8 +791,6 @@
 .method public getQscNetworkType()I
     .locals 1
 
-    .prologue
-    .line 48
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mQscNetworkType:I
 
     return v0
@@ -949,8 +799,6 @@
 .method public getQscSignalLevel()I
     .locals 1
 
-    .prologue
-    .line 49
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mQscSignalLevel:I
 
     return v0
@@ -959,8 +807,6 @@
 .method public getRegion()I
     .locals 1
 
-    .prologue
-    .line 72
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->region:I
 
     return v0
@@ -969,8 +815,6 @@
 .method public getSectorId()Ljava/lang/String;
     .locals 1
 
-    .prologue
-    .line 58
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mSectorId:Ljava/lang/String;
 
     return-object v0
@@ -979,8 +823,6 @@
 .method public getSignalLevel()I
     .locals 1
 
-    .prologue
-    .line 62
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mSignalLevel:I
 
     return v0
@@ -989,8 +831,6 @@
 .method public getSimOperator()Ljava/lang/String;
     .locals 1
 
-    .prologue
-    .line 68
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mSimOperator:Ljava/lang/String;
 
     return-object v0
@@ -999,8 +839,6 @@
 .method public getSimState()Lcom/android/internal/telephony/IccCardConstants$State;
     .locals 1
 
-    .prologue
-    .line 56
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mSimState:Lcom/android/internal/telephony/IccCardConstants$State;
 
     return-object v0
@@ -1009,8 +847,6 @@
 .method public getSkuId()I
     .locals 1
 
-    .prologue
-    .line 71
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->sku_id:I
 
     return v0
@@ -1019,8 +855,6 @@
 .method public getUnderSilentReset()I
     .locals 1
 
-    .prologue
-    .line 70
     iget v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mUnderSilentReset:I
 
     return v0
@@ -1029,8 +863,6 @@
 .method public hasCsService()Z
     .locals 1
 
-    .prologue
-    .line 53
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mHasCsService:Z
 
     return v0
@@ -1039,8 +871,6 @@
 .method public hasMdmService()Z
     .locals 1
 
-    .prologue
-    .line 45
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mHasMdmService:Z
 
     return v0
@@ -1049,8 +879,6 @@
 .method public hasPsService()Z
     .locals 1
 
-    .prologue
-    .line 54
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mHasPsService:Z
 
     return v0
@@ -1059,8 +887,6 @@
 .method public hasQscService()Z
     .locals 1
 
-    .prologue
-    .line 46
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mHasQscService:Z
 
     return v0
@@ -1069,8 +895,6 @@
 .method public isAirplaneMode()Z
     .locals 1
 
-    .prologue
-    .line 69
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mAirplaneMode:Z
 
     return v0
@@ -1079,8 +903,6 @@
 .method public isRoamingGsm()Z
     .locals 1
 
-    .prologue
-    .line 63
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mRoamingGsm:Z
 
     return v0
@@ -1088,12 +910,8 @@
 
 .method public register(Lcom/android/systemui/statusbar/policy/SystemUISimulator$Callback;)V
     .locals 0
-    .parameter "controller"
 
-    .prologue
-    .line 100
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/SystemUISimulator;->mController:Lcom/android/systemui/statusbar/policy/SystemUISimulator$Callback;
 
-    .line 101
     return-void
 .end method

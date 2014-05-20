@@ -67,7 +67,6 @@
 .method static constructor <clinit>()V
     .locals 8
 
-    .prologue
     const/4 v7, 0x2
 
     const/4 v6, 0x1
@@ -78,7 +77,6 @@
 
     const/4 v3, 0x5
 
-    .line 27
     new-array v0, v3, [[I
 
     new-array v1, v3, [I
@@ -115,7 +113,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_4LEVEL_CDMA_3G_1X:[[I
 
-    .line 55
     new-array v0, v3, [[I
 
     new-array v1, v3, [I
@@ -152,7 +149,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_4LEVEL_CDMA_3G_1X_R:[[I
 
-    .line 83
     new-array v0, v3, [[I
 
     new-array v1, v3, [I
@@ -189,7 +185,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_4LEVEL_CDMA_EV_1X:[[I
 
-    .line 111
     new-array v0, v3, [[I
 
     new-array v1, v3, [I
@@ -226,21 +221,18 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_4LEVEL_CDMA_EV_1X_R:[[I
 
-    .line 139
     new-array v0, v3, [I
 
     fill-array-data v0, :array_14
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_4LEVEL_CDMA_1X:[I
 
-    .line 147
     new-array v0, v3, [I
 
     fill-array-data v0, :array_15
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_4LEVEL_CDMA_1X_R:[I
 
-    .line 155
     const/4 v0, 0x6
 
     new-array v0, v0, [I
@@ -249,7 +241,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_S1_5LEVEL:[I
 
-    .line 164
     const/4 v0, 0x6
 
     new-array v0, v0, [I
@@ -258,21 +249,18 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_S1_5LEVEL_R:[I
 
-    .line 173
     new-array v0, v3, [I
 
     fill-array-data v0, :array_18
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_S1_4LEVEL:[I
 
-    .line 181
     new-array v0, v3, [I
 
     fill-array-data v0, :array_19
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_S1_4LEVEL_R:[I
 
-    .line 191
     const/4 v0, 0x6
 
     new-array v0, v0, [I
@@ -281,7 +269,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_S2_5LEVEL:[I
 
-    .line 200
     const/4 v0, 0x6
 
     new-array v0, v0, [I
@@ -290,49 +277,42 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_S2_5LEVEL_R:[I
 
-    .line 209
     new-array v0, v3, [I
 
     fill-array-data v0, :array_1c
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_S2_4LEVEL:[I
 
-    .line 217
     new-array v0, v3, [I
 
     fill-array-data v0, :array_1d
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_S2_4LEVEL_R:[I
 
-    .line 227
     new-array v0, v3, [I
 
     fill-array-data v0, :array_1e
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_4LEVEL_3G:[I
 
-    .line 235
     new-array v0, v3, [I
 
     fill-array-data v0, :array_1f
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_4LEVEL_3G_R:[I
 
-    .line 243
     new-array v0, v3, [I
 
     fill-array-data v0, :array_20
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_4LEVEL_2G:[I
 
-    .line 251
     new-array v0, v3, [I
 
     fill-array-data v0, :array_21
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_SIGNAL_4LEVEL_2G_R:[I
 
-    .line 262
     new-array v0, v7, [[I
 
     new-array v1, v4, [I
@@ -349,7 +329,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_DATA_G:[[I
 
-    .line 274
     new-array v0, v7, [[I
 
     new-array v1, v4, [I
@@ -366,7 +345,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_DATA_E:[[I
 
-    .line 286
     new-array v0, v7, [[I
 
     new-array v1, v3, [I
@@ -383,7 +361,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_DATA_CDMA_1X:[[I
 
-    .line 300
     new-array v0, v7, [[I
 
     new-array v1, v3, [I
@@ -400,7 +377,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_DATA_3G:[[I
 
-    .line 314
     new-array v0, v7, [[I
 
     new-array v1, v4, [I
@@ -417,7 +393,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_DATA_4G:[[I
 
-    .line 326
     new-array v0, v7, [[I
 
     new-array v1, v4, [I
@@ -434,7 +409,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_DATA_2G:[[I
 
-    .line 338
     new-array v0, v7, [[I
 
     new-array v1, v3, [I
@@ -451,7 +425,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_DATA_EV:[[I
 
-    .line 352
     new-array v0, v7, [[I
 
     new-array v1, v4, [I
@@ -468,7 +441,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_DATA_H:[[I
 
-    .line 364
     new-array v0, v7, [[I
 
     new-array v1, v4, [I
@@ -485,7 +457,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_DATA_HPLUS:[[I
 
-    .line 376
     new-array v0, v7, [[I
 
     new-array v1, v4, [I
@@ -502,7 +473,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIconsDual;->HTC_DATA_LTE:[[I
 
-    .line 388
     new-array v0, v7, [[I
 
     new-array v1, v4, [I
@@ -521,7 +491,6 @@
 
     return-void
 
-    .line 27
     :array_0
     .array-data 0x4
         0xdt 0x2t 0x2t 0x7ft
@@ -567,7 +536,6 @@
         0x4dt 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 55
     :array_5
     .array-data 0x4
         0x17t 0x2t 0x2t 0x7ft
@@ -613,7 +581,6 @@
         0x57t 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 83
     :array_a
     .array-data 0x4
         0x20t 0x4t 0x2t 0x7ft
@@ -659,7 +626,6 @@
         0x4ct 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 111
     :array_f
     .array-data 0x4
         0x25t 0x4t 0x2t 0x7ft
@@ -705,7 +671,6 @@
         0x51t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 139
     :array_14
     .array-data 0x4
         0xdct 0x1t 0x2t 0x7ft
@@ -715,7 +680,6 @@
         0xe0t 0x1t 0x2t 0x7ft
     .end array-data
 
-    .line 147
     :array_15
     .array-data 0x4
         0xe2t 0x1t 0x2t 0x7ft
@@ -725,7 +689,6 @@
         0xe6t 0x1t 0x2t 0x7ft
     .end array-data
 
-    .line 155
     :array_16
     .array-data 0x4
         0xdt 0x0t 0x2t 0x7ft
@@ -736,7 +699,6 @@
         0x12t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 164
     :array_17
     .array-data 0x4
         0x98t 0x4t 0x2t 0x7ft
@@ -747,7 +709,6 @@
         0x9dt 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 173
     :array_18
     .array-data 0x4
         0x8dt 0x4t 0x2t 0x7ft
@@ -757,7 +718,6 @@
         0x91t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 181
     :array_19
     .array-data 0x4
         0x93t 0x4t 0x2t 0x7ft
@@ -767,7 +727,6 @@
         0x97t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 191
     :array_1a
     .array-data 0x4
         0x14t 0x0t 0x2t 0x7ft
@@ -778,7 +737,6 @@
         0x19t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 200
     :array_1b
     .array-data 0x4
         0xa9t 0x4t 0x2t 0x7ft
@@ -789,7 +747,6 @@
         0xaet 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 209
     :array_1c
     .array-data 0x4
         0x9et 0x4t 0x2t 0x7ft
@@ -799,7 +756,6 @@
         0xa2t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 217
     :array_1d
     .array-data 0x4
         0xa4t 0x4t 0x2t 0x7ft
@@ -809,7 +765,6 @@
         0xa8t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 227
     :array_1e
     .array-data 0x4
         0x58t 0x2t 0x2t 0x7ft
@@ -819,7 +774,6 @@
         0x5ct 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 235
     :array_1f
     .array-data 0x4
         0x67t 0x2t 0x2t 0x7ft
@@ -829,7 +783,6 @@
         0x6bt 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 243
     :array_20
     .array-data 0x4
         0xf5t 0x1t 0x2t 0x7ft
@@ -839,7 +792,6 @@
         0xf9t 0x1t 0x2t 0x7ft
     .end array-data
 
-    .line 251
     :array_21
     .array-data 0x4
         0xfat 0x1t 0x2t 0x7ft
@@ -849,7 +801,6 @@
         0xfet 0x1t 0x2t 0x7ft
     .end array-data
 
-    .line 262
     :array_22
     .array-data 0x4
         0x41t 0x3t 0x2t 0x7ft
@@ -866,7 +817,6 @@
         0x91t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 274
     :array_24
     .array-data 0x4
         0x3et 0x3t 0x2t 0x7ft
@@ -883,7 +833,6 @@
         0x8ft 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 286
     :array_26
     .array-data 0x4
         0x2dt 0x0t 0x2t 0x7ft
@@ -902,7 +851,6 @@
         0x30t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 300
     :array_28
     .array-data 0x4
         0x2et 0x0t 0x2t 0x7ft
@@ -921,7 +869,6 @@
         0x32t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 314
     :array_2a
     .array-data 0x4
         0x38t 0x3t 0x2t 0x7ft
@@ -938,7 +885,6 @@
         0x8bt 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 326
     :array_2c
     .array-data 0x4
         0x30t 0x3t 0x2t 0x7ft
@@ -955,7 +901,6 @@
         0x87t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 338
     :array_2e
     .array-data 0x4
         0x2ft 0x0t 0x2t 0x7ft
@@ -974,7 +919,6 @@
         0x34t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 352
     :array_30
     .array-data 0x4
         0x45t 0x3t 0x2t 0x7ft
@@ -991,7 +935,6 @@
         0x93t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 364
     :array_32
     .array-data 0x4
         0x46t 0x3t 0x2t 0x7ft
@@ -1008,7 +951,6 @@
         0x94t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 376
     :array_34
     .array-data 0x4
         0x47t 0x3t 0x2t 0x7ft
@@ -1025,7 +967,6 @@
         0x95t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 388
     :array_36
     .array-data 0x4
         0x3at 0x3t 0x2t 0x7ft
@@ -1046,8 +987,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .prologue
-    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

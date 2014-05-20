@@ -23,11 +23,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/policy/NetworkControllerDual;Lcom/android/internal/util/AsyncChannel;)V
     .locals 0
-    .parameter
-    .parameter
 
-    .prologue
-    .line 214
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerDual$1;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerDual;
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerDual$1;->val$wifiChannel:Lcom/android/internal/util/AsyncChannel;
@@ -41,26 +37,20 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
-    .parameter "msg"
 
-    .prologue
-    .line 217
     iget v0, p1, Landroid/os/Message;->what:I
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 237
     :cond_0
     :goto_0
     return-void
 
-    .line 219
     :sswitch_0
     iget v0, p1, Landroid/os/Message;->arg1:I
 
     if-nez v0, :cond_1
 
-    .line 220
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerDual$1;->val$wifiChannel:Lcom/android/internal/util/AsyncChannel;
 
     const v1, 0x11001
@@ -73,7 +63,6 @@
 
     goto :goto_0
 
-    .line 223
     :cond_1
     sget-boolean v0, Lcom/android/systemui/statusbar/policy/NetworkControllerDual;->DEBUG:Z
 
@@ -105,17 +94,15 @@
 
     goto :goto_0
 
-    .line 227
     :sswitch_1
     iget v0, p1, Landroid/os/Message;->arg1:I
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerDual$1;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerDual;
 
-    iget v1, v1, Lcom/android/systemui/statusbar/policy/NetworkControllerDual;->mWifiActivity:I
+    iget v1, v1, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
     if-eq v0, v1, :cond_0
 
-    .line 228
     sget-boolean v0, Lcom/android/systemui/statusbar/policy/NetworkControllerDual;->DEBUG:Z
 
     if-eqz v0, :cond_2
@@ -144,28 +131,24 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 229
     :cond_2
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerDual$1;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerDual;
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
-    iput v1, v0, Lcom/android/systemui/statusbar/policy/NetworkControllerDual;->mWifiActivity:I
+    iput v1, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
-    .line 230
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerDual$1;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerDual;
 
     #calls: Lcom/android/systemui/statusbar/policy/NetworkControllerDual;->updateWifiIcon()V
     invoke-static {v0}, Lcom/android/systemui/statusbar/policy/NetworkControllerDual;->access$500(Lcom/android/systemui/statusbar/policy/NetworkControllerDual;)V
 
-    .line 231
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkControllerDual$1;->this$0:Lcom/android/systemui/statusbar/policy/NetworkControllerDual;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/NetworkControllerDual;->refreshViews()V
 
     goto :goto_0
 
-    .line 217
     nop
 
     :sswitch_data_0

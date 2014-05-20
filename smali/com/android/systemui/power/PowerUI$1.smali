@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/power/PowerUI;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 140
     iput-object p1, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,12 +37,9 @@
 .method public run()V
     .locals 1
 
-    .prologue
-    .line 143
     iget-object v0, p0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
 
     invoke-virtual {v0}, Lcom/android/systemui/power/PowerUI;->redrawLowBatteryWarning()V
 
-    .line 144
     return-void
 .end method

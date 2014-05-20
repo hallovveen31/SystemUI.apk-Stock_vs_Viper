@@ -1,14 +1,11 @@
 .class Lcom/android/systemui/recent/RecentAppFxActivity$3;
-.super Ljava/lang/Object;
+.super Landroid/animation/AnimatorListenerAdapter;
 .source "RecentAppFxActivity.java"
-
-# interfaces
-.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/recent/RecentAppFxActivity;->setupActionBar()V
+    value = Lcom/android/systemui/recent/RecentAppFxActivity;->clearAllItems()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,81 +17,105 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
 
+.field private final synthetic val$b:Z
+
+.field private final synthetic val$child:Landroid/view/View;
+
+.field private final synthetic val$childCount:I
+
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/recent/RecentAppFxActivity;)V
+.method constructor <init>(Lcom/android/systemui/recent/RecentAppFxActivity;Landroid/view/View;ZI)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 346
     iput-object p1, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->val$child:Landroid/view/View;
+
+    iput-boolean p3, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->val$b:Z
+
+    iput p4, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->val$childCount:I
+
+    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 2
-    .parameter "v"
+.method public onAnimationCancel(Landroid/animation/Animator;)V
+    .locals 3
 
-    .prologue
-    .line 350
-    const-string v0, "RecentApps"
-
-    const-string v1, "clearAll clicked"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 351
-    iget-object v0, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
-
-    #getter for: Lcom/android/systemui/recent/RecentAppFxActivity;->mRecentGridView:Lcom/android/systemui/recent/RecentsGridView;
-    invoke-static {v0}, Lcom/android/systemui/recent/RecentAppFxActivity;->access$100(Lcom/android/systemui/recent/RecentAppFxActivity;)Lcom/android/systemui/recent/RecentsGridView;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Lcom/android/systemui/recent/RecentsGridView;->isClicking()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 355
-    :goto_0
-    return-void
-
-    .line 352
-    :cond_0
-    iget-object v0, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
-
-    #getter for: Lcom/android/systemui/recent/RecentAppFxActivity;->actionClearAll:Lcom/htc/widget/ActionBarItemView;
-    invoke-static {v0}, Lcom/android/systemui/recent/RecentAppFxActivity;->access$300(Lcom/android/systemui/recent/RecentAppFxActivity;)Lcom/htc/widget/ActionBarItemView;
-
-    move-result-object v0
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->val$child:Landroid/view/View;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/htc/widget/ActionBarItemView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    const/4 v2, 0x0
 
-    .line 353
-    iget-object v0, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
+    invoke-virtual {v0, v1, v2}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
+
+    return-void
+.end method
+
+.method public onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 5
+
+    iget-object v2, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->val$child:Landroid/view/View;
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    invoke-virtual {v2, v3, v4}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
+
+    iget-boolean v2, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->val$b:Z
+
+    if-eqz v2, :cond_0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    iget v2, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->val$childCount:I
+
+    if-lt v1, v2, :cond_1
+
+    :cond_0
+    return-void
+
+    :cond_1
+    iget-object v2, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
 
     #getter for: Lcom/android/systemui/recent/RecentAppFxActivity;->mRecentGridView:Lcom/android/systemui/recent/RecentsGridView;
-    invoke-static {v0}, Lcom/android/systemui/recent/RecentAppFxActivity;->access$100(Lcom/android/systemui/recent/RecentAppFxActivity;)Lcom/android/systemui/recent/RecentsGridView;
+    invoke-static {v2}, Lcom/android/systemui/recent/RecentAppFxActivity;->access$5(Lcom/android/systemui/recent/RecentAppFxActivity;)Lcom/android/systemui/recent/RecentsGridView;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/systemui/recent/RecentsGridView;->setDisableItems()V
+    if-eqz v0, :cond_2
 
-    .line 354
-    iget-object v0, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
+    iget-object v2, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->this$0:Lcom/android/systemui/recent/RecentAppFxActivity;
 
-    #calls: Lcom/android/systemui/recent/RecentAppFxActivity;->clearAllItems()V
-    invoke-static {v0}, Lcom/android/systemui/recent/RecentAppFxActivity;->access$400(Lcom/android/systemui/recent/RecentAppFxActivity;)V
+    invoke-virtual {v2, v0}, Lcom/android/systemui/recent/RecentAppFxActivity;->handleSwipe(Landroid/view/View;)V
+
+    :cond_2
+    add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
+.end method
+
+.method public onAnimationStart(Landroid/animation/Animator;)V
+    .locals 3
+
+    iget-object v0, p0, Lcom/android/systemui/recent/RecentAppFxActivity$3;->val$child:Landroid/view/View;
+
+    const/4 v1, 0x2
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
+
+    return-void
 .end method

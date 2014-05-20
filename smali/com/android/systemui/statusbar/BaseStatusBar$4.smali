@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/BaseStatusBar;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 446
     iput-object p1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$4;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,30 +36,23 @@
 # virtual methods
 .method public onLongClick(Landroid/view/View;)Z
     .locals 4
-    .parameter "v"
 
-    .prologue
     const/4 v1, 0x0
 
     const/high16 v3, 0x3f80
 
-    .line 449
     invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/String;
 
-    .line 450
-    .local v0, packageNameF:Ljava/lang/String;
     if-nez v0, :cond_1
 
-    .line 478
     :cond_0
     :goto_0
     return v1
 
-    .line 451
     :cond_1
     invoke-virtual {p1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
 
@@ -70,26 +60,22 @@
 
     if-eqz v2, :cond_0
 
-    .line 455
     invoke-virtual {p1, v3}, Landroid/view/View;->setScaleX(F)V
 
-    .line 456
     invoke-virtual {p1, v3}, Landroid/view/View;->setScaleY(F)V
 
-    .line 458
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$4;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     new-instance v2, Landroid/widget/PopupMenu;
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/BaseStatusBar$4;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    iget-object v3, v3, Lcom/android/systemui/statusbar/BaseStatusBar;->mContext:Landroid/content/Context;
+    iget-object v3, v3, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-direct {v2, v3, p1}, Landroid/widget/PopupMenu;-><init>(Landroid/content/Context;Landroid/view/View;)V
 
     iput-object v2, v1, Lcom/android/systemui/statusbar/BaseStatusBar;->mNotificationBlamePopup:Landroid/widget/PopupMenu;
 
-    .line 459
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$4;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/BaseStatusBar;->mNotificationBlamePopup:Landroid/widget/PopupMenu;
@@ -110,7 +96,6 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/view/MenuInflater;->inflate(ILandroid/view/Menu;)V
 
-    .line 462
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$4;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/BaseStatusBar;->mNotificationBlamePopup:Landroid/widget/PopupMenu;
@@ -121,14 +106,12 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/PopupMenu;->setOnMenuItemClickListener(Landroid/widget/PopupMenu$OnMenuItemClickListener;)V
 
-    .line 476
     iget-object v1, p0, Lcom/android/systemui/statusbar/BaseStatusBar$4;->this$0:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/BaseStatusBar;->mNotificationBlamePopup:Landroid/widget/PopupMenu;
 
     invoke-virtual {v1}, Landroid/widget/PopupMenu;->show()V
 
-    .line 478
     const/4 v1, 0x1
 
     goto :goto_0

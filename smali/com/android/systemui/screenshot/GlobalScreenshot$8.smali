@@ -1,6 +1,9 @@
 .class Lcom/android/systemui/screenshot/GlobalScreenshot$8;
-.super Landroid/animation/AnimatorListenerAdapter;
+.super Ljava/lang/Object;
 .source "GlobalScreenshot.java"
+
+# interfaces
+.implements Landroid/view/animation/Interpolator;
 
 
 # annotations
@@ -21,46 +24,45 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/screenshot/GlobalScreenshot;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 728
     iput-object p1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$8;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
 
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 2
-    .parameter "animation"
+.method public getInterpolation(F)F
+    .locals 7
 
-    .prologue
-    const/16 v1, 0x8
+    const v3, 0x3f5c4771
 
-    .line 731
-    iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$8;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
+    const/high16 v0, 0x3f80
 
-    #getter for: Lcom/android/systemui/screenshot/GlobalScreenshot;->mBackgroundView:Landroid/widget/ImageView;
-    invoke-static {v0}, Lcom/android/systemui/screenshot/GlobalScreenshot;->access$700(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/widget/ImageView;
+    cmpg-float v1, p1, v3
 
-    move-result-object v0
+    if-gez v1, :cond_0
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
+    const-wide/high16 v1, 0x3ff0
 
-    .line 732
-    iget-object v0, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$8;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
+    div-float v3, p1, v3
 
-    #getter for: Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotView:Landroid/widget/ImageView;
-    invoke-static {v0}, Lcom/android/systemui/screenshot/GlobalScreenshot;->access$400(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/widget/ImageView;
+    sub-float v3, v0, v3
 
-    move-result-object v0
+    float-to-double v3, v3
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
+    const-wide/high16 v5, 0x4000
 
-    .line 733
-    return-void
+    invoke-static {v3, v4, v5, v6}, Ljava/lang/Math;->pow(DD)D
+
+    move-result-wide v3
+
+    sub-double/2addr v1, v3
+
+    double-to-float v0, v1
+
+    :cond_0
+    return v0
 .end method

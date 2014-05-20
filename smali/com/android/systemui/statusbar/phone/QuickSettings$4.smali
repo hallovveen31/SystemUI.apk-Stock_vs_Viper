@@ -75,7 +75,7 @@
 
     .line 1623
     .local v0, contextTheme:Landroid/content/Context;
-    invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 

@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 879
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,12 +37,10 @@
 .method public run()V
     .locals 5
 
-    .prologue
     const/4 v4, 0x0
 
     const/4 v3, 0x1
 
-    .line 883
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->handler:Landroid/os/Handler;
@@ -55,7 +50,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 884
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->handler:Landroid/os/Handler;
@@ -72,7 +66,6 @@
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 886
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
@@ -87,7 +80,6 @@
 
     if-ne v1, v3, :cond_1
 
-    .line 887
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->hotspotDrawable:Landroid/graphics/drawable/AnimationDrawable;
@@ -97,7 +89,6 @@
 
     invoke-virtual {v1}, Landroid/graphics/drawable/AnimationDrawable;->stop()V
 
-    .line 890
     :cond_1
     invoke-static {}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->access$800()Z
 
@@ -112,14 +103,11 @@
 
     move-result v0
 
-    .line 892
-    .local v0, state:I
     :goto_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
-    invoke-virtual {v1, v3}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->setEnabled(Z)V
+    invoke-virtual {v1, v3}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->setEnabled(Z)V
 
-    .line 893
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
@@ -129,9 +117,8 @@
 
     const v2, 0x7f020185
 
-    invoke-virtual {v1, v2}, Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;->setImageResource(I)V
+    invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 895
     const/16 v1, 0xd
 
     if-eq v0, v1, :cond_2
@@ -140,7 +127,6 @@
 
     if-ne v0, v1, :cond_4
 
-    .line 898
     :cond_2
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
@@ -151,7 +137,6 @@
 
     invoke-virtual {v1, v3, v3}, Lcom/android/systemui/statusbar/quicksetting/LevelIndicator;->setLevel(II)V
 
-    .line 899
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
@@ -161,7 +146,6 @@
 
     invoke-virtual {v1, v3}, Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;->setOverlayEnable(Z)V
 
-    .line 907
     :goto_1
     const-string v1, "QuickSettingWifiHotspot"
 
@@ -189,11 +173,8 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 908
     return-void
 
-    .line 890
-    .end local v0           #state:I
     :cond_3
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
@@ -208,8 +189,6 @@
 
     goto :goto_0
 
-    .line 903
-    .restart local v0       #state:I
     :cond_4
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
@@ -220,7 +199,6 @@
 
     invoke-virtual {v1, v4, v3}, Lcom/android/systemui/statusbar/quicksetting/LevelIndicator;->setLevel(II)V
 
-    .line 904
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;

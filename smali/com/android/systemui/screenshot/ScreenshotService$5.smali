@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/screenshot/ScreenshotService;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 218
     iput-object p1, p0, Lcom/android/systemui/screenshot/ScreenshotService$5;->this$0:Lcom/android/systemui/screenshot/ScreenshotService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,8 +37,6 @@
 .method public run()V
     .locals 3
 
-    .prologue
-    .line 222
     iget-object v0, p0, Lcom/android/systemui/screenshot/ScreenshotService$5;->this$0:Lcom/android/systemui/screenshot/ScreenshotService;
 
     #getter for: Lcom/android/systemui/screenshot/ScreenshotService;->screenshotLock:Ljava/lang/Object;
@@ -51,7 +46,6 @@
 
     monitor-enter v1
 
-    .line 224
     :try_start_0
     iget-object v0, p0, Lcom/android/systemui/screenshot/ScreenshotService$5;->this$0:Lcom/android/systemui/screenshot/ScreenshotService;
 
@@ -62,17 +56,15 @@
 
     if-eqz v0, :cond_0
 
-    .line 226
     const-string v0, "ScreenshotService"
 
     const-string v2, "force unbind screeshot service since timeout"
 
     invoke-static {v0, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 227
     iget-object v0, p0, Lcom/android/systemui/screenshot/ScreenshotService$5;->this$0:Lcom/android/systemui/screenshot/ScreenshotService;
 
-    iget-object v0, v0, Lcom/android/systemui/screenshot/ScreenshotService;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/android/systemui/screenshot/ScreenshotService$5;->this$0:Lcom/android/systemui/screenshot/ScreenshotService;
 
@@ -83,7 +75,6 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
-    .line 229
     iget-object v0, p0, Lcom/android/systemui/screenshot/ScreenshotService$5;->this$0:Lcom/android/systemui/screenshot/ScreenshotService;
 
     const/4 v2, 0x1
@@ -91,7 +82,6 @@
     #setter for: Lcom/android/systemui/screenshot/ScreenshotService;->screenshotEnable:Z
     invoke-static {v0, v2}, Lcom/android/systemui/screenshot/ScreenshotService;->access$002(Lcom/android/systemui/screenshot/ScreenshotService;Z)Z
 
-    .line 230
     iget-object v0, p0, Lcom/android/systemui/screenshot/ScreenshotService$5;->this$0:Lcom/android/systemui/screenshot/ScreenshotService;
 
     const/4 v2, 0x0
@@ -99,14 +89,11 @@
     #setter for: Lcom/android/systemui/screenshot/ScreenshotService;->screenshotConnection:Landroid/content/ServiceConnection;
     invoke-static {v0, v2}, Lcom/android/systemui/screenshot/ScreenshotService;->access$502(Lcom/android/systemui/screenshot/ScreenshotService;Landroid/content/ServiceConnection;)Landroid/content/ServiceConnection;
 
-    .line 232
     :cond_0
     monitor-exit v1
 
-    .line 233
     return-void
 
-    .line 232
     :catchall_0
     move-exception v0
 

@@ -18,14 +18,9 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
-    .parameter "context"
-    .parameter "attrs"
 
-    .prologue
-    .line 49
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/statusbar/phone/PanelView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 50
     return-void
 .end method
 
@@ -33,10 +28,7 @@
 # virtual methods
 .method public dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
     .locals 3
-    .parameter "event"
 
-    .prologue
-    .line 121
     invoke-virtual {p1}, Landroid/view/accessibility/AccessibilityEvent;->getEventType()I
 
     move-result v0
@@ -45,12 +37,11 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 122
-    invoke-virtual {p1}, Landroid/view/accessibility/AccessibilityEvent;->getText()Ljava/util/List;
+    invoke-virtual {p1}, Landroid/view/accessibility/AccessibilityRecord;->getText()Ljava/util/List;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -62,15 +53,13 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 124
     const/4 v0, 0x1
 
-    .line 127
     :goto_0
     return v0
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/systemui/statusbar/phone/PanelView;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
+    invoke-super {p0, p1}, Landroid/view/View;->dispatchPopulateAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)Z
 
     move-result v0
 
@@ -79,16 +68,12 @@
 
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 4
-    .parameter "canvas"
 
-    .prologue
     const/4 v3, 0x0
 
-    .line 143
-    invoke-super {p0, p1}, Lcom/android/systemui/statusbar/phone/PanelView;->draw(Landroid/graphics/Canvas;)V
+    invoke-super {p0, p1}, Landroid/widget/FrameLayout;->draw(Landroid/graphics/Canvas;)V
 
-    .line 144
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->getHeight()I
+    invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v1
 
@@ -96,19 +81,16 @@
 
     sub-int/2addr v1, v2
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->getPaddingBottom()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingBottom()I
 
     move-result v2
 
     sub-int v0, v1, v2
 
-    .line 145
-    .local v0, off:I
     int-to-float v1, v0
 
     invoke-virtual {p1, v3, v1}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 146
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mHandleBar:Landroid/graphics/drawable/Drawable;
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mHandleView:Landroid/view/View;
@@ -119,30 +101,23 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
-    .line 147
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mHandleBar:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 148
     neg-int v1, v0
 
     int-to-float v1, v1
 
     invoke-virtual {p1, v3, v1}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 149
     return-void
 .end method
 
 .method public fling(FZ)V
     .locals 4
-    .parameter "vel"
-    .parameter "always"
 
-    .prologue
-    .line 104
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mBar:Lcom/android/systemui/statusbar/phone/PanelBar;
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PanelView;->mBar:Lcom/android/systemui/statusbar/phone/PanelBar;
 
     check-cast v1, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
@@ -152,11 +127,8 @@
 
     move-result-object v0
 
-    .line 105
-    .local v0, gr:Lcom/android/systemui/statusbar/GestureRecorder;
     if-eqz v0, :cond_0
 
-    .line 106
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -204,14 +176,11 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/android/systemui/statusbar/GestureRecorder;->tag(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 110
     :cond_0
     invoke-super {p0, p1, p2}, Lcom/android/systemui/statusbar/phone/PanelView;->fling(FZ)V
 
-    .line 111
     return-void
 
-    .line 106
     :cond_1
     const-string v1, "closed"
 
@@ -221,14 +190,11 @@
 .method protected onFinishInflate()V
     .locals 2
 
-    .prologue
-    .line 54
     invoke-super {p0}, Lcom/android/systemui/statusbar/phone/PanelView;->onFinishInflate()V
 
-    .line 56
     const v1, 0x7f07000c
 
-    invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -236,8 +202,7 @@
 
     iput-object v1, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mQSContainer:Lcom/android/systemui/statusbar/phone/QuickSettingsContainerView;
 
-    .line 58
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -245,8 +210,6 @@
 
     move-result-object v0
 
-    .line 59
-    .local v0, resources:Landroid/content/res/Resources;
     const v1, 0x7f020502
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -255,7 +218,6 @@
 
     iput-object v1, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mHandleBar:Landroid/graphics/drawable/Drawable;
 
-    .line 60
     const v1, 0x7f0c0033
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -264,52 +226,37 @@
 
     iput v1, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mHandleBarHeight:I
 
-    .line 61
     const v1, 0x7f070008
 
-    invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mHandleView:Landroid/view/View;
 
-    .line 62
     return-void
 .end method
 
 .method protected onLayout(ZIIII)V
     .locals 6
-    .parameter "changed"
-    .parameter "left"
-    .parameter "top"
-    .parameter "right"
-    .parameter "bottom"
 
-    .prologue
-    .line 133
     invoke-super/range {p0 .. p5}, Lcom/android/systemui/statusbar/phone/PanelView;->onLayout(ZIIII)V
 
-    .line 134
     if-eqz p1, :cond_0
 
-    .line 135
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->getPaddingLeft()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v0
 
-    .line 136
-    .local v0, pl:I
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->getPaddingRight()I
+    invoke-virtual {p0}, Landroid/view/View;->getPaddingRight()I
 
     move-result v1
 
-    .line 137
-    .local v1, pr:I
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mHandleBar:Landroid/graphics/drawable/Drawable;
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->getWidth()I
+    invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v4
 
@@ -319,28 +266,21 @@
 
     invoke-virtual {v2, v0, v3, v4, v5}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 139
-    .end local v0           #pl:I
-    .end local v1           #pr:I
     :cond_0
     return-void
 .end method
 
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
-    .parameter "event"
 
-    .prologue
     const/4 v4, 0x2
 
-    .line 154
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
 
     if-eq v0, v4, :cond_0
 
-    .line 155
     const v0, 0x8cbe
 
     const/4 v1, 0x3
@@ -387,7 +327,6 @@
 
     invoke-static {v0, v1}, Landroid/util/EventLog;->writeEvent(I[Ljava/lang/Object;)I
 
-    .line 159
     :cond_0
     invoke-super {p0, p1}, Lcom/android/systemui/statusbar/phone/PanelView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -398,35 +337,25 @@
 
 .method public setBar(Lcom/android/systemui/statusbar/phone/PanelBar;)V
     .locals 1
-    .parameter "panelBar"
 
-    .prologue
-    .line 70
     invoke-super {p0, p1}, Lcom/android/systemui/statusbar/phone/PanelView;->setBar(Lcom/android/systemui/statusbar/phone/PanelBar;)V
 
-    .line 72
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mQS:Lcom/android/systemui/statusbar/phone/QuickSettings;
 
     if-eqz v0, :cond_0
 
-    .line 73
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mQS:Lcom/android/systemui/statusbar/phone/QuickSettings;
 
     invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/phone/QuickSettings;->setBar(Lcom/android/systemui/statusbar/phone/PanelBar;)V
 
-    .line 75
     :cond_0
     return-void
 .end method
 
 .method public setQuickSettings(Lcom/android/systemui/statusbar/phone/QuickSettings;)V
     .locals 0
-    .parameter "qs"
 
-    .prologue
-    .line 65
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/SettingsPanelView;->mQS:Lcom/android/systemui/statusbar/phone/QuickSettings;
 
-    .line 66
     return-void
 .end method

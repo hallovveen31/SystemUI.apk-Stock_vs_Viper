@@ -147,7 +147,6 @@
 .method static constructor <clinit>()V
     .locals 8
 
-    .prologue
     const/4 v7, 0x3
 
     const/4 v6, 0x6
@@ -158,294 +157,252 @@
 
     const/4 v3, 0x5
 
-    .line 28
     new-array v0, v3, [I
 
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_4LEVEL:[I
 
-    .line 36
     new-array v0, v3, [I
 
     fill-array-data v0, :array_1
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_4LEVEL_R:[I
 
-    .line 45
     new-array v0, v3, [I
 
     fill-array-data v0, :array_2
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_4LEVEL_CDMA:[I
 
-    .line 53
     new-array v0, v3, [I
 
     fill-array-data v0, :array_3
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_4LEVEL_TRIANGLE:[I
 
-    .line 61
     new-array v0, v3, [I
 
     fill-array-data v0, :array_4
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_4LEVEL_FLASH:[I
 
-    .line 71
     new-array v0, v6, [I
 
     fill-array-data v0, :array_5
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_5LEVEL:[I
 
-    .line 80
     new-array v0, v6, [I
 
     fill-array-data v0, :array_6
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_5LEVEL_R:[I
 
-    .line 89
     new-array v0, v6, [I
 
     fill-array-data v0, :array_7
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_5LEVEL_TRIANGLE:[I
 
-    .line 98
     new-array v0, v6, [I
 
     fill-array-data v0, :array_8
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_5LEVEL_FLASH:[I
 
-    .line 109
     new-array v0, v5, [I
 
     fill-array-data v0, :array_9
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_6LEVEL:[I
 
-    .line 119
     new-array v0, v5, [I
 
     fill-array-data v0, :array_a
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_6LEVEL_R:[I
 
-    .line 130
     new-array v0, v5, [I
 
     fill-array-data v0, :array_b
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_6LEVEL_CDMA:[I
 
-    .line 140
     new-array v0, v5, [I
 
     fill-array-data v0, :array_c
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_6LEVEL_TRIANGLE:[I
 
-    .line 150
     new-array v0, v5, [I
 
     fill-array-data v0, :array_d
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_6LEVEL_FLASH:[I
 
-    .line 210
     new-array v0, v4, [I
 
     fill-array-data v0, :array_e
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_G:[I
 
-    .line 218
     new-array v0, v4, [I
 
     fill-array-data v0, :array_f
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_3G:[I
 
-    .line 226
     new-array v0, v3, [I
 
     fill-array-data v0, :array_10
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_3G_CDMA:[I
 
-    .line 235
     new-array v0, v3, [I
 
     fill-array-data v0, :array_11
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_EVDO:[I
 
-    .line 244
     new-array v0, v4, [I
 
     fill-array-data v0, :array_12
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_E:[I
 
-    .line 252
     new-array v0, v4, [I
 
     fill-array-data v0, :array_13
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_H:[I
 
-    .line 260
     new-array v0, v4, [I
 
     fill-array-data v0, :array_14
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_HPLUS:[I
 
-    .line 268
     new-array v0, v4, [I
 
     fill-array-data v0, :array_15
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_3GPLUS:[I
 
-    .line 276
     new-array v0, v3, [I
 
     fill-array-data v0, :array_16
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_1X:[I
 
-    .line 285
     new-array v0, v4, [I
 
     fill-array-data v0, :array_17
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_LTE:[I
 
-    .line 293
     new-array v0, v4, [I
 
     fill-array-data v0, :array_18
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->ATT_DATA_G:[I
 
-    .line 301
     new-array v0, v4, [I
 
     fill-array-data v0, :array_19
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->ATT_DATA_E:[I
 
-    .line 309
     new-array v0, v4, [I
 
     fill-array-data v0, :array_1a
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->ATT_DATA_4G:[I
 
-    .line 317
     new-array v0, v4, [I
 
     fill-array-data v0, :array_1b
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->ATT_DATA_4G_LTE:[I
 
-    .line 325
     new-array v0, v3, [I
 
     fill-array-data v0, :array_1c
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->VZW_DATA_3G:[I
 
-    .line 334
     new-array v0, v4, [I
 
     fill-array-data v0, :array_1d
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->VZW_DATA_LTE:[I
 
-    .line 347
     new-array v0, v4, [I
 
     fill-array-data v0, :array_1e
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_2G:[I
 
-    .line 355
     new-array v0, v4, [I
 
     fill-array-data v0, :array_1f
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_4G:[I
 
-    .line 363
     new-array v0, v4, [I
 
     fill-array-data v0, :array_20
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_4GLTE:[I
 
-    .line 371
     new-array v0, v4, [I
 
     fill-array-data v0, :array_21
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_D:[I
 
-    .line 379
     new-array v0, v4, [I
 
     fill-array-data v0, :array_22
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_DATA_DC:[I
 
-    .line 387
     new-array v0, v4, [I
 
     fill-array-data v0, :array_23
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->TMOUS_DATA_3G:[I
 
-    .line 395
     new-array v0, v4, [I
 
     fill-array-data v0, :array_24
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->TMOUS_DATA_4G:[I
 
-    .line 403
     new-array v0, v4, [I
 
     fill-array-data v0, :array_25
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->TMOUS_DATA_LTE:[I
 
-    .line 412
     new-array v0, v4, [I
 
     fill-array-data v0, :array_26
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->WIFI_SIGNAL_STRENGTH:[I
 
-    .line 418
     sget-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->WIFI_SIGNAL_STRENGTH:[I
 
     array-length v0, v0
 
     sput v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->WIFI_LEVEL_COUNT:I
 
-    .line 421
     new-array v0, v4, [I
 
     fill-array-data v0, :array_27
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->QS_WIFI_SIGNAL_STRENGTH:[I
 
-    .line 429
     new-array v0, v4, [[I
 
     const/4 v1, 0x0
@@ -480,7 +437,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->WIFI_SIGNAL_STRENGTH_ACTIVITY:[[I
 
-    .line 469
     new-array v0, v5, [[I
 
     const/4 v1, 0x0
@@ -533,7 +489,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CMCC_SGLTE_DUAL_STANDBY_SIGNAL:[[I
 
-    .line 500
     new-array v0, v5, [[I
 
     const/4 v1, 0x0
@@ -586,157 +541,134 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CMCC_SGLTE_DUAL_STANDBY_SIGNAL_R:[[I
 
-    .line 531
     new-array v0, v6, [I
 
     fill-array-data v0, :array_3a
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CMCC_SGLTE_SINGLE_STANDBY_SIGNAL_G:[I
 
-    .line 540
     new-array v0, v6, [I
 
     fill-array-data v0, :array_3b
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CMCC_SGLTE_SINGLE_STANDBY_SIGNAL_G_R:[I
 
-    .line 549
     new-array v0, v6, [I
 
     fill-array-data v0, :array_3c
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CMCC_SGLTE_SINGLE_STANDBY_SIGNAL_E:[I
 
-    .line 558
     new-array v0, v6, [I
 
     fill-array-data v0, :array_3d
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CMCC_SGLTE_SINGLE_STANDBY_SIGNAL_E_R:[I
 
-    .line 567
     new-array v0, v6, [I
 
     fill-array-data v0, :array_3e
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CMCC_SGLTE_SINGLE_STANDBY_SIGNAL_3G:[I
 
-    .line 576
     new-array v0, v6, [I
 
     fill-array-data v0, :array_3f
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CMCC_SGLTE_SINGLE_STANDBY_SIGNAL_3G_R:[I
 
-    .line 585
     new-array v0, v6, [I
 
     fill-array-data v0, :array_40
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CMCC_SGLTE_SINGLE_STANDBY_SIGNAL_4G:[I
 
-    .line 594
     new-array v0, v6, [I
 
     fill-array-data v0, :array_41
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CMCC_SGLTE_SINGLE_STANDBY_SIGNAL_4G_R:[I
 
-    .line 711
     new-array v0, v7, [I
 
     fill-array-data v0, :array_42
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->SPRINT_DATA_ACTIVE:[I
 
-    .line 717
     new-array v0, v7, [I
 
     fill-array-data v0, :array_43
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->SPRINT_DATA_INACTIVE:[I
 
-    .line 723
     sget-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->SPRINT_DATA_INACTIVE:[I
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->SPRINT_DATA_IDLE:[I
 
-    .line 725
     new-array v0, v7, [I
 
     fill-array-data v0, :array_44
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->SPRINT_DATA_INACTIVE_TO_DORMANT:[I
 
-    .line 731
     new-array v0, v7, [I
 
     fill-array-data v0, :array_45
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->SPRINT_DATA_DORMANT_TO_INACTIVE:[I
 
-    .line 737
     sget-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->SPRINT_DATA_DORMANT_TO_INACTIVE:[I
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->SPRINT_DATA_DORMANT_TO_IDLE:[I
 
-    .line 743
     new-array v0, v3, [I
 
     fill-array-data v0, :array_46
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CT_1X_SIGNAL:[I
 
-    .line 751
     new-array v0, v3, [I
 
     fill-array-data v0, :array_47
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CT_2G_SIGNAL:[I
 
-    .line 759
     new-array v0, v3, [I
 
     fill-array-data v0, :array_48
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CT_3G_SIGNAL:[I
 
-    .line 767
     new-array v0, v3, [I
 
     fill-array-data v0, :array_49
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CT_4G_SIGNAL:[I
 
-    .line 775
     new-array v0, v3, [I
 
     fill-array-data v0, :array_4a
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CT_1X_SIGNAL_R:[I
 
-    .line 783
     new-array v0, v3, [I
 
     fill-array-data v0, :array_4b
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CT_2G_SIGNAL_R:[I
 
-    .line 791
     new-array v0, v3, [I
 
     fill-array-data v0, :array_4c
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CT_3G_SIGNAL_R:[I
 
-    .line 799
     new-array v0, v3, [I
 
     fill-array-data v0, :array_4d
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CT_4G_SIGNAL_R:[I
 
-    .line 808
     new-array v0, v3, [[I
 
     const/4 v1, 0x0
@@ -777,7 +709,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CT_1X_3G_SIGNAL:[[I
 
-    .line 836
     new-array v0, v3, [[I
 
     const/4 v1, 0x0
@@ -818,7 +749,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CT_2G_3G_SIGNAL:[[I
 
-    .line 864
     new-array v0, v3, [[I
 
     const/4 v1, 0x0
@@ -861,7 +791,6 @@
 
     return-void
 
-    .line 28
     :array_0
     .array-data 0x4
         0xaft 0x4t 0x2t 0x7ft
@@ -871,7 +800,6 @@
         0xb7t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 36
     :array_1
     .array-data 0x4
         0x83t 0x4t 0x2t 0x7ft
@@ -881,7 +809,6 @@
         0x87t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 45
     :array_2
     .array-data 0x4
         0x1et 0x0t 0x2t 0x7ft
@@ -891,7 +818,6 @@
         0x22t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 53
     :array_3
     .array-data 0x4
         0x42t 0x0t 0x2t 0x7ft
@@ -901,7 +827,6 @@
         0x46t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 61
     :array_4
     .array-data 0x4
         0x54t 0x0t 0x2t 0x7ft
@@ -911,7 +836,6 @@
         0x58t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 71
     :array_5
     .array-data 0x4
         0xc0t 0x2t 0x2t 0x7ft
@@ -922,7 +846,6 @@
         0xc5t 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 80
     :array_6
     .array-data 0x4
         0x7dt 0x4t 0x2t 0x7ft
@@ -933,7 +856,6 @@
         0x82t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 89
     :array_7
     .array-data 0x4
         0x47t 0x0t 0x2t 0x7ft
@@ -944,7 +866,6 @@
         0x4ct 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 98
     :array_8
     .array-data 0x4
         0x59t 0x0t 0x2t 0x7ft
@@ -955,7 +876,6 @@
         0x5et 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 109
     :array_9
     .array-data 0x4
         0x79t 0x0t 0x2t 0x7ft
@@ -967,7 +887,6 @@
         0x7ft 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 119
     :array_a
     .array-data 0x4
         0x80t 0x0t 0x2t 0x7ft
@@ -979,7 +898,6 @@
         0x86t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 130
     :array_b
     .array-data 0x4
         0x25t 0x0t 0x2t 0x7ft
@@ -991,7 +909,6 @@
         0x2bt 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 140
     :array_c
     .array-data 0x4
         0x4dt 0x0t 0x2t 0x7ft
@@ -1003,7 +920,6 @@
         0x53t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 150
     :array_d
     .array-data 0x4
         0x5ft 0x0t 0x2t 0x7ft
@@ -1015,7 +931,6 @@
         0x65t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 210
     :array_e
     .array-data 0x4
         0x41t 0x3t 0x2t 0x7ft
@@ -1024,7 +939,6 @@
         0x91t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 218
     :array_f
     .array-data 0x4
         0x34t 0x3t 0x2t 0x7ft
@@ -1033,7 +947,6 @@
         0x88t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 226
     :array_10
     .array-data 0x4
         0x2et 0x0t 0x2t 0x7ft
@@ -1043,7 +956,6 @@
         0x32t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 235
     :array_11
     .array-data 0x4
         0x2ft 0x0t 0x2t 0x7ft
@@ -1053,7 +965,6 @@
         0x34t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 244
     :array_12
     .array-data 0x4
         0x3et 0x3t 0x2t 0x7ft
@@ -1062,7 +973,6 @@
         0x8ft 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 252
     :array_13
     .array-data 0x4
         0x45t 0x3t 0x2t 0x7ft
@@ -1071,7 +981,6 @@
         0x93t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 260
     :array_14
     .array-data 0x4
         0x46t 0x3t 0x2t 0x7ft
@@ -1080,7 +989,6 @@
         0x94t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 268
     :array_15
     .array-data 0x4
         0x37t 0x3t 0x2t 0x7ft
@@ -1089,7 +997,6 @@
         0x8at 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 276
     :array_16
     .array-data 0x4
         0x2dt 0x0t 0x2t 0x7ft
@@ -1099,7 +1006,6 @@
         0x30t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 285
     :array_17
     .array-data 0x4
         0x47t 0x3t 0x2t 0x7ft
@@ -1108,7 +1014,6 @@
         0x95t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 293
     :array_18
     .array-data 0x4
         0x66t 0x3t 0x2t 0x7ft
@@ -1117,7 +1022,6 @@
         0x2bt 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 301
     :array_19
     .array-data 0x4
         0x56t 0x3t 0x2t 0x7ft
@@ -1126,7 +1030,6 @@
         0x28t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 309
     :array_1a
     .array-data 0x4
         0x12t 0x3t 0x2t 0x7ft
@@ -1135,7 +1038,6 @@
         0x22t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 317
     :array_1b
     .array-data 0x4
         0x17t 0x3t 0x2t 0x7ft
@@ -1144,7 +1046,6 @@
         0x24t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 325
     :array_1c
     .array-data 0x4
         0x36t 0x3t 0x2t 0x7ft
@@ -1154,7 +1055,6 @@
         0x36t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 334
     :array_1d
     .array-data 0x4
         0x51t 0x3t 0x2t 0x7ft
@@ -1163,7 +1063,6 @@
         0x9dt 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 347
     :array_1e
     .array-data 0x4
         0x30t 0x3t 0x2t 0x7ft
@@ -1172,7 +1071,6 @@
         0x87t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 355
     :array_1f
     .array-data 0x4
         0x38t 0x3t 0x2t 0x7ft
@@ -1181,7 +1079,6 @@
         0x8bt 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 363
     :array_20
     .array-data 0x4
         0x3at 0x3t 0x2t 0x7ft
@@ -1190,7 +1087,6 @@
         0x8ct 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 371
     :array_21
     .array-data 0x4
         0x3ct 0x3t 0x2t 0x7ft
@@ -1199,7 +1095,6 @@
         0x8dt 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 379
     :array_22
     .array-data 0x4
         0x3dt 0x3t 0x2t 0x7ft
@@ -1208,7 +1103,6 @@
         0x8et 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 387
     :array_23
     .array-data 0x4
         0x4et 0x3t 0x2t 0x7ft
@@ -1217,7 +1111,6 @@
         0x9at 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 395
     :array_24
     .array-data 0x4
         0x4ft 0x3t 0x2t 0x7ft
@@ -1226,7 +1119,6 @@
         0x9bt 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 403
     :array_25
     .array-data 0x4
         0x50t 0x3t 0x2t 0x7ft
@@ -1235,7 +1127,6 @@
         0x9ct 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 412
     :array_26
     .array-data 0x4
         0xd1t 0x4t 0x2t 0x7ft
@@ -1244,7 +1135,6 @@
         0xd7t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 421
     :array_27
     .array-data 0x4
         0x79t 0x1t 0x2t 0x7ft
@@ -1253,7 +1143,6 @@
         0x7ct 0x1t 0x2t 0x7ft
     .end array-data
 
-    .line 429
     :array_28
     .array-data 0x4
         0xdat 0x4t 0x2t 0x7ft
@@ -1286,7 +1175,6 @@
         0xe7t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 469
     :array_2c
     .array-data 0x4
         0xbft 0x1t 0x2t 0x7ft
@@ -1364,7 +1252,6 @@
         0x71t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 500
     :array_33
     .array-data 0x4
         0xc6t 0x1t 0x2t 0x7ft
@@ -1442,7 +1329,6 @@
         0x71t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 531
     :array_3a
     .array-data 0x4
         0x53t 0x4t 0x2t 0x7ft
@@ -1453,7 +1339,6 @@
         0x58t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 540
     :array_3b
     .array-data 0x4
         0x5ct 0x4t 0x2t 0x7ft
@@ -1464,7 +1349,6 @@
         0x61t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 549
     :array_3c
     .array-data 0x4
         0x11t 0x4t 0x2t 0x7ft
@@ -1475,7 +1359,6 @@
         0x16t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 558
     :array_3d
     .array-data 0x4
         0x1at 0x4t 0x2t 0x7ft
@@ -1486,7 +1369,6 @@
         0x1ft 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 567
     :array_3e
     .array-data 0x4
         0x5dt 0x2t 0x2t 0x7ft
@@ -1497,7 +1379,6 @@
         0x62t 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 576
     :array_3f
     .array-data 0x4
         0x6ct 0x2t 0x2t 0x7ft
@@ -1508,7 +1389,6 @@
         0x71t 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 585
     :array_40
     .array-data 0x4
         0x9et 0x2t 0x2t 0x7ft
@@ -1519,7 +1399,6 @@
         0xa3t 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 594
     :array_41
     .array-data 0x4
         0xact 0x2t 0x2t 0x7ft
@@ -1530,7 +1409,6 @@
         0xb1t 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 711
     :array_42
     .array-data 0x4
         0xft 0x4t 0x2t 0x7ft
@@ -1538,7 +1416,6 @@
         0xe9t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 717
     :array_43
     .array-data 0x4
         0xeat 0x3t 0x2t 0x7ft
@@ -1546,7 +1423,6 @@
         0xd1t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 725
     :array_44
     .array-data 0x4
         0xeat 0x3t 0x2t 0x7ft
@@ -1554,7 +1430,6 @@
         0xe8t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 731
     :array_45
     .array-data 0x4
         0xeat 0x3t 0x2t 0x7ft
@@ -1562,7 +1437,6 @@
         0xe2t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 743
     :array_46
     .array-data 0x4
         0xdct 0x1t 0x2t 0x7ft
@@ -1572,7 +1446,6 @@
         0xe0t 0x1t 0x2t 0x7ft
     .end array-data
 
-    .line 751
     :array_47
     .array-data 0x4
         0xf5t 0x1t 0x2t 0x7ft
@@ -1582,7 +1455,6 @@
         0xf9t 0x1t 0x2t 0x7ft
     .end array-data
 
-    .line 759
     :array_48
     .array-data 0x4
         0x58t 0x2t 0x2t 0x7ft
@@ -1592,7 +1464,6 @@
         0x5ct 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 767
     :array_49
     .array-data 0x4
         0x99t 0x2t 0x2t 0x7ft
@@ -1602,7 +1473,6 @@
         0x9dt 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 775
     :array_4a
     .array-data 0x4
         0xe2t 0x1t 0x2t 0x7ft
@@ -1612,7 +1482,6 @@
         0xe6t 0x1t 0x2t 0x7ft
     .end array-data
 
-    .line 783
     :array_4b
     .array-data 0x4
         0xfat 0x1t 0x2t 0x7ft
@@ -1622,7 +1491,6 @@
         0xfet 0x1t 0x2t 0x7ft
     .end array-data
 
-    .line 791
     :array_4c
     .array-data 0x4
         0x67t 0x2t 0x2t 0x7ft
@@ -1632,7 +1500,6 @@
         0x6bt 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 799
     :array_4d
     .array-data 0x4
         0xa7t 0x2t 0x2t 0x7ft
@@ -1642,7 +1509,6 @@
         0xabt 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 808
     :array_4e
     .array-data 0x4
         0xdt 0x2t 0x2t 0x7ft
@@ -1688,7 +1554,6 @@
         0x4dt 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 836
     :array_53
     .array-data 0x4
         0x12t 0x2t 0x2t 0x7ft
@@ -1734,7 +1599,6 @@
         0x52t 0x2t 0x2t 0x7ft
     .end array-data
 
-    .line 864
     :array_58
     .array-data 0x4
         0x80t 0x2t 0x2t 0x7ft
@@ -1784,8 +1648,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .prologue
-    .line 22
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -1793,39 +1655,30 @@
 
 .method private static final getCmccSgLteDualStandbyMdmOnlySignalRat(I)I
     .locals 1
-    .parameter
 
-    .prologue
-    .line 638
     packed-switch p0, :pswitch_data_0
 
-    .line 641
     :pswitch_0
     const v0, 0x7f02045b
 
-    .line 651
     :goto_0
     return v0
 
-    .line 643
     :pswitch_1
     const v0, 0x7f020419
 
     goto :goto_0
 
-    .line 649
     :pswitch_2
     const v0, 0x7f020266
 
     goto :goto_0
 
-    .line 651
     :pswitch_3
     const v0, 0x7f0202a6
 
     goto :goto_0
 
-    .line 638
     nop
 
     :pswitch_data_0
@@ -1849,16 +1702,11 @@
 
 .method private static final getCmccSgLteDualStandbyQscOnlySignalRat(I)I
     .locals 1
-    .parameter
 
-    .prologue
-    .line 656
     packed-switch p0, :pswitch_data_0
 
-    .line 659
     const v0, 0x7f020469
 
-    .line 661
     :goto_0
     return v0
 
@@ -1867,7 +1715,6 @@
 
     goto :goto_0
 
-    .line 656
     nop
 
     :pswitch_data_0
@@ -1878,53 +1725,39 @@
 
 .method static final getCmccSgLteDualStandbySignalRat(ZIZI)I
     .locals 1
-    .parameter
-    .parameter
-    .parameter
-    .parameter
 
-    .prologue
     const/4 v0, 0x2
 
-    .line 605
     if-nez p0, :cond_0
 
     if-nez p2, :cond_0
 
-    .line 606
     const/4 v0, 0x0
 
-    .line 632
     :goto_0
     return v0
 
-    .line 607
     :cond_0
     if-nez p2, :cond_1
 
-    .line 609
     invoke-static {p1}, Lcom/android/systemui/statusbar/policy/HtcIcons;->getCmccSgLteDualStandbyMdmOnlySignalRat(I)I
 
     move-result v0
 
     goto :goto_0
 
-    .line 610
     :cond_1
     if-nez p0, :cond_2
 
-    .line 612
     invoke-static {p3}, Lcom/android/systemui/statusbar/policy/HtcIcons;->getCmccSgLteDualStandbyQscOnlySignalRat(I)I
 
     move-result v0
 
     goto :goto_0
 
-    .line 616
     :cond_2
     packed-switch p1, :pswitch_data_0
 
-    .line 619
     :pswitch_0
     if-ne p3, v0, :cond_3
 
@@ -1937,7 +1770,6 @@
 
     goto :goto_0
 
-    .line 622
     :pswitch_1
     if-ne p3, v0, :cond_4
 
@@ -1950,7 +1782,6 @@
 
     goto :goto_0
 
-    .line 629
     :pswitch_2
     if-ne p3, v0, :cond_5
 
@@ -1963,7 +1794,6 @@
 
     goto :goto_0
 
-    .line 632
     :pswitch_3
     if-ne p3, v0, :cond_6
 
@@ -1976,7 +1806,6 @@
 
     goto :goto_0
 
-    .line 616
     :pswitch_data_0
     .packed-switch 0x2
         :pswitch_1
@@ -1998,62 +1827,47 @@
 
 .method static final getCmccSgLteDualStandbySignalStrength(ZIZIZ)I
     .locals 1
-    .parameter "hasMdmService"
-    .parameter "mdmSignal"
-    .parameter "hasQscService"
-    .parameter "qscSignal"
-    .parameter "roaming"
 
-    .prologue
     const/4 v0, 0x5
 
-    .line 667
     if-gez p1, :cond_0
 
     const/4 p1, 0x0
 
-    .line 668
     :cond_0
     if-le p1, v0, :cond_1
 
     const/4 p1, 0x5
 
-    .line 669
     :cond_1
     if-gez p3, :cond_2
 
     const/4 p3, 0x0
 
-    .line 670
     :cond_2
     if-le p3, v0, :cond_3
 
     const/4 p3, 0x5
 
-    .line 671
     :cond_3
     if-nez p0, :cond_4
 
     const/4 p1, 0x6
 
-    .line 672
     :cond_4
     if-nez p2, :cond_5
 
     const/4 p3, 0x6
 
-    .line 673
     :cond_5
     if-eqz p4, :cond_6
 
-    .line 674
     sget-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CMCC_SGLTE_DUAL_STANDBY_SIGNAL_R:[[I
 
     aget-object v0, v0, p1
 
     aget v0, v0, p3
 
-    .line 676
     :goto_0
     return v0
 
@@ -2069,33 +1883,23 @@
 
 .method static final getCmccSgLteSingleStandbySignalStrength(ZIIZ)I
     .locals 1
-    .parameter "hasService"
-    .parameter "rat"
-    .parameter "signal"
-    .parameter "roaming"
 
-    .prologue
     const/4 v0, 0x5
 
-    .line 682
     if-eqz p0, :cond_6
 
-    .line 683
     if-gez p2, :cond_0
 
     const/4 p2, 0x0
 
-    .line 684
     :cond_0
     if-le p2, v0, :cond_1
 
     const/4 p2, 0x5
 
-    .line 685
     :cond_1
     packed-switch p1, :pswitch_data_0
 
-    .line 688
     :pswitch_0
     if-eqz p3, :cond_2
 
@@ -2103,11 +1907,9 @@
 
     aget v0, v0, p2
 
-    .line 705
     :goto_0
     return v0
 
-    .line 688
     :cond_2
     sget-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->CMCC_SGLTE_SINGLE_STANDBY_SIGNAL_G:[I
 
@@ -2115,7 +1917,6 @@
 
     goto :goto_0
 
-    .line 691
     :pswitch_1
     if-eqz p3, :cond_3
 
@@ -2132,7 +1933,6 @@
 
     goto :goto_0
 
-    .line 698
     :pswitch_2
     if-eqz p3, :cond_4
 
@@ -2149,7 +1949,6 @@
 
     goto :goto_0
 
-    .line 701
     :pswitch_3
     if-eqz p3, :cond_5
 
@@ -2166,7 +1965,6 @@
 
     goto :goto_0
 
-    .line 705
     :cond_6
     invoke-static {v0}, Lcom/android/systemui/statusbar/policy/HtcIcons;->getSignalBarIconNull(I)I
 
@@ -2174,7 +1972,6 @@
 
     goto :goto_0
 
-    .line 685
     nop
 
     :pswitch_data_0
@@ -2198,29 +1995,22 @@
 
 .method static final getSignalBarIconList(II)[I
     .locals 3
-    .parameter "maxLevel"
-    .parameter "state"
 
-    .prologue
     const/4 v2, 0x2
 
     const/4 v1, 0x1
 
-    .line 166
     const/4 v0, 0x4
 
     if-ne v0, p0, :cond_3
 
-    .line 167
     if-nez p1, :cond_0
 
     sget-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_4LEVEL:[I
 
-    .line 180
     :goto_0
     return-object v0
 
-    .line 168
     :cond_0
     if-ne p1, v1, :cond_1
 
@@ -2228,7 +2018,6 @@
 
     goto :goto_0
 
-    .line 169
     :cond_1
     if-ne p1, v2, :cond_2
 
@@ -2236,26 +2025,22 @@
 
     goto :goto_0
 
-    .line 170
     :cond_2
     sget-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_4LEVEL_FLASH:[I
 
     goto :goto_0
 
-    .line 171
     :cond_3
     const/4 v0, 0x6
 
     if-ne v0, p0, :cond_7
 
-    .line 172
     if-nez p1, :cond_4
 
     sget-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_6LEVEL:[I
 
     goto :goto_0
 
-    .line 173
     :cond_4
     if-ne p1, v1, :cond_5
 
@@ -2263,7 +2048,6 @@
 
     goto :goto_0
 
-    .line 174
     :cond_5
     if-ne p1, v2, :cond_6
 
@@ -2271,13 +2055,11 @@
 
     goto :goto_0
 
-    .line 175
     :cond_6
     sget-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_6LEVEL_FLASH:[I
 
     goto :goto_0
 
-    .line 177
     :cond_7
     if-nez p1, :cond_8
 
@@ -2285,7 +2067,6 @@
 
     goto :goto_0
 
-    .line 178
     :cond_8
     if-ne p1, v1, :cond_9
 
@@ -2293,7 +2074,6 @@
 
     goto :goto_0
 
-    .line 179
     :cond_9
     if-ne p1, v2, :cond_a
 
@@ -2301,7 +2081,6 @@
 
     goto :goto_0
 
-    .line 180
     :cond_a
     sget-object v0, Lcom/android/systemui/statusbar/policy/HtcIcons;->HTC_SIGNAL_5LEVEL_FLASH:[I
 
@@ -2310,21 +2089,16 @@
 
 .method static final getSignalBarIconNull(I)I
     .locals 1
-    .parameter
 
-    .prologue
-    .line 185
     const/4 v0, 0x4
 
     if-ne v0, p0, :cond_0
 
     const v0, 0x7f020024
 
-    .line 187
     :goto_0
     return v0
 
-    .line 186
     :cond_0
     const/4 v0, 0x6
 
@@ -2334,7 +2108,6 @@
 
     goto :goto_0
 
-    .line 187
     :cond_1
     const v0, 0x7f0202c6
 

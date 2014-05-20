@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 2567
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1$1;->this$2:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,8 +37,6 @@
 .method public run()V
     .locals 2
 
-    .prologue
-    .line 2574
     :try_start_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1$1;->this$2:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1;
 
@@ -49,7 +44,7 @@
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    #getter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mPile:Lcom/android/systemui/statusbar/policy/NotificationRowLayout;
+    #getter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mPile:Lcom/android/systemui/statusbar/policy/NotificationRowLayout;
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$3300(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Lcom/android/systemui/statusbar/policy/NotificationRowLayout;
 
     move-result-object v0
@@ -58,14 +53,13 @@
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/policy/NotificationRowLayout;->setViewRemoval(Z)V
 
-    .line 2575
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1$1;->this$2:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20$1;->this$1:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$20;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    #getter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mBarService:Lcom/android/internal/statusbar/IStatusBarService;
+    #getter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mBarService:Lcom/android/internal/statusbar/IStatusBarService;
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$3400(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Lcom/android/internal/statusbar/IStatusBarService;
 
     move-result-object v0
@@ -74,11 +68,9 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2577
     :goto_0
     return-void
 
-    .line 2576
     :catch_0
     move-exception v0
 

@@ -1,11 +1,11 @@
 .class Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;
-.super Landroid/telephony/PhoneStateListener;
+.super Landroid/content/BroadcastReceiver;
 .source "HtcGenericNetworkController.java"
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;-><init>(Landroid/content/Context;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,643 +21,150 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 482
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
 
-    invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onCallStateChanged(ILjava/lang/String;)V
-    .locals 4
-    .parameter "state"
-    .parameter "incomingNumber"
+.method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 7
 
-    .prologue
-    .line 528
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
+    const/4 v4, 0x1
 
-    const-string v1, "TelephonyCallback"
+    const/4 v3, 0x0
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v1
 
-    const-string v3, "CallState: "
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
 
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    move-result-object v2
+    const-string v6, "onReceive, action="
 
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    move-result-object v2
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v5
 
-    move-result-object v2
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->printLog(Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v0, v1, v2}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$000(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;Ljava/lang/String;Ljava/lang/String;)V
+    move-result-object v5
 
-    .line 530
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
+    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->printLog(Ljava/lang/String;)V
+    invoke-static {v2, v5}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$11(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;Ljava/lang/String;)V
 
-    iput p1, v0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->mPhoneState:I
+    const-string v2, "android.provider.Telephony.SECRET_CODE"
 
-    .line 532
-    invoke-static {}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->isVerizon()Z
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v0
+    move-result v2
 
-    if-eqz v0, :cond_0
+    if-eqz v2, :cond_0
 
-    if-nez p1, :cond_0
+    iget-object v5, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
 
-    .line 533
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
 
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateFemtocellIcon()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$1100(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
+    #getter for: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->isHkCslIconEnabled:Z
+    invoke-static {v2}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$12(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)Z
 
-    .line 534
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
+    move-result v2
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->refreshViews()V
+    if-eqz v2, :cond_1
 
-    .line 537
-    :cond_0
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
+    move v2, v3
 
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->isCdma()Z
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$1200(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)Z
+    :goto_0
+    #setter for: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->isHkCslIconEnabled:Z
+    invoke-static {v5, v2}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$13(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;Z)V
+
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
+
+    #getter for: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->isHkCslIconEnabled:Z
+    invoke-static {v2}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$12(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    invoke-static {p1}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
-    .line 538
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
+    move-result-object v2
 
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateSignalStrength()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$600(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
+    invoke-interface {v2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
-    .line 539
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
+    move-result-object v5
+
+    const-string v6, "pre_state_of_hk_d"
+
+    if-eqz v0, :cond_2
+
+    move v2, v4
+
+    :goto_1
+    invoke-interface {v5, v6, v2}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    const-string v6, "HK D icon customization, state="
+
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    if-eqz v0, :cond_3
+
+    :goto_2
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->printLog(Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$11(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;Ljava/lang/String;)V
+
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
 
     #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateDataNetType()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$400(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
+    invoke-static {v2}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$4(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
 
-    .line 540
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
 
     #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateDataIcon()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$500(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
+    invoke-static {v2}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$5(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
 
-    .line 541
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
+    iget-object v2, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->refreshViews()V
+    invoke-virtual {v2}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->refreshViews()V
 
-    .line 543
+    :cond_0
+    return-void
+
     :cond_1
-    return-void
-.end method
+    move v2, v4
 
-.method public onDataActivity(I)V
-    .locals 4
-    .parameter "direction"
+    goto :goto_0
 
-    .prologue
-    .line 557
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
+    :cond_2
+    move v2, v3
 
-    const-string v1, "TelephonyCallback"
+    goto :goto_1
 
-    new-instance v2, Ljava/lang/StringBuilder;
+    :cond_3
+    move v4, v3
 
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "DataActivity: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->printLog(Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v0, v1, v2}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$000(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 558
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    iput p1, v0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->mDataActivity:I
-
-    .line 559
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateDataIcon()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$500(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
-
-    .line 560
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->refreshViews()V
-
-    .line 561
-    return-void
-.end method
-
-.method public onDataConnectionStateChanged(II)V
-    .locals 4
-    .parameter "state"
-    .parameter "networkType"
-
-    .prologue
-    .line 547
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    const-string v1, "TelephonyCallback"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "DataState: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->printLog(Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v0, v1, v2}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$000(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 548
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    iput p1, v0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->mDataState:I
-
-    .line 549
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->dumpState()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$900(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
-
-    .line 550
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateDataNetType()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$400(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
-
-    .line 551
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateDataIcon()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$500(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
-
-    .line 552
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->refreshViews()V
-
-    .line 553
-    return-void
-.end method
-
-.method public onSecondSignalStrengthsChanged(Landroid/telephony/SignalStrength;)V
-    .locals 4
-    .parameter "signalStrength"
-
-    .prologue
-    .line 495
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    const-string v1, "TelephonyCallback"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "2nd SignalStrength: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->getQscNetworkType()I
-    invoke-static {v3}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$700(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)I
-
-    move-result v3
-
-    invoke-virtual {p1, v3}, Landroid/telephony/SignalStrength;->getHtcGsmLevel(I)I
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->printLog(Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v0, v1, v2}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$000(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 497
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    iput-object p1, v0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->mSecondSignalStrength:Landroid/telephony/SignalStrength;
-
-    .line 498
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateSignalStrength()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$600(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
-
-    .line 499
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->refreshViews()V
-
-    .line 500
-    return-void
-.end method
-
-.method public onSectorIDIndChanged(Ljava/lang/String;)V
-    .locals 4
-    .parameter "sid"
-
-    .prologue
-    .line 565
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    const-string v1, "TelephonyCallback"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "SectorID: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->printLog(Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v0, v1, v2}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$000(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 566
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    iput-object p1, v0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->mSectorId:Ljava/lang/String;
-
-    .line 568
-    invoke-static {}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->isVerizon()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateFemtocellIcon()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$1100(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
-
-    .line 569
-    :cond_0
-    return-void
-.end method
-
-.method public onServiceStateChanged(Landroid/telephony/ServiceState;)V
-    .locals 4
-    .parameter "state"
-
-    .prologue
-    .line 505
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 506
-    .local v0, sb:Ljava/lang/StringBuilder;
-    const-string v1, "ServiceState: "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p1}, Landroid/telephony/ServiceState;->getVoiceRegState()I
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string v3, " "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p1}, Landroid/telephony/ServiceState;->getVoiceNetworkType()I
-
-    move-result v3
-
-    invoke-static {v3}, Landroid/telephony/TelephonyManager;->getNetworkTypeName(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string v3, " "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p1}, Landroid/telephony/ServiceState;->getDataRegState()I
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string v3, " "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {p1}, Landroid/telephony/ServiceState;->getDataNetworkType()I
-
-    move-result v3
-
-    invoke-static {v3}, Landroid/telephony/TelephonyManager;->getNetworkTypeName(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string v3, " "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    iget-object v3, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->getCdmaRoamingIndicator()I
-    invoke-static {v3}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$800(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)I
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    const-string v3, " "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v1
-
-    invoke-virtual {p1}, Landroid/telephony/ServiceState;->getPhoneType()I
-
-    move-result v2
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 513
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    const-string v2, "TelephonyCallback"
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->printLog(Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v1, v2, v3}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$000(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 514
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    iput-object p1, v1, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->mServiceState:Landroid/telephony/ServiceState;
-
-    .line 515
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    invoke-virtual {p1}, Landroid/telephony/ServiceState;->getDataNetworkType()I
-
-    move-result v2
-
-    iput v2, v1, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->mDataNetType:I
-
-    .line 516
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->dumpState()V
-    invoke-static {v1}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$900(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
-
-    .line 517
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateSignalStrength()V
-    invoke-static {v1}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$600(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
-
-    .line 518
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateDataNetType()V
-    invoke-static {v1}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$400(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
-
-    .line 519
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateDataIcon()V
-    invoke-static {v1}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$500(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
-
-    .line 520
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateSimCardIcon()V
-    invoke-static {v1}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$1000(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
-
-    .line 522
-    invoke-static {}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->isVerizon()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateFemtocellIcon()V
-    invoke-static {v1}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$1100(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
-
-    .line 523
-    :cond_0
-    iget-object v1, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    invoke-virtual {v1}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->refreshViews()V
-
-    .line 524
-    return-void
-.end method
-
-.method public onSignalStrengthsChanged(Landroid/telephony/SignalStrength;)V
-    .locals 4
-    .parameter "signalStrength"
-
-    .prologue
-    .line 485
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    const-string v1, "TelephonyCallback"
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v3, "SignalStrength: "
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    iget-object v3, v3, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->mContext:Landroid/content/Context;
-
-    invoke-virtual {p1, v3}, Landroid/telephony/SignalStrength;->getHtcLevel(Landroid/content/Context;)I
-
-    move-result v3
-
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->printLog(Ljava/lang/String;Ljava/lang/String;)V
-    invoke-static {v0, v1, v2}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$000(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 487
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    iput-object p1, v0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->mSignalStrength:Landroid/telephony/SignalStrength;
-
-    .line 488
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    #calls: Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->updateSignalStrength()V
-    invoke-static {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->access$600(Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;)V
-
-    .line 489
-    iget-object v0, p0, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController$3;->this$0:Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;
-
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/HtcGenericNetworkController;->refreshViews()V
-
-    .line 490
-    return-void
+    goto :goto_2
 .end method

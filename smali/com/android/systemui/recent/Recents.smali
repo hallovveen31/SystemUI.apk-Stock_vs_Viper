@@ -10,8 +10,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .prologue
-    .line 45
     invoke-direct {p0}, Lcom/android/systemui/SystemUI;-><init>()V
 
     return-void
@@ -20,15 +18,11 @@
 .method private screenshotLastActivity()V
     .locals 9
 
-    .prologue
-    .line 250
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v3
 
-    .line 251
-    .local v3, startTime:J
-    iget-object v5, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const-string v6, "activity"
 
@@ -38,8 +32,6 @@
 
     check-cast v0, Landroid/app/ActivityManager;
 
-    .line 252
-    .local v0, am:Landroid/app/ActivityManager;
     const/4 v5, 0x1
 
     const/16 v6, 0x20
@@ -48,15 +40,11 @@
 
     move-result-object v2
 
-    .line 254
-    .local v2, recentTasks:Ljava/util/List;,"Ljava/util/List<Landroid/app/ActivityManager$RecentTaskInfo;>;"
     if-nez v2, :cond_0
 
-    .line 260
     :goto_0
     return-void
 
-    .line 255
     :cond_0
     invoke-interface {v2}, Ljava/util/List;->size()I
 
@@ -64,7 +52,6 @@
 
     if-lez v5, :cond_1
 
-    .line 256
     const/4 v5, 0x0
 
     invoke-interface {v2, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -73,14 +60,10 @@
 
     check-cast v1, Landroid/app/ActivityManager$RecentTaskInfo;
 
-    .line 257
-    .local v1, recentInfo:Landroid/app/ActivityManager$RecentTaskInfo;
     iget v5, v1, Landroid/app/ActivityManager$RecentTaskInfo;->persistentId:I
 
     invoke-virtual {v0, v5}, Landroid/app/ActivityManager;->getTaskTopThumbnail(I)Landroid/graphics/Bitmap;
 
-    .line 259
-    .end local v1           #recentInfo:Landroid/app/ActivityManager$RecentTaskInfo;
     :cond_1
     const-string v5, "Recents"
 
@@ -118,17 +101,13 @@
 .method public cancelPreloadingRecentTasksList()V
     .locals 4
 
-    .prologue
-    .line 230
     sget-boolean v1, Lcom/android/systemui/statusbar/StatusBarFlag;->HTC_RECENT_APP:Z
 
     if-eqz v1, :cond_0
 
-    .line 238
     :goto_0
     return-void
 
-    .line 232
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
@@ -136,16 +115,13 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 233
-    .local v0, intent:Landroid/content/Intent;
     const-string v1, "com.android.systemui"
 
     const-string v2, "com.android.systemui.recent.RecentsPreloadReceiver"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 235
-    iget-object v1, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     new-instance v2, Landroid/os/UserHandle;
 
@@ -155,8 +131,7 @@
 
     invoke-virtual {v1, v0, v2}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    .line 237
-    iget-object v1, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/android/systemui/recent/RecentTasksLoader;->getInstance(Landroid/content/Context;)Lcom/android/systemui/recent/RecentTasksLoader;
 
@@ -170,17 +145,13 @@
 .method public closeRecents()V
     .locals 4
 
-    .prologue
-    .line 242
     sget-boolean v1, Lcom/android/systemui/statusbar/StatusBarFlag;->HTC_RECENT_APP:Z
 
     if-eqz v1, :cond_0
 
-    .line 247
     :goto_0
     return-void
 
-    .line 244
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
@@ -188,14 +159,11 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 245
-    .local v0, intent:Landroid/content/Intent;
     const-string v1, "com.android.systemui"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 246
-    iget-object v1, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     new-instance v2, Landroid/os/UserHandle;
 
@@ -211,20 +179,15 @@
 .method public preloadRecentTasksList()V
     .locals 4
 
-    .prologue
-    .line 216
     sget-boolean v1, Lcom/android/systemui/statusbar/StatusBarFlag;->HTC_RECENT_APP:Z
 
     if-eqz v1, :cond_0
 
-    .line 217
     invoke-direct {p0}, Lcom/android/systemui/recent/Recents;->screenshotLastActivity()V
 
-    .line 226
     :goto_0
     return-void
 
-    .line 220
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
@@ -232,16 +195,13 @@
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 221
-    .local v0, intent:Landroid/content/Intent;
     const-string v1, "com.android.systemui"
 
     const-string v2, "com.android.systemui.recent.RecentsPreloadReceiver"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 223
-    iget-object v1, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     new-instance v2, Landroid/os/UserHandle;
 
@@ -251,8 +211,7 @@
 
     invoke-virtual {v1, v0, v2}, Landroid/content/Context;->sendBroadcastAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    .line 225
-    iget-object v1, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/android/systemui/recent/RecentTasksLoader;->getInstance(Landroid/content/Context;)Lcom/android/systemui/recent/RecentTasksLoader;
 
@@ -266,47 +225,35 @@
 .method public start()V
     .locals 1
 
-    .prologue
-    .line 51
     const-class v0, Lcom/android/systemui/RecentsComponent;
 
-    invoke-virtual {p0, v0, p0}, Lcom/android/systemui/recent/Recents;->putComponent(Ljava/lang/Class;Ljava/lang/Object;)V
+    invoke-virtual {p0, v0, p0}, Lcom/android/systemui/SystemUI;->putComponent(Ljava/lang/Class;Ljava/lang/Object;)V
 
-    .line 52
     return-void
 .end method
 
 .method public toggleRecents(Landroid/view/Display;ILandroid/view/View;)V
     .locals 14
-    .parameter
-    .parameter
-    .parameter
 
-    .prologue
-    .line 58
     sget-boolean v1, Lcom/android/systemui/statusbar/StatusBarFlag;->HTC_RECENT_APP:Z
 
     if-eqz v1, :cond_0
 
-    .line 59
     new-instance v1, Landroid/content/Intent;
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    .line 61
-    iget-object v2, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const-class v3, Lcom/android/systemui/recent/RecentAppFxActivity;
 
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 62
     const/high16 v2, 0x10c0
 
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 66
-    iget-object v2, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     new-instance v3, Landroid/os/UserHandle;
 
@@ -316,7 +263,6 @@
 
     invoke-virtual {v2, v1, v3}, Landroid/content/Context;->startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    .line 67
     const-string v1, "AutoTest"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -349,14 +295,12 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 211
     :goto_0
     return-void
 
-    .line 72
     :cond_0
     :try_start_0
-    iget-object v1, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/android/systemui/recent/RecentTasksLoader;->getInstance(Landroid/content/Context;)Lcom/android/systemui/recent/RecentTasksLoader;
 
@@ -366,30 +310,25 @@
 
     move-result-object v1
 
-    .line 74
     new-instance v4, Landroid/content/Intent;
 
     const-string v2, "com.android.systemui.recent.action.TOGGLE_RECENTS"
 
     invoke-direct {v4, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 75
     const-string v2, "com.android.systemui"
 
     const-string v3, "com.android.systemui.recent.RecentsActivity"
 
     invoke-virtual {v4, v2, v3}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 77
     const/high16 v2, 0x1080
 
     invoke-virtual {v4, v2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 80
     if-nez v1, :cond_2
 
-    .line 81
-    iget-object v1, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/android/systemui/recent/RecentsActivity;->forceOpaqueBackground(Landroid/content/Context;)Z
 
@@ -397,8 +336,7 @@
 
     if-eqz v1, :cond_1
 
-    .line 82
-    iget-object v1, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const v2, 0x7f05000d
 
@@ -408,8 +346,7 @@
 
     move-result-object v1
 
-    .line 85
-    iget-object v2, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/app/ActivityOptions;->toBundle()Landroid/os/Bundle;
 
@@ -427,11 +364,9 @@
 
     goto :goto_0
 
-    .line 208
     :catch_0
     move-exception v1
 
-    .line 209
     const-string v2, "Recents"
 
     const-string v3, "Failed to launch RecentAppsIntent"
@@ -440,10 +375,9 @@
 
     goto :goto_0
 
-    .line 89
     :cond_1
     :try_start_1
-    iget-object v1, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     new-instance v2, Landroid/os/UserHandle;
 
@@ -455,7 +389,6 @@
 
     goto :goto_0
 
-    .line 95
     :cond_2
     invoke-virtual {v1}, Lcom/android/systemui/recent/TaskDescription;->getThumbnail()Landroid/graphics/drawable/Drawable;
 
@@ -465,7 +398,6 @@
 
     if-eqz v2, :cond_3
 
-    .line 96
     invoke-virtual {v1}, Lcom/android/systemui/recent/TaskDescription;->getThumbnail()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
@@ -476,15 +408,13 @@
 
     move-result-object v1
 
-    .line 102
     :goto_1
-    iget-object v2, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
-    .line 104
     const v2, 0x7f0c0003
 
     invoke-virtual {v5, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -493,7 +423,6 @@
 
     int-to-float v2, v2
 
-    .line 106
     const v3, 0x7f0c0004
 
     invoke-virtual {v5, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -502,10 +431,8 @@
 
     int-to-float v6, v3
 
-    .line 108
     if-nez v1, :cond_4
 
-    .line 109
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Recents thumbnail is null"
@@ -514,7 +441,6 @@
 
     throw v1
 
-    .line 98
     :cond_3
     const/4 v1, 0x1
 
@@ -526,8 +452,7 @@
 
     move-result-object v1
 
-    .line 99
-    iget-object v2, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/android/systemui/recent/RecentTasksLoader;->getInstance(Landroid/content/Context;)Lcom/android/systemui/recent/RecentTasksLoader;
 
@@ -537,7 +462,6 @@
 
     move-result-object v2
 
-    .line 100
     new-instance v3, Landroid/graphics/Canvas;
 
     invoke-direct {v3, v1}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
@@ -546,7 +470,6 @@
 
     goto :goto_1
 
-    .line 111
     :cond_4
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -568,7 +491,6 @@
 
     if-eqz v3, :cond_6
 
-    .line 112
     :cond_5
     float-to-int v3, v2
 
@@ -580,10 +502,8 @@
 
     move-result-object v1
 
-    .line 114
     if-nez v1, :cond_6
 
-    .line 115
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Recents thumbnail is null"
@@ -595,27 +515,22 @@
     :cond_6
     move-object v3, v1
 
-    .line 120
     new-instance v7, Landroid/util/DisplayMetrics;
 
     invoke-direct {v7}, Landroid/util/DisplayMetrics;-><init>()V
 
-    .line 121
     invoke-virtual {p1, v7}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
 
-    .line 124
     invoke-virtual {v5}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
     move-result-object v1
 
-    .line 127
     iget v1, v1, Landroid/content/res/Configuration;->orientation:I
 
     const/4 v8, 0x1
 
     if-ne v1, v8, :cond_8
 
-    .line 128
     const v1, 0x7f0c000e
 
     invoke-virtual {v5, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -624,7 +539,6 @@
 
     int-to-float v1, v1
 
-    .line 130
     const v6, 0x7f0c000d
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -633,7 +547,6 @@
 
     int-to-float v6, v6
 
-    .line 132
     const v8, 0x7f0c000b
 
     invoke-virtual {v5, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -642,7 +555,6 @@
 
     int-to-float v8, v8
 
-    .line 134
     const v9, 0x7f0c0005
 
     invoke-virtual {v5, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -651,7 +563,6 @@
 
     int-to-float v9, v9
 
-    .line 137
     add-float v10, v1, v6
 
     add-float/2addr v10, v8
@@ -664,7 +575,6 @@
 
     add-float/2addr v2, v10
 
-    .line 143
     iget v10, v7, Landroid/util/DisplayMetrics;->widthPixels:I
 
     int-to-float v10, v10
@@ -685,7 +595,6 @@
 
     float-to-int v1, v1
 
-    .line 145
     iget v2, v7, Landroid/util/DisplayMetrics;->heightPixels:I
 
     const v6, 0x7f0c0004
@@ -702,14 +611,12 @@
 
     float-to-int v2, v2
 
-    .line 148
     const/4 v6, 0x1
 
     move/from16 v0, p2
 
     if-ne v0, v6, :cond_7
 
-    .line 149
     iget v6, v7, Landroid/util/DisplayMetrics;->widthPixels:I
 
     sub-int v1, v6, v1
@@ -729,7 +636,6 @@
 
     move v1, v13
 
-    .line 192
     :goto_2
     new-instance v5, Lcom/android/systemui/recent/Recents$1;
 
@@ -741,15 +647,13 @@
 
     move-result-object v1
 
-    .line 204
     const-string v2, "com.android.systemui.recent.WAITING_FOR_WINDOW_ANIMATION"
 
     const/4 v3, 0x1
 
     invoke-virtual {v4, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 205
-    iget-object v2, p0, Lcom/android/systemui/recent/Recents;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/app/ActivityOptions;->toBundle()Landroid/os/Bundle;
 
@@ -765,7 +669,6 @@
 
     goto/16 :goto_0
 
-    .line 154
     :cond_8
     const v1, 0x7f0c0074
 
@@ -775,7 +678,6 @@
 
     int-to-float v1, v1
 
-    .line 156
     const v2, 0x7f0c0005
 
     invoke-virtual {v5, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -784,7 +686,6 @@
 
     int-to-float v8, v2
 
-    .line 158
     const v2, 0x7f0c000c
 
     invoke-virtual {v5, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -793,7 +694,6 @@
 
     int-to-float v2, v2
 
-    .line 160
     const v9, 0x7f0c0006
 
     invoke-virtual {v5, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -802,15 +702,12 @@
 
     int-to-float v9, v9
 
-    .line 162
     new-instance v10, Landroid/graphics/Paint;
 
     invoke-direct {v10}, Landroid/graphics/Paint;-><init>()V
 
-    .line 163
     invoke-virtual {v10, v9}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 164
     invoke-virtual {v10}, Landroid/graphics/Paint;->getFontMetricsInt()Landroid/graphics/Paint$FontMetricsInt;
 
     move-result-object v9
@@ -827,7 +724,6 @@
 
     int-to-float v9, v9
 
-    .line 166
     const v11, 0x7f0c0007
 
     invoke-virtual {v5, v11}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -836,10 +732,8 @@
 
     int-to-float v11, v11
 
-    .line 168
     invoke-virtual {v10, v11}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 169
     invoke-virtual {v10}, Landroid/graphics/Paint;->getFontMetricsInt()Landroid/graphics/Paint$FontMetricsInt;
 
     move-result-object v11
@@ -856,7 +750,6 @@
 
     int-to-float v10, v10
 
-    .line 172
     const v11, 0x105000c
 
     invoke-virtual {v5, v11}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -865,7 +758,6 @@
 
     int-to-float v11, v11
 
-    .line 176
     add-float/2addr v6, v1
 
     const/high16 v12, 0x4000
@@ -884,7 +776,6 @@
 
     add-float v6, v2, v10
 
-    .line 180
     const v2, 0x7f0c000f
 
     invoke-virtual {v5, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -893,7 +784,6 @@
 
     int-to-float v2, v2
 
-    .line 182
     const v9, 0x7f0c000a
 
     invoke-virtual {v5, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -902,7 +792,6 @@
 
     int-to-float v9, v9
 
-    .line 184
     iget v10, v7, Landroid/util/DisplayMetrics;->widthPixels:I
 
     const v12, 0x7f0c0003
@@ -923,7 +812,6 @@
 
     float-to-int v2, v2
 
-    .line 188
     iget v5, v7, Landroid/util/DisplayMetrics;->heightPixels:I
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_0

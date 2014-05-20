@@ -26,11 +26,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/net/NetworkOverLimitActivity;Landroid/net/NetworkTemplate;)V
     .locals 0
-    .parameter
-    .parameter
 
-    .prologue
-    .line 59
     iput-object p1, p0, Lcom/android/systemui/net/NetworkOverLimitActivity$1;->this$0:Lcom/android/systemui/net/NetworkOverLimitActivity;
 
     iput-object p2, p0, Lcom/android/systemui/net/NetworkOverLimitActivity$1;->val$template:Landroid/net/NetworkTemplate;
@@ -44,11 +40,7 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
-    .parameter "dialog"
-    .parameter "which"
 
-    .prologue
-    .line 61
     iget-object v0, p0, Lcom/android/systemui/net/NetworkOverLimitActivity$1;->this$0:Lcom/android/systemui/net/NetworkOverLimitActivity;
 
     iget-object v1, p0, Lcom/android/systemui/net/NetworkOverLimitActivity$1;->val$template:Landroid/net/NetworkTemplate;
@@ -56,6 +48,5 @@
     #calls: Lcom/android/systemui/net/NetworkOverLimitActivity;->snoozePolicy(Landroid/net/NetworkTemplate;)V
     invoke-static {v0, v1}, Lcom/android/systemui/net/NetworkOverLimitActivity;->access$000(Lcom/android/systemui/net/NetworkOverLimitActivity;Landroid/net/NetworkTemplate;)V
 
-    .line 62
     return-void
 .end method

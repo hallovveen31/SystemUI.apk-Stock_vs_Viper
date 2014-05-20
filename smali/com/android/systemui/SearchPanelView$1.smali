@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/SearchPanelView;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 155
     iput-object p1, p0, Lcom/android/systemui/SearchPanelView$1;->this$0:Lcom/android/systemui/SearchPanelView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,8 +37,6 @@
 .method public run()V
     .locals 2
 
-    .prologue
-    .line 157
     iget-object v0, p0, Lcom/android/systemui/SearchPanelView$1;->this$0:Lcom/android/systemui/SearchPanelView;
 
     iget-object v0, v0, Lcom/android/systemui/SearchPanelView;->mGlowPadViewListener:Lcom/android/systemui/SearchPanelView$GlowPadTriggerListener;
@@ -50,7 +45,6 @@
 
     iput-boolean v1, v0, Lcom/android/systemui/SearchPanelView$GlowPadTriggerListener;->mWaitingForLaunch:Z
 
-    .line 158
     iget-object v0, p0, Lcom/android/systemui/SearchPanelView$1;->this$0:Lcom/android/systemui/SearchPanelView;
 
     #getter for: Lcom/android/systemui/SearchPanelView;->mBar:Lcom/android/systemui/statusbar/BaseStatusBar;
@@ -60,6 +54,5 @@
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->hideSearchPanel()V
 
-    .line 159
     return-void
 .end method

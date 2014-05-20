@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 274
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,18 +36,13 @@
 # virtual methods
 .method public onServiceConnected(ILandroid/bluetooth/BluetoothProfile;)V
     .locals 4
-    .parameter "profile"
-    .parameter "proxy"
 
-    .prologue
     const/16 v3, 0x7d1
 
-    .line 278
     const/4 v0, 0x1
 
     if-ne p1, v0, :cond_0
 
-    .line 279
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;
 
     move-object v0, p2
@@ -60,7 +52,6 @@
     #setter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;->bluetoothHeadset:Landroid/bluetooth/BluetoothHeadset;
     invoke-static {v1, v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;->access$302(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;Landroid/bluetooth/BluetoothHeadset;)Landroid/bluetooth/BluetoothHeadset;
 
-    .line 281
     :cond_0
     const-string v0, "QuickSettingMiniLite"
 
@@ -101,7 +92,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 284
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;->handler:Landroid/os/Handler;
@@ -111,7 +101,6 @@
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 285
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;->handler:Landroid/os/Handler;
@@ -123,18 +112,14 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 286
     return-void
 .end method
 
 .method public onServiceDisconnected(I)V
     .locals 4
-    .parameter "profile"
 
-    .prologue
     const/16 v3, 0x7d1
 
-    .line 291
     const-string v0, "QuickSettingMiniLite"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -164,7 +149,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 294
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;->handler:Landroid/os/Handler;
@@ -174,7 +158,6 @@
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 295
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingMiniLite;->handler:Landroid/os/Handler;
@@ -186,6 +169,5 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 296
     return-void
 .end method

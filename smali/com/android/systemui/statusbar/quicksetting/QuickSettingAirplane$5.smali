@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 460
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,12 +37,10 @@
 .method public run()V
     .locals 5
 
-    .prologue
     const/4 v3, 0x0
 
     const/4 v2, 0x1
 
-    .line 464
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;->handler:Landroid/os/Handler;
@@ -55,7 +50,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 465
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;->handler:Landroid/os/Handler;
@@ -72,7 +66,6 @@
 
     invoke-virtual {v1, v4}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 468
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
@@ -81,13 +74,10 @@
 
     move-result v0
 
-    .line 470
-    .local v0, airplaneModeOn:Z
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
     invoke-virtual {v1, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;->setEnabled(Z)V
 
-    .line 471
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;->indicatorview:Lcom/android/systemui/statusbar/quicksetting/LevelIndicator;
@@ -102,7 +92,6 @@
     :goto_0
     invoke-virtual {v4, v1, v2}, Lcom/android/systemui/statusbar/quicksetting/LevelIndicator;->setLevel(II)V
 
-    .line 473
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
@@ -112,7 +101,6 @@
 
     invoke-virtual {v1}, Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;->stopColorAnimation()V
 
-    .line 474
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
@@ -125,7 +113,6 @@
     :goto_1
     invoke-virtual {v1, v2}, Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;->setOverlayEnable(Z)V
 
-    .line 476
     const-string v1, "QuickSettingAirplane"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -148,18 +135,15 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 477
     return-void
 
     :cond_1
     move v1, v3
 
-    .line 471
     goto :goto_0
 
     :cond_2
     move v2, v3
 
-    .line 474
     goto :goto_1
 .end method

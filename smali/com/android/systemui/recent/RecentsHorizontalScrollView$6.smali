@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/recent/RecentsHorizontalScrollView;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 323
     iput-object p1, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$6;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,8 +37,6 @@
 .method public run()V
     .locals 4
 
-    .prologue
-    .line 327
     iget-object v1, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$6;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
     #getter for: Lcom/android/systemui/recent/RecentsHorizontalScrollView;->mLinearLayout:Landroid/widget/LinearLayout;
@@ -49,12 +44,10 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Landroid/widget/LinearLayout;->getLayoutTransition()Landroid/animation/LayoutTransition;
+    invoke-virtual {v1}, Landroid/view/ViewGroup;->getLayoutTransition()Landroid/animation/LayoutTransition;
 
     move-result-object v0
 
-    .line 328
-    .local v0, transition:Landroid/animation/LayoutTransition;
     if-eqz v0, :cond_0
 
     invoke-virtual {v0}, Landroid/animation/LayoutTransition;->isRunning()Z
@@ -63,7 +56,6 @@
 
     if-nez v1, :cond_1
 
-    .line 329
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/recent/RecentsHorizontalScrollView$6;->this$0:Lcom/android/systemui/recent/RecentsHorizontalScrollView;
 
@@ -73,9 +65,8 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {v1, v2, v3}, Lcom/android/systemui/recent/RecentsHorizontalScrollView;->scrollTo(II)V
+    invoke-virtual {v1, v2, v3}, Landroid/widget/HorizontalScrollView;->scrollTo(II)V
 
-    .line 331
     :cond_1
     return-void
 .end method

@@ -26,11 +26,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/recent/FxRecentTasksLoader$1;Lcom/android/systemui/recent/TaskDescription;)V
     .locals 0
-    .parameter
-    .parameter
 
-    .prologue
-    .line 244
     iput-object p1, p0, Lcom/android/systemui/recent/FxRecentTasksLoader$1$1;->this$1:Lcom/android/systemui/recent/FxRecentTasksLoader$1;
 
     iput-object p2, p0, Lcom/android/systemui/recent/FxRecentTasksLoader$1$1;->val$td:Lcom/android/systemui/recent/TaskDescription;
@@ -45,25 +41,19 @@
 .method public run()V
     .locals 2
 
-    .prologue
-    .line 246
     iget-object v1, p0, Lcom/android/systemui/recent/FxRecentTasksLoader$1$1;->val$td:Lcom/android/systemui/recent/TaskDescription;
 
     monitor-enter v1
 
-    .line 247
     :try_start_0
     iget-object v0, p0, Lcom/android/systemui/recent/FxRecentTasksLoader$1$1;->val$td:Lcom/android/systemui/recent/TaskDescription;
 
     invoke-virtual {v0}, Ljava/lang/Object;->notifyAll()V
 
-    .line 248
     monitor-exit v1
 
-    .line 249
     return-void
 
-    .line 248
     :catchall_0
     move-exception v0
 

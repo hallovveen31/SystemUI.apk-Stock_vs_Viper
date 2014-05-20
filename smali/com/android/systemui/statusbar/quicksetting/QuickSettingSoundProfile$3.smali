@@ -32,10 +32,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 238
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -47,13 +44,9 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 238
     check-cast p1, [Ljava/lang/Void;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile$3;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
@@ -63,15 +56,11 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 1
-    .parameter "args"
 
-    .prologue
-    .line 242
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSoundProfile;->performNextProfileState()V
 
-    .line 243
     const/4 v0, 0x0
 
     return-object v0

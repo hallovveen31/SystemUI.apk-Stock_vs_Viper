@@ -23,11 +23,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/recent/RecentSwipeHelper;Landroid/view/View;)V
     .locals 0
-    .parameter
-    .parameter
 
-    .prologue
-    .line 179
     iput-object p1, p0, Lcom/android/systemui/recent/RecentSwipeHelper$1;->this$0:Lcom/android/systemui/recent/RecentSwipeHelper;
 
     iput-object p2, p0, Lcom/android/systemui/recent/RecentSwipeHelper$1;->val$view:Landroid/view/View;
@@ -41,13 +37,10 @@
 # virtual methods
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
-    .parameter "animation"
 
-    .prologue
-    .line 181
     iget-object v0, p0, Lcom/android/systemui/recent/RecentSwipeHelper$1;->this$0:Lcom/android/systemui/recent/RecentSwipeHelper;
 
-    #getter for: Lcom/android/systemui/recent/RecentSwipeHelper;->mCallback:Lcom/android/systemui/SwipeHelper$Callback;
+    #getter for: Lcom/android/systemui/SwipeHelper;->mCallback:Lcom/android/systemui/SwipeHelper$Callback;
     invoke-static {v0}, Lcom/android/systemui/recent/RecentSwipeHelper;->access$000(Lcom/android/systemui/recent/RecentSwipeHelper;)Lcom/android/systemui/SwipeHelper$Callback;
 
     move-result-object v0
@@ -56,6 +49,5 @@
 
     invoke-interface {v0, v1}, Lcom/android/systemui/SwipeHelper$Callback;->onChildDismissed(Landroid/view/View;)V
 
-    .line 184
     return-void
 .end method

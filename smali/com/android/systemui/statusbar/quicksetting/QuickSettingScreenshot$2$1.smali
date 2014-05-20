@@ -32,10 +32,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 96
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -47,13 +44,9 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 96
     check-cast p1, [Ljava/lang/Void;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
@@ -63,12 +56,9 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 5
-    .parameter "args"
 
-    .prologue
     const/4 v4, 0x0
 
-    .line 100
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2;->mBucketId:I
@@ -80,7 +70,6 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 101
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2;
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2;
@@ -93,7 +82,6 @@
     #setter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2;->mBucketId:I
     invoke-static {v1, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2;->access$302(Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2;I)I
 
-    .line 103
     :cond_0
     const-string v1, "QuickSettingScreenshot"
 
@@ -124,15 +112,12 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 105
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.htc.album.action.VIEW_FOLDER_IN_THUMBNAIL"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 106
-    .local v0, intent:Landroid/content/Intent;
     const-string v1, "folder_type"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -168,29 +153,25 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 107
     const-string v1, "entry_from"
 
     const-string v2, "Screenshots"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 108
     const-string v1, "image/*"
 
     invoke-virtual {v0, v4, v1}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 109
     const/high16 v1, 0x1400
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 111
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
 
-    invoke-virtual {v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;->getTag()Ljava/lang/Object;
+    invoke-virtual {v1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -198,12 +179,11 @@
 
     if-eqz v1, :cond_1
 
-    .line 112
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
 
-    invoke-virtual {v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;->getTag()Ljava/lang/Object;
+    invoke-virtual {v1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -211,7 +191,6 @@
 
     invoke-virtual {v1, v0}, Lcom/android/systemui/statusbar/phone/QuickSettings;->startSettingsActivity(Landroid/content/Intent;)V
 
-    .line 114
     :cond_1
     return-object v4
 .end method

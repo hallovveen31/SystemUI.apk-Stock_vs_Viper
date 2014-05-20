@@ -21,10 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/NavigationBarView;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 224
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$3;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -36,19 +33,14 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
-    .parameter "context"
-    .parameter "intent"
 
-    .prologue
-    .line 226
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$3;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
     new-instance v1, Lcom/android/systemui/statusbar/phone/NavigationBarView$3$1;
 
     invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/phone/NavigationBarView$3$1;-><init>(Lcom/android/systemui/statusbar/phone/NavigationBarView$3;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
-    .line 232
     return-void
 .end method

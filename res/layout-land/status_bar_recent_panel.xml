@@ -8,4 +8,5 @@
         </com.android.systemui.recent.RecentsHorizontalScrollView>
     </FrameLayout>
     <include android:id="@id/recents_no_apps" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/status_bar_no_recent_apps" />
+    <include android:id="@id/clear_all_button" android:layout_width="fill_parent" android:layout_height="@dimen/notification_panel_header_height" layout="@layout/ram_meter" />
 </com.android.systemui.recent.RecentsPanelView>

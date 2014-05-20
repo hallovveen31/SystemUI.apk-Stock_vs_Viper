@@ -15,7 +15,6 @@
 .method static constructor <clinit>()V
     .locals 6
 
-    .prologue
     const/4 v5, 0x2
 
     const/4 v4, 0x1
@@ -24,7 +23,6 @@
 
     const/4 v2, 0x5
 
-    .line 22
     new-array v0, v5, [[I
 
     new-array v1, v2, [I
@@ -41,7 +39,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/WifiIcons;->WIFI_SIGNAL_STRENGTH:[[I
 
-    .line 35
     new-array v0, v5, [[I
 
     new-array v1, v2, [I
@@ -58,7 +55,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/WifiIcons;->QS_WIFI_SIGNAL_STRENGTH:[[I
 
-    .line 48
     sget-object v0, Lcom/android/systemui/statusbar/policy/WifiIcons;->WIFI_SIGNAL_STRENGTH:[[I
 
     aget-object v0, v0, v3
@@ -69,7 +65,6 @@
 
     return-void
 
-    .line 22
     :array_0
     .array-data 0x4
         0xd0t 0x4t 0x2t 0x7ft
@@ -88,7 +83,6 @@
         0xd8t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 35
     :array_2
     .array-data 0x4
         0xe6t 0x0t 0x2t 0x7ft
@@ -111,8 +105,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .prologue
-    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

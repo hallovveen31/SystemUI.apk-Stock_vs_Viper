@@ -18,76 +18,68 @@
 .field final synthetic this$1:Lcom/android/systemui/ImageWallpaper$DrawableEngine;
 
 
+# direct methods
+.method constructor <init>(Lcom/android/systemui/ImageWallpaper$DrawableEngine;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/systemui/ImageWallpaper$DrawableEngine$WallpaperObserver;->this$1:Lcom/android/systemui/ImageWallpaper$DrawableEngine;
+
+    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+
+    return-void
+.end method
+
+
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 3
-    .parameter "context"
-    .parameter "intent"
+    .locals 4
 
-    .prologue
-    .line 189
-    sget-boolean v0, Lcom/htc/htcjavaflag/HtcBuildFlag;->Htc_DEBUG_flag:Z
-
-    if-eqz v0, :cond_0
-
-    .line 190
-    const-string v0, "ImageWallpaper"
-
-    const-string v1, "onReceive"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 193
-    :cond_0
     iget-object v0, p0, Lcom/android/systemui/ImageWallpaper$DrawableEngine$WallpaperObserver;->this$1:Lcom/android/systemui/ImageWallpaper$DrawableEngine;
 
-    iget-object v1, p0, Lcom/android/systemui/ImageWallpaper$DrawableEngine$WallpaperObserver;->this$1:Lcom/android/systemui/ImageWallpaper$DrawableEngine;
+    #getter for: Lcom/android/systemui/ImageWallpaper$DrawableEngine;->mLock:Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->access$0(Lcom/android/systemui/ImageWallpaper$DrawableEngine;)Ljava/lang/Object;
 
-    const/4 v2, -0x1
+    move-result-object v1
 
-    iput v2, v1, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->mLastSurfaceHeight:I
+    monitor-enter v1
 
-    iput v2, v0, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->mLastSurfaceWidth:I
-
-    .line 194
+    :try_start_0
     iget-object v0, p0, Lcom/android/systemui/ImageWallpaper$DrawableEngine$WallpaperObserver;->this$1:Lcom/android/systemui/ImageWallpaper$DrawableEngine;
 
-    const/4 v1, 0x0
+    iget-object v2, p0, Lcom/android/systemui/ImageWallpaper$DrawableEngine$WallpaperObserver;->this$1:Lcom/android/systemui/ImageWallpaper$DrawableEngine;
 
-    iput-object v1, v0, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->mBackground:Landroid/graphics/Bitmap;
+    const/4 v3, -0x1
 
-    .line 195
+    iput v3, v2, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->mLastSurfaceHeight:I
+
+    iput v3, v0, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->mLastSurfaceWidth:I
+
     iget-object v0, p0, Lcom/android/systemui/ImageWallpaper$DrawableEngine$WallpaperObserver;->this$1:Lcom/android/systemui/ImageWallpaper$DrawableEngine;
 
-    const/4 v1, 0x1
+    const/4 v2, 0x0
 
-    iput-boolean v1, v0, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->mRedrawNeeded:Z
+    iput-object v2, v0, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->mBackground:Landroid/graphics/Bitmap;
 
-    .line 196
-    sget-boolean v0, Lcom/htc/htcjavaflag/HtcBuildFlag;->Htc_DEBUG_flag:Z
-
-    if-eqz v0, :cond_1
-
-    .line 197
-    const-string v0, "ImageWallpaper"
-
-    const-string v1, "onReceive mLastSurface width=height=-1"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 198
-    const-string v0, "ImageWallpaper"
-
-    const-string v1, "onReceive drawFrameLocked"
-
-    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 200
-    :cond_1
     iget-object v0, p0, Lcom/android/systemui/ImageWallpaper$DrawableEngine$WallpaperObserver;->this$1:Lcom/android/systemui/ImageWallpaper$DrawableEngine;
 
-    invoke-virtual {v0}, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->drawFrame()V
+    const/4 v2, 0x1
 
-    .line 201
+    iput-boolean v2, v0, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->mRedrawNeeded:Z
+
+    iget-object v0, p0, Lcom/android/systemui/ImageWallpaper$DrawableEngine$WallpaperObserver;->this$1:Lcom/android/systemui/ImageWallpaper$DrawableEngine;
+
+    invoke-virtual {v0}, Lcom/android/systemui/ImageWallpaper$DrawableEngine;->drawFrameLocked()V
+
+    monitor-exit v1
+
     return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
 .end method

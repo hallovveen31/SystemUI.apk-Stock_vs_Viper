@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 177
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,14 +37,10 @@
 .method public run()V
     .locals 6
 
-    .prologue
-    .line 181
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 184
-    .local v0, startTime:J
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard;->userInfoTask:Landroid/os/AsyncTask;
@@ -57,7 +50,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 186
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard;->userInfoTask:Landroid/os/AsyncTask;
@@ -69,7 +61,6 @@
 
     invoke-virtual {v2, v3}, Landroid/os/AsyncTask;->cancel(Z)Z
 
-    .line 187
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard;
 
     const/4 v3, 0x0
@@ -77,14 +68,12 @@
     #setter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard;->userInfoTask:Landroid/os/AsyncTask;
     invoke-static {v2, v3}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard;->access$202(Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard;Landroid/os/AsyncTask;)Landroid/os/AsyncTask;
 
-    .line 189
     :cond_0
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard;->queryForUserInformation()V
     invoke-static {v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard;->access$300(Lcom/android/systemui/statusbar/quicksetting/QuickSettingUserCard;)V
 
-    .line 191
     const-string v2, "QuickSettingUserCard"
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -130,6 +119,5 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 192
     return-void
 .end method

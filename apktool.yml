@@ -1,5 +1,5 @@
 version: 1.5.2
-apkFileName: SystemUI[STOCK].apk
+apkFileName: SystemUI_VIPER.apk
 isFrameworkApk: false
 usesFramework:
   ids:
@@ -11,4 +11,4 @@ sdkInfo:
 packageInfo:
   cur_package: com.android.systemui
   orig_package: com.android.systemui
-compressionType: false
+compressionType: true

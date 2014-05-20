@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/usb/StorageNotification;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 193
     iput-object p1, p0, Lcom/android/systemui/usb/StorageNotification$2;->this$0:Lcom/android/systemui/usb/StorageNotification;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,13 +37,10 @@
 .method public run()V
     .locals 1
 
-    .prologue
-    .line 196
     iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification$2;->this$0:Lcom/android/systemui/usb/StorageNotification;
 
     #calls: Lcom/android/systemui/usb/StorageNotification;->startAsync()V
     invoke-static {v0}, Lcom/android/systemui/usb/StorageNotification;->access$600(Lcom/android/systemui/usb/StorageNotification;)V
 
-    .line 197
     return-void
 .end method

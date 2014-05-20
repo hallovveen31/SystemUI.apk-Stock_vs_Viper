@@ -44,7 +44,7 @@
     .line 699
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->isFinishing()Z
+    invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
 
     move-result v0
 
@@ -85,7 +85,7 @@
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;
 
-    invoke-virtual {v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v2}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 

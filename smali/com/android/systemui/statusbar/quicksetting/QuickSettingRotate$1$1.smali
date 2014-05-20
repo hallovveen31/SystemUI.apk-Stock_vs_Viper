@@ -32,10 +32,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate$1;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 58
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate$1$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate$1;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -47,13 +44,9 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 58
     check-cast p1, [Ljava/lang/Void;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate$1$1;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
@@ -63,15 +56,12 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 3
-    .parameter "args"
 
-    .prologue
-    .line 62
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate$1$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate$1;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate;
 
-    #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate;->mContext:Landroid/content/Context;
+    #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate;->access$100(Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate;)Landroid/content/Context;
 
     move-result-object v1
@@ -80,13 +70,11 @@
 
     move-result v0
 
-    .line 63
-    .local v0, locked:Z
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate$1$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate$1;
 
     iget-object v1, v1, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate;
 
-    #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate;->mContext:Landroid/content/Context;
+    #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
     invoke-static {v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate;->access$200(Lcom/android/systemui/statusbar/quicksetting/QuickSettingRotate;)Landroid/content/Context;
 
     move-result-object v2
@@ -98,12 +86,10 @@
     :goto_0
     invoke-static {v2, v1}, Lcom/android/internal/view/RotationPolicy;->setRotationLockForAccessibility(Landroid/content/Context;Z)V
 
-    .line 65
     const/4 v1, 0x0
 
     return-object v1
 
-    .line 63
     :cond_0
     const/4 v1, 0x0
 

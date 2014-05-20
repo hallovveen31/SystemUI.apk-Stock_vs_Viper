@@ -21,10 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/PhoneStatusBar$ClockThread;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 3129
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$ClockThread$1;->this$1:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$ClockThread;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -36,18 +33,13 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 11
-    .parameter "m"
 
-    .prologue
     const-wide/32 v9, 0xea60
 
-    .line 3132
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    .line 3133
-    .local v2, now:J
     div-long v5, v2, v9
 
     const-wide/16 v7, 0x1
@@ -58,8 +50,6 @@
 
     sub-long v0, v5, v2
 
-    .line 3134
-    .local v0, delay:J
     const-string v5, "ClockThread"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -92,17 +82,15 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3135
     const/4 v5, 0x0
 
-    invoke-virtual {p0, v5, v0, v1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$ClockThread$1;->sendEmptyMessageDelayed(IJ)Z
+    invoke-virtual {p0, v5, v0, v1}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 3137
     iget-object v5, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$ClockThread$1;->this$1:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$ClockThread;
 
     iget-object v5, v5, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$ClockThread;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    #getter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mHandler:Lcom/android/systemui/statusbar/BaseStatusBar$H;
+    #getter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mHandler:Lcom/android/systemui/statusbar/BaseStatusBar$H;
     invoke-static {v5}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$5600(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Lcom/android/systemui/statusbar/BaseStatusBar$H;
 
     move-result-object v5
@@ -113,24 +101,20 @@
 
     move-result-object v4
 
-    .line 3138
-    .local v4, uiMessage:Landroid/os/Message;
     const/4 v5, 0x1
 
     invoke-virtual {v4, v5}, Landroid/os/Message;->setAsynchronous(Z)V
 
-    .line 3139
     iget-object v5, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$ClockThread$1;->this$1:Lcom/android/systemui/statusbar/phone/PhoneStatusBar$ClockThread;
 
     iget-object v5, v5, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$ClockThread;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    #getter for: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mHandler:Lcom/android/systemui/statusbar/BaseStatusBar$H;
+    #getter for: Lcom/android/systemui/statusbar/BaseStatusBar;->mHandler:Lcom/android/systemui/statusbar/BaseStatusBar$H;
     invoke-static {v5}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$5700(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)Lcom/android/systemui/statusbar/BaseStatusBar$H;
 
     move-result-object v5
 
-    invoke-virtual {v5, v4}, Lcom/android/systemui/statusbar/BaseStatusBar$H;->sendMessageAtFrontOfQueue(Landroid/os/Message;)Z
+    invoke-virtual {v5, v4}, Landroid/os/Handler;->sendMessageAtFrontOfQueue(Landroid/os/Message;)Z
 
-    .line 3140
     return-void
 .end method

@@ -32,10 +32,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 242
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -47,13 +44,9 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 242
     check-cast p1, [Ljava/lang/Void;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND$4;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
@@ -63,14 +56,11 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 7
-    .parameter "args"
 
-    .prologue
     const/4 v3, 0x0
 
     const/4 v2, 0x1
 
-    .line 246
     iget-object v4, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND;->dndEnable:Z
@@ -82,12 +72,10 @@
 
     move v0, v2
 
-    .line 248
-    .local v0, nextState:Z
     :goto_0
     iget-object v4, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND;
 
-    #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND;->mContext:Landroid/content/Context;
+    #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
     invoke-static {v4}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND;->access$600(Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND;)Landroid/content/Context;
 
     move-result-object v4
@@ -96,8 +84,6 @@
 
     move-result-object v1
 
-    .line 250
-    .local v1, resolver:Landroid/content/ContentResolver;
     const-string v4, "QuickSettingDND"
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -137,7 +123,6 @@
 
     invoke-static {v4, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 253
     const-string v4, "htc_dnd_feature_enabled"
 
     if-ne v0, v2, :cond_1
@@ -145,10 +130,9 @@
     :goto_1
     invoke-static {v1, v4, v2}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 256
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND;
 
-    #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND;->mContext:Landroid/content/Context;
+    #getter for: Landroid/view/View;->mContext:Landroid/content/Context;
     invoke-static {v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND;->access$700(Lcom/android/systemui/statusbar/quicksetting/QuickSettingDND;)Landroid/content/Context;
 
     move-result-object v2
@@ -161,24 +145,17 @@
 
     invoke-virtual {v2, v3}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
-    .line 258
     const/4 v2, 0x0
 
     return-object v2
 
-    .end local v0           #nextState:Z
-    .end local v1           #resolver:Landroid/content/ContentResolver;
     :cond_0
     move v0, v3
 
-    .line 246
     goto :goto_0
 
-    .restart local v0       #nextState:Z
-    .restart local v1       #resolver:Landroid/content/ContentResolver;
     :cond_1
     move v2, v3
 
-    .line 253
     goto :goto_1
 .end method

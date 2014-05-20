@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.PreferenceView android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="55.0dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/eqs_icon" android:padding="2.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@com.htc:dimen/list_primary_s" android:textStyle="bold" android:textColor="@com.htc:color/dark_shadow" android:id="@id/eqs_title" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="@com.htc:dimen/list_body_secondary_xs" android:textColor="@com.htc:color/ap_background_color" android:id="@id/eqs_summary" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.htc.widget.HtcSeekBar android:id="@id/seekbar" android:visibility="gone" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.htc.widget.HtcToggleButtonLight android:layout_gravity="center_vertical" android:id="@id/eqs_togglebutton" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@com.htc:style/htcToggleButtonStyleDefault.Dark" />
+    </LinearLayout>
+    <View android:id="@id/bottom_glow" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+</com.android.systemui.statusbar.PreferenceView>

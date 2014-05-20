@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.weather.WeatherWidget android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="100.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/wicon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0sp" android:id="@id/hilotemp" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="2" android:lines="2" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="17.0sp" android:textColor="@*android:color/white" android:ellipsize="marquee" android:id="@id/city" android:paddingLeft="3.0dip" android:paddingRight="60.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:hint="@*android:color/white" android:maxLines="2" android:lines="2" android:layout_alignRight="@id/wicon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="36.0sp" android:textColor="@*android:color/white" android:id="@id/temp" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_toLeftOf="@id/hilotemp" android:layout_centerVertical="true" />
+</com.android.systemui.statusbar.weather.WeatherWidget>

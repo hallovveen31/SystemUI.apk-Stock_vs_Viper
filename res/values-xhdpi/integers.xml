@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer name="recent_item_size">230400</integer>
+    <integer name="header_icon_width">50</integer>
 </resources>

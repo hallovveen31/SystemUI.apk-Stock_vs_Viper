@@ -21,10 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/policy/NetworkController;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 792
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/NetworkController$WifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -36,26 +33,20 @@
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
-    .parameter "msg"
 
-    .prologue
-    .line 795
     iget v0, p1, Landroid/os/Message;->what:I
 
     sparse-switch v0, :sswitch_data_0
 
-    .line 814
     :cond_0
     :goto_0
     return-void
 
-    .line 797
     :sswitch_0
     iget v0, p1, Landroid/os/Message;->arg1:I
 
     if-nez v0, :cond_1
 
-    .line 798
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$WifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiChannel:Lcom/android/internal/util/AsyncChannel;
@@ -70,7 +61,6 @@
 
     goto :goto_0
 
-    .line 801
     :cond_1
     const-string v0, "StatusBar.NetworkController"
 
@@ -80,7 +70,6 @@
 
     goto :goto_0
 
-    .line 805
     :sswitch_1
     iget v0, p1, Landroid/os/Message;->arg1:I
 
@@ -90,21 +79,18 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 806
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$WifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
     iput v1, v0, Lcom/android/systemui/statusbar/policy/NetworkController;->mWifiActivity:I
 
-    .line 807
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/NetworkController$WifiHandler;->this$0:Lcom/android/systemui/statusbar/policy/NetworkController;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/policy/NetworkController;->refreshViews()V
 
     goto :goto_0
 
-    .line 795
     nop
 
     :sswitch_data_0

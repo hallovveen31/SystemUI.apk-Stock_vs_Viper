@@ -119,7 +119,7 @@
 
     const/4 v6, 0x0
 
-    invoke-virtual {v5, v6}, Lcom/htc/widget/HtcFooterButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v5, v6}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 788
     :cond_3
@@ -197,7 +197,7 @@
     :cond_4
     iget-object v5, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity$7;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;
 
-    invoke-virtual {v5}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -337,7 +337,7 @@
     :cond_5
     iget-object v5, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity$7;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;
 
-    invoke-virtual {v5}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v5}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -406,7 +406,7 @@
     .line 820
     iget-object v5, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity$7;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;
 
-    invoke-virtual {v5}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->isFinishing()Z
+    invoke-virtual {v5}, Landroid/app/Activity;->isFinishing()Z
 
     move-result v5
 
@@ -415,7 +415,7 @@
     .line 821
     iget-object v5, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity$7;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;
 
-    invoke-virtual {v5}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->finish()V
+    invoke-virtual {v5}, Landroid/app/Activity;->finish()V
 
     goto/16 :goto_0
 .end method

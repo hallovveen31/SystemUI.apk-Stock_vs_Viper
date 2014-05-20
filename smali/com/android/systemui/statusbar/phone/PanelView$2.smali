@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/PanelView;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 231
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PanelView$2;->this$0:Lcom/android/systemui/statusbar/phone/PanelView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,10 +37,8 @@
 .method public run()V
     .locals 2
 
-    .prologue
     const/4 v1, 0x0
 
-    .line 234
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView$2;->this$0:Lcom/android/systemui/statusbar/phone/PanelView;
 
     #getter for: Lcom/android/systemui/statusbar/phone/PanelView;->mTimeAnimator:Landroid/animation/TimeAnimator;
@@ -60,13 +55,12 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/animation/TimeAnimator;->isStarted()Z
+    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->isStarted()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 235
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView$2;->this$0:Lcom/android/systemui/statusbar/phone/PanelView;
 
     #getter for: Lcom/android/systemui/statusbar/phone/PanelView;->mTimeAnimator:Landroid/animation/TimeAnimator;
@@ -74,27 +68,23 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/animation/TimeAnimator;->end()V
+    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->end()V
 
-    .line 236
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView$2;->this$0:Lcom/android/systemui/statusbar/phone/PanelView;
 
     #setter for: Lcom/android/systemui/statusbar/phone/PanelView;->mRubberbanding:Z
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/PanelView;->access$202(Lcom/android/systemui/statusbar/phone/PanelView;Z)Z
 
-    .line 237
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView$2;->this$0:Lcom/android/systemui/statusbar/phone/PanelView;
 
     #setter for: Lcom/android/systemui/statusbar/phone/PanelView;->mClosing:Z
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/PanelView;->access$302(Lcom/android/systemui/statusbar/phone/PanelView;Z)Z
 
-    .line 240
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView$2;->this$0:Lcom/android/systemui/statusbar/phone/PanelView;
 
     #calls: Lcom/android/systemui/statusbar/phone/PanelView;->disableGc(Z)V
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/PanelView;->access$400(Lcom/android/systemui/statusbar/phone/PanelView;Z)V
 
-    .line 242
     :cond_0
     return-void
 .end method

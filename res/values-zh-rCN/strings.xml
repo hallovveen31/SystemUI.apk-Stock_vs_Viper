@@ -207,7 +207,7 @@
     <string name="quick_settings_music_channel">动态歌词</string>
     <string name="quick_settings_do_not_disturb">请勿打扰</string>
     <string name="quick_settings_fingerprint_scan">指纹扫描</string>
-    <string name="quick_settings_power_saver_ex">极致节能程序模式</string>
+    <string name="quick_settings_power_saver_ex">极端节能程序模式</string>
     <string name="quick_settings_wifi_hotspot">WLAN 热点</string>
     <string name="quick_settings_wifi_hotspot_jp">数据共享</string>
     <string name="quick_settings_wifi_hotspot_us">移动热点</string>
@@ -267,7 +267,7 @@
     <string name="battery_low_charging_not_enough_title">警告</string>
     <string name="battery_low_charging_not_enough_ac_title">无法充电</string>
     <string name="battery_low_charging_not_enough_ac">手机耗电量太大，无法充电。要解决此问题，您可以关闭手机、关闭所有当前未使用的应用程序或关闭屏幕以降低能耗。</string>
-    <string name="extreme_auto_power_saver_ask_title_ex">极致节能程序模式</string>
+    <string name="extreme_auto_power_saver_ask_title_ex">极端节能程序模式</string>
     <string name="extreme_auto_power_saver_ask_eps_msg">"开启极端节能程序模式可通过以下方式延长电池使用寿命：
 -节省 CPU 使用量。
 -降低屏幕亮度。
@@ -275,14 +275,14 @@
 -屏幕关闭时关闭数据连接。
 -仅允许必要的应用程序运行。
 -关闭计步器。"</string>
-    <string name="extreme_auto_power_saver_ask_msg_ex">"开启极致节能程序模式可通过以下方式延长电池使用寿命：
+    <string name="extreme_auto_power_saver_ask_msg_ex">"开启极端节能程序模式可通过以下方式延长电池使用寿命：
 -节省 CPU 使用量。
 -降低屏幕亮度。
 -关闭振动反馈。
 -屏幕关闭时关闭数据连接。
 -仅允许必要的应用程序运行。"</string>
-    <string name="extreme_auto_power_saver_ask_title_ex1">极致节能程序</string>
-    <string name="extreme_auto_power_saver_ask_msg_ex1">"开启极致节能程序可通过以下延长电池使用寿命：
+    <string name="extreme_auto_power_saver_ask_title_ex1">极端节能程序</string>
+    <string name="extreme_auto_power_saver_ask_msg_ex1">"开启极端节能程序可通过以下延长电池使用寿命：
 -节省 CPU 使用量。
 -降低屏幕亮度。
 -关闭振动反馈。

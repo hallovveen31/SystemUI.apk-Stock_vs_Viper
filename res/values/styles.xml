@@ -230,4 +230,15 @@
         <item name="com.htc:fakescreenHeaderEnable">true</item>
         <item name="com.htc:fakescreenFooterEnable">false</item>
     </style>
+    <style name="TextAppearance.StatusBar.Clock.Small" parent="@*android:style/TextAppearance.StatusBar.Icon">
+        <item name="android:textSize">@dimen/status_bar_clock_size_small</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="TextAppearance.StatusBar.PhoneTicker.Small" parent="@style/TextAppearance.StatusBar.Clock.Small">
+        <item name="android:textSize">@dimen/status_bar_ticker_size_small</item>
+        <item name="android:textColor">@*android:color/white</item>
+        <item name="android:singleLine">true</item>
+    </style>
 </resources>

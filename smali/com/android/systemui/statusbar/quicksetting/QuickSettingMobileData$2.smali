@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 90
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,25 +36,20 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .parameter "view"
 
-    .prologue
-    .line 94
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;
 
     const-string v1, "QuickSettingMobileData"
 
     const-string v2, "click:launch more shortcut item!"
 
-    #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->Log(Ljava/lang/String;Ljava/lang/String;)V
+    #calls: Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->Log(Ljava/lang/String;Ljava/lang/String;)V
     invoke-static {v0, v1, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->access$100(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 95
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->disableQuickTipsFlag()V
+    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->disableQuickTipsFlag()V
 
-    .line 97
     new-instance v0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$2$1;
 
     invoke-direct {v0, p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$2$1;-><init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$2;)V
@@ -66,8 +58,7 @@
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$2$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Landroid/os/AsyncTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 109
     return-void
 .end method

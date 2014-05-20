@@ -21,11 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;Landroid/os/Handler;)V
     .locals 0
-    .parameter
-    .parameter "x0"
 
-    .prologue
-    .line 552
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -37,11 +33,7 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 3
-    .parameter "selfChange"
-    .parameter "uri"
 
-    .prologue
-    .line 556
     const-string v0, "QuickSettingAPN"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -64,12 +56,10 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 557
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->updateAPNstate()V
     invoke-static {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->access$400(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;)V
 
-    .line 558
     return-void
 .end method

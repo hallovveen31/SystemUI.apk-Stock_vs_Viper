@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity$2;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 187
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity$2$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity$2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,32 +37,25 @@
 .method public run()V
     .locals 6
 
-    .prologue
-    .line 193
     :try_start_0
     new-instance v2, Landroid/content/Intent;
 
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
-    .line 195
-    .local v2, userIntent:Landroid/content/Intent;
     const-string v3, "com.htc.contacts"
 
     const-string v4, "com.htc.contacts.MyContactLayerCarouselActivity"
 
     invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 198
     const/high16 v3, 0x1000
 
     invoke-virtual {v2, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 199
     const/high16 v3, 0x2000
 
     invoke-virtual {v2, v3}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 201
     iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity$2$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity$2;
 
     iget-object v3, v3, Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity;
@@ -78,8 +68,6 @@
 
     move-result-object v1
 
-    .line 204
-    .local v1, opts:Landroid/app/ActivityOptions;
     iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity$2$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity$2;
 
     iget-object v3, v3, Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity;
@@ -88,22 +76,16 @@
 
     move-result-object v4
 
-    invoke-virtual {v3, v2, v4}, Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity;->startActivity(Landroid/content/Intent;Landroid/os/Bundle;)V
+    invoke-virtual {v3, v2, v4}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;Landroid/os/Bundle;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 211
-    .end local v1           #opts:Landroid/app/ActivityOptions;
-    .end local v2           #userIntent:Landroid/content/Intent;
     :goto_0
     return-void
 
-    .line 206
     :catch_0
     move-exception v0
 
-    .line 208
-    .local v0, exception:Ljava/lang/Exception;
     const-string v3, "QuickContact"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -116,7 +98,7 @@
 
     move-result-object v4
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v5
 
@@ -130,12 +112,11 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 209
     iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity$2$1;->this$1:Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity$2;
 
     iget-object v3, v3, Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity$2;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity;
 
-    invoke-virtual {v3}, Lcom/android/systemui/statusbar/quicksetting/QuickContactActivity;->finish()V
+    invoke-virtual {v3}, Landroid/app/Activity;->finish()V
 
     goto :goto_0
 .end method

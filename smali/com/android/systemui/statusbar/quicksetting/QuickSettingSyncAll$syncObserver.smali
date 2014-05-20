@@ -24,10 +24,7 @@
 # direct methods
 .method private constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 167
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$syncObserver;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -37,11 +34,7 @@
 
 .method synthetic constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$1;)V
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 167
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$syncObserver;-><init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;)V
 
     return-void
@@ -51,12 +44,9 @@
 # virtual methods
 .method public onStatusChanged(I)V
     .locals 5
-    .parameter "which"
 
-    .prologue
     const/4 v4, 0x1
 
-    .line 171
     const-string v1, "QuickSettingSyncAll"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -79,7 +69,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 172
     const/16 v1, 0x8
 
     if-eq p1, v1, :cond_0
@@ -90,7 +79,6 @@
 
     if-ne p1, v4, :cond_1
 
-    .line 174
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$syncObserver;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;
 
@@ -99,12 +87,10 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$H;->obtainMessage()Landroid/os/Message;
+    invoke-virtual {v1}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object v0
 
-    .line 175
-    .local v0, msg:Landroid/os/Message;
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$syncObserver;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;->mHandler:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$H;
@@ -112,12 +98,10 @@
 
     move-result-object v1
 
-    invoke-virtual {v1, v4}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$H;->removeMessages(I)V
+    invoke-virtual {v1, v4}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 176
     iput v4, v0, Landroid/os/Message;->what:I
 
-    .line 177
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$syncObserver;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll;->mHandler:Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$H;
@@ -127,10 +111,8 @@
 
     const-wide/16 v2, 0x1f4
 
-    invoke-virtual {v1, v0, v2, v3}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingSyncAll$H;->sendMessageDelayed(Landroid/os/Message;J)Z
+    invoke-virtual {v1, v0, v2, v3}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 179
-    .end local v0           #msg:Landroid/os/Message;
     :cond_1
     return-void
 .end method

@@ -21,10 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 206
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -36,10 +33,7 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 11
-    .parameter "context"
-    .parameter "intent"
 
-    .prologue
     const/16 v5, 0xb
 
     const/16 v4, 0xa
@@ -48,13 +42,10 @@
 
     const/4 v10, 0x0
 
-    .line 209
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v6
 
-    .line 210
-    .local v6, action:Ljava/lang/String;
     const-string v0, "CarrierLabel"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -77,7 +68,6 @@
 
     invoke-static {v0, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 211
     const-string v0, "android.provider.Telephony.SPN_STRINGS_UPDATED"
 
     invoke-virtual {v0, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -86,7 +76,6 @@
 
     if-eqz v0, :cond_a
 
-    .line 212
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v2, "phone_slot"
@@ -98,7 +87,6 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mPhoneSlot:I
     invoke-static {v0, v2}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$002(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;I)I
 
-    .line 213
     invoke-static {}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$100()Z
 
     move-result v0
@@ -134,7 +122,6 @@
 
     invoke-static {v0, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 215
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
@@ -145,7 +132,6 @@
 
     if-ne v0, v4, :cond_6
 
-    .line 216
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v2, "showSpn"
@@ -157,7 +143,6 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mShowSpn:Z
     invoke-static {v0, v2}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$202(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Z)Z
 
-    .line 217
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v2, "spn"
@@ -169,7 +154,6 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mSPN:Ljava/lang/String;
     invoke-static {v0, v2}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$302(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 218
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v2, "showPlmn"
@@ -181,7 +165,6 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mShowPlmn:Z
     invoke-static {v0, v2}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$402(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Z)Z
 
-    .line 219
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v2, "plmn"
@@ -193,14 +176,12 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mPLMN:Ljava/lang/String;
     invoke-static {v0, v2}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$502(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 220
     invoke-static {}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$100()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 221
     const-string v0, "CarrierLabel"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -281,7 +262,6 @@
 
     invoke-static {v0, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 236
     :cond_1
     :goto_0
     const-string v0, "networkState"
@@ -292,7 +272,6 @@
 
     if-eqz v0, :cond_8
 
-    .line 237
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     #getter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mPhoneSlot:I
@@ -302,7 +281,6 @@
 
     if-ne v0, v4, :cond_7
 
-    .line 238
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v2, "networkState"
@@ -314,7 +292,6 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mServiceStatus:I
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$1002(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;I)I
 
-    .line 239
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     #getter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mServiceStatus:I
@@ -324,13 +301,11 @@
 
     if-eqz v0, :cond_2
 
-    .line 240
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mShowSpn:Z
     invoke-static {v0, v10}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$202(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Z)Z
 
-    .line 241
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v1, ""
@@ -338,13 +313,11 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mSPN:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$302(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 242
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mShowPlmn:Z
     invoke-static {v0, v10}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$402(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Z)Z
 
-    .line 243
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v1, ""
@@ -352,7 +325,6 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mPLMN:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$502(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 255
     :cond_2
     :goto_1
     invoke-static {}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$100()Z
@@ -407,14 +379,12 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 256
     :cond_3
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     #calls: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->updateDualSimNetworkNameExt()V
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$1200(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;)V
 
-    .line 279
     :cond_4
     :goto_2
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
@@ -422,27 +392,21 @@
     #calls: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->addSeperator()V
     invoke-static {v0}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$1500(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;)V
 
-    .line 281
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v7
 
     check-cast v7, Landroid/view/View;
 
-    .line 282
-    .local v7, parent:Landroid/view/View;
     if-eqz v7, :cond_5
 
     invoke-virtual {v7}, Landroid/view/View;->invalidate()V
 
-    .line 283
     :cond_5
     return-void
 
-    .line 225
-    .end local v7           #parent:Landroid/view/View;
     :cond_6
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
@@ -453,7 +417,6 @@
 
     if-ne v0, v5, :cond_1
 
-    .line 226
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v2, "showSpn"
@@ -465,7 +428,6 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mShowSpnSlot2:Z
     invoke-static {v0, v2}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$602(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Z)Z
 
-    .line 227
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v2, "spn"
@@ -477,7 +439,6 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mSpnSlot2:Ljava/lang/String;
     invoke-static {v0, v2}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$702(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 228
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v2, "showPlmn"
@@ -489,7 +450,6 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mShowPlmnSlot2:Z
     invoke-static {v0, v2}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$802(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Z)Z
 
-    .line 229
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v2, "plmn"
@@ -501,14 +461,12 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mPlmnSlot2:Ljava/lang/String;
     invoke-static {v0, v2}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$902(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 230
     invoke-static {}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$100()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 231
     const-string v0, "CarrierLabel"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -591,7 +549,6 @@
 
     goto/16 :goto_0
 
-    .line 246
     :cond_7
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
@@ -602,7 +559,6 @@
 
     if-ne v0, v5, :cond_2
 
-    .line 247
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v2, "networkState"
@@ -614,7 +570,6 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mServiceStatusSlot2:I
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$1102(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;I)I
 
-    .line 248
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     #getter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mServiceStatusSlot2:I
@@ -624,13 +579,11 @@
 
     if-eqz v0, :cond_2
 
-    .line 249
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mShowSpnSlot2:Z
     invoke-static {v0, v10}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$602(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Z)Z
 
-    .line 250
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v1, ""
@@ -638,13 +591,11 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mSpnSlot2:Ljava/lang/String;
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$702(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 251
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mShowPlmnSlot2:Z
     invoke-static {v0, v10}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$802(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;Z)Z
 
-    .line 252
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     const-string v1, ""
@@ -654,7 +605,6 @@
 
     goto/16 :goto_1
 
-    .line 259
     :cond_8
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
@@ -665,7 +615,6 @@
 
     if-ne v0, v4, :cond_9
 
-    .line 260
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
@@ -701,7 +650,6 @@
 
     goto/16 :goto_2
 
-    .line 261
     :cond_9
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
@@ -712,7 +660,6 @@
 
     if-ne v0, v5, :cond_4
 
-    .line 262
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
@@ -750,7 +697,6 @@
 
     goto/16 :goto_2
 
-    .line 266
     :cond_a
     const-string v0, "android.intent.action.CONFIGURATION_CHANGED"
 
@@ -760,18 +706,14 @@
 
     if-eqz v0, :cond_b
 
-    .line 267
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v8
 
-    .line 268
-    .local v8, startTime:J
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->updateResources()V
 
-    .line 269
     const-string v0, "AutoTest"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -808,8 +750,6 @@
 
     goto/16 :goto_2
 
-    .line 271
-    .end local v8           #startTime:J
     :cond_b
     const-string v0, "android.intent.action.SIM_STATE_CHANGED"
 
@@ -827,7 +767,6 @@
 
     if-eqz v0, :cond_e
 
-    .line 272
     :cond_c
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
@@ -840,7 +779,6 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mPhoneSlot:I
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$002(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;I)I
 
-    .line 273
     invoke-static {}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$100()Z
 
     move-result v0
@@ -876,7 +814,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 274
     :cond_d
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
@@ -885,7 +822,6 @@
 
     goto/16 :goto_2
 
-    .line 275
     :cond_e
     const-string v0, "android.intent.action.AIRPLANE_MODE"
 
@@ -895,7 +831,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 276
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$1;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     #calls: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->updateDualSimNetworkNameExt()V

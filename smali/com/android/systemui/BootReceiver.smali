@@ -7,8 +7,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .prologue
-    .line 30
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -18,17 +16,12 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
-    .parameter
-    .parameter
 
-    .prologue
-    .line 37
     :try_start_0
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 38
     const-string v1, "show_processes"
 
     const/4 v2, 0x0
@@ -39,28 +32,23 @@
 
     if-eqz v0, :cond_0
 
-    .line 39
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/android/systemui/LoadAverageService;
 
     invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 40
     invoke-virtual {p1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 45
     :cond_0
     :goto_0
     return-void
 
-    .line 42
     :catch_0
     move-exception v0
 
-    .line 43
     const-string v1, "SystemUIBootReceiver"
 
     const-string v2, "Can\'t start load average service"

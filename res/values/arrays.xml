@@ -44,4 +44,19 @@
         <item>0</item>
         <item>334</item>
     </integer-array>
+    <string-array name="sizes">
+        <item>B</item>
+        <item>KB</item>
+        <item>MB</item>
+        <item>GB</item>
+    </string-array>
+    <string-array name="volume_quick_settings">
+        <item>Voice Volume</item>
+        <item>System Volume</item>
+        <item>Ringer Volume</item>
+        <item>Media Volume</item>
+        <item>Alarm Volume</item>
+        <item>Notification Volume</item>
+        <item>Bluetooth Volume</item>
+    </string-array>
 </resources>

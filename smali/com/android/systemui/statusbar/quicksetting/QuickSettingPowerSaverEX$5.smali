@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 301
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,13 +37,10 @@
 .method public run()V
     .locals 1
 
-    .prologue
-    .line 306
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX;->updateDemoFLOstate()V
     invoke-static {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX;->access$500(Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX;)V
 
-    .line 307
     return-void
 .end method

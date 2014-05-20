@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 59
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,10 +36,7 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .parameter "view"
 
-    .prologue
-    .line 63
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;->statusBar:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
@@ -52,18 +46,15 @@
 
     if-nez v0, :cond_0
 
-    .line 68
     :goto_0
     return-void
 
-    .line 66
     :cond_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;->takeScreenshot()V
     invoke-static {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;->access$100(Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;)V
 
-    .line 67
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;->statusBar:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;

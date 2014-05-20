@@ -21,10 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/power/PowerUI;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 1038
     iput-object p1, p0, Lcom/android/systemui/power/PowerUI$12;->this$0:Lcom/android/systemui/power/PowerUI;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -36,35 +33,25 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .parameter "context"
-    .parameter "intent"
 
-    .prologue
-    .line 1042
     if-nez p2, :cond_0
 
-    .line 1043
     const-string v1, "PowerUI"
 
     const-string v2, "onReceive, intent is null"
 
     invoke-static {v1, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1065
     :goto_0
     return-void
 
-    .line 1047
     :cond_0
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 1049
-    .local v0, action:Ljava/lang/String;
     if-nez v0, :cond_1
 
-    .line 1050
     const-string v1, "PowerUI"
 
     const-string v2, "onReceive, action is null"
@@ -73,7 +60,6 @@
 
     goto :goto_0
 
-    .line 1054
     :cond_1
     invoke-static {}, Lcom/android/systemui/power/PowerUI;->access$200()Z
 
@@ -81,7 +67,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 1055
     const-string v1, "PowerUI"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -104,7 +89,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 1058
     :cond_2
     const-string v1, "com.htc.intent.action.HtcPowerSaver.ExtremeAutoModeOnASK"
 
@@ -114,7 +98,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 1059
     iget-object v1, p0, Lcom/android/systemui/power/PowerUI$12;->this$0:Lcom/android/systemui/power/PowerUI;
 
     #calls: Lcom/android/systemui/power/PowerUI;->showExtremeAutoPowerSaverModeAsk()V
@@ -122,7 +105,6 @@
 
     goto :goto_0
 
-    .line 1060
     :cond_3
     const-string v1, "com.htc.intent.action.HtcPowerSaver.ExtremeAutoModeOnASKOFF"
 
@@ -132,7 +114,6 @@
 
     if-eqz v1, :cond_4
 
-    .line 1061
     iget-object v1, p0, Lcom/android/systemui/power/PowerUI$12;->this$0:Lcom/android/systemui/power/PowerUI;
 
     #calls: Lcom/android/systemui/power/PowerUI;->closeExtremeAutoPowerSaverModeAsk()V
@@ -140,7 +121,6 @@
 
     goto :goto_0
 
-    .line 1063
     :cond_4
     const-string v1, "PowerUI"
 

@@ -3,12 +3,12 @@
 .source "GlobalScreenshot.java"
 
 # interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/android/systemui/screenshot/GlobalScreenshot;->createScreenshotDropOutAnimation(IIZZ)Landroid/animation/ValueAnimator;
+    value = Lcom/android/systemui/screenshot/GlobalScreenshot;->startAnimation(Ljava/lang/Runnable;IIZZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -20,25 +20,12 @@
 # instance fields
 .field final synthetic this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
 
-.field final synthetic val$finalPos:Landroid/graphics/PointF;
-
-.field final synthetic val$scaleInterpolator:Landroid/view/animation/Interpolator;
-
 
 # direct methods
-.method constructor <init>(Lcom/android/systemui/screenshot/GlobalScreenshot;Landroid/view/animation/Interpolator;Landroid/graphics/PointF;)V
+.method constructor <init>(Lcom/android/systemui/screenshot/GlobalScreenshot;)V
     .locals 0
-    .parameter
-    .parameter
-    .parameter
 
-    .prologue
-    .line 776
     iput-object p1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
-
-    iput-object p2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->val$scaleInterpolator:Landroid/view/animation/Interpolator;
-
-    iput-object p3, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->val$finalPos:Landroid/graphics/PointF;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,136 +34,90 @@
 
 
 # virtual methods
-.method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
-    .locals 6
-    .parameter "animation"
+.method public run()V
+    .locals 4
 
-    .prologue
-    const/high16 v5, 0x3f80
+    const/4 v3, 0x0
 
-    .line 779
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
 
-    move-result-object v2
+    #getter for: Lcom/android/systemui/screenshot/GlobalScreenshot;->mContext:Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/systemui/screenshot/GlobalScreenshot;->access$8(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/content/Context;
 
-    check-cast v2, Ljava/lang/Float;
+    move-result-object v1
 
-    invoke-virtual {v2}, Ljava/lang/Float;->floatValue()F
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "tweaks_screenshot_quiet"
+
+    invoke-static {v1, v2, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v1
 
-    .line 780
-    .local v1, t:F
-    const v2, 0x3f39999a
+    if-nez v1, :cond_0
 
-    iget-object v3, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
+    iget-object v1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
 
-    #getter for: Lcom/android/systemui/screenshot/GlobalScreenshot;->mBgPaddingScale:F
-    invoke-static {v3}, Lcom/android/systemui/screenshot/GlobalScreenshot;->access$800(Lcom/android/systemui/screenshot/GlobalScreenshot;)F
+    #getter for: Lcom/android/systemui/screenshot/GlobalScreenshot;->mCameraSound:Landroid/media/MediaActionSound;
+    invoke-static {v1}, Lcom/android/systemui/screenshot/GlobalScreenshot;->access$9(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/media/MediaActionSound;
 
-    move-result v3
+    move-result-object v1
 
-    add-float/2addr v2, v3
+    invoke-virtual {v1, v3}, Landroid/media/MediaActionSound;->play(I)V
 
-    iget-object v3, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->val$scaleInterpolator:Landroid/view/animation/Interpolator;
-
-    invoke-interface {v3, v1}, Landroid/view/animation/Interpolator;->getInterpolation(F)F
-
-    move-result v3
-
-    const v4, 0x3e8cccce
-
-    mul-float/2addr v3, v4
-
-    sub-float v0, v2, v3
-
-    .line 783
-    .local v0, scaleT:F
-    iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
-
-    #getter for: Lcom/android/systemui/screenshot/GlobalScreenshot;->mBackgroundView:Landroid/widget/ImageView;
-    invoke-static {v2}, Lcom/android/systemui/screenshot/GlobalScreenshot;->access$700(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/widget/ImageView;
-
-    move-result-object v2
-
-    sub-float v3, v5, v1
-
-    const/high16 v4, 0x3f00
-
-    mul-float/2addr v3, v4
-
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setAlpha(F)V
-
-    .line 784
-    iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
+    :cond_0
+    :try_start_0
+    iget-object v1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
 
     #getter for: Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotView:Landroid/widget/ImageView;
-    invoke-static {v2}, Lcom/android/systemui/screenshot/GlobalScreenshot;->access$400(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/widget/ImageView;
+    invoke-static {v1}, Lcom/android/systemui/screenshot/GlobalScreenshot;->access$2(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/widget/ImageView;
 
-    move-result-object v2
+    move-result-object v1
 
-    iget-object v3, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->val$scaleInterpolator:Landroid/view/animation/Interpolator;
+    invoke-virtual {v1}, Landroid/view/View;->buildLayer()V
 
-    invoke-interface {v3, v1}, Landroid/view/animation/Interpolator;->getInterpolation(F)F
+    iget-object v1, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
 
-    move-result v3
+    #getter for: Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotAnimation:Landroid/animation/AnimatorSet;
+    invoke-static {v1}, Lcom/android/systemui/screenshot/GlobalScreenshot;->access$10(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/animation/AnimatorSet;
 
-    sub-float v3, v5, v3
+    move-result-object v1
 
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setAlpha(F)V
+    invoke-virtual {v1}, Landroid/animation/AnimatorSet;->start()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 785
-    iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
-
-    #getter for: Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotView:Landroid/widget/ImageView;
-    invoke-static {v2}, Lcom/android/systemui/screenshot/GlobalScreenshot;->access$400(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/widget/ImageView;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Landroid/widget/ImageView;->setScaleX(F)V
-
-    .line 786
-    iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
-
-    #getter for: Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotView:Landroid/widget/ImageView;
-    invoke-static {v2}, Lcom/android/systemui/screenshot/GlobalScreenshot;->access$400(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/widget/ImageView;
-
-    move-result-object v2
-
-    invoke-virtual {v2, v0}, Landroid/widget/ImageView;->setScaleY(F)V
-
-    .line 787
-    iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
-
-    #getter for: Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotView:Landroid/widget/ImageView;
-    invoke-static {v2}, Lcom/android/systemui/screenshot/GlobalScreenshot;->access$400(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/widget/ImageView;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->val$finalPos:Landroid/graphics/PointF;
-
-    iget v3, v3, Landroid/graphics/PointF;->x:F
-
-    mul-float/2addr v3, v1
-
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setTranslationX(F)V
-
-    .line 788
-    iget-object v2, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->this$0:Lcom/android/systemui/screenshot/GlobalScreenshot;
-
-    #getter for: Lcom/android/systemui/screenshot/GlobalScreenshot;->mScreenshotView:Landroid/widget/ImageView;
-    invoke-static {v2}, Lcom/android/systemui/screenshot/GlobalScreenshot;->access$400(Lcom/android/systemui/screenshot/GlobalScreenshot;)Landroid/widget/ImageView;
-
-    move-result-object v2
-
-    iget-object v3, p0, Lcom/android/systemui/screenshot/GlobalScreenshot$11;->val$finalPos:Landroid/graphics/PointF;
-
-    iget v3, v3, Landroid/graphics/PointF;->y:F
-
-    mul-float/2addr v3, v1
-
-    invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setTranslationY(F)V
-
-    .line 789
+    :goto_0
     return-void
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
+
+    const-string v1, "GlobalScreenshot"
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v3, "!!!!!fail to start screenshot animation:"
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
+
+    goto :goto_0
 .end method

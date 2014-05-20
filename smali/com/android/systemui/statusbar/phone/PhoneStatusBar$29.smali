@@ -30,13 +30,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;Landroid/view/View;II)V
     .locals 0
-    .parameter
-    .parameter
-    .parameter
-    .parameter
 
-    .prologue
-    .line 3585
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$29;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     iput-object p2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$29;->val$parentView:Landroid/view/View;
@@ -55,8 +49,6 @@
 .method public run()V
     .locals 3
 
-    .prologue
-    .line 3589
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$29;->val$parentView:Landroid/view/View;
 
     iget v2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$29;->val$viewID:I
@@ -67,29 +59,24 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 3591
-    .local v0, textView:Landroid/widget/TextView;
     if-eqz v0, :cond_0
 
-    .line 3594
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$29;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    iget-object v1, v1, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mContext:Landroid/content/Context;
+    iget-object v1, v1, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const v2, 0x7f0d0018
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
-    .line 3595
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$29;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
-    iget-object v1, v1, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mContext:Landroid/content/Context;
+    iget-object v1, v1, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     iget v2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$29;->val$styleID:I
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
-    .line 3597
     :cond_0
     return-void
 .end method

@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 64
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,15 +36,11 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .parameter "view"
 
-    .prologue
-    .line 68
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;->toggleNextState()V
     invoke-static {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;->access$000(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAirplane;)V
 
-    .line 69
     return-void
 .end method

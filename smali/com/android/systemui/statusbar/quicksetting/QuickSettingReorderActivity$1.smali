@@ -44,7 +44,7 @@
     .line 226
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->recreate()V
+    invoke-virtual {v0}, Landroid/app/Activity;->recreate()V
 
     .line 227
     return-void

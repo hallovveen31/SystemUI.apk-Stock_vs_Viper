@@ -32,10 +32,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 524
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -47,10 +44,7 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
     .locals 1
-    .parameter "args"
 
-    .prologue
-    .line 528
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->performToggleState()Ljava/lang/Boolean;
@@ -63,13 +57,9 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 524
     check-cast p1, [Ljava/lang/Void;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$4;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
 
     move-result-object v0
@@ -79,20 +69,15 @@
 
 .method protected onPostExecute(Ljava/lang/Boolean;)V
     .locals 2
-    .parameter "result"
 
-    .prologue
     const/4 v1, 0x1
 
-    .line 534
     if-nez p1, :cond_1
 
-    .line 549
     :cond_0
     :goto_0
     return-void
 
-    .line 538
     :cond_1
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -106,7 +91,6 @@
 
     if-nez v0, :cond_0
 
-    .line 540
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->hotspotDrawable:Landroid/graphics/drawable/AnimationDrawable;
@@ -120,7 +104,6 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 541
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->hotspotDrawable:Landroid/graphics/drawable/AnimationDrawable;
@@ -130,13 +113,11 @@
 
     invoke-virtual {v0}, Landroid/graphics/drawable/AnimationDrawable;->stop()V
 
-    .line 543
     :cond_2
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->setEnabled(Z)V
 
-    .line 544
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
@@ -146,9 +127,8 @@
 
     const v1, 0x7f020185
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;->setImageResource(I)V
+    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 546
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->handler:Landroid/os/Handler;
@@ -165,7 +145,6 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 547
     const-string v0, "QuickSettingWifiHotspot"
 
     const-string v1, "!!!!!toggleHotspotState.unlock(airplaneModeOn):restore"
@@ -177,13 +156,9 @@
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .parameter "x0"
 
-    .prologue
-    .line 524
     check-cast p1, Ljava/lang/Boolean;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$4;->onPostExecute(Ljava/lang/Boolean;)V
 
     return-void

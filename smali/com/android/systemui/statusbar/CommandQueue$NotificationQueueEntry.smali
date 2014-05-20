@@ -25,10 +25,7 @@
 # direct methods
 .method private constructor <init>(Lcom/android/systemui/statusbar/CommandQueue;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 78
     iput-object p1, p0, Lcom/android/systemui/statusbar/CommandQueue$NotificationQueueEntry;->this$0:Lcom/android/systemui/statusbar/CommandQueue;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,11 +35,7 @@
 
 .method synthetic constructor <init>(Lcom/android/systemui/statusbar/CommandQueue;Lcom/android/systemui/statusbar/CommandQueue$1;)V
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 78
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/CommandQueue$NotificationQueueEntry;-><init>(Lcom/android/systemui/statusbar/CommandQueue;)V
 
     return-void

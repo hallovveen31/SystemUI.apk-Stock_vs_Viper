@@ -28,22 +28,13 @@
 # direct methods
 .method public constructor <init>(Lcom/android/systemui/media/RingtonePlayer;Landroid/os/IBinder;Landroid/net/Uri;Landroid/os/UserHandle;I)V
     .locals 3
-    .parameter
-    .parameter "token"
-    .parameter "uri"
-    .parameter "user"
-    .parameter "streamType"
 
-    .prologue
-    .line 76
     iput-object p1, p0, Lcom/android/systemui/media/RingtonePlayer$Client;->this$0:Lcom/android/systemui/media/RingtonePlayer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 77
     iput-object p2, p0, Lcom/android/systemui/media/RingtonePlayer$Client;->mToken:Landroid/os/IBinder;
 
-    .line 79
     new-instance v0, Landroid/media/Ringtone;
 
     #calls: Lcom/android/systemui/media/RingtonePlayer;->getContextForUser(Landroid/os/UserHandle;)Landroid/content/Context;
@@ -57,26 +48,20 @@
 
     iput-object v0, p0, Lcom/android/systemui/media/RingtonePlayer$Client;->mRingtone:Landroid/media/Ringtone;
 
-    .line 80
     iget-object v0, p0, Lcom/android/systemui/media/RingtonePlayer$Client;->mRingtone:Landroid/media/Ringtone;
 
     invoke-virtual {v0, p5}, Landroid/media/Ringtone;->setStreamType(I)V
 
-    .line 81
     iget-object v0, p0, Lcom/android/systemui/media/RingtonePlayer$Client;->mRingtone:Landroid/media/Ringtone;
 
     invoke-virtual {v0, p3}, Landroid/media/Ringtone;->setUri(Landroid/net/Uri;)V
 
-    .line 82
     return-void
 .end method
 
 .method static synthetic access$200(Lcom/android/systemui/media/RingtonePlayer$Client;)Landroid/media/Ringtone;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 72
     iget-object v0, p0, Lcom/android/systemui/media/RingtonePlayer$Client;->mRingtone:Landroid/media/Ringtone;
 
     return-object v0
@@ -84,10 +69,7 @@
 
 .method static synthetic access$300(Lcom/android/systemui/media/RingtonePlayer$Client;)Landroid/os/IBinder;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 72
     iget-object v0, p0, Lcom/android/systemui/media/RingtonePlayer$Client;->mToken:Landroid/os/IBinder;
 
     return-object v0
@@ -98,8 +80,6 @@
 .method public binderDied()V
     .locals 3
 
-    .prologue
-    .line 87
     iget-object v0, p0, Lcom/android/systemui/media/RingtonePlayer$Client;->this$0:Lcom/android/systemui/media/RingtonePlayer;
 
     #getter for: Lcom/android/systemui/media/RingtonePlayer;->mClients:Ljava/util/HashMap;
@@ -109,7 +89,6 @@
 
     monitor-enter v1
 
-    .line 88
     :try_start_0
     iget-object v0, p0, Lcom/android/systemui/media/RingtonePlayer$Client;->this$0:Lcom/android/systemui/media/RingtonePlayer;
 
@@ -122,20 +101,16 @@
 
     invoke-virtual {v0, v2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 89
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 90
     iget-object v0, p0, Lcom/android/systemui/media/RingtonePlayer$Client;->mRingtone:Landroid/media/Ringtone;
 
     invoke-virtual {v0}, Landroid/media/Ringtone;->stop()V
 
-    .line 91
     return-void
 
-    .line 89
     :catchall_0
     move-exception v0
 

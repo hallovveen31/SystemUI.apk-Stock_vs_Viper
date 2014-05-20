@@ -133,7 +133,7 @@
     .line 604
     iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;
 
-    invoke-virtual {v3}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v3}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 

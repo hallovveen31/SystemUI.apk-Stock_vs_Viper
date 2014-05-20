@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/settings/SettingsUI$1;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 49
     iput-object p1, p0, Lcom/android/systemui/settings/SettingsUI$1$1;->this$1:Lcom/android/systemui/settings/SettingsUI$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,10 +36,7 @@
 # virtual methods
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 2
-    .parameter "dialog"
 
-    .prologue
-    .line 52
     iget-object v0, p0, Lcom/android/systemui/settings/SettingsUI$1$1;->this$1:Lcom/android/systemui/settings/SettingsUI$1;
 
     iget-object v0, v0, Lcom/android/systemui/settings/SettingsUI$1;->this$0:Lcom/android/systemui/settings/SettingsUI;
@@ -52,6 +46,5 @@
     #setter for: Lcom/android/systemui/settings/SettingsUI;->mBrightnessDialog:Lcom/android/systemui/settings/BrightnessDialog;
     invoke-static {v0, v1}, Lcom/android/systemui/settings/SettingsUI;->access$002(Lcom/android/systemui/settings/SettingsUI;Lcom/android/systemui/settings/BrightnessDialog;)Lcom/android/systemui/settings/BrightnessDialog;
 
-    .line 53
     return-void
 .end method

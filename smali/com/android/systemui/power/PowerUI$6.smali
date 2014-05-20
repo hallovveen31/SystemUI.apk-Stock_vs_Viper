@@ -26,11 +26,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/power/PowerUI;Landroid/content/Intent;)V
     .locals 0
-    .parameter
-    .parameter
 
-    .prologue
-    .line 673
     iput-object p1, p0, Lcom/android/systemui/power/PowerUI$6;->this$0:Lcom/android/systemui/power/PowerUI;
 
     iput-object p2, p0, Lcom/android/systemui/power/PowerUI$6;->val$intent:Landroid/content/Intent;
@@ -44,14 +40,10 @@
 # virtual methods
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 3
-    .parameter "dialog"
-    .parameter "which"
 
-    .prologue
-    .line 676
     iget-object v0, p0, Lcom/android/systemui/power/PowerUI$6;->this$0:Lcom/android/systemui/power/PowerUI;
 
-    iget-object v0, v0, Lcom/android/systemui/power/PowerUI;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/systemui/power/PowerUI$6;->val$intent:Landroid/content/Intent;
 
@@ -59,21 +51,18 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Context;->startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
-    .line 678
     iget-object v0, p0, Lcom/android/systemui/power/PowerUI$6;->this$0:Lcom/android/systemui/power/PowerUI;
 
     iget-object v0, v0, Lcom/android/systemui/power/PowerUI;->mLowBatteryDialog2:Lcom/htc/dialog/HtcAlertDialog;
 
     if-eqz v0, :cond_0
 
-    .line 679
     iget-object v0, p0, Lcom/android/systemui/power/PowerUI$6;->this$0:Lcom/android/systemui/power/PowerUI;
 
     iget-object v0, v0, Lcom/android/systemui/power/PowerUI;->mLowBatteryDialog2:Lcom/htc/dialog/HtcAlertDialog;
 
-    invoke-virtual {v0}, Lcom/htc/dialog/HtcAlertDialog;->dismiss()V
+    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 682
     :cond_0
     return-void
 .end method

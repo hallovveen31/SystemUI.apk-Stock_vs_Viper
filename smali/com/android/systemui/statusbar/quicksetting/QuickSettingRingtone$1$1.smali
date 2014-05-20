@@ -83,7 +83,7 @@
 
     iget-object v3, v3, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone;
 
-    invoke-virtual {v3}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone;->getTag()Ljava/lang/Object;
+    invoke-virtual {v3}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -96,7 +96,7 @@
 
     iget-object v3, v3, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone;
 
-    invoke-virtual {v3}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone;->getTag()Ljava/lang/Object;
+    invoke-virtual {v3}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v3
 

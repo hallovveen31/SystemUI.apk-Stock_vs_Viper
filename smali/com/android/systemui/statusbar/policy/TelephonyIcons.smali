@@ -47,7 +47,6 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .prologue
     const/4 v6, 0x5
 
     const/4 v5, 0x1
@@ -58,7 +57,6 @@
 
     const/4 v2, 0x2
 
-    .line 25
     new-array v0, v2, [[I
 
     new-array v1, v6, [I
@@ -75,7 +73,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->TELEPHONY_SIGNAL_STRENGTH:[[I
 
-    .line 38
     new-array v0, v2, [[I
 
     new-array v1, v6, [I
@@ -92,7 +89,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->QS_TELEPHONY_SIGNAL_STRENGTH:[[I
 
-    .line 51
     new-array v0, v2, [[I
 
     new-array v1, v6, [I
@@ -109,19 +105,16 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->TELEPHONY_SIGNAL_STRENGTH_ROAMING:[[I
 
-    .line 64
     new-array v0, v2, [I
 
     fill-array-data v0, :array_6
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->QS_DATA_R:[I
 
-    .line 69
     sget-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->TELEPHONY_SIGNAL_STRENGTH:[[I
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_SIGNAL_STRENGTH:[[I
 
-    .line 74
     new-array v0, v2, [[I
 
     new-array v1, v3, [I
@@ -138,14 +131,12 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_G:[[I
 
-    .line 85
     new-array v0, v2, [I
 
     fill-array-data v0, :array_9
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->QS_DATA_G:[I
 
-    .line 90
     new-array v0, v2, [[I
 
     new-array v1, v3, [I
@@ -162,14 +153,12 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_3G:[[I
 
-    .line 101
     new-array v0, v2, [I
 
     fill-array-data v0, :array_c
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->QS_DATA_3G:[I
 
-    .line 106
     new-array v0, v2, [[I
 
     new-array v1, v3, [I
@@ -186,14 +175,12 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_E:[[I
 
-    .line 117
     new-array v0, v2, [I
 
     fill-array-data v0, :array_f
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->QS_DATA_E:[I
 
-    .line 123
     new-array v0, v2, [[I
 
     new-array v1, v3, [I
@@ -210,14 +197,12 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_H:[[I
 
-    .line 134
     new-array v0, v2, [I
 
     fill-array-data v0, :array_12
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->QS_DATA_H:[I
 
-    .line 141
     new-array v0, v2, [[I
 
     new-array v1, v3, [I
@@ -234,14 +219,12 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_1X:[[I
 
-    .line 152
     new-array v0, v2, [I
 
     fill-array-data v0, :array_15
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->QS_DATA_1X:[I
 
-    .line 158
     new-array v0, v2, [[I
 
     new-array v1, v3, [I
@@ -258,14 +241,12 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_4G:[[I
 
-    .line 169
     new-array v0, v2, [I
 
     fill-array-data v0, :array_18
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->QS_DATA_4G:[I
 
-    .line 175
     new-array v0, v2, [[I
 
     new-array v1, v3, [I
@@ -282,7 +263,6 @@
 
     sput-object v0, Lcom/android/systemui/statusbar/policy/TelephonyIcons;->DATA_LTE:[[I
 
-    .line 186
     new-array v0, v2, [I
 
     fill-array-data v0, :array_1b
@@ -291,7 +271,6 @@
 
     return-void
 
-    .line 25
     :array_0
     .array-data 0x4
         0xb0t 0x4t 0x2t 0x7ft
@@ -310,7 +289,6 @@
         0xb8t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 38
     :array_2
     .array-data 0x4
         0xc6t 0x0t 0x2t 0x7ft
@@ -329,7 +307,6 @@
         0xd5t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 51
     :array_4
     .array-data 0x4
         0xb0t 0x4t 0x2t 0x7ft
@@ -348,14 +325,12 @@
         0xb8t 0x4t 0x2t 0x7ft
     .end array-data
 
-    .line 64
     :array_6
     .array-data 0x4
         0xe4t 0x0t 0x2t 0x7ft
         0xdbt 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 74
     :array_7
     .array-data 0x4
         0x61t 0x3t 0x2t 0x7ft
@@ -372,14 +347,12 @@
         0x61t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 85
     :array_9
     .array-data 0x4
         0xdct 0x0t 0x2t 0x7ft
         0xd8t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 90
     :array_a
     .array-data 0x4
         0x5et 0x3t 0x2t 0x7ft
@@ -396,14 +369,12 @@
         0x5et 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 101
     :array_c
     .array-data 0x4
         0xcbt 0x0t 0x2t 0x7ft
         0xd4t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 106
     :array_d
     .array-data 0x4
         0x60t 0x3t 0x2t 0x7ft
@@ -420,14 +391,12 @@
         0x60t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 117
     :array_f
     .array-data 0x4
         0xcet 0x0t 0x2t 0x7ft
         0xd7t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 123
     :array_10
     .array-data 0x4
         0x62t 0x3t 0x2t 0x7ft
@@ -444,14 +413,12 @@
         0x62t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 134
     :array_12
     .array-data 0x4
         0xddt 0x0t 0x2t 0x7ft
         0xd9t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 141
     :array_13
     .array-data 0x4
         0x5dt 0x3t 0x2t 0x7ft
@@ -468,14 +435,12 @@
         0x5dt 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 152
     :array_15
     .array-data 0x4
         0xc8t 0x0t 0x2t 0x7ft
         0xd1t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 158
     :array_16
     .array-data 0x4
         0x47t 0x3t 0x2t 0x7ft
@@ -492,14 +457,12 @@
         0x63t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 169
     :array_18
     .array-data 0x4
         0xcdt 0x0t 0x2t 0x7ft
         0xd6t 0x0t 0x2t 0x7ft
     .end array-data
 
-    .line 175
     :array_19
     .array-data 0x4
         0x63t 0x3t 0x2t 0x7ft
@@ -516,7 +479,6 @@
         0x63t 0x3t 0x2t 0x7ft
     .end array-data
 
-    .line 186
     :array_1b
     .array-data 0x4
         0xe0t 0x0t 0x2t 0x7ft
@@ -527,8 +489,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .prologue
-    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

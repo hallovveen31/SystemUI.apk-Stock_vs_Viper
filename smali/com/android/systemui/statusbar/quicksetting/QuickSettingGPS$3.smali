@@ -21,11 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingGPS;Landroid/os/Handler;)V
     .locals 0
-    .parameter
-    .parameter "x0"
 
-    .prologue
-    .line 169
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingGPS$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingGPS;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -37,18 +33,13 @@
 # virtual methods
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 2
-    .parameter "selfChange"
-    .parameter "uri"
 
-    .prologue
-    .line 173
     const-string v0, "QuickSettingGPS"
 
     const-string v1, "gpsObserver:onChange"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 174
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingGPS$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingGPS;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingGPS$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingGPS;
@@ -61,6 +52,5 @@
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingGPS;->updateGpsStats(Z)V
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingGPS;->access$300(Lcom/android/systemui/statusbar/quicksetting/QuickSettingGPS;Z)V
 
-    .line 175
     return-void
 .end method

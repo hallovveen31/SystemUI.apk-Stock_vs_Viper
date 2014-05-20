@@ -16,8 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .prologue
-    .line 36
     invoke-direct {p0}, Lcom/android/systemui/SystemUI;-><init>()V
 
     return-void
@@ -25,16 +23,11 @@
 
 .method private andLog(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
     .locals 1
-    .parameter "msg"
-    .parameter "t"
 
-    .prologue
-    .line 111
     const-string v0, "SystemBars"
 
     invoke-static {v0, p1, p2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 112
     new-instance v0, Ljava/lang/RuntimeException;
 
     invoke-direct {v0, p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
@@ -45,16 +38,13 @@
 .method private createStatusBarFromConfig()V
     .locals 6
 
-    .prologue
-    .line 88
     const-string v3, "SystemBars"
 
     const-string v4, "createStatusBarFromConfig"
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 89
-    iget-object v3, p0, Lcom/android/systemui/statusbar/SystemBars;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const/high16 v4, 0x7f0a
 
@@ -62,8 +52,6 @@
 
     move-result-object v1
 
-    .line 90
-    .local v1, clsName:Ljava/lang/String;
     if-eqz v1, :cond_0
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
@@ -72,7 +60,6 @@
 
     if-nez v3, :cond_1
 
-    .line 91
     :cond_0
     const-string v3, "No status bar component configured"
 
@@ -84,14 +71,11 @@
 
     throw v3
 
-    .line 93
     :cond_1
     const/4 v0, 0x0
 
-    .line 95
-    .local v0, cls:Ljava/lang/Class;,"Ljava/lang/Class<*>;"
     :try_start_0
-    iget-object v3, p0, Lcom/android/systemui/statusbar/SystemBars;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
 
@@ -103,7 +87,6 @@
 
     move-result-object v0
 
-    .line 100
     :try_start_1
     invoke-virtual {v0}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
 
@@ -115,26 +98,22 @@
     :try_end_1
     .catch Ljava/lang/Throwable; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 104
     iget-object v3, p0, Lcom/android/systemui/statusbar/SystemBars;->mStatusBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    iget-object v4, p0, Lcom/android/systemui/statusbar/SystemBars;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
-    iput-object v4, v3, Lcom/android/systemui/statusbar/BaseStatusBar;->mContext:Landroid/content/Context;
+    iput-object v4, v3, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
-    .line 105
     iget-object v3, p0, Lcom/android/systemui/statusbar/SystemBars;->mStatusBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    iget-object v4, p0, Lcom/android/systemui/statusbar/SystemBars;->mComponents:Ljava/util/Map;
+    iget-object v4, p0, Lcom/android/systemui/SystemUI;->mComponents:Ljava/util/Map;
 
-    iput-object v4, v3, Lcom/android/systemui/statusbar/BaseStatusBar;->mComponents:Ljava/util/Map;
+    iput-object v4, v3, Lcom/android/systemui/SystemUI;->mComponents:Ljava/util/Map;
 
-    .line 106
     iget-object v3, p0, Lcom/android/systemui/statusbar/SystemBars;->mStatusBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-virtual {v3}, Lcom/android/systemui/statusbar/BaseStatusBar;->start()V
 
-    .line 107
     const-string v3, "SystemBars"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -167,15 +146,11 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 108
     return-void
 
-    .line 96
     :catch_0
     move-exception v2
 
-    .line 97
-    .local v2, t:Ljava/lang/Throwable;
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -200,13 +175,9 @@
 
     throw v3
 
-    .line 101
-    .end local v2           #t:Ljava/lang/Throwable;
     :catch_1
     move-exception v2
 
-    .line 102
-    .restart local v2       #t:Ljava/lang/Throwable;
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -236,42 +207,30 @@
 # virtual methods
 .method public dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 1
-    .parameter "fd"
-    .parameter "pw"
-    .parameter "args"
 
-    .prologue
-    .line 82
     iget-object v0, p0, Lcom/android/systemui/statusbar/SystemBars;->mStatusBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     if-eqz v0, :cond_0
 
-    .line 83
     iget-object v0, p0, Lcom/android/systemui/statusbar/SystemBars;->mStatusBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/systemui/statusbar/BaseStatusBar;->dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    invoke-virtual {v0, p1, p2, p3}, Lcom/android/systemui/SystemUI;->dump(Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
-    .line 85
     :cond_0
     return-void
 .end method
 
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 1
-    .parameter "newConfig"
 
-    .prologue
-    .line 75
     iget-object v0, p0, Lcom/android/systemui/statusbar/SystemBars;->mStatusBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     if-eqz v0, :cond_0
 
-    .line 76
     iget-object v0, p0, Lcom/android/systemui/statusbar/SystemBars;->mStatusBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-virtual {v0, p1}, Lcom/android/systemui/statusbar/BaseStatusBar;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 78
     :cond_0
     return-void
 .end method
@@ -279,26 +238,20 @@
 .method public onNoService()V
     .locals 2
 
-    .prologue
-    .line 57
     const-string v0, "SystemBars"
 
     const-string v1, "onNoService"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 58
     invoke-direct {p0}, Lcom/android/systemui/statusbar/SystemBars;->createStatusBarFromConfig()V
 
-    .line 59
     return-void
 .end method
 
 .method public onServiceStartAttempt()J
     .locals 3
 
-    .prologue
-    .line 63
     const-string v0, "SystemBars"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -323,25 +276,20 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 64
     iget-object v0, p0, Lcom/android/systemui/statusbar/SystemBars;->mStatusBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     if-eqz v0, :cond_0
 
-    .line 66
     iget-object v0, p0, Lcom/android/systemui/statusbar/SystemBars;->mStatusBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/BaseStatusBar;->destroy()V
 
-    .line 67
     const/4 v0, 0x0
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/SystemBars;->mStatusBar:Lcom/android/systemui/statusbar/BaseStatusBar;
 
-    .line 68
     const-wide/16 v0, 0x1f4
 
-    .line 70
     :goto_0
     return-wide v0
 
@@ -354,22 +302,19 @@
 .method public start()V
     .locals 6
 
-    .prologue
-    .line 49
     const-string v0, "SystemBars"
 
     const-string v1, "start"
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 50
     new-instance v0, Lcom/android/systemui/statusbar/ServiceMonitor;
 
     const-string v1, "SystemBars"
 
     const/4 v2, 0x1
 
-    iget-object v3, p0, Lcom/android/systemui/statusbar/SystemBars;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/systemui/SystemUI;->mContext:Landroid/content/Context;
 
     const-string v4, "bar_service_component"
 
@@ -379,11 +324,9 @@
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/SystemBars;->mServiceMonitor:Lcom/android/systemui/statusbar/ServiceMonitor;
 
-    .line 52
     iget-object v0, p0, Lcom/android/systemui/statusbar/SystemBars;->mServiceMonitor:Lcom/android/systemui/statusbar/ServiceMonitor;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/ServiceMonitor;->start()V
 
-    .line 53
     return-void
 .end method

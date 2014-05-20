@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/SearchPanelView;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 204
     iput-object p1, p0, Lcom/android/systemui/SearchPanelView$2;->this$0:Lcom/android/systemui/SearchPanelView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,17 +37,14 @@
 .method public onPreDraw()Z
     .locals 1
 
-    .prologue
-    .line 206
     iget-object v0, p0, Lcom/android/systemui/SearchPanelView$2;->this$0:Lcom/android/systemui/SearchPanelView;
 
-    invoke-virtual {v0}, Lcom/android/systemui/SearchPanelView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
-    .line 207
     iget-object v0, p0, Lcom/android/systemui/SearchPanelView$2;->this$0:Lcom/android/systemui/SearchPanelView;
 
     #getter for: Lcom/android/systemui/SearchPanelView;->mGlowPadView:Lcom/android/internal/widget/multiwaveview/GlowPadView;
@@ -60,7 +54,6 @@
 
     invoke-virtual {v0}, Lcom/android/internal/widget/multiwaveview/GlowPadView;->resumeAnimations()V
 
-    .line 208
     const/4 v0, 0x0
 
     return v0

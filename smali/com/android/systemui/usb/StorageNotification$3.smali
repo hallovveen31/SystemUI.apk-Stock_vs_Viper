@@ -22,8 +22,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .prologue
-    .line 299
     invoke-static {}, Lcom/android/systemui/usb/StorageNotification$StorageType;->values()[Lcom/android/systemui/usb/StorageNotification$StorageType;
 
     move-result-object v0
@@ -39,7 +37,7 @@
 
     sget-object v1, Lcom/android/systemui/usb/StorageNotification$StorageType;->SD_CARD:Lcom/android/systemui/usb/StorageNotification$StorageType;
 
-    invoke-virtual {v1}, Lcom/android/systemui/usb/StorageNotification$StorageType;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -55,7 +53,7 @@
 
     sget-object v1, Lcom/android/systemui/usb/StorageNotification$StorageType;->USB_STORAGE:Lcom/android/systemui/usb/StorageNotification$StorageType;
 
-    invoke-virtual {v1}, Lcom/android/systemui/usb/StorageNotification$StorageType;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 
@@ -71,7 +69,7 @@
 
     sget-object v1, Lcom/android/systemui/usb/StorageNotification$StorageType;->PHONE_STORAGE:Lcom/android/systemui/usb/StorageNotification$StorageType;
 
-    invoke-virtual {v1}, Lcom/android/systemui/usb/StorageNotification$StorageType;->ordinal()I
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v1
 

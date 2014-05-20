@@ -16,7 +16,7 @@
     .line 33
     const-string v0, "ringtone"
 
-    iput-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone;->tileLabel:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->tileLabel:Ljava/lang/String;
 
     .line 34
     return-void
@@ -77,7 +77,7 @@
     .line 41
     const v1, 0x7f070028
 
-    invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -100,7 +100,7 @@
 
     invoke-direct {v1, p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone$1;-><init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone;)V
 
-    invoke-virtual {p0, v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 96
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone;->onLocaleChanged()V
@@ -119,12 +119,12 @@
     .line 104
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone;->setOnOverlayChangeListener(I)V
+    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->setOnOverlayChangeListener(I)V
 
     .line 105
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p0, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 106
     return-void
@@ -135,7 +135,7 @@
 
     .prologue
     .line 111
-    iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -145,7 +145,7 @@
     .local v0, resource:Landroid/content/res/Resources;
     const v2, 0x7f070029
 
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -156,7 +156,7 @@
     if-eqz v1, :cond_0
 
     .line 117
-    iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingRingtone;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/htc/util/res/HtcResUtil;->isInAllCapsLocale(Landroid/content/Context;)Z
 

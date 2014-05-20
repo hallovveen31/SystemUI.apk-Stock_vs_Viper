@@ -21,11 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/ServiceMonitor;Landroid/os/Handler;)V
     .locals 0
-    .parameter
-    .parameter "x0"
 
-    .prologue
-    .line 94
     iput-object p1, p0, Lcom/android/systemui/statusbar/ServiceMonitor$2;->this$0:Lcom/android/systemui/statusbar/ServiceMonitor;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -37,25 +33,17 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 1
-    .parameter "selfChange"
 
-    .prologue
-    .line 96
     const/4 v0, 0x0
 
     invoke-virtual {p0, p1, v0}, Lcom/android/systemui/statusbar/ServiceMonitor$2;->onChange(ZLandroid/net/Uri;)V
 
-    .line 97
     return-void
 .end method
 
 .method public onChange(ZLandroid/net/Uri;)V
     .locals 5
-    .parameter "selfChange"
-    .parameter "uri"
 
-    .prologue
-    .line 100
     iget-object v1, p0, Lcom/android/systemui/statusbar/ServiceMonitor$2;->this$0:Lcom/android/systemui/statusbar/ServiceMonitor;
 
     #getter for: Lcom/android/systemui/statusbar/ServiceMonitor;->mDebug:Z
@@ -102,7 +90,6 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 101
     :cond_0
     iget-object v1, p0, Lcom/android/systemui/statusbar/ServiceMonitor$2;->this$0:Lcom/android/systemui/statusbar/ServiceMonitor;
 
@@ -111,8 +98,6 @@
 
     move-result-object v0
 
-    .line 102
-    .local v0, cn:Landroid/content/ComponentName;
     if-nez v0, :cond_1
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/ServiceMonitor$2;->this$0:Lcom/android/systemui/statusbar/ServiceMonitor;
@@ -140,7 +125,6 @@
 
     if-eqz v1, :cond_4
 
-    .line 103
     :cond_2
     iget-object v1, p0, Lcom/android/systemui/statusbar/ServiceMonitor$2;->this$0:Lcom/android/systemui/statusbar/ServiceMonitor;
 
@@ -162,12 +146,10 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 110
     :cond_3
     :goto_0
     return-void
 
-    .line 106
     :cond_4
     iget-object v1, p0, Lcom/android/systemui/statusbar/ServiceMonitor$2;->this$0:Lcom/android/systemui/statusbar/ServiceMonitor;
 
@@ -178,7 +160,6 @@
 
     if-eqz v1, :cond_5
 
-    .line 107
     iget-object v1, p0, Lcom/android/systemui/statusbar/ServiceMonitor$2;->this$0:Lcom/android/systemui/statusbar/ServiceMonitor;
 
     #getter for: Lcom/android/systemui/statusbar/ServiceMonitor;->mHandler:Landroid/os/Handler;
@@ -190,7 +171,6 @@
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 109
     :cond_5
     iget-object v1, p0, Lcom/android/systemui/statusbar/ServiceMonitor$2;->this$0:Lcom/android/systemui/statusbar/ServiceMonitor;
 

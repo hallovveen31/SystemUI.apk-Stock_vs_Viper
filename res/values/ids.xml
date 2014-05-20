@@ -153,4 +153,46 @@
     <item type="id" name="notification_inspect_item">false</item>
     <item type="id" name="recent_remove_item">false</item>
     <item type="id" name="recent_inspect_item">false</item>
+    <item type="id" name="title">false</item>
+    <item type="id" name="carrier_extended">false</item>
+    <item type="id" name="wicon">false</item>
+    <item type="id" name="hilotemp">false</item>
+    <item type="id" name="city">false</item>
+    <item type="id" name="temp">false</item>
+    <item type="id" name="weatherwidget">false</item>
+    <item type="id" name="center">false</item>
+    <item type="id" name="status_icon">false</item>
+    <item type="id" name="carrier_icon">false</item>
+    <item type="id" name="quicklauncher_icon">false</item>
+    <item type="id" name="quicklauncher">false</item>
+    <item type="id" name="widgets_divider">false</item>
+    <item type="id" name="widgets_switchview">false</item>
+    <item type="id" name="exp_power_stat">false</item>
+    <item type="id" name="powerwidget">false</item>
+    <item type="id" name="power_widget_button">false</item>
+    <item type="id" name="power_widget_button_image">false</item>
+    <item type="id" name="power_widget_button_text">false</item>
+    <item type="id" name="power_widget_button_indicator">false</item>
+    <item type="id" name="notifications">false</item>
+    <item type="id" name="quick_settings">false</item>
+    <item type="id" name="qs_swtich_buttons">false</item>
+    <item type="id" name="center_clock">false</item>
+    <item type="id" name="kill_all">false</item>
+    <item type="id" name="progress">false</item>
+    <item type="id" name="taskmanager">false</item>
+    <item type="id" name="htc_quick_settings">false</item>
+    <item type="id" name="eqs_icon">false</item>
+    <item type="id" name="eqs_title">false</item>
+    <item type="id" name="eqs_summary">false</item>
+    <item type="id" name="seekbar">false</item>
+    <item type="id" name="eqs_togglebutton">false</item>
+    <item type="id" name="qs_scroll">false</item>
+    <item type="id" name="gestures">false</item>
+    <item type="id" name="hsv_scroll">false</item>
+    <item type="id" name="ll_imageContainer">false</item>
+    <item type="id" name="clear_button_holder">false</item>
+    <item type="id" name="battery_text2">false</item>
+    <item type="id" name="heqs_container_top">false</item>
+    <item type="id" name="heqs_container_bottom">false</item>
+    <item type="id" name="minor_qs_scroll">false</item>
 </resources>

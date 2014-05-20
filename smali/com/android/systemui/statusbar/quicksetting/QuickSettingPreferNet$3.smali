@@ -21,10 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 330
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -36,13 +33,9 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
-    .parameter "context"
-    .parameter "intent"
 
-    .prologue
     const v3, 0xc351
 
-    .line 334
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;->handler:Landroid/os/Handler;
@@ -52,7 +45,6 @@
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 335
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;->handler:Landroid/os/Handler;
@@ -64,6 +56,5 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 336
     return-void
 .end method

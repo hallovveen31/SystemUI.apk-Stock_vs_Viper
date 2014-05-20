@@ -21,11 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;Landroid/os/Handler;)V
     .locals 0
-    .parameter
-    .parameter "x0"
 
-    .prologue
-    .line 341
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -37,22 +33,18 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 4
-    .parameter "selfChange"
 
-    .prologue
     const v3, 0xc351
 
-    .line 345
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;
 
     const-string v1, "QuickSettingPreferNet"
 
     const-string v2, "onChange:EXT_MOBILE_DATA_PHONE_TYPE"
 
-    #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;->Log(Ljava/lang/String;Ljava/lang/String;)V
+    #calls: Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->Log(Ljava/lang/String;Ljava/lang/String;)V
     invoke-static {v0, v1, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;->access$300(Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 347
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;->handler:Landroid/os/Handler;
@@ -62,7 +54,6 @@
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 348
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingPreferNet;->handler:Landroid/os/Handler;
@@ -74,6 +65,5 @@
 
     invoke-virtual {v0, v3, v1, v2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
-    .line 349
     return-void
 .end method

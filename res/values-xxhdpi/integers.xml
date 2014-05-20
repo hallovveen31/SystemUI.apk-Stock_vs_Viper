@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <integer name="recent_item_size">518400</integer>
+    <integer name="header_icon_width">76</integer>
+    <integer name="heqs_size_small">100</integer>
+    <integer name="heqs_size_medium">130</integer>
+    <integer name="heqs_size_large">160</integer>
 </resources>

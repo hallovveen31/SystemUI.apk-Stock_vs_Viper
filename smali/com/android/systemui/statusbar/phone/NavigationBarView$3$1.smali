@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/NavigationBarView$3;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 226
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$3$1;->this$1:Lcom/android/systemui/statusbar/phone/NavigationBarView$3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,8 +37,6 @@
 .method public run()V
     .locals 2
 
-    .prologue
-    .line 229
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$3$1;->this$1:Lcom/android/systemui/statusbar/phone/NavigationBarView$3;
 
     iget-object v0, v0, Lcom/android/systemui/statusbar/phone/NavigationBarView$3;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
@@ -58,6 +53,5 @@
     #setter for: Lcom/android/systemui/statusbar/phone/NavigationBarView;->mCameraDisabledByDpm:Z
     invoke-static {v0, v1}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->access$302(Lcom/android/systemui/statusbar/phone/NavigationBarView;Z)Z
 
-    .line 230
     return-void
 .end method

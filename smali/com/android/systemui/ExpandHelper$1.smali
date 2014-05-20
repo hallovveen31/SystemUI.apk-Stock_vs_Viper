@@ -21,10 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/ExpandHelper;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 116
     iput-object p1, p0, Lcom/android/systemui/ExpandHelper$1;->this$0:Lcom/android/systemui/ExpandHelper;
 
     invoke-direct {p0}, Landroid/view/ScaleGestureDetector$SimpleOnScaleGestureListener;-><init>()V
@@ -36,10 +33,7 @@
 # virtual methods
 .method public onScale(Landroid/view/ScaleGestureDetector;)Z
     .locals 1
-    .parameter "detector"
 
-    .prologue
-    .line 133
     const/4 v0, 0x1
 
     return v0
@@ -47,22 +41,15 @@
 
 .method public onScaleBegin(Landroid/view/ScaleGestureDetector;)Z
     .locals 5
-    .parameter "detector"
 
-    .prologue
-    .line 120
     invoke-virtual {p1}, Landroid/view/ScaleGestureDetector;->getFocusX()F
 
     move-result v0
 
-    .line 121
-    .local v0, focusX:F
     invoke-virtual {p1}, Landroid/view/ScaleGestureDetector;->getFocusY()F
 
     move-result v1
 
-    .line 123
-    .local v1, focusY:F
     iget-object v3, p0, Lcom/android/systemui/ExpandHelper$1;->this$0:Lcom/android/systemui/ExpandHelper;
 
     #calls: Lcom/android/systemui/ExpandHelper;->findView(FF)Landroid/view/View;
@@ -70,11 +57,8 @@
 
     move-result-object v2
 
-    .line 124
-    .local v2, underFocus:Landroid/view/View;
     if-eqz v2, :cond_0
 
-    .line 125
     iget-object v3, p0, Lcom/android/systemui/ExpandHelper$1;->this$0:Lcom/android/systemui/ExpandHelper;
 
     const/4 v4, 0x4
@@ -82,7 +66,6 @@
     #calls: Lcom/android/systemui/ExpandHelper;->startExpanding(Landroid/view/View;I)V
     invoke-static {v3, v2, v4}, Lcom/android/systemui/ExpandHelper;->access$100(Lcom/android/systemui/ExpandHelper;Landroid/view/View;I)V
 
-    .line 127
     :cond_0
     iget-object v3, p0, Lcom/android/systemui/ExpandHelper$1;->this$0:Lcom/android/systemui/ExpandHelper;
 
@@ -96,9 +79,6 @@
 
 .method public onScaleEnd(Landroid/view/ScaleGestureDetector;)V
     .locals 0
-    .parameter "detector"
 
-    .prologue
-    .line 138
     return-void
 .end method

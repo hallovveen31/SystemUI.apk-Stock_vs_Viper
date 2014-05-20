@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/QuickSettingsContainerView;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 177
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsContainerView$1;->this$0:Lcom/android/systemui/statusbar/phone/QuickSettingsContainerView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,12 +37,9 @@
 .method public run()V
     .locals 1
 
-    .prologue
-    .line 181
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsContainerView$1;->this$0:Lcom/android/systemui/statusbar/phone/QuickSettingsContainerView;
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/QuickSettingsContainerView;->updateResources()V
 
-    .line 182
     return-void
 .end method

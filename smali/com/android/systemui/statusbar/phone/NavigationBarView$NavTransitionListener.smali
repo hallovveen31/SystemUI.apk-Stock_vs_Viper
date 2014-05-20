@@ -34,10 +34,7 @@
 # direct methods
 .method private constructor <init>(Lcom/android/systemui/statusbar/phone/NavigationBarView;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 101
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,11 +44,7 @@
 
 .method synthetic constructor <init>(Lcom/android/systemui/statusbar/phone/NavigationBarView;Lcom/android/systemui/statusbar/phone/NavigationBarView$1;)V
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 101
     invoke-direct {p0, p1}, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;-><init>(Lcom/android/systemui/statusbar/phone/NavigationBarView;)V
 
     return-void
@@ -61,15 +54,9 @@
 # virtual methods
 .method public endTransition(Landroid/animation/LayoutTransition;Landroid/view/ViewGroup;Landroid/view/View;I)V
     .locals 3
-    .parameter "transition"
-    .parameter "container"
-    .parameter "view"
-    .parameter "transitionType"
 
-    .prologue
     const/4 v2, 0x0
 
-    .line 124
     invoke-virtual {p3}, Landroid/view/View;->getId()I
 
     move-result v0
@@ -78,15 +65,12 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 125
     iput-boolean v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;->mBackTransitioning:Z
 
-    .line 129
     :cond_0
     :goto_0
     return-void
 
-    .line 126
     :cond_1
     invoke-virtual {p3}, Landroid/view/View;->getId()I
 
@@ -100,7 +84,6 @@
 
     if-ne p4, v0, :cond_0
 
-    .line 127
     iput-boolean v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;->mHomeAppearing:Z
 
     goto :goto_0
@@ -109,10 +92,8 @@
 .method public onBackAltCleared()V
     .locals 4
 
-    .prologue
     const/4 v2, 0x0
 
-    .line 134
     iget-boolean v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;->mBackTransitioning:Z
 
     if-nez v1, :cond_0
@@ -147,7 +128,6 @@
 
     if-nez v1, :cond_0
 
-    .line 136
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
     invoke-virtual {v1}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getBackButton()Landroid/view/View;
@@ -156,7 +136,6 @@
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setAlpha(F)V
 
-    .line 137
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
     invoke-virtual {v1}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getBackButton()Landroid/view/View;
@@ -175,31 +154,23 @@
 
     move-result-object v0
 
-    .line 138
-    .local v0, a:Landroid/animation/ValueAnimator;
     iget-wide v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;->mStartDelay:J
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setStartDelay(J)V
 
-    .line 139
     iget-wide v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;->mDuration:J
 
-    invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
+    invoke-virtual {v0, v1, v2}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 140
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;->mInterpolator:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 141
-    invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
+    invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->start()V
 
-    .line 143
-    .end local v0           #a:Landroid/animation/ValueAnimator;
     :cond_0
     return-void
 
-    .line 137
     nop
 
     :array_0
@@ -211,15 +182,9 @@
 
 .method public startTransition(Landroid/animation/LayoutTransition;Landroid/view/ViewGroup;Landroid/view/View;I)V
     .locals 3
-    .parameter "transition"
-    .parameter "container"
-    .parameter "view"
-    .parameter "transitionType"
 
-    .prologue
     const/4 v2, 0x1
 
-    .line 111
     invoke-virtual {p3}, Landroid/view/View;->getId()I
 
     move-result v0
@@ -228,15 +193,12 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 112
     iput-boolean v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;->mBackTransitioning:Z
 
-    .line 119
     :cond_0
     :goto_0
     return-void
 
-    .line 113
     :cond_1
     invoke-virtual {p3}, Landroid/view/View;->getId()I
 
@@ -250,24 +212,20 @@
 
     if-ne p4, v0, :cond_0
 
-    .line 114
     iput-boolean v2, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;->mHomeAppearing:Z
 
-    .line 115
     invoke-virtual {p1, p4}, Landroid/animation/LayoutTransition;->getStartDelay(I)J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;->mStartDelay:J
 
-    .line 116
     invoke-virtual {p1, p4}, Landroid/animation/LayoutTransition;->getDuration(I)J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$NavTransitionListener;->mDuration:J
 
-    .line 117
     invoke-virtual {p1, p4}, Landroid/animation/LayoutTransition;->getInterpolator(I)Landroid/animation/TimeInterpolator;
 
     move-result-object v0

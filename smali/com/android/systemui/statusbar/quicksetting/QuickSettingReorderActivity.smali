@@ -464,7 +464,7 @@
     if-eqz v11, :cond_3
 
     .line 255
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v11
 
@@ -576,7 +576,7 @@
 
     move-result-object v12
 
-    invoke-virtual {v3}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v13
 
@@ -631,7 +631,7 @@
     if-eqz v11, :cond_8
 
     .line 285
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v11
 
@@ -960,7 +960,7 @@
 
     move-result-object v12
 
-    invoke-virtual {v3}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v13
 
@@ -1174,7 +1174,7 @@
 
     invoke-direct {v3, p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity$2;-><init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;)V
 
-    invoke-virtual {v2, v3}, Lcom/htc/widget/HtcReorderListView;->setDividerController(Lcom/htc/widget/IDividerController;)V
+    invoke-virtual {v2, v3}, Lcom/htc/widget/HtcListView;->setDividerController(Lcom/htc/widget/IDividerController;)V
 
     .line 464
     invoke-direct {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->updateFooterContent()V
@@ -1250,12 +1250,12 @@
     .line 742
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->footerCancel1:Lcom/htc/widget/HtcFooterButton;
 
-    invoke-virtual {v0, v2}, Lcom/htc/widget/HtcFooterButton;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 743
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->footerCancel2:Lcom/htc/widget/HtcFooterButton;
 
-    invoke-virtual {v0, v1}, Lcom/htc/widget/HtcFooterButton;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 
@@ -1263,12 +1263,12 @@
     :cond_2
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->footerCancel1:Lcom/htc/widget/HtcFooterButton;
 
-    invoke-virtual {v0, v1}, Lcom/htc/widget/HtcFooterButton;->setVisibility(I)V
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 748
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->footerCancel2:Lcom/htc/widget/HtcFooterButton;
 
-    invoke-virtual {v0, v2}, Lcom/htc/widget/HtcFooterButton;->setVisibility(I)V
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 .end method
@@ -1301,7 +1301,7 @@
 
     .line 717
     :cond_1
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -1353,7 +1353,7 @@
 
     .line 720
     .local v1, cntText:Ljava/lang/String;
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -1394,7 +1394,7 @@
     move-result-object v3
 
     :goto_1
-    invoke-virtual {v4, v3}, Lcom/htc/widget/HtcFooterButton;->setText(Ljava/lang/CharSequence;)V
+    invoke-virtual {v4, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 728
     invoke-direct {p0, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->updateFooterCancelVisible(I)V
@@ -1705,7 +1705,7 @@
     .line 214
     iget v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->orientation:I
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1721,7 +1721,7 @@
     invoke-direct {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->updateFooterContent()V
 
     .line 217
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1760,7 +1760,7 @@
     invoke-static {p0}, Lcom/htc/configuration/HtcWrapConfiguration;->applyHtcFontscale(Landroid/content/Context;)Z
 
     .line 77
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -1782,7 +1782,7 @@
     .line 81
     iget v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->htcThemeID:I
 
-    invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->setTheme(I)V
+    invoke-virtual {p0, v7}, Landroid/view/ContextThemeWrapper;->setTheme(I)V
 
     .line 83
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
@@ -1790,7 +1790,7 @@
     .line 84
     const/16 v7, 0x9
 
-    invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v7}, Landroid/app/Activity;->requestWindowFeature(I)Z
 
     .line 86
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -1801,7 +1801,7 @@
     .local v3, startTime1:J
     new-instance v7, Lcom/htc/widget/ActionBarExt;
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getActionBar()Landroid/app/ActionBar;
+    invoke-virtual {p0}, Landroid/app/Activity;->getActionBar()Landroid/app/ActionBar;
 
     move-result-object v8
 
@@ -1850,7 +1850,7 @@
     .local v5, startTime2:J
     const v7, 0x7f04000d
 
-    invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->setContentView(I)V
+    invoke-virtual {p0, v7}, Landroid/app/Activity;->setContentView(I)V
 
     .line 101
     invoke-virtual {v0, v11}, Ldalvik/system/VMRuntime;->restoreGc(Z)Z
@@ -1858,7 +1858,7 @@
     .line 103
     const v7, 0x7f070024
 
-    invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v7}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
     move-result-object v7
 
@@ -1869,7 +1869,7 @@
     .line 104
     const v7, 0x7f070023
 
-    invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v7}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
     move-result-object v7
 
@@ -1880,7 +1880,7 @@
     .line 105
     const v7, 0x7f070025
 
-    invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v7}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
     move-result-object v7
 
@@ -1891,7 +1891,7 @@
     .line 107
     const v7, 0x7f070026
 
-    invoke-virtual {p0, v7}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v7}, Landroid/app/Activity;->findViewById(I)Landroid/view/View;
 
     move-result-object v7
 
@@ -1906,7 +1906,7 @@
 
     invoke-direct {v8, v11}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 
-    invoke-virtual {v7, v8}, Lcom/htc/widget/HtcReorderListView;->setSelector(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {v7, v8}, Landroid/widget/AbsListView;->setSelector(Landroid/graphics/drawable/Drawable;)V
 
     .line 110
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -1984,7 +1984,7 @@
 
     .line 116
     :cond_0
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -2071,7 +2071,7 @@
 
     move-result-object v6
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
@@ -2092,7 +2092,7 @@
     invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 130
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v5
 
@@ -2145,7 +2145,7 @@
     invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 140
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v5
 
@@ -2161,7 +2161,7 @@
 
     .line 144
     :cond_2
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v7
 
@@ -2190,7 +2190,7 @@
     iput-object v9, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->qs_invisible:Ljava/util/ArrayList;
 
     .line 154
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Landroid/content/ContextWrapper;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -2206,7 +2206,7 @@
     invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 157
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v5
 
@@ -2279,7 +2279,7 @@
 
     iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->footerCancelListener:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v6, v7}, Lcom/htc/widget/HtcFooterButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v6, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 176
     :cond_8
@@ -2292,7 +2292,7 @@
 
     iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->footerCancelListener:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v6, v7}, Lcom/htc/widget/HtcFooterButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v6, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 179
     :cond_9
@@ -2305,11 +2305,11 @@
 
     iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->footerDoneListener:Landroid/view/View$OnClickListener;
 
-    invoke-virtual {v6, v7}, Lcom/htc/widget/HtcFooterButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v6, v7}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 182
     :cond_a
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Landroid/view/ContextThemeWrapper;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 

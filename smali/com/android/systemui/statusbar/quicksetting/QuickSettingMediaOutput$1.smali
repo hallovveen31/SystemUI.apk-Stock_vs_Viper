@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMediaOutput;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 43
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMediaOutput$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingMediaOutput;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,20 +36,16 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 3
-    .parameter "view"
 
-    .prologue
-    .line 47
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMediaOutput$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingMediaOutput;
 
     const-string v1, "QuickSettingMediaOutput"
 
     const-string v2, "click:launch media output shortcut item!"
 
-    #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingMediaOutput;->Log(Ljava/lang/String;Ljava/lang/String;)V
+    #calls: Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->Log(Ljava/lang/String;Ljava/lang/String;)V
     invoke-static {v0, v1, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMediaOutput;->access$000(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMediaOutput;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 48
     new-instance v0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMediaOutput$1$1;
 
     invoke-direct {v0, p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMediaOutput$1$1;-><init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMediaOutput$1;)V
@@ -61,8 +54,7 @@
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMediaOutput$1$1;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Landroid/os/AsyncTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
-    .line 59
     return-void
 .end method

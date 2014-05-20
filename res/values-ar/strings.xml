@@ -287,8 +287,8 @@
 -وإيقاف تشغيل الاستجابة بالاهتزاز
 -وإيقاف اتصال بيانات عند غلق الشاشة
 -والسماح فقط بتشغيل التطبيقات الهامة."</string>
-    <string name="extreme_auto_power_saver_ask_title">وضع توفير الطاقة القصوى</string>
-    <string name="extreme_auto_power_saver_ask_msg">"تشغيل وضع توفير الطاقة القصوى يطيل عمر البطارية من خلال:
+    <string name="extreme_auto_power_saver_ask_title">وضع موفر الطاقة القصوى</string>
+    <string name="extreme_auto_power_saver_ask_msg">"تشغيل وضع موفر الطاقة القصوى يطيل عمر البطارية من خلال:
 -حفظ استخدام CPU
 -وتخفيض سطوع الشاشة
 -وإيقاف تشغيل الاستجابة بالاهتزاز

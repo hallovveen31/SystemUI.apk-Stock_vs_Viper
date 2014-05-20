@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/screenshot/ScreenshotService;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 206
     iput-object p1, p0, Lcom/android/systemui/screenshot/ScreenshotService$4;->this$0:Lcom/android/systemui/screenshot/ScreenshotService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,8 +37,6 @@
 .method public run()V
     .locals 2
 
-    .prologue
-    .line 211
     iget-object v0, p0, Lcom/android/systemui/screenshot/ScreenshotService$4;->this$0:Lcom/android/systemui/screenshot/ScreenshotService;
 
     const/4 v1, 0x1
@@ -49,13 +44,11 @@
     #setter for: Lcom/android/systemui/screenshot/ScreenshotService;->screenshotEnable:Z
     invoke-static {v0, v1}, Lcom/android/systemui/screenshot/ScreenshotService;->access$002(Lcom/android/systemui/screenshot/ScreenshotService;Z)Z
 
-    .line 213
     const-string v0, "ScreenshotService"
 
     const-string v1, "restoreLockState.run:exception!"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 214
     return-void
 .end method

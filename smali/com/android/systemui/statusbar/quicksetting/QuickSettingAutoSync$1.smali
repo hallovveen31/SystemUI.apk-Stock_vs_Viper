@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 53
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,15 +36,11 @@
 # virtual methods
 .method public onClick(Landroid/view/View;)V
     .locals 1
-    .parameter "view"
 
-    .prologue
-    .line 57
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync$1;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync;->toggleNextState()V
     invoke-static {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync;->access$000(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync;)V
 
-    .line 58
     return-void
 .end method

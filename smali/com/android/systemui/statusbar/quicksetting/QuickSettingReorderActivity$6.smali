@@ -82,7 +82,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Lcom/htc/widget/HtcFooterButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 764
     :cond_1
@@ -103,13 +103,13 @@
 
     move-result-object v0
 
-    invoke-virtual {v0, v2}, Lcom/htc/widget/HtcFooterButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 767
     :cond_2
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->isFinishing()Z
+    invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
 
     move-result v0
 
@@ -118,7 +118,7 @@
     .line 768
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingReorderActivity;->finish()V
+    invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
     .line 769
     :cond_3

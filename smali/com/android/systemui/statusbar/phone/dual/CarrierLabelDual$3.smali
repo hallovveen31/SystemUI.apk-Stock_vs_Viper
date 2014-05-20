@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 579
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$3;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,10 +37,8 @@
 .method public run()V
     .locals 6
 
-    .prologue
     const/4 v3, 0x0
 
-    .line 581
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$3;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     #calls: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->getServiceState(Z)I
@@ -51,8 +46,6 @@
 
     move-result v1
 
-    .line 582
-    .local v1, serviceState:I
     const/4 v2, 0x4
 
     if-ne v1, v2, :cond_1
@@ -64,13 +57,12 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Landroid/widget/TextView;->getVisibility()I
+    invoke-virtual {v2}, Landroid/view/View;->getVisibility()I
 
     move-result v2
 
     if-nez v2, :cond_1
 
-    .line 583
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$3;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$3;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
@@ -96,7 +88,6 @@
     #setter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mSearchingIdx:I
     invoke-static {v2, v3}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$1802(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;I)I
 
-    .line 584
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$3;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     #getter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mSpnLabel:Landroid/widget/TextView;
@@ -122,13 +113,11 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(I)V
 
-    .line 585
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$3;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     #calls: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->addSeperator()V
     invoke-static {v2}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->access$1500(Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;)V
 
-    .line 586
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$3;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     #getter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mNWKSearchingHandler:Landroid/os/Handler;
@@ -145,7 +134,6 @@
 
     invoke-virtual {v2, v3}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 587
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$3;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
     #getter for: Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->mNWKSearchingHandler:Landroid/os/Handler;
@@ -164,28 +152,22 @@
 
     invoke-virtual {v2, v3, v4, v5}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 588
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$3;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 
-    invoke-virtual {v2}, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;->getParent()Landroid/view/ViewParent;
+    invoke-virtual {v2}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/View;
 
-    .line 589
-    .local v0, parent:Landroid/view/View;
     if-eqz v0, :cond_0
 
     invoke-virtual {v0}, Landroid/view/View;->invalidate()V
 
-    .line 593
-    .end local v0           #parent:Landroid/view/View;
     :cond_0
     :goto_0
     return-void
 
-    .line 591
     :cond_1
     iget-object v2, p0, Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual$3;->this$0:Lcom/android/systemui/statusbar/phone/dual/CarrierLabelDual;
 

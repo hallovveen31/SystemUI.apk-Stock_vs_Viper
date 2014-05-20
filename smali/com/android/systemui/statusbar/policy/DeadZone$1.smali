@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/policy/DeadZone;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 51
     iput-object p1, p0, Lcom/android/systemui/statusbar/policy/DeadZone$1;->this$0:Lcom/android/systemui/statusbar/policy/DeadZone;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,8 +37,6 @@
 .method public run()V
     .locals 3
 
-    .prologue
-    .line 54
     iget-object v0, p0, Lcom/android/systemui/statusbar/policy/DeadZone$1;->this$0:Lcom/android/systemui/statusbar/policy/DeadZone;
 
     const-string v1, "flash"
@@ -64,10 +59,8 @@
 
     invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->start()V
 
-    .line 55
     return-void
 
-    .line 54
     :array_0
     .array-data 0x4
         0x0t 0x0t 0x80t 0x3ft

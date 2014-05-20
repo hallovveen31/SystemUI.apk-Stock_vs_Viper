@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 824
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,11 +37,9 @@
 .method public run()V
     .locals 1
 
-    .prologue
-    .line 828
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot$5;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingWifiHotspot;->getTag()Ljava/lang/Object;
+    invoke-virtual {v0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -52,6 +47,5 @@
 
     invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/QuickSettings;->animateCollapseAndUnlock()V
 
-    .line 829
     return-void
 .end method

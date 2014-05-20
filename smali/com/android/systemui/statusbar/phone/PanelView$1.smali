@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/PanelView;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 224
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PanelView$1;->this$0:Lcom/android/systemui/statusbar/phone/PanelView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,17 +36,11 @@
 # virtual methods
 .method public onTimeUpdate(Landroid/animation/TimeAnimator;JJ)V
     .locals 1
-    .parameter "animation"
-    .parameter "totalTime"
-    .parameter "deltaTime"
 
-    .prologue
-    .line 227
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PanelView$1;->this$0:Lcom/android/systemui/statusbar/phone/PanelView;
 
     #calls: Lcom/android/systemui/statusbar/phone/PanelView;->animationTick(J)V
     invoke-static {v0, p4, p5}, Lcom/android/systemui/statusbar/phone/PanelView;->access$000(Lcom/android/systemui/statusbar/phone/PanelView;J)V
 
-    .line 228
     return-void
 .end method

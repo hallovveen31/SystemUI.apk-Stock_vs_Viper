@@ -32,10 +32,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 578
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -47,13 +44,9 @@
 # virtual methods
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 578
     check-cast p1, [Ljava/lang/Void;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$6;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
@@ -63,10 +56,7 @@
 
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 3
-    .parameter "params"
 
-    .prologue
-    .line 583
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->getSelectAPN()Ljava/lang/String;
@@ -74,8 +64,6 @@
 
     move-result-object v0
 
-    .line 585
-    .local v0, currentSelectAPN:Ljava/lang/String;
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->getNextSelectKey(Ljava/lang/String;)Ljava/lang/String;
@@ -83,14 +71,11 @@
 
     move-result-object v1
 
-    .line 588
-    .local v1, nextSelectAPNkey:Ljava/lang/String;
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->setSelectAPNkey(Ljava/lang/String;)V
     invoke-static {v2, v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;->access$1600(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAPN;Ljava/lang/String;)V
 
-    .line 590
     const/4 v2, 0x0
 
     return-object v2

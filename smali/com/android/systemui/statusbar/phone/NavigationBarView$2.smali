@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/NavigationBarView;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 158
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$2;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,27 +36,22 @@
 # virtual methods
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 3
-    .parameter "cameraButtonView"
-    .parameter "event"
 
-    .prologue
     const/4 v2, 0x1
 
     const/4 v1, 0x0
 
-    .line 161
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
 
     packed-switch v0, :pswitch_data_0
 
-    .line 173
     :goto_0
     :pswitch_0
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$2;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
-    invoke-virtual {v0}, Lcom/android/systemui/statusbar/phone/NavigationBarView;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -73,7 +65,6 @@
 
     return v0
 
-    .line 164
     :pswitch_1
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$2;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
@@ -84,7 +75,6 @@
 
     invoke-virtual {v0, v2}, Lcom/android/systemui/statusbar/DelegateViewHelper;->setDisabled(Z)V
 
-    .line 165
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$2;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
     #getter for: Lcom/android/systemui/statusbar/phone/NavigationBarView;->mBarTransitions:Lcom/android/systemui/statusbar/phone/NavigationBarTransitions;
@@ -96,7 +86,6 @@
 
     goto :goto_0
 
-    .line 169
     :pswitch_2
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$2;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
@@ -107,7 +96,6 @@
 
     invoke-virtual {v0, v1}, Lcom/android/systemui/statusbar/DelegateViewHelper;->setDisabled(Z)V
 
-    .line 170
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/NavigationBarView$2;->this$0:Lcom/android/systemui/statusbar/phone/NavigationBarView;
 
     #getter for: Lcom/android/systemui/statusbar/phone/NavigationBarView;->mBarTransitions:Lcom/android/systemui/statusbar/phone/NavigationBarTransitions;
@@ -119,7 +107,6 @@
 
     goto :goto_0
 
-    .line 161
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_1

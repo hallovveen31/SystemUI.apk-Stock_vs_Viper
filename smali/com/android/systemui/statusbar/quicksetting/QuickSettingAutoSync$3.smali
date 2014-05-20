@@ -21,10 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 165
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -36,21 +33,15 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 9
-    .parameter "context"
-    .parameter "intent"
 
-    .prologue
     const/4 v6, 0x0
 
     const/4 v7, 0x1
 
-    .line 169
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v3
 
-    .line 171
-    .local v3, startTime:J
     iget-object v5, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
@@ -69,19 +60,15 @@
 
     if-nez v5, :cond_1
 
-    .line 183
     :cond_0
     :goto_0
     return-void
 
-    .line 174
     :cond_1
     invoke-static {}, Landroid/content/ContentResolver;->getMasterSyncAutomatically()Z
 
     move-result v0
 
-    .line 177
-    .local v0, autoSyncEnable:Z
     iget-object v5, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
@@ -96,7 +83,6 @@
     :goto_1
     invoke-virtual {v8, v5}, Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;->setOverlayEnable(Z)V
 
-    .line 178
     iget-object v5, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingAutoSync;->indicatorview:Lcom/android/systemui/statusbar/quicksetting/LevelIndicator;
@@ -109,15 +95,12 @@
     :goto_2
     invoke-virtual {v5, v6, v7}, Lcom/android/systemui/statusbar/quicksetting/LevelIndicator;->setLevel(II)V
 
-    .line 180
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v5
 
     sub-long v1, v5, v3
 
-    .line 182
-    .local v1, elapse:J
     const-string v5, "QuickSettingAutoSync"
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -152,16 +135,13 @@
 
     goto :goto_0
 
-    .end local v1           #elapse:J
     :cond_2
     move v5, v7
 
-    .line 177
     goto :goto_1
 
     :cond_3
     move v6, v7
 
-    .line 178
     goto :goto_2
 .end method

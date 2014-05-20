@@ -34,11 +34,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingNfc;Z)V
     .locals 0
-    .parameter
-    .parameter
 
-    .prologue
-    .line 304
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingNfc$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingNfc;
 
     iput-boolean p2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingNfc$3;->val$nextEnable:Z
@@ -52,23 +48,17 @@
 # virtual methods
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/Long;
     .locals 4
-    .parameter "args"
 
-    .prologue
-    .line 308
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 310
-    .local v0, start:J
     iget-boolean v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingNfc$3;->val$nextEnable:Z
 
     const/4 v3, 0x1
 
     if-ne v2, v3, :cond_0
 
-    .line 311
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingNfc$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingNfc;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingNfc;->nfcAdapter:Landroid/nfc/NfcAdapter;
@@ -78,7 +68,6 @@
 
     invoke-virtual {v2}, Landroid/nfc/NfcAdapter;->enable()Z
 
-    .line 315
     :goto_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -92,7 +81,6 @@
 
     return-object v2
 
-    .line 313
     :cond_0
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingNfc$3;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingNfc;
 
@@ -108,13 +96,9 @@
 
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 304
     check-cast p1, [Ljava/lang/Void;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingNfc$3;->doInBackground([Ljava/lang/Void;)Ljava/lang/Long;
 
     move-result-object v0
@@ -124,10 +108,7 @@
 
 .method protected onPostExecute(Ljava/lang/Long;)V
     .locals 4
-    .parameter "elapse"
 
-    .prologue
-    .line 321
     const-string v0, "QuickSettingNfc"
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -154,19 +135,14 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 322
     return-void
 .end method
 
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
-    .parameter "x0"
 
-    .prologue
-    .line 304
     check-cast p1, Ljava/lang/Long;
 
-    .end local p1
     invoke-virtual {p0, p1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingNfc$3;->onPostExecute(Ljava/lang/Long;)V
 
     return-void

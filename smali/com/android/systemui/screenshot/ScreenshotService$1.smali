@@ -21,10 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/screenshot/ScreenshotService;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 48
     iput-object p1, p0, Lcom/android/systemui/screenshot/ScreenshotService$1;->this$0:Lcom/android/systemui/screenshot/ScreenshotService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -36,11 +33,7 @@
 # virtual methods
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 5
-    .parameter "context"
-    .parameter "intent"
 
-    .prologue
-    .line 52
     if-eqz p1, :cond_0
 
     if-eqz p2, :cond_0
@@ -54,12 +47,10 @@
 
     if-nez v1, :cond_1
 
-    .line 61
     :cond_0
     :goto_0
     return-void
 
-    .line 55
     :cond_1
     const-string v1, "delay"
 
@@ -69,8 +60,6 @@
 
     move-result v0
 
-    .line 57
-    .local v0, delay:I
     iget-object v1, p0, Lcom/android/systemui/screenshot/ScreenshotService$1;->this$0:Lcom/android/systemui/screenshot/ScreenshotService;
 
     #getter for: Lcom/android/systemui/screenshot/ScreenshotService;->handler:Landroid/os/Handler;
@@ -87,7 +76,6 @@
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 58
     iget-object v1, p0, Lcom/android/systemui/screenshot/ScreenshotService$1;->this$0:Lcom/android/systemui/screenshot/ScreenshotService;
 
     #getter for: Lcom/android/systemui/screenshot/ScreenshotService;->handler:Landroid/os/Handler;
@@ -106,7 +94,6 @@
 
     invoke-virtual {v1, v2, v3, v4}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 60
     const-string v1, "ScreenshotService"
 
     new-instance v2, Ljava/lang/StringBuilder;

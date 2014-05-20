@@ -21,11 +21,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX;Landroid/os/Handler;)V
     .locals 0
-    .parameter
-    .parameter "x0"
 
-    .prologue
-    .line 340
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
@@ -37,15 +33,11 @@
 # virtual methods
 .method public onChange(Z)V
     .locals 1
-    .parameter "selfChange"
 
-    .prologue
-    .line 345
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX$6;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX;
 
     #calls: Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX;->updateDemoFLOstate()V
     invoke-static {v0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX;->access$500(Lcom/android/systemui/statusbar/quicksetting/QuickSettingPowerSaverEX;)V
 
-    .line 346
     return-void
 .end method

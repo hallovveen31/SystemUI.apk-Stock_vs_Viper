@@ -275,11 +275,11 @@ a hálózatot felügyelik"</string>
 – A rezgő visszajelzések kikapcsolása.
 – Az adatkapcsolat leállítása, amikor a képernyő ki van kapcsolva.
 – A lépésszámláló kikapcsolása."</string>
-    <string name="extreme_auto_power_saver_ask_msg_ex">"Az extrém energiatakarékos mód a következőkkel növeli az akkumulátor üzemidejét:
+    <string name="extreme_auto_power_saver_ask_msg_ex">"Az extrém energiatakarékos mód a következőkkel növeli az akkumulátoros üzemidőt:
 – Takarékos CPU-használat.
 – A kijelző fényerejének csökkentése.
 – A rezgő visszajelzések kikapcsolása.
-– Az adatkapcsolat leállítása, ha a képernyő ki van kapcsolva.
+– Az adatkapcsolat leállítása, amikor a képernyő ki van kapcsolva.
 – Csak a fontos alkalmazások futtatásának engedélyezése."</string>
     <string name="extreme_auto_power_saver_ask_title_ex1">Extrém energiatakarékos mód</string>
     <string name="extreme_auto_power_saver_ask_msg_ex1">"Az extrém energiatakarékos mód a következőkkel növeli az akkumulátoros üzemidőt:
@@ -288,7 +288,7 @@ a hálózatot felügyelik"</string>
 – A rezgő visszajelzések kikapcsolása.
 – Az adatkapcsolat leállítása, amikor a képernyő ki van kapcsolva.
 – Csak a fontos alkalmazások futtatásának engedélyezése."</string>
-    <string name="extreme_auto_power_saver_ask_title">Maximálisan energiatakarékos</string>
+    <string name="extreme_auto_power_saver_ask_title">Maximálisan energiatakarékos mód</string>
     <string name="extreme_auto_power_saver_ask_msg">"A maximálisan energiatakarékos mód a következőkkel növeli az akkumulátoros üzemidőt:
 – Takarékos CPU-használat.
 – A kijelző fényerejének csökkentése.
@@ -300,34 +300,34 @@ a hálózatot felügyelik"</string>
 – Takarékos CPU-használat.
 – A kijelző fényerejének csökkentése.
 – A rezgő visszajelzések kikapcsolása.
-– Az adatkapcsolat leállítása, ha a képernyő ki van kapcsolva.
+– Az adatkapcsolat leállítása, amikor a képernyő ki van kapcsolva.
 – Csak a fontos alkalmazások futtatásának engedélyezése."</string>
     <string name="extreme_auto_power_saver_ask_title_ex3">Segélyhívó mód</string>
-    <string name="extreme_auto_power_saver_ask_msg_ex3">"A segélyhívó mód a következőkkel növeli az akkumulátor üzemidejét:
+    <string name="extreme_auto_power_saver_ask_msg_ex3">"A segélyhívó mód a következőkkel növeli az akkumulátoros üzemidőt:
 – Takarékos CPU-használat.
 – A kijelző fényerejének csökkentése.
 – A rezgő visszajelzések kikapcsolása.
-– Az adatkapcsolat leállítása, ha a képernyő ki van kapcsolva.
+– Az adatkapcsolat leállítása, amikor a képernyő ki van kapcsolva.
 – Csak a fontos alkalmazások futtatásának engedélyezése."</string>
     <string name="extreme_auto_power_saver_ask_title_ex4">Alacsony energiaigényű mód</string>
-    <string name="extreme_auto_power_saver_ask_msg_ex4">"Az alacsony energiaigényű mód a következőkkel növeli az akkumulátor üzemidejét:
+    <string name="extreme_auto_power_saver_ask_msg_ex4">"Az alacsony energiaigényű mód a következőkkel növeli az akkumulátoros üzemidőt:
 – Takarékos CPU-használat.
 – A kijelző fényerejének csökkentése.
 – A rezgő visszajelzések kikapcsolása.
 – Az adatkapcsolat leállítása, amikor a képernyő ki van kapcsolva.
 – Csak a fontos alkalmazások futtatásának engedélyezése."</string>
     <string name="extreme_auto_power_saver_ask_title_ex5">Energiatakarékos mód</string>
-    <string name="extreme_auto_power_saver_ask_msg_ex5">"Az energiatakarékos mód a következőkkel növeli az akkumulátor üzemidejét:
+    <string name="extreme_auto_power_saver_ask_msg_ex5">"Az energiatakarékos mód a következőkkel növeli az akkumulátoros üzemidőt:
 – Takarékos CPU-használat.
 – A kijelző fényerejének csökkentése.
 – A rezgő visszajelzések kikapcsolása.
-– Az adatkapcsolat leállítása, ha a képernyő ki van kapcsolva.
+– Az adatkapcsolat leállítása, amikor a képernyő ki van kapcsolva.
 – Csak a fontos alkalmazások futtatásának engedélyezése."</string>
     <string name="extreme_auto_power_saver_ask_title_ex6">Intelligens energiatakarékos mód</string>
-    <string name="extreme_auto_power_saver_ask_msg_ex6">"Az intelligens energiatakarékos mód a következőkkel növeli az akkumulátor üzemidejét:
+    <string name="extreme_auto_power_saver_ask_msg_ex6">"Az intelligens energiatakarékos mód a következőkkel növeli az akkumulátoros üzemidőt:
 – Takarékos CPU-használat.
 – A kijelző fényerejének csökkentése.
 – A rezgő visszajelzések kikapcsolása.
-– Az adatkapcsolat leállítása, ha a képernyő ki van kapcsolva.
+– Az adatkapcsolat leállítása, amikor a képernyő ki van kapcsolva.
 – Csak a fontos alkalmazások futtatásának engedélyezése."</string>
 </resources>

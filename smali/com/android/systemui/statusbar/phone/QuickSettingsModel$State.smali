@@ -24,11 +24,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .prologue
-    .line 61
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 66
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsModel$State;->enabled:Z

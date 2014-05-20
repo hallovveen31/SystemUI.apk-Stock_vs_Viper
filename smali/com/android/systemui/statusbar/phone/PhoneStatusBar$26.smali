@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/phone/PhoneStatusBar;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 3054
     iput-object p1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$26;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,19 +37,15 @@
 .method public run()V
     .locals 3
 
-    .prologue
-    .line 3060
     iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar$26;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     iget-boolean v0, v0, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->mExpandedVisible:Z
 
     if-nez v0, :cond_0
 
-    .line 3061
     #calls: Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->releaseHWTextureCache()V
     invoke-static {}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->access$5400()V
 
-    .line 3063
     :cond_0
     const-string v1, "PhoneStatusBar"
 
@@ -85,10 +78,8 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3064
     return-void
 
-    .line 3063
     :cond_1
     const/4 v0, 0x0
 

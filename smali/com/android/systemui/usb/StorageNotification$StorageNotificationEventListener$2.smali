@@ -30,13 +30,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .parameter
-    .parameter
-    .parameter
-    .parameter
 
-    .prologue
-    .line 177
     iput-object p1, p0, Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener$2;->this$1:Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener;
 
     iput-object p2, p0, Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener$2;->val$path:Ljava/lang/String;
@@ -55,8 +49,6 @@
 .method public run()V
     .locals 4
 
-    .prologue
-    .line 180
     iget-object v0, p0, Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener$2;->this$1:Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener;
 
     iget-object v0, v0, Lcom/android/systemui/usb/StorageNotification$StorageNotificationEventListener;->this$0:Lcom/android/systemui/usb/StorageNotification;
@@ -70,6 +62,5 @@
     #calls: Lcom/android/systemui/usb/StorageNotification;->onStorageStateChangedAsync(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     invoke-static {v0, v1, v2, v3}, Lcom/android/systemui/usb/StorageNotification;->access$500(Lcom/android/systemui/usb/StorageNotification;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 181
     return-void
 .end method

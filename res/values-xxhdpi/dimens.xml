@@ -41,6 +41,17 @@
     <dimen name="fixed_htcpowermanager_02">130.0px</dimen>
     <dimen name="fixed_notification_01">98.0px</dimen>
     <dimen name="fixed_notification_02">34.0px</dimen>
+    <dimen name="quick_setting_item_height">80.0px</dimen>
+    <dimen name="quick_setting_item_icon_margin_top">3.0px</dimen>
+    <dimen name="quick_setting_item_text_margin_top">3.0px</dimen>
+    <dimen name="quick_setting_item_indicator_height">7.5px</dimen>
+    <dimen name="quick_setting_item_indicator_margin_left">7.0px</dimen>
+    <dimen name="quick_setting_item_indicator_margin_top">3.0px</dimen>
+    <dimen name="quick_setting_item_indicator_margin_right">7.0px</dimen>
     <dimen name="thumbnail_transition_portrait_diff">38.0px</dimen>
     <dimen name="thumbnail_transition_landscape_diff">36.0px</dimen>
+    <dimen name="status_bar_clock_size_small">40.0px</dimen>
+    <dimen name="status_bar_ticker_size_small">40.0px</dimen>
+    <dimen name="status_bar_icon_size_small">58.0px</dimen>
+    <dimen name="status_bar_icon_drawing_size_small">50.0px</dimen>
 </resources>

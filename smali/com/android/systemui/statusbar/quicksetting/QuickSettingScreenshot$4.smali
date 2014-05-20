@@ -24,10 +24,7 @@
 # direct methods
 .method constructor <init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;)V
     .locals 0
-    .parameter
 
-    .prologue
-    .line 285
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,21 +36,15 @@
 # virtual methods
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 10
-    .parameter "name"
-    .parameter "service"
 
-    .prologue
-    .line 289
     if-eqz p1, :cond_0
 
     if-nez p2, :cond_1
 
-    .line 356
     :cond_0
     :goto_0
     return-void
 
-    .line 292
     :cond_1
     const-string v5, "QuickSettingScreenshot"
 
@@ -81,7 +72,6 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 294
     iget-object v5, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;->screenshotLock:Ljava/lang/Object;
@@ -91,7 +81,6 @@
 
     monitor-enter v6
 
-    .line 297
     :try_start_0
     iget-object v5, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
 
@@ -102,12 +91,10 @@
 
     if-eq v5, p0, :cond_2
 
-    .line 298
     monitor-exit v6
 
     goto :goto_0
 
-    .line 355
     :catchall_0
     move-exception v5
 
@@ -117,15 +104,12 @@
 
     throw v5
 
-    .line 300
     :cond_2
     :try_start_1
     new-instance v4, Landroid/os/Messenger;
 
     invoke-direct {v4, p2}, Landroid/os/Messenger;-><init>(Landroid/os/IBinder;)V
 
-    .line 303
-    .local v4, serviceMessenger:Landroid/os/Messenger;
     const/4 v5, 0x0
 
     const/4 v7, 0x1
@@ -134,12 +118,8 @@
 
     move-result-object v3
 
-    .line 305
-    .local v3, serviceMessage:Landroid/os/Message;
     move-object v2, p0
 
-    .line 308
-    .local v2, myConnection:Landroid/content/ServiceConnection;
     new-instance v1, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4$1;
 
     iget-object v5, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
@@ -155,27 +135,22 @@
 
     invoke-direct {v1, p0, v5, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4$1;-><init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;Landroid/os/Looper;Landroid/content/ServiceConnection;)V
 
-    .line 336
-    .local v1, localHandler:Landroid/os/Handler;
     new-instance v5, Landroid/os/Messenger;
 
     invoke-direct {v5, v1}, Landroid/os/Messenger;-><init>(Landroid/os/Handler;)V
 
     iput-object v5, v3, Landroid/os/Message;->replyTo:Landroid/os/Messenger;
 
-    .line 338
     const/4 v5, 0x1
 
     iput v5, v3, Landroid/os/Message;->arg1:I
 
-    .line 339
     const/4 v5, 0x0
 
     iput v5, v3, Landroid/os/Message;->arg2:I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 343
     :try_start_2
     const-string v5, "QuickSettingScreenshot"
 
@@ -183,25 +158,20 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 346
     invoke-virtual {v4, v3}, Landroid/os/Messenger;->send(Landroid/os/Message;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
-    .line 355
     :goto_1
     :try_start_3
     monitor-exit v6
 
     goto :goto_0
 
-    .line 348
     :catch_0
     move-exception v0
 
-    .line 350
-    .local v0, exception:Ljava/lang/Exception;
     const-string v5, "QuickSettingScreenshot"
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -214,7 +184,7 @@
 
     move-result-object v7
 
-    invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v8
 
@@ -228,7 +198,6 @@
 
     invoke-static {v5, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 353
     iget-object v5, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot$4;->this$0:Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;
 
     #getter for: Lcom/android/systemui/statusbar/quicksetting/QuickSettingScreenshot;->handler:Landroid/os/Handler;
@@ -254,17 +223,12 @@
 
 .method public onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 3
-    .parameter "name"
 
-    .prologue
-    .line 361
     if-nez p1, :cond_0
 
-    .line 365
     :goto_0
     return-void
 
-    .line 364
     :cond_0
     const-string v0, "QuickSettingScreenshot"
 

@@ -30,77 +30,57 @@
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
-    .parameter "context"
-    .parameter "attrset"
 
-    .prologue
     const/4 v2, 0x0
 
     const/4 v1, 0x0
 
-    .line 52
     invoke-direct {p0, p1, p2}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 44
     const-string v0, "QuickSettingMobileData"
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->TAG:Ljava/lang/String;
 
-    .line 48
     const-string v0, "com.android.systemui.statusbar.quicksetting.QuickSettingMobileData"
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->SENDER:Ljava/lang/String;
 
-    .line 56
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->handler:Landroid/os/Handler;
 
-    .line 58
     iput-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->indicatorview:Lcom/android/systemui/statusbar/quicksetting/LevelIndicator;
 
-    .line 153
     iput-boolean v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->receiverRegister:Z
 
-    .line 187
     iput-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
 
-    .line 190
     new-instance v0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$3;
 
     invoke-direct {v0, p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$3;-><init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;)V
 
     iput-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->receiver:Landroid/content/BroadcastReceiver;
 
-    .line 239
     iput-boolean v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mobileState:Z
 
-    .line 240
     iput-boolean v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->airplaneState:Z
 
-    .line 274
     iput-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->connectManager:Landroid/net/ConnectivityManager;
 
-    .line 371
     iput-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->telephonyManager:Landroid/telephony/TelephonyManager;
 
-    .line 53
     const-string v0, "mobile_data"
 
-    iput-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->tileLabel:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->tileLabel:Ljava/lang/String;
 
-    .line 54
     return-void
 .end method
 
 .method static synthetic access$000(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;)V
     .locals 0
-    .parameter "x0"
 
-    .prologue
-    .line 42
     invoke-direct {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->toggleNextState()V
 
     return-void
@@ -108,23 +88,15 @@
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
-    .parameter "x2"
 
-    .prologue
-    .line 42
-    invoke-virtual {p0, p1, p2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->Log(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, p2}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->Log(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
 
 .method static synthetic access$200(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;)Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 42
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
 
     return-object v0
@@ -132,10 +104,7 @@
 
 .method static synthetic access$300(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;)Lcom/android/systemui/statusbar/quicksetting/LevelIndicator;
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 42
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->indicatorview:Lcom/android/systemui/statusbar/quicksetting/LevelIndicator;
 
     return-object v0
@@ -143,10 +112,7 @@
 
 .method static synthetic access$400(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;)Z
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 42
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mobileState:Z
 
     return v0
@@ -154,11 +120,7 @@
 
 .method static synthetic access$402(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;Z)Z
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 42
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mobileState:Z
 
     return p1
@@ -166,10 +128,7 @@
 
 .method static synthetic access$500(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;)Z
     .locals 1
-    .parameter "x0"
 
-    .prologue
-    .line 42
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->airplaneState:Z
 
     return v0
@@ -177,11 +136,7 @@
 
 .method static synthetic access$502(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;Z)Z
     .locals 0
-    .parameter "x0"
-    .parameter "x1"
 
-    .prologue
-    .line 42
     iput-boolean p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->airplaneState:Z
 
     return p1
@@ -189,10 +144,7 @@
 
 .method static synthetic access$600(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;)V
     .locals 0
-    .parameter "x0"
 
-    .prologue
-    .line 42
     invoke-direct {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->performNextState()V
 
     return-void
@@ -201,9 +153,7 @@
 .method private getNeedToShowCTDataRoamingWarning()Z
     .locals 3
 
-    .prologue
-    .line 453
-    iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -223,8 +173,6 @@
 .method public static getQSIconID()I
     .locals 1
 
-    .prologue
-    .line 437
     const v0, 0x7f020131
 
     return v0
@@ -232,10 +180,7 @@
 
 .method public static getQSItemName(Landroid/content/res/Resources;)Ljava/lang/String;
     .locals 1
-    .parameter "resource"
 
-    .prologue
-    .line 431
     if-nez p0, :cond_0
 
     const-string v0, "null"
@@ -255,34 +200,27 @@
 
 .method private initEnvironment(J)V
     .locals 7
-    .parameter "startTime"
 
-    .prologue
     const/4 v4, 0x1
 
     const/4 v5, 0x0
 
-    .line 244
-    iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
-    .line 246
-    .local v2, resolver:Landroid/content/ContentResolver;
     if-eqz v2, :cond_0
 
     iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->connectManager:Landroid/net/ConnectivityManager;
 
     if-nez v3, :cond_1
 
-    .line 272
     :cond_0
     :goto_0
     return-void
 
-    .line 250
     :cond_1
     const-string v3, "airplane_mode_on"
 
@@ -297,7 +235,6 @@
     :goto_1
     iput-boolean v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->airplaneState:Z
 
-    .line 253
     iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->connectManager:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v3}, Landroid/net/ConnectivityManager;->getMobileDataEnabled()Z
@@ -306,25 +243,20 @@
 
     iput-boolean v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mobileState:Z
 
-    .line 255
     iget-boolean v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->airplaneState:Z
 
     if-ne v3, v4, :cond_3
 
-    .line 257
     invoke-virtual {p0, v5}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->setEnabled(Z)V
 
-    .line 258
     iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->indicatorview:Lcom/android/systemui/statusbar/quicksetting/LevelIndicator;
 
     invoke-virtual {v3, v5, v4}, Lcom/android/systemui/statusbar/quicksetting/LevelIndicator;->setLevel(II)V
 
-    .line 259
     iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
 
     invoke-virtual {v3, v5}, Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;->setOverlayEnable(Z)V
 
-    .line 269
     :goto_2
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -332,8 +264,6 @@
 
     sub-long v0, v3, p1
 
-    .line 271
-    .local v0, elapse:J
     const-string v3, "QuickSettingMobileData"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -382,18 +312,14 @@
 
     goto :goto_0
 
-    .end local v0           #elapse:J
     :cond_2
     move v3, v5
 
-    .line 250
     goto :goto_1
 
-    .line 263
     :cond_3
     invoke-virtual {p0, v4}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->setEnabled(Z)V
 
-    .line 265
     iget-object v6, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
 
     iget-boolean v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mobileState:Z
@@ -405,7 +331,6 @@
     :goto_3
     invoke-virtual {v6, v3}, Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;->setOverlayEnable(Z)V
 
-    .line 266
     iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->indicatorview:Lcom/android/systemui/statusbar/quicksetting/LevelIndicator;
 
     iget-boolean v6, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mobileState:Z
@@ -420,25 +345,21 @@
     :cond_4
     move v3, v4
 
-    .line 265
     goto :goto_3
 
     :cond_5
     move v5, v4
 
-    .line 266
     goto :goto_4
 .end method
 
 .method private isEnableDataRoaming()Z
     .locals 4
 
-    .prologue
     const/4 v1, 0x0
 
-    .line 398
     :try_start_0
-    iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -456,27 +377,21 @@
 
     const/4 v1, 0x1
 
-    .line 403
     :cond_0
     :goto_0
     return v1
 
-    .line 401
     :catch_0
     move-exception v0
 
-    .line 403
-    .local v0, exception:Ljava/lang/Exception;
     goto :goto_0
 .end method
 
 .method private isUnderDataRoaming()Z
     .locals 5
 
-    .prologue
     const/4 v2, 0x0
 
-    .line 376
     iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->connectManager:Landroid/net/ConnectivityManager;
 
     if-eqz v3, :cond_0
@@ -488,17 +403,13 @@
     :cond_0
     move v1, v2
 
-    .line 391
     :cond_1
     :goto_0
     return v1
 
-    .line 379
     :cond_2
     const/4 v1, 0x0
 
-    .line 381
-    .local v1, underRoaming:Z
     iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->telephonyManager:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v3}, Landroid/telephony/TelephonyManager;->getCurrentPhoneType()I
@@ -509,7 +420,6 @@
 
     if-ne v3, v4, :cond_3
 
-    .line 382
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->telephonyManager:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v2}, Landroid/telephony/TelephonyManager;->isNetworkRoaming()Z
@@ -518,7 +428,6 @@
 
     goto :goto_0
 
-    .line 385
     :cond_3
     iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->connectManager:Landroid/net/ConnectivityManager;
 
@@ -526,11 +435,8 @@
 
     move-result-object v0
 
-    .line 387
-    .local v0, info:Landroid/net/NetworkInfo;
     if-eqz v0, :cond_1
 
-    .line 388
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->isRoaming()Z
 
     move-result v1
@@ -541,16 +447,12 @@
 .method private performNextState()V
     .locals 4
 
-    .prologue
-    .line 351
     iget-boolean v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mobileState:Z
 
     if-nez v1, :cond_1
 
     const/4 v0, 0x1
 
-    .line 353
-    .local v0, nextState:Z
     :goto_0
     if-nez v0, :cond_2
 
@@ -560,7 +462,6 @@
 
     if-ne v1, v2, :cond_2
 
-    .line 355
     const-string v1, "QuickSettingMobileData"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -585,8 +486,7 @@
 
     invoke-static {v1, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 357
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->getTag()Ljava/lang/Object;
+    invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -594,8 +494,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 358
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->getTag()Ljava/lang/Object;
+    invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v1
 
@@ -607,26 +506,20 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/android/systemui/statusbar/phone/QuickSettings;->startSettingsActivity(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 367
     :cond_0
     :goto_1
     return-void
 
-    .line 351
-    .end local v0           #nextState:Z
     :cond_1
     const/4 v0, 0x0
 
     goto :goto_0
 
-    .line 364
-    .restart local v0       #nextState:Z
     :cond_2
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->connectManager:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v1, v0}, Landroid/net/ConnectivityManager;->setMobileDataEnabled(Z)V
 
-    .line 366
     const-string v1, "QuickSettingMobileData"
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -666,21 +559,15 @@
 
 .method private setContentView(Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;Lcom/android/systemui/statusbar/quicksetting/LevelIndicator;)Z
     .locals 8
-    .parameter "_imageview"
-    .parameter "_indicatorview"
 
-    .prologue
     const/4 v3, 0x1
 
     const/4 v4, 0x0
 
-    .line 157
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 159
-    .local v0, startTime:J
     if-eqz p1, :cond_0
 
     if-nez p2, :cond_1
@@ -688,19 +575,15 @@
     :cond_0
     move v2, v4
 
-    .line 184
     :goto_0
     return v2
 
-    .line 162
     :cond_1
     iput-object p1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
 
-    .line 163
     iput-object p2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->indicatorview:Lcom/android/systemui/statusbar/quicksetting/LevelIndicator;
 
-    .line 165
-    iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     const-string v5, "phone"
 
@@ -712,8 +595,7 @@
 
     iput-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->telephonyManager:Landroid/telephony/TelephonyManager;
 
-    .line 166
-    iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     const-string v5, "connectivity"
 
@@ -725,7 +607,6 @@
 
     iput-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->connectManager:Landroid/net/ConnectivityManager;
 
-    .line 168
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->connectManager:Landroid/net/ConnectivityManager;
 
     if-eqz v2, :cond_2
@@ -737,17 +618,14 @@
     :cond_2
     move v2, v4
 
-    .line 169
     goto :goto_0
 
-    .line 171
     :cond_3
     iget-boolean v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->receiverRegister:Z
 
     if-nez v2, :cond_4
 
-    .line 173
-    iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     iget-object v4, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->receiver:Landroid/content/BroadcastReceiver;
 
@@ -759,8 +637,7 @@
 
     invoke-virtual {v2, v4, v5}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 174
-    iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     iget-object v4, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->receiver:Landroid/content/BroadcastReceiver;
 
@@ -776,10 +653,8 @@
 
     invoke-virtual {v2, v4, v5, v6, v7}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
-    .line 177
     iput-boolean v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->receiverRegister:Z
 
-    .line 180
     :cond_4
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -787,7 +662,6 @@
 
     invoke-direct {p0, v4, v5}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->initEnvironment(J)V
 
-    .line 182
     const-string v2, "QuickSettingMobileData"
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -818,26 +692,22 @@
 
     move v2, v3
 
-    .line 184
     goto :goto_0
 .end method
 
 .method private toggleNextState()V
     .locals 12
 
-    .prologue
     const/4 v11, 0x0
 
     const/4 v10, 0x1
 
-    .line 280
     const-string v7, "QuickSettingMobileData"
 
     const-string v8, "click.toggleNextState!"
 
     invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 283
     iget-boolean v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mobileState:Z
 
     if-nez v7, :cond_3
@@ -848,22 +718,17 @@
 
     if-ne v7, v8, :cond_3
 
-    .line 285
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v4
 
-    .line 287
-    .local v4, start:J
     invoke-direct {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->getNeedToShowCTDataRoamingWarning()Z
 
     move-result v3
 
-    .line 290
-    .local v3, needShowDialog:Z
     if-ne v3, v10, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->getTag()Ljava/lang/Object;
+    invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v7
 
@@ -871,8 +736,7 @@
 
     if-eqz v7, :cond_0
 
-    .line 291
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->getTag()Ljava/lang/Object;
+    invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v7
 
@@ -880,18 +744,15 @@
 
     invoke-virtual {v7}, Lcom/android/systemui/statusbar/phone/QuickSettings;->animateCollapseAndUnlock()V
 
-    .line 293
     :cond_0
     iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->connectManager:Landroid/net/ConnectivityManager;
 
     if-eqz v7, :cond_1
 
-    .line 294
     iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->connectManager:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v7, v10}, Landroid/net/ConnectivityManager;->setMobileDataEnabled(Z)V
 
-    .line 296
     :cond_1
     const-string v7, "QuickSettingMobileData"
 
@@ -931,32 +792,23 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 346
-    .end local v3           #needShowDialog:Z
-    .end local v4           #start:J
     :cond_2
     :goto_0
     return-void
 
-    .line 301
     :cond_3
     iget-boolean v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mobileState:Z
 
     if-nez v7, :cond_4
 
-    .line 303
     invoke-direct {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->isUnderDataRoaming()Z
 
     move-result v6
 
-    .line 304
-    .local v6, underRoaming:Z
     invoke-direct {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->isEnableDataRoaming()Z
 
     move-result v0
 
-    .line 306
-    .local v0, enableRoaming:Z
     const-string v7, "QuickSettingMobileData"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -989,7 +841,6 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 309
     if-ne v6, v10, :cond_4
 
     if-nez v0, :cond_4
@@ -1006,33 +857,27 @@
 
     if-nez v7, :cond_4
 
-    .line 313
     new-instance v2, Landroid/content/Intent;
 
     const-string v7, "android.intent.action.MAIN"
 
     invoke-direct {v2, v7}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 315
-    .local v2, intent:Landroid/content/Intent;
     const-string v7, "com.android.settings"
 
     const-string v8, "com.android.settings.framework.core.wireless.mobilenetwork.HtcMobileDataDialog"
 
     invoke-virtual {v2, v7, v8}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 316
     const/high16 v7, 0x1084
 
     invoke-virtual {v2, v7}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 319
     const-string v7, "type"
 
     invoke-virtual {v2, v7, v10}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 322
-    iget-object v7, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mContext:Landroid/content/Context;
+    iget-object v7, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-virtual {v7}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -1042,8 +887,6 @@
 
     move-result-object v1
 
-    .line 324
-    .local v1, info:Ljava/util/List;,"Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
     const-string v7, "QuickSettingMobileData"
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -1066,7 +909,6 @@
 
     invoke-static {v7, v8}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 326
     if-eqz v1, :cond_4
 
     invoke-interface {v1}, Ljava/util/List;->size()I
@@ -1075,8 +917,7 @@
 
     if-eqz v7, :cond_4
 
-    .line 328
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->getTag()Ljava/lang/Object;
+    invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v7
 
@@ -1084,8 +925,7 @@
 
     if-eqz v7, :cond_2
 
-    .line 329
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->getTag()Ljava/lang/Object;
+    invoke-virtual {p0}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v7
 
@@ -1095,11 +935,6 @@
 
     goto/16 :goto_0
 
-    .line 337
-    .end local v0           #enableRoaming:Z
-    .end local v1           #info:Ljava/util/List;,"Ljava/util/List<Landroid/content/pm/ResolveInfo;>;"
-    .end local v2           #intent:Landroid/content/Intent;
-    .end local v6           #underRoaming:Z
     :cond_4
     new-instance v7, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$4;
 
@@ -1107,11 +942,10 @@
 
     new-array v8, v11, [Ljava/lang/Void;
 
-    invoke-virtual {v7, v8}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$4;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v7, v8}, Landroid/os/AsyncTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto/16 :goto_0
 
-    .line 309
     :array_0
     .array-data 0x4
         0xat 0x0t 0x0t 0x0t
@@ -1125,18 +959,15 @@
 .method public onAttachedToWindow()V
     .locals 6
 
-    .prologue
     const v5, 0x7f07002e
 
     const/4 v4, 0x1
 
-    .line 63
     invoke-super {p0}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->onAttachedToWindow()V
 
-    .line 65
     const v2, 0x7f070027
 
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
@@ -1144,7 +975,7 @@
 
     const v3, 0x7f070028
 
-    invoke-virtual {p0, v3}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -1154,68 +985,52 @@
 
     move-result v1
 
-    .line 69
-    .local v1, success:Z
     if-ne v1, v4, :cond_2
 
-    .line 72
     new-instance v2, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$1;
 
     invoke-direct {v2, p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$1;-><init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;)V
 
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 81
-    invoke-virtual {p0, v4}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->setLongClickable(Z)V
+    invoke-virtual {p0, v4}, Landroid/view/View;->setLongClickable(Z)V
 
-    .line 82
-    invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->getOnLongClickListener()Landroid/view/View$OnLongClickListener;
+    invoke-virtual {p0}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->getOnLongClickListener()Landroid/view/View$OnLongClickListener;
 
     move-result-object v2
 
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+    invoke-virtual {p0, v2}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
-    .line 84
-    invoke-virtual {p0, v5}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 86
-    .local v0, moreview:Landroid/view/View;
     if-eqz v0, :cond_0
 
-    .line 89
     new-instance v2, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$2;
 
     invoke-direct {v2, p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData$2;-><init>(Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;)V
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 117
     :cond_0
     invoke-virtual {p0}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->onLocaleChanged()V
 
-    .line 119
     if-eqz v0, :cond_1
 
-    .line 122
     const v2, 0x7f07002d
 
-    invoke-virtual {p0, v2, v5}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->setTouchDelegate(II)V
+    invoke-virtual {p0, v2, v5}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->setTouchDelegate(II)V
 
-    .line 132
-    .end local v0           #moreview:Landroid/view/View;
     :cond_1
     :goto_0
     return-void
 
-    .line 128
     :cond_2
     iget-object v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->handler:Landroid/os/Handler;
 
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->removeSelfIfNeed(Landroid/os/Handler;)V
+    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->removeSelfIfNeed(Landroid/os/Handler;)V
 
-    .line 130
     const-string v2, "QuickSettingMobileData"
 
     const-string v3, "!!!!!initialize set content fail"
@@ -1228,82 +1043,64 @@
 .method public onDetachedFromWindow()V
     .locals 4
 
-    .prologue
     const/4 v3, 0x0
 
     const/4 v2, 0x0
 
-    .line 137
     invoke-super {p0}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->onDetachedFromWindow()V
 
-    .line 139
     iget-boolean v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->receiverRegister:Z
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_0
 
-    .line 141
-    iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->receiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 142
     iput-boolean v2, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->receiverRegister:Z
 
-    .line 145
     :cond_0
-    invoke-virtual {p0, v3}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p0, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 146
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->setOnOverlayChangeListener(I)V
+    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->setOnOverlayChangeListener(I)V
 
-    .line 148
-    invoke-virtual {p0, v2}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->setLongClickable(Z)V
+    invoke-virtual {p0, v2}, Landroid/view/View;->setLongClickable(Z)V
 
-    .line 149
-    invoke-virtual {p0, v3}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
+    invoke-virtual {p0, v3}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
-    .line 150
     return-void
 .end method
 
 .method public onLocaleChanged()V
     .locals 4
 
-    .prologue
-    .line 412
-    iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    .line 414
-    .local v1, resource:Landroid/content/res/Resources;
     const v3, 0x7f070029
 
-    invoke-virtual {p0, v3}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/TextView;
 
-    .line 416
-    .local v2, textview:Landroid/widget/TextView;
     if-eqz v2, :cond_0
 
-    .line 418
     invoke-static {v1}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->getQSItemName(Landroid/content/res/Resources;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 419
-    iget-object v3, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/htc/util/res/HtcResUtil;->isInAllCapsLocale(Landroid/content/Context;)Z
 
@@ -1311,19 +1108,15 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setAllCaps(Z)V
 
-    .line 422
     :cond_0
     const v3, 0x7f07002e
 
-    invoke-virtual {p0, v3}, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 424
-    .local v0, moreview:Landroid/view/View;
     if-eqz v0, :cond_1
 
-    .line 425
     const v3, 0x7f0a00de
 
     invoke-virtual {v1, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -1332,25 +1125,19 @@
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 427
     :cond_1
     return-void
 .end method
 
 .method public setEnabled(Z)V
     .locals 2
-    .parameter "enabled"
 
-    .prologue
-    .line 443
     invoke-super {p0, p1}, Lcom/android/systemui/statusbar/phone/QuickSettingsTileView;->setEnabled(Z)V
 
-    .line 445
     iget-object v0, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
 
     if-eqz v0, :cond_0
 
-    .line 446
     iget-object v1, p0, Lcom/android/systemui/statusbar/quicksetting/QuickSettingMobileData;->imageview:Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;
 
     const/4 v0, 0x1
@@ -1360,13 +1147,11 @@
     const/high16 v0, 0x3f80
 
     :goto_0
-    invoke-virtual {v1, v0}, Lcom/android/systemui/statusbar/quicksetting/ScaleImageView;->setAlpha(F)V
+    invoke-virtual {v1, v0}, Landroid/view/View;->setAlpha(F)V
 
-    .line 449
     :cond_0
     return-void
 
-    .line 446
     :cond_1
     const v0, 0x3e99999a
 
